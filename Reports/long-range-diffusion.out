@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.1}{Diffusion of heat}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{ Diffusion kernel \(construct lemma and it's proof\)}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Long-range interactions based on social distance in diffusion}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{k-path Laplacians \(consider Mellin and Laplace transforms to account for long-range interactions in diffusion\).}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Real-world Applications }{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Image Segmentation with k-path Laplacians}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Consensus with k-path Laplacians}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Financial risk and contagion \(too interconnected to fail and centralities\)}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.4}{Frequency overlap - Design of transmitters}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.5}{Sensor monitoring as an application of diffusion}{section.2}% 10
+\BOOKMARK [1][-]{section.3}{Future Considerations}{}% 11
+\BOOKMARK [2][-]{subsection.3.1}{Centrality measures such as leverage and super diffusion centralities}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{neural correlates to future value of information \(something in line is about reinforcement learning\)}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.3}{Communicability in networks}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.4}{Equilibrium Behaviour}{section.3}% 15
+\BOOKMARK [1][-]{section.4}{Diffusion on network with long range interactions}{}% 16
+\BOOKMARK [1][-]{section.5}{Diffusion with long range Interactions for different Network structures}{}% 17
+\BOOKMARK [1][-]{section.6}{Degree Centrality and Diffusion on networks}{}% 18
+\BOOKMARK [1][-]{section.7}{Diffusion process on a grid}{}% 19
+\BOOKMARK [1][-]{section.8}{Previous Discussions}{}% 20

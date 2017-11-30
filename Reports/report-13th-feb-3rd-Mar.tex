@@ -1,0 +1,65 @@
+\documentclass[10pt,a4paper]{article}
+% usepackages
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+% math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{latexsym}
+% formatting
+\usepackage{parskip}
+\usepackage{fullpage}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+% graphics
+%\usepackage[pdftex]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[below,section]{placeins} % the one below is better for short assignments
+\usepackage{float} % provides H as float placement specifier
+% extras
+\usepackage[pdftex,a4paper,colorlinks=true,urlcolor=blue]{hyperref}
+\urlstyle{same}
+\usepackage{moreverb} %\verbatimtabinput{filename.py} preserves indentation
+
+%Numbering first level list roman (i,ii,iii) instead of arabic (1,2,3)
+% options are \roman \Roman \alph \Alph \arabic
+\renewcommand{\theenumi}{\roman{enumi}} 
+\renewcommand{\theenumii}{\roman{enumii}}
+\newcommand{\Int}{\int\limits}
+% Also achieved with the enumerate package
+\usepackage{enumerate}
+%\numberwithin{equation}{section}%
+
+% author/title details
+\author{Alice NANYANZI (\href{mailto:alicenanyanzi@aims.ac.za}{alicenanyanzi@aims.ac.za})}
+% \title{Course Title: Assignment X}
+\title{Report: 16th Jan-3rd Feb, 2017}
+\begin{document}
+\maketitle
+\section*{Week 1 (13th Feb-17th Feb,2017):}
+
+\begin{itemize}
+\item Complexity in computing centrality measures of networks. consider a network comprising of n nodes and m edges; Degree centrality(O(m)), closeness and betweenness centralities(O($n^3$)), and Laplacian centrality O(n$\delta^2$).
+\end{itemize}
+\begin{itemize}
+\item Communicability in complex networks. Communicability function 
+\end{itemize}
+\section*{Week 2 (20th Feb-3rd Mar,2017):}
+\begin{enumerate}[a)]
+\item Robustness in complex networks. \\How many nodes do we have to delete to fragment a network into isolated components?
+\begin{itemize}
+\item For a regular lattice (Random networks)
+Use the reverse percolation theory.
+\item Scale free networks
+
+\end{itemize}
+
+
+\end{enumerate}
+
+\end{document}

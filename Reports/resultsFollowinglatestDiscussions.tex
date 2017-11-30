@@ -1,0 +1,115 @@
+\documentclass[10pt,a4paper]{article}
+% usepackages
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+% math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{latexsym}
+% formatting
+\usepackage{parskip}
+\usepackage{fullpage}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+% graphics
+%\usepackage[pdftex]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[below,section]{placeins} % the one below is better for short assignments
+\usepackage{float} % provides H as float placement specifier
+% extras
+\usepackage[pdftex,a4paper,colorlinks=true,urlcolor=blue]{hyperref}
+\urlstyle{same}
+\usepackage{moreverb} %\verbatimtabinput{filename.py} preserves indentation
+
+%Numbering first level list roman (i,ii,iii) instead of arabic (1,2,3)
+% options are \roman \Roman \alph \Alph \arabic
+\renewcommand{\theenumi}{\roman{enumi}} 
+\renewcommand{\theenumii}{\roman{enumii}}
+\newcommand{\Int}{\int\limits}
+% Also achieved with the enumerate package
+\usepackage{enumerate}
+%\numberwithin{equation}{section}%
+
+% author/title details
+\author{Alice NANYANZI (\href{mailto:alicenanyanzi@aims.ac.za}{alicenanyanzi@aims.ac.za})}
+% \title{Course Title: Assignment X}
+\title{Report: as at 13th- April, 2017}
+\begin{document}
+\maketitle
+\section*{SUMMARY }
+\begin{enumerate}[i)]
+\item \textbf{Heat Diffusion Over a Network}
+
+Motivation for studying diffusion\\
+Definition of diffusion\\
+Significance and selection of the diffusion constant\\
+Direct interactions\\
+Longrange interactions\\
+Diffusion with both direct and long range interactions (mathematics)\\
+Toy models and corresponding illustrations\\
+Diffusion over lattice simulation for direct\\
+Diffusion over lattice simulation for long range interactions\\
+
+Proposed research areas:\\
+What happens by considering a fraction of long range interaction, what happens as you iterate towards a complete graph due to long range interactions, When is longrange pronounced? For epidermic spread, how does the time taken to infect half of the population related to long range interactions.
+
+
+	
+	
+	Data Representation\\
+
+Considering various kinds of networks (e.g Barabasi,Erdos Renyi, Star) with $100$ nodes. Initially (at $t_0$), we assign random quantities of heat to each node, and at each time step, we record quantities of heat at each node. The following are various suggestions on how to graphically represent the results:\\
+\begin{itemize}
+\item At each time step, compute the average values and then plot them against time
+\item Choose the first $20$ most important nodes and visualize them i.e plot quantity of each node against time. We can also vary the conductance (x in long range interactions) and compare the results.
+\item  Alternatively, we can consider the threshold, we can then plot the number of nodes below the threshold at each time step.
+\item Another possibility may be to categorize nodes in groups of 10 nodes and then have plots of them accordingly.
+\item Understand the code that animates heat transfer  on a regular lattice. This code was implemented in Matlab. I will have to come up with a Python version of the code and then extend it to include long range interactions.\\
+(ref: $https://en.wikipedia.org/wiki/Laplacian_matrix$).  
+\end{itemize}
+\item \textbf{Systemic Risk in Banking System} \\
+
+In finance, systemic risk is the risk of collapse of an entire financial system or entire market, as opposed to risk associated with any one individual entity, group or component of a system, that can be contained therein without harming the entire system (Wikipedia).\\\\
+Systemic risk may be caused by particular bank(s) whose failure cascades to other banks within the system thus a whole system failure.\\\\
+Project by UCT students provides ranking for South African financial institutions elaborating which banks can cause a whole system failure when they default. \\
+\textbf{References:}\\
+\begin{itemize}
+\item http://www.aifmrm.uct.ac.za/newsroom/new-ranking-shows-sa-banks-contribute-systemic-risk/ 
+\item http://www.systemicrisk.org.za/
+\end{itemize}
+The rankings may be based on whether the institution is Too Big To Fail (TBTF) or Too Interconnected To Fail (TICTF). Our interest is mainly in the concept of Too interconnected To Fail. We are looking at using the Laplacian centrality to come out with the ranking.\\
+
+\textbf{Requirements and Challenges:}\\
+\begin{itemize}
+\item We need bank dataset to form a network.\\
+\item A few samples of the banking networks I have come across are mostly directed networks where nodes represent different banks and links originate from the lending bank to the borrowing bank. It therefore implies for such cases, we need to apply the concept of Laplacian centrality for directed networks considering the in degrees of nodes. 
+\end{itemize}
+
+\item \textbf{Image Segmentation} \\
+
+In computer vision, image segmentation is the process of partitioning a digital image into multiple segments (sets of pixels, also known as super-pixels). The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze (Wikipedia).\\
+
+We are basically looking at two network related techniques of image segmentation namely:\\
+\begin{itemize}
+\item \textbf{Random walks} ( ref: Random Walks for Image Segmentation by Leo Grady)\\
+
+Regarding this, we are looking at extending the random walk concept to include long range (\textbf{LR}) interactions in the network. We then compare results for both scenarios (ie with \textbf{LR} and without).\\
+
+\item \textbf{Minimum Cut} \\
+In graph theory, a minimum cut of a graph is a cut (a partition of the vertices of a graph into two disjoint subsets that are joined by at least one edge) that is minimal in some sense.\\
+
+Here, we get to understand how the minimum cut of a graph can be used in segmenting an image. \\
+
+Still with minimum cut, We would love to find a relationship between the Laplacian energy of a graph with minimum cut. currently, the challenge at hand is 
+how to compute Laplacian energy of a graph with disconnected components.
+\end{itemize}
+
+
+\end{enumerate}
+
+\end{document}

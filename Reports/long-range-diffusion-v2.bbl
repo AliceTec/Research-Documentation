@@ -1,0 +1,218 @@
+\begin{thebibliography}{10}
+
+\bibitem{albert2002statistical}
+R.~Albert and A.-L. Barab{\'a}si.
+\newblock Statistical mechanics of complex networks.
+\newblock {\em Reviews of modern physics}, 74(1):47, 2002.
+
+\bibitem{barabasi1999emergence}
+A.-L. Barab{\'a}si and R.~Albert.
+\newblock Emergence of scaling in random networks.
+\newblock {\em science}, 286(5439):509--512, 1999.
+
+\bibitem{barrat2004architecture}
+A.~Barrat, M.~Barthelemy, R.~Pastor-Satorras, and A.~Vespignani.
+\newblock The architecture of complex weighted networks.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 101(11):3747--3752, 2004.
+
+\bibitem{belkin2003laplacian}
+M.~Belkin and P.~Niyogi.
+\newblock Laplacian eigenmaps for dimensionality reduction and data
+  representation.
+\newblock {\em Neural computation}, 15(6):1373--1396, 2003.
+
+\bibitem{das2004laplacian}
+K.~C. Das.
+\newblock The laplacian spectrum of a graph.
+\newblock {\em Computers \& Mathematics with Applications}, 48(5):715--724,
+  2004.
+
+\bibitem{edwards2004differential}
+C.~H. Edwards and D.~E. Penney.
+\newblock {\em Differential equations and boundary value problems}, volume~2.
+\newblock Prentice Hall, 2004.
+
+\bibitem{erdos1960evolution}
+P.~Erdos and A.~R{\'e}nyi.
+\newblock On the evolution of random graphs.
+\newblock {\em Publ. Math. Inst. Hung. Acad. Sci}, 5(1):17--60, 1960.
+
+\bibitem{estrada2010quantifying}
+E.~Estrada.
+\newblock Quantifying network heterogeneity.
+\newblock {\em Physical Review E}, 82(6):066102, 2010.
+
+\bibitem{estrada2011structure}
+E.~Estrada.
+\newblock {\em The structure of complex networks: theory and applications}.
+\newblock OUP Oxford, 2011.
+
+\bibitem{estrada2012path}
+E.~Estrada.
+\newblock Path laplacian matrices: introduction and application to the analysis
+  of consensus in networks.
+\newblock {\em Linear Algebra and its Applications}, 436(9):3373--3391, 2012.
+
+\bibitem{estrada2015introduction}
+E.~Estrada.
+\newblock Introduction to complex networks: structure and dynamics.
+\newblock In {\em Evolutionary Equations with Applications in Natural
+  Sciences}, pages 93--131. Springer, 2015.
+
+\bibitem{estrada2011epidemic}
+E.~Estrada, F.~Kalala-Mutombo, and A.~Valverde-Colmeiro.
+\newblock Epidemic spreading in networks with nonrandom long-range
+  interactions.
+\newblock {\em Physical Review E}, 84(3):036110, 2011.
+
+\bibitem{estrada2015first}
+E.~Estrada, P.~Knight, et~al.
+\newblock {\em A first course in network theory}.
+\newblock Oxford University Press, USA, 2015.
+
+\bibitem{estrada2005subgraph}
+E.~Estrada and J.~A. Rodriguez-Velazquez.
+\newblock Subgraph centrality in complex networks.
+\newblock {\em Physical Review E}, 71(5):056103, 2005.
+
+\bibitem{euler1953leonhard}
+L.~Euler.
+\newblock Leonhard euler and the k{\"o}nigsberg bridges.
+\newblock {\em Scientific American}, 189(1):66--70, 1953.
+
+\bibitem{gower1980modified}
+J.~Gower.
+\newblock A modified leverrier-faddeev algorithm for matrices with multiple
+  eigenvalues.
+\newblock {\em Linear Algebra and its Applications}, 31:61--70, 1980.
+
+\bibitem{gribkovskaia2007bridges}
+I.~Gribkovskaia, {\O}.~Halskau, and G.~Laporte.
+\newblock The bridges of k{\"o}nigsberg—a historical perspective.
+\newblock {\em Networks}, 49(3):199--203, 2007.
+
+\bibitem{gutman2012mathematical}
+I.~Gutman and O.~E. Polansky.
+\newblock {\em Mathematical concepts in organic chemistry}.
+\newblock Springer Science \& Business Media, 2012.
+
+\bibitem{harris2008combinatorics}
+J.~M. Harris, J.~L. Hirst, and M.~J. Mossinghoff.
+\newblock {\em Combinatorics and graph theory}, volume~2.
+\newblock Springer, 2008.
+
+\bibitem{googleimages}
+Internet.
+\newblock Network.
+\newblock [Online; accessed 2016-03-29].
+
+\bibitem{kasprzak2012diffusion}
+R.~Kasprzak.
+\newblock Diffusion in networks.
+\newblock {\em Journal of Telecommunications and Information Technology}, pages
+  99--106, 2012.
+
+\bibitem{kondor2004diffusion}
+R.~Kondor and J.-P. Vert.
+\newblock Diffusion kernels.
+\newblock {\em kernel methods in computational biology}, pages 171--192, 2004.
+
+\bibitem{lafferty2005diffusion}
+J.~Lafferty and G.~Lebanon.
+\newblock Diffusion kernels on statistical manifolds.
+\newblock {\em Journal of Machine Learning Research}, 6(Jan):129--163, 2005.
+
+\bibitem{lopez2008diffusion}
+D.~L{\'o}pez-Pintado.
+\newblock Diffusion in complex social networks.
+\newblock {\em Games and Economic Behavior}, 62(2):573--590, 2008.
+
+\bibitem{ma2008mining}
+H.~Ma, H.~Yang, M.~R. Lyu, and I.~King.
+\newblock Mining social networks using heat diffusion processes for marketing
+  candidates selection.
+\newblock In {\em Proceedings of the 17th ACM conference on Information and
+  knowledge management}, pages 233--242. ACM, 2008.
+
+\bibitem{milgram1967small}
+S.~Milgram.
+\newblock The small world problem.
+\newblock {\em Psychology today}, 2(1):60--67, 1967.
+
+\bibitem{molitierno2012applications}
+J.~J. Molitierno.
+\newblock {\em Applications of combinatorial matrix theory to Laplacian
+  matrices of graphs}.
+\newblock CRC Press, 2012.
+
+\bibitem{frankthesis}
+F.~K. Mutombo.
+\newblock {\em Long-range interactions in complex networks}.
+\newblock PhD thesis, University of Strathclyde, 2012.
+
+\bibitem{newman2010networks}
+M.~Newman.
+\newblock {\em Networks: an introduction}.
+\newblock OUP Oxford, 2010.
+
+\bibitem{newman2001scientific}
+M.~E. Newman.
+\newblock Scientific collaboration networks. ii. shortest paths, weighted
+  networks, and centrality.
+\newblock {\em Physical review E}, 64(1):016132, 2001.
+
+\bibitem{newman2003structure}
+M.~E. Newman.
+\newblock The structure and function of complex networks.
+\newblock {\em SIAM review}, 45(2):167--256, 2003.
+
+\bibitem{zacharydataset}
+Nexus.
+\newblock Zachary's karate club [karate], 2012.
+\newblock [Online; accessed 2016-04-25].
+
+\bibitem{opsahl2009structure}
+T.~Opsahl.
+\newblock {\em Structure and evolution of weighted networks}.
+\newblock PhD thesis, Queen Mary, University of London, 2009.
+
+\bibitem{opsahl2010node}
+T.~Opsahl, F.~Agneessens, and J.~Skvoretz.
+\newblock Node centrality in weighted networks: Generalizing degree and
+  shortest paths.
+\newblock {\em Social Networks}, 32(3):245--251, 2010.
+
+\bibitem{opsahl2009clustering}
+T.~Opsahl and P.~Panzarasa.
+\newblock Clustering in weighted networks.
+\newblock {\em Social networks}, 31(2):155--163, 2009.
+
+\bibitem{qi2013terrorist}
+X.~Qi, R.~D. Duval, K.~Christensen, E.~Fuller, A.~Spahiu, Q.~Wu, Y.~Wu,
+  W.~Tang, C.~Zhang, et~al.
+\newblock Terrorist networks, network energy and node removal: a new measure of
+  centrality based on laplacian energy.
+\newblock {\em Social Networking}, 2(01):19, 2013.
+
+\bibitem{qi2012laplacian}
+X.~Qi, E.~Fuller, Q.~Wu, Y.~Wu, and C.-Q. Zhang.
+\newblock Laplacian centrality: A new centrality measure for weighted networks.
+\newblock {\em Information Sciences}, 194:240--253, 2012.
+
+\bibitem{wang2003complex}
+X.~F. Wang and G.~Chen.
+\newblock Complex networks: small-world, scale-free and beyond.
+\newblock {\em Circuits and Systems Magazine, IEEE}, 3(1):6--20, 2003.
+
+\bibitem{watts1998collective}
+D.~J. Watts and S.~H. Strogatz.
+\newblock Collective dynamics of ‘small-world’networks.
+\newblock {\em nature}, 393(6684):440--442, 1998.
+
+\bibitem{wilson1970introduction}
+R.~J. Wilson.
+\newblock {\em An introduction to graph theory}.
+\newblock Pearson Education India, 1970.
+
+\end{thebibliography}

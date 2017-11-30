@@ -1,0 +1,47 @@
+(function() {
+try {
+    (function() {
+    var mid = document.createElement('script'); mid.type = 'text/javascript'; mid.async = true;
+    mid.src = '//mathid.mathtag.com/d/i.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mid, s);
+})();
+
+(window.MathIDInits = window.MathIDInits || []).push(function() {
+    MathID.getData({mt_id:'1075168',ccid:'',cuid:'',mm_uuid:'e81459e4-f413-4300-811e-822963edadd9',src:'mt2'}).then(function(data) {
+        var p = document.createElement('script');
+        p.src = '//pixel.mathtag.com/event/js?01AD=3oAmuZEkhq1FF7elzAnneqwdzs-GFd7CJQlQMmQObEvMPB8JK1o-kAw&01RI=61A3980C1A6FCE2&01NA=na&event_type=conversion&industry=technology&page_name=www.research.ibm.com%2Flabs%2Fafrica&product_condition=PAGE%20CLICK&product_color=Blank%20HREF&product_brand=CTB18&site_language=en-US&mt_id=1075168&mt_adid=171815&mt_excl=19630891779015055466481&mm_bnc&mm_bct&no_log&mathid_data=' + encodeURIComponent(data);
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(p, s);
+    });
+});//used to sync advertiser without leaking referer to final destination
+(function() {
+    try {
+	var frm = document.createElement('iframe');
+	frm.style.visibility = 'hidden';
+	frm.style.display = 'none';
+	frm.src = "https://pixel.mathtag.com/sync/iframe?mt_uuid=e81459e4-f413-4300-811e-822963edadd9&no_iframe=1&mt_adid=171815";
+	frm.setAttribute("id", "mm_sync_back_ground");
+	var trys = 0;
+        var interval = setInterval(function(){
+            if (trys++ < 20 && interval && !document.getElementById("mm_sync_back_ground")) {
+                if (document.body) {
+                    if (interval) {
+                        clearInterval(interval);
+                        interval = 0;
+                    }
+                    document.body.appendChild(frm);
+                }
+            }
+        }, 100);
+    }
+    catch(ex)
+    {
+	document.createElement("img").src="//pixel.mathtag.com/error/img?error_domain=synciframe&what="+encodeURIComponent(ex.message);
+    }
+})();
+
+}
+catch(ex)
+{
+   document.createElement("img").src="//pixel.mathtag.com/error/img?error_domain=wrap&what="+encodeURIComponent(ex.message);
+}
+})();

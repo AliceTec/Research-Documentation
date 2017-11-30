@@ -1,0 +1,41 @@
+/* Site nav mega panels */
+div.research-mega-nav-link a { line-height: 1.2em; }
+
+div.research-mega-nav-link a:hover {
+    color: #5aaafa !important;
+    background-color: #FFF !important;
+    cursor: pointer;
+}
+
+
+
+ul[id^='research-mega-'] div.research-mega-nav div.research-mega-nav-item {
+    display: table;
+}
+
+ul[id^='research-mega-'] div.research-mega-nav div.research-mega-nav-item div.research-mega-nav-img{
+    display: table-cell;
+}
+
+ul[id^='research-mega-'] div.research-mega-nav-link {
+    position: relative;
+    top: -10px;
+}
+
+ul[id^='research-mega-'] div.research-mega-nav-link a {
+    padding: 0 10px 10px 10px;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.research-mega-main-p {width:95%;}
+
+	 .icon-research-area path {fill:#000000;}
+	 .icon-research-area rect {fill:#000000;}
+	 .icon-research-area polygon {fill:#000000;}
+
+.mega-menu-width {width:100vw;}
+
+.research-mega-nav-img img {width:25px;}
+
+.research-mega-nav-lab-img img {width:1px;}

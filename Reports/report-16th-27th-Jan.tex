@@ -1,0 +1,80 @@
+\documentclass[10pt,a4paper]{article}
+% usepackages
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+% math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{latexsym}
+% formatting
+\usepackage{parskip}
+\usepackage{fullpage}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+% graphics
+%\usepackage[pdftex]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[below,section]{placeins} % the one below is better for short assignments
+\usepackage{float} % provides H as float placement specifier
+% extras
+\usepackage[pdftex,a4paper,colorlinks=true,urlcolor=blue]{hyperref}
+\urlstyle{same}
+\usepackage{moreverb} %\verbatimtabinput{filename.py} preserves indentation
+
+%Numbering first level list roman (i,ii,iii) instead of arabic (1,2,3)
+% options are \roman \Roman \alph \Alph \arabic
+\renewcommand{\theenumi}{\roman{enumi}} 
+\renewcommand{\theenumii}{\roman{enumii}}
+\newcommand{\Int}{\int\limits}
+% Also achieved with the enumerate package
+\usepackage{enumerate}
+%\numberwithin{equation}{section}%
+
+% author/title details
+\author{Alice NANYANZI (\href{mailto:alicenanyanzi@aims.ac.za}{alicenanyanzi@aims.ac.za})}
+% \title{Course Title: Assignment X}
+\title{Report: 16th-27th January, 2017}
+\begin{document}
+\maketitle
+\section*{Week 1 (16th-20th January,2017):}
+Revision of my Structured Masters Essay (Laplacian Matrix of a Network and Applications). Focus was mainly on the centrality measures and Laplacian matrix.\\\\
+Revision Guiding Questions included?
+\begin{itemize}
+\item What is meant by centrality of anode?
+\item Why is it important to compute the centrality of a node with in the network?
+\item Explain the different centrality measures and their applications in the real-world.
+\item Any correlation between the different centrality measure? Explanation for results?
+\item Do you think there exists new determinants of importance of a node that are not addressed within the existing centrality measures?
+\item Why is it called the Laplacian?
+\item What is the importance of the Laplacian?
+\item Explain some of the applications of the Laplacian.
+\item Can you think of some other applications of the Laplacian?
+\item How about Laplacian matrix of a directed network? What are its properties? Any applications in real world?
+\end{itemize}
+\section*{Week 2 (23rd-27th January,2017):}
+\begin{enumerate}[a)]
+\item Ford-Furkerson Algorithm (FFA) for flow networks:
+\begin{itemize}
+\item What are flow networks?
+\item Examples of such networks in real-world
+\item operation of the Ford-Furkerson Algorithm for maximum flow
+\item What is maximum cut in FFA?
+\item Can we use the Laplacian matrix to compute the maximum cut in a flow network? 
+\end{itemize}
+\item Consensus in Networks:
+\begin{itemize}
+\item What is consensus?
+\item Examples of real world scenarios where consensus is applied?
+\item Application of Laplacian matrices in the analysis of consensus in networks
+\item Long range interactions- may be grouped under physical or social influences. \\\\
+Regarding the social influence, using the analogy of finance theory, why is the Future value of information always greater than the present value.
+\item Can we think of any other kind of influence or method for modelling long range interactions?
+\end{itemize}
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,89 @@
+	.float-left {float: left;}
+	.float-right {float: right;}
+	.ibm-landing-page #ibm-leadspace-body h1+p {padding-top: 10px;}
+	#ibm-leadspace-head {border-bottom: none !important;}
+	
+	.ibm-research-leadspace-country-background { background: url(../images/leadspace-country-outline.png);background-repeat: no-repeat;background-size: 48%;background-position: 50% 50%;}
+	#ibm-research-news-ticker-container {margin-top:-40px;background: rgb(0,0,0); /* Old browsers */background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 51%, rgba(0,124,89,1) 63%, rgba(252,181,20,1) 76%, rgba(12,28,140,1) 87%, rgba(226,61,40,1) 100%); /* FF3.6-15 */background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 51%,rgba(0,124,89,1) 63%,rgba(252,181,20,1) 76%,rgba(12,28,140,1) 87%,rgba(226,61,40,1) 100%); /* Chrome10-25,Safari5.1-6 */background: linear-gradient(135deg, rgba(0,0,0,1) 51%,rgba(0,124,89,1) 63%,rgba(252,181,20,1) 76%,rgba(12,28,140,1) 87%,rgba(226,61,40,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#e23d28',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
+	
+   
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+				.quick-links-card {width:95%;}
+			.ibm-research-padding-left-1 {padding-left:25px;}
+			
+			
+			.ibm-research-featured-project-card {width:100%;min-height:313px;}
+			.ibm-research-featured-project-card figure {width:100%;height: 313px; margin: 0px;background:rgba(0, 0, 0, 0.2);transition: background 0.5s ease;}
+			.ibm-research-featured-project-card figure:hover, .ibm-research-featured-project-card figure:focus {background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(150,84,209,0.65) 62%, rgba(152,85,212,0.65) 63%); /* FF3.6-15 */background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(150,84,209,0.65) 62%,rgba(152,85,212,0.65) 63%); /* Chrome10-25,Safari5.1-6 */background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(150,84,209,0.65) 62%,rgba(152,85,212,0.65) 63%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a69855d4',GradientType=0 ); /* IE6-9 */copy}
+			
+			.ibm-research-featured-project-card figure h3 {padding-top:20%;transition: background 0.5s ease, padding 0.5s linear;}
+			.ibm-research-featured-project-card figure:hover  h3, .ibm-research-featured-project-card figure:focus  h3  {padding-top:15%;}
+			
+			.ibm-research-featured-project-card figure figcaption { opacity: 0.0; padding-left:25px;padding-right:25px;padding-top:5px;transition: opacity 0.5s ease;}
+			.ibm-research-featured-project-card figure:hover figcaption, .ibm-research-featured-project-card figure:focus figcaption { opacity: 1;}
+			.ibm-graphic-tabs ul.ibm-tabs li {    border-right: none;}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	.ibm-margin-top-small {margin-top:-10px;}
+	.featured-content-separator-container h3 {margin-top:-10px;}
+	hr {width:75%}
+	
+	#ibm-content-nav-research a {}
+	#ibm-content-nav-research a:visited {color:#ffffff !important;}
+	.ibm-content-nav-research-container-scrolled {position: fixed;width: 100%;top: 51px;z-index: 9;/*border-bottom: 1px solid #e0e0e0;*/}	
+	
+	@media screen and (max-width: 1478px) {
+	   .get-invovled-landing-container { background-position:125%;}
+	}	
+	
+	
+	@media screen and (max-width: 1100px) {
+	   .get-invovled-landing-container { background-position:150%;}
+	}	
+
+
+	@media screen and (max-width: 970px) {
+	   .get-invovled-landing-container { background-position:500px;}
+	}	
+	
+	@media screen and (max-width: 769px) {
+	   #ibm-leadspace-head { background: url(../images/leadspace-medium.jpg) !important} 
+	   .ibm-research-leadspace-country-background {background-size:58% !important} 
+	}		
+	
+	@media screen and (max-width: 500px) {
+	   #ibm-leadspace-head { background: url(../images/leadspace-mobile.jpg) !important}
+	  .ibm-research-leadspace-country-background {background-size:100% !important} 
+	}		

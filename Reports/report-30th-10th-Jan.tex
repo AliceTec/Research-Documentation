@@ -1,0 +1,74 @@
+\documentclass[10pt,a4paper]{article}
+% usepackages
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+% math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{latexsym}
+% formatting
+\usepackage{parskip}
+\usepackage{fullpage}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+% graphics
+%\usepackage[pdftex]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[below,section]{placeins} % the one below is better for short assignments
+\usepackage{float} % provides H as float placement specifier
+% extras
+\usepackage[pdftex,a4paper,colorlinks=true,urlcolor=blue]{hyperref}
+\urlstyle{same}
+\usepackage{moreverb} %\verbatimtabinput{filename.py} preserves indentation
+
+%Numbering first level list roman (i,ii,iii) instead of arabic (1,2,3)
+% options are \roman \Roman \alph \Alph \arabic
+\renewcommand{\theenumi}{\roman{enumi}} 
+\renewcommand{\theenumii}{\roman{enumii}}
+\newcommand{\Int}{\int\limits}
+% Also achieved with the enumerate package
+\usepackage{enumerate}
+%\numberwithin{equation}{section}%
+
+% author/title details
+\author{Alice NANYANZI (\href{mailto:alicenanyanzi@aims.ac.za}{alicenanyanzi@aims.ac.za})}
+% \title{Course Title: Assignment X}
+\title{Report: 16th Jan-3rd Feb, 2017}
+\begin{document}
+\maketitle
+\section*{Week 1 (16th Jan-3rd Feb,2017):}
+
+\begin{itemize}
+\item Identify if there is a relationship between minimum cut and the laplacian centrality of nodes around the minimum cut.\\\\
+Results:\\
+Since laplacian centrality is achieved with removal of a node from a network, we therefore used the line graph of the given node (where edges form nodes and edges are incident if they share a node within the original graph). research still on going.
+\item Read paper about Robustness in starling flock
+Aim was to get to understand how the flock handles robustness despite the external influences. 
+\end{itemize}
+\begin{itemize}
+\item The computation for robustness in this paper raised concerned that is to say I did not understand how the computation is carried out.
+\item Seven is a magic number. Each bird maintains interaction among seven other birds irrespective of the distance of separation.
+\end{itemize}
+\section*{Week 2 (3rd-10th Feb,2017):}
+\begin{enumerate}[a)]
+\item Leverage centrality:
+\begin{itemize}
+\item The leverage centrality is a centrality measure for brain networks.The motivation behind this measure is that the relative importance of a node is based on how its immediate neighbours rely on it for information. its derived from degree centrality.
+\item A high degree node is not highly central in leverage if its neighbours are also high degree nodes.
+\item Leverage centrality does not assume that information flows following shortest path or in a serial manner as compared to other betweenness and closeness centralities.
+\item However, question about how the centrality is computed that is division by the degree of the node whose centrality is being calculated.
+\end{itemize}
+\item Relationship between laplacian energy of a graph and that of its corresponding line graph:\\
+So far still working on this.
+
+\item Read about laplacian centrality for directed networks. The out degree is considered in this case.
+What would the computations using in degree imply?
+
+\end{enumerate}
+
+\end{document}

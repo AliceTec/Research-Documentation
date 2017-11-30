@@ -1,0 +1,43 @@
+\BOOKMARK [1][-]{section.1}{Diffusion on networks}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Motivation}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Ideas}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Image Segmentation}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{Motivation}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Ideas}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Systemic Risk and Contagion in Financial Systems}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Motivation}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Ideas}{section.3}% 9
+\BOOKMARK [1][-]{section.4}{Laplacian centrality of an edge}{}% 10
+\BOOKMARK [2][-]{subsection.4.1}{Motivation}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.2}{Ideas}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Minimum-maximum cut}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{Motivation}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{Ideas}{section.5}% 15
+\BOOKMARK [1][-]{section.6}{Noise on networks}{}% 16
+\BOOKMARK [2][-]{subsection.6.1}{Motivation}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.2}{Ideas}{section.6}% 18
+\BOOKMARK [1][-]{section.7}{Communicability in Networks}{}% 19
+\BOOKMARK [2][-]{subsection.7.1}{Motivation}{section.7}% 20
+\BOOKMARK [2][-]{subsection.7.2}{Ideas}{section.7}% 21
+\BOOKMARK [1][-]{section.8}{Diffusion on networks}{}% 22
+\BOOKMARK [2][-]{subsection.8.1}{Heat Diffusion Models}{section.8}% 23
+\BOOKMARK [2][-]{subsection.8.2}{ Equilibrium behaviour }{section.8}% 24
+\BOOKMARK [2][-]{subsection.8.3}{Diffusion on Directed Networks}{section.8}% 25
+\BOOKMARK [2][-]{subsection.8.4}{Equilibrium behaviour in Directed Network}{section.8}% 26
+\BOOKMARK [3][-]{subsubsection.8.4.1}{Estimation of Eigenvalues of the Laplacian}{subsection.8.4}% 27
+\BOOKMARK [3][-]{subsubsection.8.4.2}{Equilibrium state for Balanced Graphs}{subsection.8.4}% 28
+\BOOKMARK [2][-]{subsection.8.5}{ k-path Laplacian matrices}{section.8}% 29
+\BOOKMARK [2][-]{subsection.8.6}{Diffusion on network with long-range interactions \(generalisation of diffusion equation on Graphs\) }{section.8}% 30
+\BOOKMARK [2][-]{subsection.8.7}{Results}{section.8}% 31
+\BOOKMARK [1][-]{section.9}{Image segmentation}{}% 32
+\BOOKMARK [2][-]{subsection.9.1}{Image segmentation based on Random Walks}{section.9}% 33
+\BOOKMARK [2][-]{subsection.9.2}{Random Walks and Electric potential}{section.9}% 34
+\BOOKMARK [2][-]{subsection.9.3}{The Random walker Algorithm}{section.9}% 35
+\BOOKMARK [3][-]{subsubsection.9.3.1}{Problem Formulation}{subsection.9.3}% 36
+\BOOKMARK [3][-]{subsubsection.9.3.2}{Combinatorial Dirichlet Problem}{subsection.9.3}% 37
+\BOOKMARK [3][-]{subsubsection.9.3.3}{Implementation of Algorithm}{subsection.9.3}% 38
+\BOOKMARK [1][-]{section.10}{Laplacian Centrality of weighted Networks}{}% 39
+\BOOKMARK [2][-]{subsection.10.1}{Laplacian energy of a network}{section.10}% 40
+\BOOKMARK [2][-]{subsection.10.2}{Laplacian centrality of node}{section.10}% 41
+\BOOKMARK [2][-]{subsection.10.3}{Laplacian Centrality of an edge}{section.10}% 42
+\BOOKMARK [2][-]{subsection.10.4}{Laplacian Energy as a fair measure of robustness of network}{section.10}% 43

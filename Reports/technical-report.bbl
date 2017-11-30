@@ -1,0 +1,252 @@
+\begin{thebibliography}{42}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Albert and Barab{\'a}si(2002)]{albert2002statistical}
+R.~Albert and A.-L. Barab{\'a}si.
+\newblock Statistical mechanics of complex networks.
+\newblock \emph{Reviews of modern physics}, 74\penalty0 (1):\penalty0 47, 2002.
+
+\bibitem[Barab{\'a}si and Albert(1999)]{barabasi1999emergence}
+A.-L. Barab{\'a}si and R.~Albert.
+\newblock Emergence of scaling in random networks.
+\newblock \emph{science}, 286\penalty0 (5439):\penalty0 509--512, 1999.
+
+\bibitem[Barrat et~al.(2004)Barrat, Barthelemy, Pastor-Satorras, and
+  Vespignani]{barrat2004architecture}
+A.~Barrat, M.~Barthelemy, R.~Pastor-Satorras, and A.~Vespignani.
+\newblock The architecture of complex weighted networks.
+\newblock \emph{Proceedings of the National Academy of Sciences of the United
+  States of America}, 101\penalty0 (11):\penalty0 3747--3752, 2004.
+
+\bibitem[Belkin and Niyogi(2003)]{belkin2003laplacian}
+M.~Belkin and P.~Niyogi.
+\newblock Laplacian eigenmaps for dimensionality reduction and data
+  representation.
+\newblock \emph{Neural computation}, 15\penalty0 (6):\penalty0 1373--1396,
+  2003.
+
+\bibitem[Das(2004)]{das2004laplacian}
+K.~C. Das.
+\newblock The laplacian spectrum of a graph.
+\newblock \emph{Computers \& Mathematics with Applications}, 48\penalty0
+  (5):\penalty0 715--724, 2004.
+
+\bibitem[Edwards and Penney(2004)]{edwards2004differential}
+C.~H. Edwards and D.~E. Penney.
+\newblock \emph{Differential equations and boundary value problems}, volume~2.
+\newblock Prentice Hall, 2004.
+
+\bibitem[Erdos and R{\'e}nyi(1960)]{erdos1960evolution}
+P.~Erdos and A.~R{\'e}nyi.
+\newblock On the evolution of random graphs.
+\newblock \emph{Publ. Math. Inst. Hung. Acad. Sci}, 5\penalty0 (1):\penalty0
+  17--60, 1960.
+
+\bibitem[Estrada(2010)]{estrada2010quantifying}
+E.~Estrada.
+\newblock Quantifying network heterogeneity.
+\newblock \emph{Physical Review E}, 82\penalty0 (6):\penalty0 066102, 2010.
+
+\bibitem[Estrada(2011)]{estrada2011structure}
+E.~Estrada.
+\newblock \emph{The structure of complex networks: theory and applications}.
+\newblock OUP Oxford, 2011.
+
+\bibitem[Estrada(2012)]{estrada2012path}
+E.~Estrada.
+\newblock Path laplacian matrices: introduction and application to the analysis
+  of consensus in networks.
+\newblock \emph{Linear Algebra and its Applications}, 436\penalty0
+  (9):\penalty0 3373--3391, 2012.
+
+\bibitem[Estrada(2015)]{estrada2015introduction}
+E.~Estrada.
+\newblock Introduction to complex networks: structure and dynamics.
+\newblock In \emph{Evolutionary Equations with Applications in Natural
+  Sciences}, pages 93--131. Springer, 2015.
+
+\bibitem[Estrada and Rodriguez-Velazquez(2005)]{estrada2005subgraph}
+E.~Estrada and J.~A. Rodriguez-Velazquez.
+\newblock Subgraph centrality in complex networks.
+\newblock \emph{Physical Review E}, 71\penalty0 (5):\penalty0 056103, 2005.
+
+\bibitem[Estrada et~al.(2011)Estrada, Kalala-Mutombo, and
+  Valverde-Colmeiro]{estrada2011epidemic}
+E.~Estrada, F.~Kalala-Mutombo, and A.~Valverde-Colmeiro.
+\newblock Epidemic spreading in networks with nonrandom long-range
+  interactions.
+\newblock \emph{Physical Review E}, 84\penalty0 (3):\penalty0 036110, 2011.
+
+\bibitem[Estrada et~al.(2015)Estrada, Knight, et~al.]{estrada2015first}
+E.~Estrada, P.~Knight, et~al.
+\newblock \emph{A first course in network theory}.
+\newblock Oxford University Press, USA, 2015.
+
+\bibitem[Euler(1953)]{euler1953leonhard}
+L.~Euler.
+\newblock Leonhard euler and the k{\"o}nigsberg bridges.
+\newblock \emph{Scientific American}, 189\penalty0 (1):\penalty0 66--70, 1953.
+
+\bibitem[Gower(1980)]{gower1980modified}
+J.~Gower.
+\newblock A modified leverrier-faddeev algorithm for matrices with multiple
+  eigenvalues.
+\newblock \emph{Linear Algebra and its Applications}, 31:\penalty0 61--70,
+  1980.
+
+\bibitem[Gribkovskaia et~al.(2007)Gribkovskaia, Halskau, and
+  Laporte]{gribkovskaia2007bridges}
+I.~Gribkovskaia, {\O}.~Halskau, and G.~Laporte.
+\newblock The bridges of k{\"o}nigsberg—a historical perspective.
+\newblock \emph{Networks}, 49\penalty0 (3):\penalty0 199--203, 2007.
+
+\bibitem[Gutman and Polansky(2012)]{gutman2012mathematical}
+I.~Gutman and O.~E. Polansky.
+\newblock \emph{Mathematical concepts in organic chemistry}.
+\newblock Springer Science \& Business Media, 2012.
+
+\bibitem[Harris et~al.(2008)Harris, Hirst, and
+  Mossinghoff]{harris2008combinatorics}
+J.~M. Harris, J.~L. Hirst, and M.~J. Mossinghoff.
+\newblock \emph{Combinatorics and graph theory}, volume~2.
+\newblock Springer, 2008.
+
+\bibitem[Internet()]{googleimages}
+Internet.
+\newblock Network.
+\newblock URL
+  \url{https://www.google.com/search?q=internet+network&client=ubuntu&hs=xZp&channel=fs&gl=za&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiZsrLOueTMAhVMCcAKHS_8AysQ_AUIBygB&biw=1215&bih=900#channel=fs&gl=za&tbm=isch&q=computer+network&imgrc=_}.
+\newblock [Online; accessed 2016-03-29].
+
+\bibitem[Kasprzak(2012)]{kasprzak2012diffusion}
+R.~Kasprzak.
+\newblock Diffusion in networks.
+\newblock \emph{Journal of Telecommunications and Information Technology},
+  pages 99--106, 2012.
+
+\bibitem[Kondor and Vert(2004)]{kondor2004diffusion}
+R.~Kondor and J.-P. Vert.
+\newblock Diffusion kernels.
+\newblock \emph{kernel methods in computational biology}, pages 171--192, 2004.
+
+\bibitem[Lafferty and Lebanon(2005)]{lafferty2005diffusion}
+J.~Lafferty and G.~Lebanon.
+\newblock Diffusion kernels on statistical manifolds.
+\newblock \emph{Journal of Machine Learning Research}, 6\penalty0
+  (Jan):\penalty0 129--163, 2005.
+
+\bibitem[L{\'o}pez-Pintado(2008)]{lopez2008diffusion}
+D.~L{\'o}pez-Pintado.
+\newblock Diffusion in complex social networks.
+\newblock \emph{Games and Economic Behavior}, 62\penalty0 (2):\penalty0
+  573--590, 2008.
+
+\bibitem[Ma et~al.(2008)Ma, Yang, Lyu, and King]{ma2008mining}
+H.~Ma, H.~Yang, M.~R. Lyu, and I.~King.
+\newblock Mining social networks using heat diffusion processes for marketing
+  candidates selection.
+\newblock In \emph{Proceedings of the 17th ACM conference on Information and
+  knowledge management}, pages 233--242. ACM, 2008.
+
+\bibitem[Milgram(1967)]{milgram1967small}
+S.~Milgram.
+\newblock The small world problem.
+\newblock \emph{Psychology today}, 2\penalty0 (1):\penalty0 60--67, 1967.
+
+\bibitem[Molitierno(2012)]{molitierno2012applications}
+J.~J. Molitierno.
+\newblock \emph{Applications of combinatorial matrix theory to Laplacian
+  matrices of graphs}.
+\newblock CRC Press, 2012.
+
+\bibitem[Mutombo(2012)]{frankthesis}
+F.~K. Mutombo.
+\newblock \emph{Long-range interactions in complex networks}.
+\newblock PhD thesis, University of Strathclyde, 2012.
+
+\bibitem[Newman(2010)]{newman2010networks}
+M.~Newman.
+\newblock \emph{Networks: an introduction}.
+\newblock OUP Oxford, 2010.
+
+\bibitem[Newman(2001)]{newman2001scientific}
+M.~E. Newman.
+\newblock Scientific collaboration networks. ii. shortest paths, weighted
+  networks, and centrality.
+\newblock \emph{Physical review E}, 64\penalty0 (1):\penalty0 016132, 2001.
+
+\bibitem[Newman(2003)]{newman2003structure}
+M.~E. Newman.
+\newblock The structure and function of complex networks.
+\newblock \emph{SIAM review}, 45\penalty0 (2):\penalty0 167--256, 2003.
+
+\bibitem[Nexus(2012)]{zacharydataset}
+Nexus.
+\newblock Zachary's karate club [karate], 2012.
+\newblock URL \url{http://nexus.igraph.org/api/dataset_info?id=1&format=html}.
+\newblock [Online; accessed 2016-04-25].
+
+\bibitem[Opsahl(2009)]{opsahl2009structure}
+T.~Opsahl.
+\newblock \emph{Structure and evolution of weighted networks}.
+\newblock PhD thesis, Queen Mary, University of London, 2009.
+
+\bibitem[Opsahl and Panzarasa(2009)]{opsahl2009clustering}
+T.~Opsahl and P.~Panzarasa.
+\newblock Clustering in weighted networks.
+\newblock \emph{Social networks}, 31\penalty0 (2):\penalty0 155--163, 2009.
+
+\bibitem[Opsahl et~al.(2010)Opsahl, Agneessens, and Skvoretz]{opsahl2010node}
+T.~Opsahl, F.~Agneessens, and J.~Skvoretz.
+\newblock Node centrality in weighted networks: Generalizing degree and
+  shortest paths.
+\newblock \emph{Social Networks}, 32\penalty0 (3):\penalty0 245--251, 2010.
+
+\bibitem[Qi et~al.(2012)Qi, Fuller, Wu, Wu, and Zhang]{qi2012laplacian}
+X.~Qi, E.~Fuller, Q.~Wu, Y.~Wu, and C.-Q. Zhang.
+\newblock Laplacian centrality: A new centrality measure for weighted networks.
+\newblock \emph{Information Sciences}, 194:\penalty0 240--253, 2012.
+
+\bibitem[Qi et~al.(2013)Qi, Duval, Christensen, Fuller, Spahiu, Wu, Wu, Tang,
+  Zhang, et~al.]{qi2013terrorist}
+X.~Qi, R.~D. Duval, K.~Christensen, E.~Fuller, A.~Spahiu, Q.~Wu, Y.~Wu,
+  W.~Tang, C.~Zhang, et~al.
+\newblock Terrorist networks, network energy and node removal: a new measure of
+  centrality based on laplacian energy.
+\newblock \emph{Social Networking}, 2\penalty0 (01):\penalty0 19, 2013.
+
+\bibitem[Saber and Murray(2003)]{saber2003agreement}
+R.~O. Saber and R.~M. Murray.
+\newblock Agreement problems in networks with directed graphs and switching
+  topology.
+\newblock In \emph{Decision and Control, 2003. Proceedings. 42nd IEEE
+  Conference on}, volume~4, pages 4126--4132. IEEE, 2003.
+
+\bibitem[Thanou et~al.(2017)Thanou, Dong, Kressner, and
+  Frossard]{thanou2017learning}
+D.~Thanou, X.~Dong, D.~Kressner, and P.~Frossard.
+\newblock Learning heat diffusion graphs.
+\newblock \emph{IEEE Transactions on Signal and Information Processing over
+  Networks}, 3\penalty0 (3):\penalty0 484--499, 2017.
+
+\bibitem[Wang and Chen(2003)]{wang2003complex}
+X.~F. Wang and G.~Chen.
+\newblock Complex networks: small-world, scale-free and beyond.
+\newblock \emph{Circuits and Systems Magazine, IEEE}, 3\penalty0 (1):\penalty0
+  6--20, 2003.
+
+\bibitem[Watts and Strogatz(1998)]{watts1998collective}
+D.~J. Watts and S.~H. Strogatz.
+\newblock Collective dynamics of ‘small-world’networks.
+\newblock \emph{nature}, 393\penalty0 (6684):\penalty0 440--442, 1998.
+
+\bibitem[Wilson(1970)]{wilson1970introduction}
+R.~J. Wilson.
+\newblock \emph{An introduction to graph theory}.
+\newblock Pearson Education India, 1970.
+
+\end{thebibliography}

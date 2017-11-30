@@ -1,0 +1,115 @@
+\documentclass[10pt,a4paper]{article}
+% usepackages
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+% math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{latexsym}
+% formatting
+\usepackage{parskip}
+\usepackage{fullpage}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+%\pagestyle{empty}
+% graphics
+%\usepackage[pdftex]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[below,section]{placeins} % the one below is better for short assignments
+\usepackage{float} % provides H as float placement specifier
+% extras
+\usepackage[pdftex,a4paper,colorlinks=true,urlcolor=blue]{hyperref}
+\urlstyle{same}
+\usepackage{moreverb} %\verbatimtabinput{filename.py} preserves indentation
+
+%Numbering first level list roman (i,ii,iii) instead of arabic (1,2,3)
+% options are \roman \Roman \alph \Alph \arabic
+%\renewcommand{\theenumi}{\roman{enumi}} 
+%\renewcommand{\theenumii}{\roman{enumii}}
+%\newcommand{\Int}{\int\limits}
+\pagenumbering{arabic}
+% Also achieved with the enumerate package
+\usepackage{enumerate}
+%\numberwithin{equation}{section}%
+
+% author/title details
+%\author{Alice NANYANZI (\href{mailto:alicenanyanzi@aims.ac.za}{alicenanyanzi@aims.ac.za})}
+% \title{Course Title: Assignment X}
+\title{Probabilistic and Statistical Methods for Networks \\Summer School}
+\date{\today}
+\begin{document}
+\maketitle
+\subsection*{Duration: \date{21 August - 01 September,  2017}}
+\subsection*{Venue: Berlin Mathematical School, TU Berlin}
+\subsection*{Reporter: Alice Nanyanzi, AIMS-South Africa}
+
+\vspace{1cm}
+\section*{Summer School Theme}
+The central theme of this School was randomness that may arise in various forms: it can be used to
+construct models for networks, to analyse networks using statistical methods, or as part of stochastic
+processes on networks. One strand of the school considered the theory of statistical physics models
+on networks; another strand developed tools of statistical inference in network data; and a third
+strand investigated applications such as networks in neuroscience, traffic and telecommunication.
+
+\section*{Lecture Content}
+%\subsection*{Week 1: \date{21 - 25 August ,  2017} }
+Lectures involved introduction to formulation of dynamic network models that aid in explaining real-world networks  such as the internet, network of citations, etc. Some of the models included the Erdos-Renyi random graphs (both static and dynamic) and Preferential attachment models.
+The brain is one of the most important components of our bodies. It is paramount to understand how this complex part of the body operates. We therefore explored the construction and analysis of connectivity networks in neuroscience which involved brain connectivity (Functional connectivity was our interest) as well as brain imaging such as Magnectic Resonance Imaging (MRI) and  functional Magnetic Resonance Imaging (fMRI). Its evident that a large number of peoples' day to day activities involve usage of networks such as the road, power grid, telecommunication networks among others. It is practically impossible to impose global strategies that optimise network performance and thus users make routing decisions driven by selfish interests. We therefore try to understand issues regarding network stability, whether there exists equilibrium points where all users are satisfied with the current routing decisions and how these equilibria are attained. We also ascertain how the performance of the network is affected by such selfish behaviour of users. Related to the above, we covered the application of stochastic geometry in designing of telecommunication networks that is to say ascertaining the possibility and mechanism of transmitting information over large distances using device-to-device communications.\\
+These insightful lectures were conducted by  Shankar Bhamidi (North Carolina), J$\ddot{o}$rg Polzehl (Berlin), Max Klimm (Berlin), Benedikt Jahnel (Berlin) among others.
+%\begin{enumerate}[a)]
+%	\item 
+%	Connectivity networks in neuroscience-construction and analysis by  J$\dddot{o}$rg Polzehl (Berlin):
+%	\item 
+%	Probabilistic and statistical problems pertaining to dynamic networks by Shankar Bhamidi (North Carolina):
+%	
+%	\item Selfish routing in networks by Max Klimm (Berlin): 
+%	
+%	\item 
+%	Stochastic geometry in telecommunications by Benedikt Jahnel (Berlin):
+%\end{enumerate}
+
+%\subsection{Week 2: \date{28 August - 01 September ,  2017} }
+%\begin{enumerate}[a)]
+%	\item 
+%	Statistical inference of network structure and dynamics by Tiago Peixoto (Bath):
+%	\item 
+%	Reinforced branching processes by Peter Mörters (Bath/Cologne):
+%	\item 
+%	Stochastic mean-field theories for brain networks by Wilhelm Stannat (Berlin):
+%	\item 
+%	Inference on networks via cavity method and message passing by Lenka Zdeborov\`a (Saclay):
+%\end{enumerate}
+ \subsection*{Learning outcomes}
+During the lectures, my knowledge about networks was greatly enriched as I was introduced to another aspect of networks that involves dynamic networks other than the static networks that I am currently working with in my research. In addition, I was able to learn more about randomness in networks and its application to real world networks in telecommunication, neuroscience, among others. I am looking forward to applying this knowledge in my advanced studies on completion of my masters.
+
+\section*{Talks by Organisers and Participants}
+I was privileged to be among the participants selected to give a talk about my current research. My talk was entitled \textbf{'The Laplacian matrix of a network and its applications'}. The applications included diffusion on networks and centrality measure. Fortunately, I received constructive feedback from the audience which I believe is very helpful in my research currently. Furthermore, during the various talks of other participants, we were able to discuss and share ideas on various research topics, identifying any similarities in our work as well as possibilities of collaborations. 
+
+For details of both lectures and talks:\\ \url{https://www.math-berlin.de/academics/summer-schools/2017/randgraph}
+
+%I was able to successfully participate in the summer school for which I received a certificate confirming so.
+
+As the summer school involved people from different parts of the world, it was an opportunity for networking. We discussed more about our work and institutions of study as well as opportunities available at those institutions. It was during such casual discussions that availed information about the African Institute for Mathematical Sciences (AIMS)- South Africa and the opportunities available at the research centre for instance research visits, post-doctoral research fellowships, PhD positions, workshops and so on.
+
+\vspace{2cm}
+\begin{figure}[!h]
+	\centering
+	\includegraphics*[width=0.8\textwidth] {bms-summerschool.jpg}
+	\caption{Summer school Group photo}
+	\label{}
+
+\end{figure}
+
+
+
+
+
+
+	
+%Use of randomness to construct network models
+%Applications to real world problems such as routing in transportation networks,  connectivity properties of ad-hoc telecommunication networks, construction and analysis of connectivity networks in neuroscience.  
+\end{document}

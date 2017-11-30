@@ -1,0 +1,114 @@
+\documentclass[10pt,a4paper]{article}
+% usepackages
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+% math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{latexsym}
+% formatting
+\usepackage{parskip}
+\usepackage{fullpage}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+% graphics
+%\usepackage[pdftex]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[below,section]{placeins} % the one below is better for short assignments
+\usepackage{float} % provides H as float placement specifier
+% extras
+\usepackage[pdftex,a4paper,colorlinks=true,urlcolor=blue]{hyperref}
+\urlstyle{same}
+\usepackage{moreverb} %\verbatimtabinput{filename.py} preserves indentation
+
+%Numbering first level list roman (i,ii,iii) instead of arabic (1,2,3)
+% options are \roman \Roman \alph \Alph \arabic
+\renewcommand{\theenumi}{\roman{enumi}} 
+\renewcommand{\theenumii}{\roman{enumii}}
+\newcommand{\Int}{\int\limits}
+% Also achieved with the enumerate package
+\usepackage{enumerate}
+%\numberwithin{equation}{section}%
+
+% author/title details
+\author{Alice NANYANZI (\href{mailto:alicenanyanzi@aims.ac.za}{alicenanyanzi@aims.ac.za})}
+% \title{Course Title: Assignment X}
+\title{Compilation of weekly discussions}
+\begin{document}
+\maketitle
+\section*{Week 28-July-2017:}
+\begin{enumerate}[a)]
+	\item Immediate expectations
+\begin{itemize}
+	\item Regarding Images, write more descriptive and  informative captions of figures.
+	\item Try diffusion on networks by randomly selecting a few nodes to which you assign initial quantities and others set to zero. For instance, randomly choose nodes in BA and then choose the most central in ER network, explain the resulting plots.
+	\item What is performance measure of a network with long range interaction e.g diameter, average path length, etc.(Say when long range interactions r involved, the diameter increases or decreases)
+	\item Plot of eigenvalues against $x$ value for different structures e.g star, path, circular
+	\item What that the switch in the plot above plots mean? What does the switching mean to the position of equilibrium?
+	\item Surface plot showing variation of $x$, $\gamma$(power exponent of scale-free network) and another parameter(such as average quantity)
+\end{itemize}
+\item Other Suggestions
+\begin{itemize}
+	\item Diffusion over a lattice possibly follows similar procedure as the cellular automata.
+	\item Application of Kleinberg model in considerations for long range interactions
+	\item Account for noise in diffusion on network
+\end{itemize}
+\end{enumerate}
+
+\section*{Week 04-August-2017:}
+\begin{enumerate}[a)]
+	\item Draft of the first paper
+	Worked on the draft of the paper which captures the social approach of long range interactions in diffusion over networks.
+	\item In addition, we would consider other approaches such as the physical approach.
+	\item There is need to to add more result to the paper to make it a strong one for instance applications to banking systems, sensor networks e.t.c
+\end{enumerate}
+
+\section*{Week 07-18 August, 2017:}
+\begin{enumerate}[a)]
+	\item Participation in the national Science week (07-10,August).
+	\item Had couple of meetings to understand image segmentation and how we would account for long range interactions and whether including long range interactions will result into better image segmentation.  Below is a summary of the outcomes of the discussions;
+	\begin{itemize}
+		\item We could not use the social distance approach to extend to account for long range interactions. This is because it is not a feasible approach.
+		\item New direction was to understand the k-path laplacian and its application to image segmentation.
+		\item In future, we will look at how to use the Mellin and Laplace transforms in image segmentation.                                
+	\end{itemize}
+\end{enumerate}
+
+\section*{Weeks 21 August-01 September, 2017:}
+\begin{enumerate}[a)]
+	\item Participated in the Statistical and Probabilistic methods to networks at the Berlin Mathematical School, TU Berlin. Below is an account of the summer school;
+	\begin{itemize}
+		\item The theme of the summer school mainly revolved around randomness that may arise in various forms. The randomness can be used to construct models for networks,to analyse networks using statistical methods, or as part of stochastic processes on networks. 
+		\item One of the activities in the summer school was talks by both organisers and participants in which one had an opportunity to know which areas of research other participants are involved in, how one's research is connected to other participants and ascertain any possibilities of collaborations or further discussions. I had an opportunity to give a talk about my current research titled 'The Laplacian Matrix of a network and Applications'.  I received constructive feedback from the audience which I believe will be beneficial to my research such as the use of Laplacian matrix in identifying motifs in networks.
+		\item Use of randomness to construct network models
+		\item Applications to real world problems such as routing in transportation networks,  connectivity properties of ad-hoc telecommunication networks, construction and analysis of connectivity networks in neuroscience.    
+	\end{itemize}
+\end{enumerate}
+\section{Weeks 01-29 September, 2017}
+\subsection{Possible applications of the Path Laplacian Matrices}
+\begin{enumerate}[a)]
+	\item Matrices representing images are at times very large for storage. One suggestion was to consider image compression. One of the ways is the use of superpixels which involves consideration of groups of pixels other than individual pixels.
+	\item Assigning seats on an aircraft to account for balance of passengers for a particular flight
+	\item Assigning runways for landing or take off air crafts.
+	\item Is the idea of hole and anti-hole similar to k-path Laplacian matrices?
+	\item Suppose we position robots in such a way that those capturing certain type of signals are at k-hop in reference to a particular starting point.
+\end{enumerate}
+
+\newpage
+
+\section*{Week 16-27 October, 2017}
+\begin{enumerate}[a)]
+	\item Extending $k$-path Laplacian concept to weighted networks.
+	\item In heat diffusion over network, the equilibrium state is completely determined from the kernel of the Laplacian matrix that is $ker(\mathbf{L}) = \{\mathbf{v} | \mathbf{L}\mathbf{v}= \mathbf{0}\}$. This still holds for diffusion over longrange interaction. On the otherhand, the diffusion kernel or heat diffusion is given by $e^{-CL}$. how are the two concepts different and which one should we explore?
+	\item Suppose equilibrium state in diffusion of heat on a given network occurs at a time t. is the average heat for most central nodes at half time $t_{1/2}$ any closer to the quantity at each node at equilibrium?
+	\item Consider laplacian centrality for nodes taking into account longrange interaction
+	\item Compute the ratio of degree to generalised degree for each node. What insights do we obtain from this?
+	\item Finding out how stability in networks is related to longrange interactions. What is the impact of longrange interactions to group and individual behaviour for instance in flocks?
+	
+\end{enumerate}
+\end{document}
