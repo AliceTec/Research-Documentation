@@ -5,6 +5,7 @@
 %\usepackage[english]{babel}
 % math
 \usepackage{amsmath}
+\usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{mathtools}
@@ -16,6 +17,7 @@
 \usepackage{mathrsfs}
 \usetikzlibrary{arrows}
 \usepackage[round]{natbib}
+\usepackage{multirow}
 %\pagestyle{empty}
 % graphics
 %\usepackage[pdftex]{graphicx}
@@ -43,12 +45,12 @@
 % \title{Course Title: Assignment X}
 %\theoremstyle{plain}
 \newtheorem{thm}{Theorem}
-
 %\theoremstyle{definition} 
 \newtheorem{defn}{Definition}
 \newtheorem{exa}{Example}
 \newtheorem{prop}{Proposition}
 \newtheorem{cor}{Corollary}
+
 
 \title{Technical Report}
 \date{\today}
@@ -191,6 +193,267 @@
 		\end{subfigure}
 		\caption{Networks in real world: (\subref{socialnetwork}) A social network. (\subref{citationntk}) A citation network. (\subref{foodweb}) A food web.  (\subref{internet}) Computer network. Source: \citep{googleimages}}
 	\end{figure} 
+
+\section{Review of Networks}
+In the study of networks or graphs, we use various terminology. Let us explore some of the definitions and notations for simple undirected and unweighted graphs unless stated otherwise.
+\begin{defn}[Walk]
+	A walk in a network is a series of edges (not necessarily distinct)
+	\begin{eqnarray*}
+		(u_1,v_1),(u_2,v_2),\ldots,(u_l,v_l), \quad \text{ for which }  v_i=u_{i+1} ~(i=1,2,\ldots,l-1).
+	\end{eqnarray*}
+	A walk from $v_1 $ to $v_{l+1}$ is one of length $l$.   \citep{estrada2015first}
+\end{defn}
+
+\begin{defn}[Path]
+	A path of length $l$ is a walk of length $l$ in which all the nodes and edges are distinct. A closed path is called a cycle \citep{estrada2011structure}.
+\end{defn}
+
+A walk of length $k$ is referred to as a $k$-walk. We can compute the number of $k$-walks between any pair of nodes in a network using the entries of $\mathbf{A}^k$. 
+
+\begin{exa}
+	Let us compute the number of $2$-walks and $3$-walks between pairs of nodes in network in Fig.~\ref{matrixgraph}.
+	\begin{eqnarray*}
+		\mathbf{A}^2 = \begin{pmatrix}
+			2 & 1 & 2 & 1 \\
+			1 & 3 & 2 & 2 \\
+			2 & 1 & 2 & 1  \\
+			1 & 2 & 1 & 3
+		\end{pmatrix}, \quad
+		\mathbf{A}^3 = \begin{pmatrix}
+			2 & 5 & 2 & 5 \\
+			5 & 4 & 5 & 5 \\
+			2 & 5 & 2 & 5 \\
+			5 & 5 & 5 & 4
+		\end{pmatrix}
+	\end{eqnarray*}
+	From the matrix $\mathbf{A}^2$, we can tell that there are $2$ walks of length $2$ between nodes $1$ and $3$, $1$ walk of length $2$ between nodes $3$ and $4$, $2$ walks of length $2$ between nodes $2$ and $4$, etc.
+	From matrix $\mathbf{A}^3$, there are $2$ walks of length $3$ between nodes $1$ and $3$, node $3$ to it self, and node $1$ to it self. There are $5$ walks of length $3$ between nodes $2$ and $3$, nodes $2$ and $4$, etc.
+	%The diagonal entries of  $\mathbf{A}^2$ are the node degrees because the only $2$-walks from a node and back to it self are the closed walks from the node to its neighbors and then back to the node which implies the total number of such $2$-walks is equal to the number of the node's neighbors.
+	%The diagonal entries of $\mathbf{A}^3$ correspond to the number of triangles a particular node is a part of.
+\end{exa}
+
+\begin{defn}[Path]
+	A path of length $l$ is a walk of length $l$ in which all the nodes and edges are distinct. A closed path is called a cycle \citep{estrada2011structure}. For any pair of nodes $v_i$,$v_j$ in a connected graph, there exists at least one path connecting $v_i$ to $v_j$. The paths with minimum length are referred as shortest-paths.
+\end{defn}
+
+\begin{defn}[Irreducible set of shortest paths]
+	An irreducible set of shortest paths of length $l$ is the set $P_l ={P_l(v_i,v_j),P_l(v_i,v_r),\cdots, P_l(v_s,v_t)}$ in which the endpoints of every shortest-path $P_l(v_i,v_j)$ in the set are different.
+	Each path in this set is referred to as an irreducible shortest-path \citep{estrada2012path}.\end{defn}
+
+\begin{defn}[Connected component of a graph]
+	A component of an undirected graph is a subgraph in which any two vertices are connected to each other by paths, and which is connected to no additional vertices in the supergraph \citep{newman2010networks}. 
+	A connected component is also referred to as a maximal connected subgraph of a graph.
+\end{defn}
+
+
+\section{Laplacian Matrix}
+The Laplacian matrix is one of matrices used for representation of a network. Previously, a lot of research efforts were geared towards the study of the adjacency matrix and its spectral properties. However, it has lately been discovered that the spectral properties of a Laplacian matrix give more information pertaining the structure of the network as compared to the adjacency matrix. In this essay therefore, we study the spectrum of the Laplacian matrix of the network with the aim of obtaining information about the structure of the network. In addition, we explore the various applications of the Laplacian of a network in real-world.
+
+The Laplacian matrix, sometimes called admittance matrix or Kirchhoff matrix, is a matrix representation of a network. The Laplacian matrix provides useful information about the properties of a network. 
+It is for this reason that researchers have in studying the Laplacian matrix.
+
+\section{Definitions and Properties of the Laplacian Matrix}
+
+\begin{defn}[Laplacian Matrix]
+	The Laplacian matrix of a network is the difference between the degree matrix $\mathbf{D}$ and the adjacency matrix $\mathbf{A}$ of a network. That is,
+	\begin{eqnarray}
+	\mathbf{L} = \mathbf{D} - \mathbf{A}.
+	\end{eqnarray}
+	Given a simple network $G=(V,E)$, the entries of the Laplacian matrix $\mathbf{L(G)}$  are defined as
+	\begin{eqnarray}
+	L_{ij} = \begin{cases} k_{v_i} &\mbox{if } i = j \\
+	-1 &\mbox{if } i \neq j \text{ and } v_i \text{ is adjacent to } v_j \\
+	0 & \text{otherwise},
+	\end{cases}
+	\end{eqnarray}
+	where $k_{v_i}$  denotes the degree of node $i$ \citep{estrada2011structure}.
+	
+	Alternatively, we can define the Laplacian matrix of a graph in terms of the vertex-edge incidence matrix $\mathbf{B}$. That is,
+	\begin{eqnarray}
+	\mathbf{L} =  \mathbf{B} \mathbf{B}^T,
+	\label{lintermsb}
+	\end{eqnarray}
+	where $\mathbf{B}^T$ is the transpose of $\mathbf{B}$ \citep{estrada2011structure}.
+\end{defn}
+
+%\begin{defn}[Normalized Laplacian matrix]
+%The normalized Laplacian matrix is defined as 
+%\begin{eqnarray*}
+%\mathbf{\mathcal{L}} = \mathbf{D}^{-1/2} \mathbf{L} \mathbf{D}^{-1/2} = \mathbf{I} -\mathbf{D}^{-1/2} \mathbf{A} \mathbf{D}^{-1/2}
+%\end{eqnarray*}
+%where $\mathbf{D}^{-1/2}$ is the diagonal matrix determined by the inverse square root of each diagonal entry of the degree matrix \citep{estrada2011structure}. Then, the entries of $\mathbf{\mathcal{L}}$ are given by
+%\begin{eqnarray*}
+%\mathcal{L}_{ij} = \begin{cases} 1, &\mbox{if } i = j \text{ and } k_i \neq 0;\\
+%-(k_ik_j)^{-1/2}, &\mbox{if } i \sim j; \\ 
+%0, & \text{otherwise}.
+%\end{cases}
+%\end{eqnarray*}
+%\end{defn}
+
+\begin{exa} We compute the Laplacian matrix of the network in Fig.~\ref{fig:laplace-graph}.
+	\begin{figure}[!h]
+		\centering 
+		\includegraphics[width=0.24\textwidth]{images/laplace-graph.pdf}
+		\caption{A Network $G$.}
+		\label{fig:laplace-graph}
+	\end{figure} 
+	
+	\begin{align*}
+	\mathbf{L} = \begin{pmatrix*}[r]
+	2 & 0 &-1 & -1  & 0 \\
+	0 & 2 & 0 & -1 & -1 \\
+	-1 & 0 &  3 & -1 & -1  \\
+	-1 & -1 & -1 & 3 & 0 \\
+	0 & -1 & -1 & 0 &  2
+	\end{pmatrix*}.
+	\end{align*}
+	
+	%\begin{minipage}{.25\textwidth}
+	% align*}
+	%  \mathb \centering 
+	%   \includegraphics[width=\textwidth]{images/laplace-graph.pdf}
+	%  \captionof{figure}{A Network $G$.}
+	%  \label{fig:laplace-graph}
+	%\end{minipage} \qquad \qquad
+	%\begin{minipage}{.23\textwidth}
+	%\begin{f{L} = \begin{pmatrix*}[r]
+	%  2 & 0 &-1 & -1  & 0 \\
+	%  0 & 2 & 0 & -1 & -1 \\
+	%  -1 & 0 &  3 & -1 & -1  \\
+	%  -1 & -1 & -1 & 3 & 0 \\
+	%  0 & -1 & -1 & 0 &  2
+	%  \end{pmatrix*}.
+	%\end{align*}
+	%\end{minipage}
+	% ~
+	%\begin{minipage}{.23\textwidth}
+	%\begin{align*}
+	%\renewcommand*{\arraystretch}{1.2}
+	%  \mathcal{L} = \begin{pmatrix*}[r]
+	%  1 & 0 &-\frac{1}{\sqrt{6}} & -\frac{1}{\sqrt{6}} & 0 \\
+	%  0 & 1 & 0 & -\frac{1}{\sqrt{6}} & -\frac{1}{2}\\
+	%  -\frac{1}{\sqrt{6}} & 0 &  1 & -\frac{1}{3} & -\frac{1}{\sqrt{6}}  \\
+	%  -\frac{1}{\sqrt{6}} & -\frac{1}{\sqrt{6}} & -\frac{1}{3}& 1 & 0 \\
+	%  0 & -\frac{1}{2} & -\frac{1}{\sqrt{6}} & 0 &  1
+	%  \end{pmatrix*}.
+	%\end{align*}
+	%\end{minipage}
+	\label{example:laplace}
+\end{exa}
+
+The properties of the Laplacian matrix of a network are very useful in understanding the structure of a network. We therefore discuss some of these properties.
+\subsection{Real and symmetric matrix} 
+The entries of the Laplacian matrix are real numbers and are symmetric with respect to the main diagonal \citep{das2004laplacian}.
+\subsection{Singular matrix}
+The Laplacian matrix is a square matrix that is not invertible. Its determinant is equal to zero \citep{das2004laplacian}.
+\subsection{Positive semi-definite}
+A matrix is positive semi-definite if and only if all its eigenvalues are non-negative. Suppose the eigenvalues of a Laplacian matrix are: $\lambda_1,\lambda_2,\ldots, \lambda_n$, we show that $\lambda_i \geq 0 ~\forall~i$.
+\begin{proof}
+	Let $\mathbf{v}_i$ be a normalised eigenvector of $\mathbf{L}$ with eigenvalue $\lambda_i$. Then, using Equation (\ref{lintermsb})
+	\begin{eqnarray*}
+		\mathbf{v}_i^T \mathbf{B}^T \mathbf{B} \mathbf{v} &=& \mathbf{v}_i^T \mathbf{L} \mathbf{v}_i = \lambda_i  \mathbf{v}_i^T \mathbf{v}_i  = \lambda_i.
+	\end{eqnarray*}  
+	Thus, any eigenvalue $\lambda_i$ of the Laplacian matrix is equal 
+	to $(\mathbf{v}_i^T \mathbf{B}^T \mathbf{B} \mathbf{v}_i)$ which can be written as $(\mathbf{v}_i \mathbf{B})^T (\mathbf{B} \mathbf{v}_i)$. The quantity $(\mathbf{v}_i \mathbf{B})^T (\mathbf{B} \mathbf{v}_i)$  is the inner product of a real vector $(\mathbf{B} \mathbf{v}_i)$ with itself, that is, the sum of the squares of the real elements of the vector $(\mathbf{B} \mathbf{v}_i)$ and hence it is non-negative \citep{estrada2015first}.
+\end{proof}
+
+\section{Spectrum of the Laplacian Matrix}
+The spectrum of the Laplacian provides useful information about the structure of a network. The spectrum of the Laplacian matrix is the set of all its eigenvalues and their multiplicities \citep{estrada2011structure}. Let $\lambda_1 < \lambda_2 < \ldots < \lambda_n$ be the distinct eigenvalues of $\mathbf{L}$ and let $m(\lambda_1),m(\lambda_2), \ldots,m(\lambda_n)$ be their multiplicities. Then, the spectrum of $\mathbf{L}$ is written as
+\begin{eqnarray}
+Sp\mathbf{L} = 
+\renewcommand*{\arraystretch}{1.1}
+\begin{pmatrix*}[l]
+\lambda_1 & \lambda_2 & \ldots & \lambda_n \\
+m(\lambda_1) & m(\lambda_2) & \ldots & m(\lambda_n).
+\end{pmatrix*}
+\end{eqnarray}
+
+Let us write the eigenvalues of $\mathbf{L}$ in decreasing order: $\lambda_n  \geq \lambda_{n-1} \geq  \cdots \geq \lambda_2 \geq \lambda_1 =0 $. Some of the results associated with the spectrum of the Laplacian matrix include:
+\begin{itemize}
+	\item The eigenvalues of $\mathbf{L}$ are bounded as 
+	$ 0 \leq \lambda_j \leq 2k_{max} \quad \text{and} \quad \lambda_n \geq k_{max} $.
+	\item The eigenvalue $\lambda_1$ is always equal to zero \citep{estrada2011structure}.
+	%\item The smallest non-zero eigenvalue of $\mathbf{L}$ is called the spectral gap.
+	\item The multiplicity of $0$ as an eigenvalue of $\mathbf{L}$ is equal to the number of connected components in the network \citep{estrada2011structure}.
+	\item Every row sum and column sum of $\mathbf{L}$ is zero. Thus, the vector $\mathbf{v_1}$ of all ones is an eigenvector associated with $\lambda_1 =0$, since $\mathbf{Lv_1} = \mathbf{0} $ \citep{das2004laplacian}.
+	\item  A network is connected if its second smallest eigenvalue is nonzero. That is, $\lambda_2> 0$ if and only if $G$ is connected. The eigenvalue $\lambda_2$ is thus called the algebraic connectivity of a network, $a(G)$. The eigenvector corresponding to the eigenvalue $\lambda_2$ is called the Fiedler vector \citep{estrada2015first}.
+\end{itemize}
+
+\begin{thm}[Fiedler, 1975]
+	Suppose $G = (V,E)$ is a connected network with graph Laplacian $\mathbf{L}$ whose second smallest eigenvalue is $\lambda_2 > 0$. Let $x$ be the eigenvector associated with $\lambda_2$. Let $r \in \mathbb{R}$ and partition the nodes in $V$ into two sets
+	\begin{eqnarray}
+	V_1 = \{i \in V|x_i \geq r\}, ~ V_2 = \{i \in V | x_i < r\}, 
+	\end{eqnarray}
+	then the subgraphs of $G$ induced by the sets $V_1$ and $V_2$ are connected \citep{estrada2015first}.
+	\label{fiedler}
+\end{thm}
+This result is useful for partitioning a network while ensuring that all the parts remain connected. This method of partitioning using eigenvalues is known as spectral clustering. For clusters of equal size, we choose $r$ such that it is the median value of $x$. 
+
+\begin{exa} Using Theorem \ref{fiedler}, let us partition the network in Fig.~\ref{clusters}(\subref{whole-graph}) into two clusters. First, we compute the eigenvalues and corresponding eigenvectors of the Laplacian matrix $\mathbf{L}$ of the network which are: $\lambda_1=0,\lambda_2=2,\lambda_3=4,\lambda_4=4$. The second smallest non-zero eigenvalue $\lambda_2=2$ is associated with eigenvector $ \mathbf{v_2}=(1,0,0,-1)^T$ which implies that $x_1 =1, x_2 = 0, x_3=0$ and $x_4=-1$. Taking $r=0$, we obtain the two vertex sets $V_1$ and $V_2$ as $V_1 = \{1,2,3 \}$ and $V_2 =\{4 \}$. The two clusters are shown in Fig.~\ref{clusters}(\subref{cluster-graph}).
+	
+	\begin{figure}[!h]
+		\centering
+		\begin{subfigure}[b]{0.21\textwidth}
+			\includegraphics[width=\textwidth]{images/cluster-graph.pdf}
+			\caption{}
+			\label{whole-graph}
+		\end{subfigure}
+		\begin{subfigure}[b]{0.28\textwidth}
+			\includegraphics[width=\textwidth]{images/partitions-graph.pdf}
+			\caption{}
+			\label{cluster-graph}
+		\end{subfigure} 
+		\caption{(\subref{whole-graph}) A network (\subref{cluster-graph}) and its two clusters of size $3$ and $1$.} \label{clusters}
+	\end{figure}
+\end{exa}
+
+Some analytic expressions for the spectra of different kinds of simple networks are:
+\begin{itemize}
+	\item Star, $S_n$ : $Sp(\mathbf{L}) = \{ 0~ 1^{n-2}~n\}$. 
+	
+	\item Complete, $K_n$ : $Sp(\mathbf{L}) = \{ 0~ n^{n-1} \}$. 
+	
+	\item Complete bipartite, $K_{m,n}$ : $Sp(\mathbf{L}) =\{ 0 ~ m^{n-1} ~ n^{m-1}\}$.
+	
+\end{itemize}
+
+\begin{thm}[Kirchoff's Matrix-Tree Theorem]
+	If $G$ is a connected graph with Laplacian matrix $\mathbf{L}$, then the number of unique spanning trees of $G$ is equal to the value of any cofactor of the matrix $\mathbf{L}$ \citep{harris2008combinatorics}.
+	\label{thm:kirchoff}
+\end{thm}
+%For a given connected graph $G$ with $n$ vertices, let $\lambda_1, \lambda_2, \ldots, \lambda_{n-1}$ be the non-zero eigenvalues of its Laplacian matrix. Then the number of spanning trees of $G$ is
+%\begin{eqnarray}
+%t(G) = \frac{1}{n} \lambda_1 \lambda_2 \ldots \lambda_{n-1}.
+%\label{spanning}
+%\end{eqnarray}
+
+\begin{exa} Let us compute the number of spanning trees of network $G$ in Fig.~\ref{clusters}(\subref{whole-graph}) using Theorem \ref{thm:kirchoff}.
+	The $(i,j)$ cofactor is obtained as $(-1)^{i+j} \times |\mathbf{L}(i|j)|$ where $\mathbf{L}(i|j)$ is the $(n-1) \times (n-1)$ submatrix of $\mathbf{L(G)}$ obtained by deleting its $i$th row and $j$th column. The Laplace matrix is given by
+	\begin{eqnarray*}
+		\mathbf{L(G)} = \begin{pmatrix*}[r]
+			2 & -1 & -1  & 0 \\
+			-1 & 3 & -1 & -1  \\
+			-1 & -1 & 3 & -1 \\
+			0 & -1 & -1 &  2
+		\end{pmatrix*},\text{ deleting row $1$ and column $1$ gives } \mathbf{L}(1|1) = \begin{pmatrix*}[r]
+			3 & -1 & -1 \\
+			-1 & 3 & -1  \\
+			-1 & -1 & 2 
+		\end{pmatrix*}.
+	\end{eqnarray*}
+	The $(1,1)$ cofactor of $\mathbf{L(G)}$ is $ (-1)^2 \times |\mathbf{L}(1|1)| = 8$. Thus, there are $8$ spanning trees of graph $G$.
+	%Using Equation (\ref{spanning}), we have $\lambda_4=0,\lambda_3=2,\lambda_2=4,\lambda_1=4$, and $n=4$. Thus,
+	%\begin{eqnarray*}
+	%t(G) = \frac{1}{4} ( 4  \times 4 \times 2 ) = 8.
+	%\end{eqnarray*}
+\end{exa}
+
+%\begin{figure}[!h]
+%    \centering
+%        \includegraphics[width=0.7\textwidth]{images/spanningtreestotal.pdf}
+%      \caption{ The $8$ unique spanning trees of graph in Fig.~\ref{clusters}(\subref{whole-graph}).}
+%      \label{all-spanning}
+%\end{figure}
 	
 	\section{Robustness of Complex Systems}
 	A complex systems is considered robust if it can with stand failures or perturbations that is to say a system can still perform as expected even in circumstances of failure of one or more components in the system. Robustness of systems plays an important role in a number of fields for instance in Engineering, understanding robustness acts as a basis for designing communication, transportation systems, power grids that can perform basic operation despite failure of some system components. In biology,robustness explains why some mutations lead to diseases while others do not. For ecologists and environmental experts, robustness helps in predicting the failure of an ecosystem when faced with disruptive human behaviours. 
@@ -532,8 +795,318 @@
     	    \label{gen-difeqn}
     	    \end{equation}
     	    \subsubsection{ k-path Laplacian matrices, $\mathbf{L}_k$}
+    	    The k-path laplacian matrices are a natural generalisation of the combinatorial laplacian of a graph \citep{estrada2012path}. The motivation behind this generalisation is the problem of determining whether every node in a graph can be visited by means of a process that involves hopping from one node to another separated at a distance $k$.
+    	    A better technique used to understand the concept of k-path laplacian is to consider a simple graph $G= (V,E)$, suppose a particle with a positive charge resides at a node and while at that node, it polarises all nodes at a distance $d$ from it. Consequently, the particle's movement to another is such that it hopes to any nearest non-positively charged node. While at the new node, the particle polarises neighbouring nodes in the same manner as before. As a result, the particle either hopes to the nearest non-positive nodes or returns to the origin node as illustrated in Figures \ref{1-path-particle} and \ref{2-path-particle} for $d=1$ and $d=2$ respectively.
     	    
-    	    The k-path Laplacian matrices are a natural generalisation of the combinatorial Laplacian of a graph. The entries of these matrices account for the existence of shortest paths of length $k$ between pairs of nodes in the network.
+    	    
+    	    \begin{figure}[!h]
+    	    	\centering
+    	    	\begin{subfigure}[b]{0.3\textwidth}
+    	    		\includegraphics[width=\textwidth]{images/nodecharge1.png}
+    	    		\caption{}
+    	    		\label{particle1}
+    	    	\end{subfigure}~
+    	    	\begin{subfigure}[b]{0.3\textwidth}
+    	    		\includegraphics[width=\textwidth]{images/nodecharge11.png}
+    	    		\caption{}
+    	    		\label{polarity2}
+    	    	\end{subfigure}~ 
+    	    	\begin{subfigure}[b]{0.3\textwidth}
+    	    		\includegraphics[width=\textwidth]{images/nodecharge2.png}
+    	    		\caption{}
+    	    		\label{polarity3}
+    	    	\end{subfigure}
+    	    	\caption{ Illustration of how the polarisation analogy used as a motivation for the $k$-path Laplacian concept for networks. Starting with a positively charged particle at node $1$ as shown in (\subref{polarity1}), taking $d=1$, the particle polarises all its nearest neighbours at a distance $d$ from it (that is nodes $2$ and $3$) as depicted in (\subref{polarity2}). The particle can therefore jump to the non-polarised nearest neighbours namely nodes $4$ and $5$ and $6$( though node $6$ is further compared to other two alternatives). Suppose the particle jumps to node $4$, similar polarisation process as the particle polarises the new nearest neighbours. The particle either jumps to node $3$ or returns to node $1$ as shown in (\subref{polarity3}).}
+    	    \end{figure}
+    	    \vspace{1cm}
+    	    
+    	    \begin{figure}[!h]
+    	    	\centering
+    	    	\begin{subfigure}[b]{0.3\textwidth}
+    	    		\includegraphics[width=\textwidth]{images/nodecharge1.png}
+    	    		\caption{}
+    	    		\label{polarityl21}
+    	    	\end{subfigure}~
+    	    	\begin{subfigure}[b]{0.3\textwidth}
+    	    		\includegraphics[width=\textwidth]{images/nodecharge41.png}
+    	    		\caption{}
+    	    		\label{polarityl22}
+    	    	\end{subfigure}~ 
+    	    	\begin{subfigure}[b]{0.3\textwidth}
+    	    		\includegraphics[width=\textwidth]{images/nodecharge4.png}
+    	    		\caption{}
+    	    		\label{polarityl23}
+    	    	\end{subfigure}
+    	    	\caption{Illustration of how the a charged particle navigates the network taking jumps of length $d=2$. As discussed before, a particle starting off at node $1$ will polarise neighbouring nodes separated at not more than distance $2$ from it (that is nodes $2$,$3$, $5$, and $4$) as shown in (\subref{polarityl22}). The particle then has only an option of jumping to the non-polarised node $6$ after which a similar process occurs again as in (\subref{polarityl23}). } \label{2-path-particle}
+    	    \end{figure}
+    	    
+    	    At  the beginning of this chapter, we discussed some of the terminology related to the study of graphs or networks, we therefore extend this to account for the concept of k-paths.
+    	    \begin{defn}[k-hopping walk]
+    	    	A k-hopping walk of length $l$ is any sequence of (not necessarily different) nodes $v_1,v_2, \cdots,v_l, v_{l+1}$ such that $d_{i,i+1} = k$ for each $i=1,2, \cdots, l.$ In otherwords, this walk is referred to as a k-hopping walk from $v_1$ to $v_{l+1}$ \citep{estrada2012path}. 
+    	    \end{defn}
+    	    
+    	    
+    	    \begin{defn}[$k$-path degree]
+    	    	The $k$-path degree $\delta_k(v_i)(k\leq d_{max})$ of a node $v_i$ is the number of irreducible shortest-paths of length $k$ having $v_i$as an endpoint \citep{estrada2012path}. 
+    	    \end{defn}
+    	    \begin{defn}[$k$-path Laplacian matrix]
+    	    	The $k$-path laplacian matrix $L_k(k \leq d_{max})$ of a connected undirected graph $G=(V,E)$ is defined as the square symmetric $n*n$ matrix whose entries are given by:
+    	    	\begin{eqnarray}
+    	    	L_k(ij) = \begin{cases} -1 &\mbox{if } d_{i,j} = k, \\
+    	    	\delta_k(i) &\mbox{if } i = j,  \\
+    	    	0 & \text{otherwise}.
+    	    	\end{cases}
+    	    	\end{eqnarray}\label{k-laplacian}
+    	    \end{defn}
+    	    
+    	    \begin{exa}
+    	    	Let us compute the $k$-path laplacians for a simple graph $G$ in Fig.\ref{spanning}.
+    	    	
+    	    	\begin{figure}[!h]
+    	    		\centering
+    	    		\includegraphics[width=0.25\textwidth]{images/compute-spanning.pdf}
+    	    		\captionof{figure}{ A network of size 4.}
+    	    		\label{spanning}
+    	    	\end{figure}
+    	    	
+    	    	\begin{eqnarray*}
+    	    		\mathbf{L_1(G)} = \begin{pmatrix}
+    	    			2 & -1 & 0 & -1 \\
+    	    			-1 & 3 & -1 & -1 \\
+    	    			0 & -1 & 2 & -1  \\
+    	    			-1 & -1 & -1 & 3
+    	    		\end{pmatrix}, \quad
+    	    		\mathbf{L_2(G)} = \begin{pmatrix}
+    	    			1 & 0 & -1 & 0 \\
+    	    			0 & 0 & 0 & 0 \\
+    	    			-1 & 0 & 1 & 0 \\
+    	    			0 & 0 & 0 & 0
+    	    		\end{pmatrix}, \quad
+    	    		\mathbf{L_3(G)} = \begin{pmatrix}
+    	    			0 & 0 & 0 & 0 \\
+    	    			0 & 0 & 0 & 0 \\
+    	    			0 & 0 & 0 & 0 \\
+    	    			0 & 0 & 0 & 0
+    	    		\end{pmatrix}
+    	    	\end{eqnarray*}
+    	    \end{exa}
+    	    
+    	    
+    	    \begin{defn}[k-hopping connected component]
+    	    	A $k$-hopping connected component in a graph $G=(V,E)$ is a subgraph $G' = (V',E')$, $V'\subset V,E' \subset E$, such that there is at least one $k$-hopping walk that visit every node $v_i \in V'$.
+    	    	As mentioned earlier, the motivation of the generalisation of graph Laplacian to find the solution of the problem of whether a given graph can be $k$-hopped. If not, how many $k$-hopping connected components exist?
+    	    \end{defn}
+    	    \begin{thm}
+    	    	The number of $k$-hopping connected components in a connected undirected graph $G=(V,E)$ is given by $\eta_k(G) = m[\lambda_1(L_k)=0]$ \cite{estrada2012path}.
+    	    \end{thm}
+        Proof:
+    	    %\begin{proof}
+    	    	Let us consider a simple undirected graph $G$ that is connected, in otherwords a graph that can be $1$-hopped. Let ${v_1, v_2, \cdots, v_n}$ be an orthogonal basis of $\mathbb{R}^n$ such that $\mathbf{L} \mathbf{y}_j = \lambda_j (\mathbf{L}) \mathbf{y}_j$. Using Rayleigh-Ritz Principle we obtain
+    	    	\begin{equation}
+    	    	\lambda_1(\mathbf{L}) = \min\limits_{\mathbf{y} \in \mathbb{R}^n \ \{\mathbf{0} \}} \frac{\mathbf{y}^T \mathbf{L} \mathbf{y}}{\mathbf{y}^T \mathbf{y}} =
+    	    	\min\limits_{\mathbf{y} \in \mathbb{R}^n \ \{\mathbf{0} \}}
+    	    	\frac{\sum_{p,q \in P(v_p,v_q)} (y_p -y_q)^2}{\sum_{p\in V} y_p ^2}
+    	    	\end{equation}
+    	    	Let $\mathbf{y}$ be an eigenvector of $\mathbf{L}$ with eigenvalue $\lambda_i(\mathbf{L}_k)=0$. This implies that
+    	    	\begin{equation}
+    	    	\mathbf{y}^T \mathbf{L} \mathbf{y} = \sum_{p,q \in P(v_p,v_q)} (y_p-y_q)^2 = 0,  
+    	    	\end{equation}\label{equatezero}
+    	    	Equation \ref{equatezero} holds if $y_p = y_q$ which happens if and only if the two vertices $v_p$ and $v_q$ are connected which implies that for all vertices connected by a path in the network, $\mathbf{y}$ should be a constant.
+    	    	which happens if and only if, $y_p =y_q$ for each pair of nodes which are connected by an edge. However, on assumption that $G$ is connected, it implies that each pair of vertices of the connected component can be connected by a path and thus $y_p =y_q$ for all pair of vertices of the connected component. Consequently, for a one connected component, the vector $\mathbf{v}= \mathbf{0}$ is the only vector with corresponding to eigenvalue of $0$. In otherwise, $\mathbf{v}$ is a constant vector spanning a dimensional space. 
+    	    	
+    	    	Let us now consider the case of $n$ connected components. Suppose graph $G$ is made of vertices arranged, without loss of generality, in way that its laplacian matrix is organised as 
+    	    	\begin{equation*}
+    	    	\mathbf{L} = \begin{pmatrix}
+    	    	L_{1} & 0 & \cdots & 0 \\
+    	    	0 & L_{2} & \cdots & 0\\
+    	    	\vdots& \vdots & \ddots & \vdots \\
+    	    	0 & 0 & \cdots & L_{n}
+    	    	\end{pmatrix}.
+    	    	\end{equation*}
+    	    	The spectrum of the block diagonal matrix $\mathbf{L}$ is given as the union of the spectra of blocks $\mathbf{L_i}$. The corresponding eigenvectors are given as those of $\mathbf{L_i}$ with zeroes at the positions of other blocks.
+    	    	Since $\mathbf{L_i}$ is a graph laplacian for a connected component and we know that each $\mathbf{L_i}$ has $0$ as an eigenvalue with multiplicity $1$, it therefore implies that the multiplicity of $0$ as an eigenvalue of $L$ corresponds to the number of connected components in the graph $G$ \citep{von2007tutorial}. 
+    	    	
+    	    	Let us now consider a graph that can be $k$-hopped that is to say graph with only $1$ k-connected component for $k>1$. The graph Laplacian $\mathbf{L_k}$ is defined as in Equation \ref{k-laplacian}. Following similar argument as the case of $1$-hopped graph discussed before, we have
+    	    	\begin{equation}
+    	    	\mathbf{y}^T \mathbf{L_k} \mathbf{y} = \sum_{p,q \in P_k(v_p,v_q)} (y_p-y_q)^2 = 0,  
+    	    	\end{equation} 		
+    	    	which happens if and only if, $y_p =y_q$ for each pair of nodes which are connected by the shortest-path of length $k$. Now, let us assume that the graph is k-hopping connected. Then, because every pair of nodes is connected by paths of length $ck$, we have that $y_p =y_q \neq 0$ for every pair of nodes in the graph. Consequently, $\mathbf{y}$ is a constant vector spanning a one-dimensional space.
+    	    	
+    	    	Now let $j>1$ and let us assume that the graph has $g$ $k$-hopping connected components $\mathbf{L_{k}^1,L_{k}^2,\cdots, L_{k}^g }$. Then, the $k$-Laplacian matrix can be written as:
+    	    	\begin{equation*}
+    	    	\mathbf{L}_k = \begin{pmatrix}
+    	    	L_{k}^1 & 0 & \cdots & 0 \\
+    	    	0 & L_{k}^2 & \cdots & 0\\
+    	    	\vdots& \vdots & \ddots & \vdots \\
+    	    	0 & 0 & \cdots & L_{k}^g
+    	    	\end{pmatrix}.
+    	    	\end{equation*}
+    	    	Following similar arguments as for the case of the $k$-hopping connected graph it can be seen that $\mathbf{L}_k$ has $g$ orthogonal eigenvectors $\mathbf{y}_j$ of eigenvalue $0$, such that $y_p = y_q \neq 0$ for each pair of nodes which are in the same $k$-connected of the graph and zero otherwise \citep{estrada2012path}.
+    	    	
+    	    %\end{proof}
+    	    
+    	    \begin{exa}
+    	    	Let us consider the graph, G in Fig.~\ref{spanning}, since $d_{max} = 2$ we compute the 1-hopping and 2-hopping connected components of G.
+    	    	
+    	    	\begin{table}[!h]
+    	    		\centering
+    	    		\begin{tabular}{ |l|l|c|l| }
+    	    			\hline
+    	    			& & no. of components & components \\
+    	    			\hline
+    	    			\multirow{4}{*}{$\lambda_i(\mathbf{L}_1)$} & $\mathbf{0.000}$& & \\
+    	    			& 2.000& 1& 1- 2- 3- 4\\
+    	    			& 4.000 & & \\
+    	    			& 4.000 & & \\ \hline
+    	    			\multirow{4}{*}{$\lambda_i(\mathbf{L}_2)$} & $\mathbf{0.000}$& & \\
+    	    			& $\mathbf{0.000}$& 3 & 1-3,\\
+    	    			& $\mathbf{0.000}$ &  & 2,\\
+    	    			& 2.000 &  & 4\\
+    	    			\hline
+    	    		\end{tabular}   
+    	    	\end{table}
+    	    	
+    	    	
+    	    \end{exa}
+    	    
+    	    \subsection{k-path Laplacian for Weighted Networks}
+    	    Let us take the direction of computing the k-path Laplacian by considering the path made of k edges connecting pair of nodes and the weight of the path is the sum of the weights along that edge. Thus the entries of $k$-path are given by
+    	    
+    	    \begin{equation}
+    	    \mathbf{L}_k(i,j) = \begin{cases} -d_{i,j} &\mbox{if } e_p(ij) = k, \\
+    	    \sum_{j} d_{ij} &\mbox{if } i = j , \\
+    	    0 & \text{otherwise}.
+    	    \end{cases}
+    	    \end{equation}
+    	    where $e_p(ij)$ is the number of edges long the shortest path between nodes $p$ and $q$.
+    	    
+    	    \begin{exa}
+    	    	Let us consider aa simple weighted graph in Fig.~\ref{weighted}.
+    	    	\begin{figure}[!h]
+    	    		\centering
+    	    		\vspace{0pt}
+    	    		\includegraphics[width= 0.35\textwidth]{images/centralities-weighted.pdf}
+    	    		\caption{ A weighted network with $6$ nodes and $6$ weighted edges.} \label{weighted}
+    	    	\end{figure} 
+    	    	
+    	    	\begin{table}[!h]
+    	    		\centering
+    	    		\begin{tabular}{ |l|l|c|l| }
+    	    			\hline
+    	    			& & no.of components(computed) & no. of components (actual)\\
+    	    			\hline
+    	    			\multirow{6}{*}{$\lambda_i(\mathbf{L}_1)$} 
+    	    			& 12.3472& & \\
+    	    			& 5.7468 & & \\
+    	    			& $\mathbf{0.0000}$ & & \\
+    	    			& 0.7503 & 1&1 i.e  \\
+    	    			& 2.0000 & & A-C-B-D-B-E-F\\
+    	    			& 3.1558 & & \\
+    	    			\hline
+    	    			\multirow{6}{*}{$\lambda_i(\mathbf{L}_2)$} 
+    	    			& 19.6847& &\\
+    	    			& 7.3153 & & \\
+    	    			& $\mathbf{0.0000}$ &2 & 2 i.e\\
+    	    			& $\mathbf{0.0000}$ & &A-E-C-D, B-F \\
+    	    			& 6.0000 & & \\
+    	    			& 17.000 & & \\
+    	    			\hline
+    	    			\multirow{6}{*}{$\lambda_i(\mathbf{L}_3)$} 
+    	    			& 21.7251& &\\
+    	    			& $\mathbf{0.0000}$ & & \\
+    	    			& 5.9228 &3 & 4 i.e\\
+    	    			& 4.3521 & &A-F-C-F-D, E,B \\
+    	    			& $\mathbf{0.0000}$ & & \\
+    	    			& $\mathbf{0.0000}$ & & \\
+    	    			\hline
+    	    		\end{tabular}   
+    	    		\caption{k-hopping components of a graph in Fig.\ref{weighted}} 
+    	    		\label{tablecomponentsg1}
+    	    	\end{table}
+    	    	
+    	    	From Table.~\ref{tablecomponentsg1}, we observe that for $k=1$ and $k=2$, the number of components computed based on the multiplicity of the smallest eigenvector corresponds with the number of components obtained through navigating the graph (actual value). However, for $k=3$, we observe inconsistency in the two values.
+    	    \end{exa}
+    	    
+    	    \begin{exa}
+    	    	Let us consider a simple weighted graph in Fig.~\ref{weighted}.
+    	    	\begin{figure}[!h]
+    	    		\centering
+    	    		\vspace{0pt}
+    	    		\includegraphics[width= 0.35\textwidth]{images/weighted2.png}
+    	    		\caption{ A weighted network with $6$ nodes} \label{weighted3}
+    	    	\end{figure} 
+    	    	
+    	    	\begin{table}[!h]
+    	    		\centering
+    	    		\begin{tabular}{ |l|l|c|l| }
+    	    			\hline
+    	    			& & no.of components(computed) & no. of components (actual)\\
+    	    			\hline
+    	    			\multirow{4}{*}{$\lambda_i(\mathbf{L}_1)$} 
+    	    			& 26.1073 & & \\
+    	    			& 0.0000 & 1 &1 \\
+    	    			& 8.8606 & & \\
+    	    			& 14.0321& & \\
+    	    			\hline  
+    	    			\multirow{4}{*}{$\lambda_i(\mathbf{L}_2)$} 
+    	    			& 26.0000& &\\
+    	    			& $\mathbf{0.0000}$ &3 & 3 i.e\\
+    	    			& $\mathbf{0.0000}$ & &b-c, a, d\\
+    	    			& $\mathbf{0.0000}$ & & \\
+    	    			\hline 
+    	    		\end{tabular}   
+    	    		\caption{k-hopping components of a graph in Fig.\ref{weighted}} 
+    	    		\label{tablecomponentsg1}
+    	    	\end{table}
+    	    	The diameter of the graph is $2$. Computations for $k-$ hopping components for $k=1$ and $k=2$ correspond to the actual number as drawn from the graph.
+    	    \end{exa}
+    	    
+    	    \begin{exa}
+    	    	Let us consider a simple weighted graph in Fig.~\ref{weighted3}.
+    	    	\begin{figure}[!h]
+    	    		\centering
+    	    		\vspace{0pt}
+    	    		\includegraphics[width= 0.5\textwidth]{images/weighted3.png}
+    	    		\caption{ A weighted network with $6$ nodes} \label{weighted3}
+    	    	\end{figure} 
+    	    	\begin{table}[!h]
+    	    		\centering
+    	    		\begin{tabular}{ |l|l|c|l| }
+    	    			\hline
+    	    			& & no.of components(computed) & no. of components (actual)\\
+    	    			\hline
+    	    			\multirow{6}{*}{$\lambda_i(\mathbf{L}_1)$} 
+    	    			& 14.7000& & \\
+    	    			& 6.3200 & & \\
+    	    			& $\mathbf{0.0000}$ & & \\
+    	    			& 0.7600 & 1&1 \\
+    	    			& 2.6800 & & \\
+    	    			& 3.5500 & & \\
+    	    			\hline
+    	    			\multirow{6}{*}{$\lambda_i(\mathbf{L}_2)$} 
+    	    			& $\mathbf{0.0000}$& &\\
+    	    			& 9.4900 & & \\
+    	    			& 25.9000 &2 & 2 i.e\\
+    	    			& 20.6000 & &A-E-C-D, B-F \\
+    	    			& $\mathbf{0.0000}$ & & \\
+    	    			& 6.0000 & & \\
+    	    			\hline
+    	    			\multirow{6}{*}{$\lambda_i(\mathbf{L}_3)$} 
+    	    			& 24.4100& &\\
+    	    			& $\mathbf{0.0000}$ &3 & 3 i.e\\
+    	    			& 7.0000 & &A-F-D-F-C, E,B \\
+    	    			& $\mathbf{0.0000}$ & & \\
+    	    			& $\mathbf{0.0000}$ & & \\
+    	    			& 4.5900& &\\
+    	    			\hline
+    	    		\end{tabular}   
+    	    		\caption{k-hopping components of a graph in Fig.\ref{weighted3}} 
+    	    		\label{tablecomponentsg3}
+    	    	\end{table}
+    	    	
+    	    	From Table.~\ref{tablecomponentsg3}, we observe that for $k=1$ and $k=2$, the number of components computed based on the multiplicity of the smallest eigenvector corresponds with the number of components obtained through navigating the graph (actual value). However, for $k=3$, we observe inconsistency in the two values.
+    	    \end{exa}
+    	    
     	    
     	    The $k$-path Laplacian matrix $\mathbf{L}_{k} (k \leq d_{max})$ of a connected undirected graph $G=(V,E)$ is defined as the square symmetric $n\times n$ matrix whose entries are given by:
     	    \begin{equation}

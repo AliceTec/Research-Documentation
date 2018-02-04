@@ -20,13 +20,14 @@ Repeated entry---line 650 of file references.bib
  :                         ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "euler1976solution;euler1953leonhard"
+Warning--I didn't find a database entry for "von2007tutorial"
 Warning--can't use both volume and number fields in adiga2009skew
 Warning--there's a number but no volume in anthonisse1971rush
 Warning--empty journal in euler1976solution
 Warning--empty year in googleimages
 You've used 65 entries,
             2773 wiz_defined-function locations,
-            971 strings with 14689 characters,
+            972 strings with 14704 characters,
 and the built_in function-call counts, 28543 in all, are:
 = -- 2588
 > -- 1410
