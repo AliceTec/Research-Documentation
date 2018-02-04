@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.5.2)  20 SEP 2017 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.5.2)  26 JAN 2018 08:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -762,6 +762,30 @@ LaTeX Font Info:    Try loading font information for U+rsfs on input line 47.
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
+LaTeX Warning: Citation `kasprzak2012diffusion' on page 1 undefined on input li
+ne 48.
+
+
+LaTeX Warning: Citation `estrada2011epidemic' on page 1 undefined on input line
+ 48.
+
+
+LaTeX Warning: Citation `newman2010networks' on page 1 undefined on input line 
+53.
+
+
+LaTeX Warning: Citation `kasprzak2012diffusion' on page 1 undefined on input li
+ne 54.
+
+
+LaTeX Warning: Citation `estrada2011epidemic' on page 1 undefined on input line
+ 54.
+
+
+LaTeX Warning: Citation `estrada2011epidemic' on page 1 undefined on input line
+ 56.
+
+
 LaTeX Warning: Citation `estrada-consesus' on page 1 undefined on input line 56
 .
 
@@ -770,9 +794,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--57
 
  []
 
+
+LaTeX Warning: Citation `newman2010networks' on page 1 undefined on input line 
+63.
+
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Citation `estrada2011epidemic' on page 2 undefined on input line
+ 67.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
@@ -801,14 +834,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--140
 
  []
 
-[3] [4] <images/path-graph-dif.png, id=97, 699.61375pt x 200.75pt>
+[3] [4] <images/path-graph-dif.png, id=86, 699.61375pt x 200.75pt>
 File: images/path-graph-dif.png Graphic file (type png)
 
 <use images/path-graph-dif.png>
 Package pdftex.def Info: images/path-graph-dif.png used on input line 159.
 (pdftex.def)             Requested size: 212.89546pt x 61.08928pt.
 
-<images/path-network-diffusion.png, id=99, 539.01375pt x 348.30125pt>
+<images/path-network-diffusion.png, id=88, 539.01375pt x 348.30125pt>
 File: images/path-network-diffusion.png Graphic file (type png)
 
 <use images/path-network-diffusion.png>
@@ -816,28 +849,28 @@ Package pdftex.def Info: images/path-network-diffusion.png used on input line 1
 64.
 (pdftex.def)             Requested size: 203.83417pt x 131.71277pt.
 
-<images/star-difusion.pdf, id=100, 45.16875pt x 46.1725pt>
+<images/star-difusion.pdf, id=89, 45.16875pt x 46.1725pt>
 File: images/star-difusion.pdf Graphic file (type pdf)
 
 <use images/star-difusion.pdf>
 Package pdftex.def Info: images/star-difusion.pdf used on input line 169.
 (pdftex.def)             Requested size: 167.5959pt x 171.3667pt.
 
-<images/star-quantity-time.png, id=101, 546.04pt x 369.38pt>
+<images/star-quantity-time.png, id=90, 546.04pt x 369.38pt>
 File: images/star-quantity-time.png Graphic file (type png)
 
 <use images/star-quantity-time.png>
 Package pdftex.def Info: images/star-quantity-time.png used on input line 174.
 (pdftex.def)             Requested size: 203.83417pt x 137.8859pt.
 
-<images/regular-dif.pdf, id=102, 47.17625pt x 46.1725pt>
+<images/regular-dif.pdf, id=91, 47.17625pt x 46.1725pt>
 File: images/regular-dif.pdf Graphic file (type pdf)
 
 <use images/regular-dif.pdf>
 Package pdftex.def Info: images/regular-dif.pdf used on input line 179.
 (pdftex.def)             Requested size: 167.5959pt x 164.04448pt.
 
-<images/regular-quantity-time.png, id=103, 570.13pt x 376.40625pt>
+<images/regular-quantity-time.png, id=92, 570.13pt x 376.40625pt>
 File: images/regular-quantity-time.png Graphic file (type png)
 
 <use images/regular-quantity-time.png>
@@ -846,26 +879,26 @@ Package pdftex.def Info: images/regular-quantity-time.png used on input line 18
 (pdftex.def)             Requested size: 203.83417pt x 134.56995pt.
  [5 <./images/path-graph-dif.png> <./images/path-network-diffusion.png> <./imag
 es/star-difusion.pdf> <./images/star-quantity-time.png> <./images/regular-dif.p
-df> <./images/regular-quantity-time.png>] <images/star-t-0.png, id=119, 433.62p
+df> <./images/regular-quantity-time.png>] <images/star-t-0.png, id=108, 433.62p
 t x 289.08pt>
 File: images/star-t-0.png Graphic file (type png)
  <use images/star-t-0.png>
 Package pdftex.def Info: images/star-t-0.png used on input line 200.
 (pdftex.def)             Requested size: 172.13pt x 114.75215pt.
 
-<images/star-t-1.png, id=120, 433.62pt x 289.08pt>
+<images/star-t-1.png, id=109, 433.62pt x 289.08pt>
 File: images/star-t-1.png Graphic file (type png)
  <use images/star-t-1.png>
 Package pdftex.def Info: images/star-t-1.png used on input line 205.
 (pdftex.def)             Requested size: 172.13pt x 114.75215pt.
 
-<images/star-t-6.png, id=121, 433.62pt x 289.08pt>
+<images/star-t-6.png, id=110, 433.62pt x 289.08pt>
 File: images/star-t-6.png Graphic file (type png)
  <use images/star-t-6.png>
 Package pdftex.def Info: images/star-t-6.png used on input line 210.
 (pdftex.def)             Requested size: 172.13pt x 114.75215pt.
 
-<images/star-t-9.png, id=122, 433.62pt x 289.08pt>
+<images/star-t-9.png, id=111, 433.62pt x 289.08pt>
 File: images/star-t-9.png Graphic file (type png)
  <use images/star-t-9.png>
 Package pdftex.def Info: images/star-t-9.png used on input line 215.
@@ -873,49 +906,77 @@ Package pdftex.def Info: images/star-t-9.png used on input line 215.
 
 [6 <./images/star-t-0.png> <./images/star-t-1.png> <./images/star-t-6.png> <./i
 mages/star-t-9.png>]
-<images/barabasi-x0.png, id=145, 563.10374pt x 382.42876pt>
+
+LaTeX Warning: Citation `erdos1960evolution' on page 7 undefined on input line 
+226.
+
+
+LaTeX Warning: Citation `barabasi1999emergence' on page 7 undefined on input li
+ne 226.
+
+
+LaTeX Warning: Citation `estrada2011structure' on page 7 undefined on input lin
+e 226.
+
+<images/barabasi-x0.png, id=131, 563.10374pt x 382.42876pt>
 File: images/barabasi-x0.png Graphic file (type png)
 
 <use images/barabasi-x0.png>
 Package pdftex.def Info: images/barabasi-x0.png used on input line 233.
 (pdftex.def)             Requested size: 203.83417pt x 138.43283pt.
 
-<images/erdos-x0.png, id=146, 557.08125pt x 370.38374pt>
+<images/erdos-x0.png, id=132, 557.08125pt x 370.38374pt>
 File: images/erdos-x0.png Graphic file (type png)
 
 <use images/erdos-x0.png>
 Package pdftex.def Info: images/erdos-x0.png used on input line 238.
 (pdftex.def)             Requested size: 203.83417pt x 135.51955pt.
 
-<images/barabasi-x02.png, id=147, 571.13374pt x 380.42125pt>
+<images/barabasi-x02.png, id=133, 571.13374pt x 380.42125pt>
 File: images/barabasi-x02.png Graphic file (type png)
 
 <use images/barabasi-x02.png>
 Package pdftex.def Info: images/barabasi-x02.png used on input line 243.
 (pdftex.def)             Requested size: 203.83417pt x 135.76736pt.
 
-<images/erdos-x02.png, id=148, 543.02875pt x 377.41pt>
+<images/erdos-x02.png, id=134, 543.02875pt x 377.41pt>
 File: images/erdos-x02.png Graphic file (type png)
 
 <use images/erdos-x02.png>
 Package pdftex.def Info: images/erdos-x02.png used on input line 248.
 (pdftex.def)             Requested size: 203.83417pt x 141.66661pt.
 
-<images/barabasi-x04.png, id=149, 574.145pt x 377.41pt>
+<images/barabasi-x04.png, id=135, 574.145pt x 377.41pt>
 File: images/barabasi-x04.png Graphic file (type png)
 
 <use images/barabasi-x04.png>
 Package pdftex.def Info: images/barabasi-x04.png used on input line 253.
 (pdftex.def)             Requested size: 203.83417pt x 133.98436pt.
 
-<images/erdos-x04.png, id=150, 545.03625pt x 372.39125pt>
+<images/erdos-x04.png, id=136, 545.03625pt x 372.39125pt>
 File: images/erdos-x04.png Graphic file (type png)
 
 <use images/erdos-x04.png>
 Package pdftex.def Info: images/erdos-x04.png used on input line 258.
 (pdftex.def)             Requested size: 203.83417pt x 139.26566pt.
  [7]
-<images/quantity-time-exponents-x0.png, id=166, 551.05875pt x 359.3425pt>
+
+LaTeX Warning: Citation `estrada2010quantifying' on page 8 undefined on input l
+ine 269.
+
+
+LaTeX Warning: Citation `albert2002statistical' on page 8 undefined on input li
+ne 269.
+
+
+LaTeX Warning: Citation `newman2003structure' on page 8 undefined on input line
+ 269.
+
+
+LaTeX Warning: Citation `estrada2010quantifying' on page 8 undefined on input l
+ine 270.
+
+<images/quantity-time-exponents-x0.png, id=145, 551.05875pt x 359.3425pt>
 File: images/quantity-time-exponents-x0.png Graphic file (type png)
 
 <use images/quantity-time-exponents-x0.png>
@@ -923,7 +984,7 @@ Package pdftex.def Info: images/quantity-time-exponents-x0.png used on input li
 ne 275.
 (pdftex.def)             Requested size: 144.95303pt x 94.52347pt.
 
-<images/quantity-time-exponents-x01.png, id=167, 545.03625pt x 363.3575pt>
+<images/quantity-time-exponents-x01.png, id=146, 545.03625pt x 363.3575pt>
 File: images/quantity-time-exponents-x01.png Graphic file (type png)
 
 <use images/quantity-time-exponents-x01.png>
@@ -931,7 +992,7 @@ Package pdftex.def Info: images/quantity-time-exponents-x01.png used on input l
 ine 280.
 (pdftex.def)             Requested size: 144.95303pt x 96.63303pt.
 
-<images/quantity-time-exponents-x03.png, id=168, 474.77374pt x 309.155pt>
+<images/quantity-time-exponents-x03.png, id=147, 474.77374pt x 309.155pt>
 File: images/quantity-time-exponents-x03.png Graphic file (type png)
 
 <use images/quantity-time-exponents-x03.png>
@@ -939,7 +1000,7 @@ Package pdftex.def Info: images/quantity-time-exponents-x03.png used on input l
 ine 285.
 (pdftex.def)             Requested size: 144.95303pt x 94.38884pt.
 
-<images/legend-gamma.png, id=169, 777.90625pt x 63.23625pt>
+<images/legend-gamma.png, id=148, 777.90625pt x 63.23625pt>
 File: images/legend-gamma.png Graphic file (type png)
 
 <use images/legend-gamma.png>
@@ -950,7 +1011,7 @@ ng> <./images/erdos-x02.png> <./images/barabasi-x04.png> <./images/erdos-x04.pn
 g>] [9 <./images/quantity-time-exponents-x0.png> <./images/quantity-time-expone
 nts-x01.png> <./images/quantity-time-exponents-x03.png> <./images/legend-gamma.
 png>]
-<images/Barabasi-highest-degree.png, id=192, 540.0175pt x 346.29375pt>
+<images/Barabasi-highest-degree.png, id=168, 540.0175pt x 346.29375pt>
 File: images/Barabasi-highest-degree.png Graphic file (type png)
 
 <use images/Barabasi-highest-degree.png>
@@ -958,14 +1019,14 @@ Package pdftex.def Info: images/Barabasi-highest-degree.png used on input line
 319.
 (pdftex.def)             Requested size: 203.83417pt x 130.71056pt.
 
-<images/E-R-largest.png, id=193, 554.07pt x 354.32375pt>
+<images/E-R-largest.png, id=169, 554.07pt x 354.32375pt>
 File: images/E-R-largest.png Graphic file (type png)
 
 <use images/E-R-largest.png>
 Package pdftex.def Info: images/E-R-largest.png used on input line 324.
 (pdftex.def)             Requested size: 203.83417pt x 130.35162pt.
 
-<images/barabasi-random-selection.png, id=194, 548.0475pt x 347.2975pt>
+<images/barabasi-random-selection.png, id=170, 548.0475pt x 347.2975pt>
 File: images/barabasi-random-selection.png Graphic file (type png)
 
 <use images/barabasi-random-selection.png>
@@ -973,7 +1034,7 @@ Package pdftex.def Info: images/barabasi-random-selection.png used on input lin
 e 329.
 (pdftex.def)             Requested size: 203.83417pt x 129.17107pt.
 
-<images/E-R-random.png, id=195, 538.01pt x 347.2975pt>
+<images/E-R-random.png, id=171, 538.01pt x 347.2975pt>
 File: images/E-R-random.png Graphic file (type png)
 
 <use images/E-R-random.png>
@@ -981,6 +1042,11 @@ Package pdftex.def Info: images/E-R-random.png used on input line 334.
 (pdftex.def)             Requested size: 203.83417pt x 131.57697pt.
  [10 <./images/Barabasi-highest-degree.png> <./images/E-R-largest.png> <./image
 s/barabasi-random-selection.png> <./images/E-R-random.png>]
+
+LaTeX Warning: Citation `estrada2011epidemic' on page 11 undefined on input lin
+e 346.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 350--352
 
  []
@@ -1002,7 +1068,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
-<images/Star-network-eigenplot.png, id=207, 556.0775pt x 349.305pt>
+<images/Star-network-eigenplot.png, id=181, 556.0775pt x 349.305pt>
 File: images/Star-network-eigenplot.png Graphic file (type png)
 
 <use images/Star-network-eigenplot.png>
@@ -1010,7 +1076,7 @@ Package pdftex.def Info: images/Star-network-eigenplot.png used on input line 3
 64.
 (pdftex.def)             Requested size: 203.83417pt x 128.04158pt.
 
-<images/Path-network-eigenplot.png, id=208, 471.7625pt x 298.11375pt>
+<images/Path-network-eigenplot.png, id=182, 471.7625pt x 298.11375pt>
 File: images/Path-network-eigenplot.png Graphic file (type png)
 
 <use images/Path-network-eigenplot.png>
@@ -1018,7 +1084,7 @@ Package pdftex.def Info: images/Path-network-eigenplot.png used on input line 3
 69.
 (pdftex.def)             Requested size: 203.83417pt x 128.80505pt.
 
-<images/legend-eigenvalues.png, id=209, 770.88pt x 62.2325pt>
+<images/legend-eigenvalues.png, id=183, 770.88pt x 62.2325pt>
 File: images/legend-eigenvalues.png Graphic file (type png)
 
 <use images/legend-eigenvalues.png>
@@ -1030,28 +1096,28 @@ Package pdftex.def Info: images/legend-eigenvalues.png used on input line 374.
 LaTeX Warning: Reference `dif-final-eqn' on page 12 undefined on input line 386
 .
 
-<images/grid-t0-x0.png, id=222, 433.62pt x 289.08pt>
+<images/grid-t0-x0.png, id=196, 433.62pt x 289.08pt>
 File: images/grid-t0-x0.png Graphic file (type png)
 
 <use images/grid-t0-x0.png>
 Package pdftex.def Info: images/grid-t0-x0.png used on input line 391.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t05-x0.png, id=223, 433.62pt x 289.08pt>
+<images/grid-t05-x0.png, id=197, 433.62pt x 289.08pt>
 File: images/grid-t05-x0.png Graphic file (type png)
 
 <use images/grid-t05-x0.png>
 Package pdftex.def Info: images/grid-t05-x0.png used on input line 396.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t3-x0.png, id=224, 433.62pt x 289.08pt>
+<images/grid-t3-x0.png, id=198, 433.62pt x 289.08pt>
 File: images/grid-t3-x0.png Graphic file (type png)
 
 <use images/grid-t3-x0.png>
 Package pdftex.def Info: images/grid-t3-x0.png used on input line 401.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t5-x0.png, id=225, 433.62pt x 289.08pt>
+<images/grid-t5-x0.png, id=199, 433.62pt x 289.08pt>
 File: images/grid-t5-x0.png Graphic file (type png)
 
 <use images/grid-t5-x0.png>
@@ -1062,28 +1128,28 @@ Overfull \hbox (13.33328pt too wide) in paragraph at lines 390--412
  [][]  []  []  [] 
  []
 
-<images/grid-t0-x01.png, id=226, 433.62pt x 289.08pt>
+<images/grid-t0-x01.png, id=200, 433.62pt x 289.08pt>
 File: images/grid-t0-x01.png Graphic file (type png)
 
 <use images/grid-t0-x01.png>
 Package pdftex.def Info: images/grid-t0-x01.png used on input line 417.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t05-x01.png, id=227, 433.62pt x 289.08pt>
+<images/grid-t05-x01.png, id=201, 433.62pt x 289.08pt>
 File: images/grid-t05-x01.png Graphic file (type png)
 
 <use images/grid-t05-x01.png>
 Package pdftex.def Info: images/grid-t05-x01.png used on input line 422.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t3-x01.png, id=228, 433.62pt x 289.08pt>
+<images/grid-t3-x01.png, id=202, 433.62pt x 289.08pt>
 File: images/grid-t3-x01.png Graphic file (type png)
 
 <use images/grid-t3-x01.png>
 Package pdftex.def Info: images/grid-t3-x01.png used on input line 427.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t5-x01.png, id=229, 433.62pt x 289.08pt>
+<images/grid-t5-x01.png, id=203, 433.62pt x 289.08pt>
 File: images/grid-t5-x01.png Graphic file (type png)
 
 <use images/grid-t5-x01.png>
@@ -1094,28 +1160,28 @@ Overfull \hbox (13.33328pt too wide) in paragraph at lines 416--436
  [][]  []  []  [] 
  []
 
-<images/grid-t0-x02.png, id=230, 433.62pt x 289.08pt>
+<images/grid-t0-x02.png, id=204, 433.62pt x 289.08pt>
 File: images/grid-t0-x02.png Graphic file (type png)
 
 <use images/grid-t0-x02.png>
 Package pdftex.def Info: images/grid-t0-x02.png used on input line 441.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t05-x02.png, id=231, 433.62pt x 289.08pt>
+<images/grid-t05-x02.png, id=205, 433.62pt x 289.08pt>
 File: images/grid-t05-x02.png Graphic file (type png)
 
 <use images/grid-t05-x02.png>
 Package pdftex.def Info: images/grid-t05-x02.png used on input line 446.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t3-x02.png, id=232, 433.62pt x 289.08pt>
+<images/grid-t3-x02.png, id=206, 433.62pt x 289.08pt>
 File: images/grid-t3-x02.png Graphic file (type png)
 
 <use images/grid-t3-x02.png>
 Package pdftex.def Info: images/grid-t3-x02.png used on input line 451.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t5-x02.png, id=233, 433.62pt x 289.08pt>
+<images/grid-t5-x02.png, id=207, 433.62pt x 289.08pt>
 File: images/grid-t5-x02.png Graphic file (type png)
 
 <use images/grid-t5-x02.png>
@@ -1126,100 +1192,21 @@ Overfull \hbox (13.33328pt too wide) in paragraph at lines 440--459
  [][]  []  []  [] 
  []
 
-<images/colour-bar-grid.png, id=234, 738.76pt x 69.25874pt>
+<images/colour-bar-grid.png, id=208, 738.76pt x 69.25874pt>
 File: images/colour-bar-grid.png Graphic file (type png)
 
 <use images/colour-bar-grid.png>
 Package pdftex.def Info: images/colour-bar-grid.png used on input line 462.
 (pdftex.def)             Requested size: 271.7835pt x 25.47948pt.
- (./long-range-diffusion-v2.bbl [12 <./images/grid-t0-x0.png> <./images/grid-t0
-5-x0.png> <./images/grid-t3-x0.png> <./images/grid-t5-x0.png> <./images/grid-t0
--x01.png> <./images/grid-t05-x01.png> <./images/grid-t3-x01.png> <./images/grid
--t5-x01.png> <./images/grid-t0-x02.png> <./images/grid-t05-x02.png> <./images/g
-rid-t3-x02.png> <./images/grid-t5-x02.png> <./images/colour-bar-grid.png>]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 \newblock The bridges of k{\"o}nigsbergâ€
-                                              ”a historical perspective.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 \newblock The bridges of k{\"o}nigsbergâ€”
-                                               a historical perspective.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-[13]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.210 \newblock Collective dynamics of â€
-                                         ˜small-worldâ€™networks.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.210 \newblock Collective dynamics of â€˜
-                                          small-worldâ€™networks.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.210 ...k Collective dynamics of â€˜small-worldâ€
-                                                  ™networks.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.210 ... Collective dynamics of â€˜small-worldâ€™
-                                                  networks.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-) [14]
+ [12 <./images/grid-t0-x0.png> <./images/grid-t05-x0.png> <./images/grid-t3-x0.
+png> <./images/grid-t5-x0.png> <./images/grid-t0-x01.png> <./images/grid-t05-x0
+1.png> <./images/grid-t3-x01.png> <./images/grid-t5-x01.png> <./images/grid-t0-
+x02.png> <./images/grid-t05-x02.png> <./images/grid-t3-x02.png> <./images/grid-
+t5-x02.png> <./images/colour-bar-grid.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 473.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 473.
- (./long-range-diffusion-v2.aux)
+
+(./long-range-diffusion-v2.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 473.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 473.
 Package rerunfilecheck Info: File `long-range-diffusion-v2.out' has not changed
@@ -1235,11 +1222,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 473.
  ) 
 Here is how much of TeX's memory you used:
- 19067 strings out of 494317
- 358601 string characters out of 6162925
- 421116 words of memory out of 5000000
- 21926 multiletter control sequences out of 15000+600000
- 18465 words of font info for 77 fonts, out of 8000000 for 9000
+ 18984 strings out of 494317
+ 356896 string characters out of 6162925
+ 419463 words of memory out of 5000000
+ 21890 multiletter control sequences out of 15000+600000
+ 18119 words of font info for 76 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  48i,10n,55p,1070b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -1257,12 +1244,11 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on long-range-diffusion-v2.pdf (14 pages, 1105891 bytes).
+dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on long-range-diffusion-v2.pdf (12 pages, 1075193 bytes).
 PDF statistics:
- 376 PDF objects out of 1000 (max. 8388607)
- 256 compressed objects within 3 object streams
- 81 named destinations out of 1000 (max. 500000)
+ 297 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
  285 words of extra memory for PDF output out of 10000 (max. 10000000)
 

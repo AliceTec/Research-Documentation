@@ -1,52 +1,47 @@
 This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: long-range-diffusion-v2.aux
-The style file: abbrv.bst
-Database file #1: references.bib
-Warning--entry type for "zacharydataset" isn't style-file defined
---line 362 of file references.bib
-Warning--entry type for "googleimages" isn't style-file defined
---line 371 of file references.bib
-Warning--I didn't find a database entry for "estrada-consesus"
-You've used 40 entries,
-            2118 wiz_defined-function locations,
-            737 strings with 9329 characters,
-and the built_in function-call counts, 12400 in all, are:
-= -- 1239
-> -- 506
-< -- 6
-+ -- 211
-- -- 162
-* -- 847
-:= -- 2084
-add.period$ -- 122
-call.type$ -- 40
-change.case$ -- 189
+I found no \bibdata command---while reading file long-range-diffusion-v2.aux
+I found no \bibstyle command---while reading file long-range-diffusion-v2.aux
+You've used 10 entries,
+            0 wiz_defined-function locations,
+            93 strings with 715 characters,
+and the built_in function-call counts, 0 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 0
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 40
-duplicate$ -- 475
-empty$ -- 1018
-format.name$ -- 162
-if$ -- 2569
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 0
+format.name$ -- 0
+if$ -- 0
 int.to.chr$ -- 0
-int.to.str$ -- 40
-missing$ -- 44
-newline$ -- 203
-num.names$ -- 80
-pop$ -- 197
-preamble$ -- 1
-purify$ -- 159
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 0
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 0
+purify$ -- 0
 quote$ -- 0
-skip$ -- 324
+skip$ -- 0
 stack$ -- 0
-substring$ -- 846
-swap$ -- 75
-text.length$ -- 6
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 144
+type$ -- 0
 warning$ -- 0
-while$ -- 134
-width$ -- 42
-write$ -- 435
-(There were 3 warnings)
+while$ -- 0
+width$ -- 0
+write$ -- 0
+(There were 2 error messages)

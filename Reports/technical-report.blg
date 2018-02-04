@@ -11,46 +11,58 @@ Repeated entry---line 401 of file references.bib
  : @article{belkin2003laplacian
  :                             ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 576 of file references.bib
+ : @article{newman2003structure
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 650 of file references.bib
+ : @article{estrada2017path
+ :                         ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "euler1976solution;euler1953leonhard"
+Warning--can't use both volume and number fields in adiga2009skew
+Warning--there's a number but no volume in anthonisse1971rush
+Warning--empty journal in euler1976solution
 Warning--empty year in googleimages
-You've used 42 entries,
+You've used 65 entries,
             2773 wiz_defined-function locations,
-            844 strings with 10828 characters,
-and the built_in function-call counts, 18166 in all, are:
-= -- 1649
-> -- 869
-< -- 40
-+ -- 303
-- -- 261
-* -- 1385
-:= -- 2779
-add.period$ -- 131
-call.type$ -- 42
-change.case$ -- 201
-chr.to.int$ -- 42
-cite$ -- 85
-duplicate$ -- 885
-empty$ -- 1602
-format.name$ -- 329
-if$ -- 3826
+            971 strings with 14689 characters,
+and the built_in function-call counts, 28543 in all, are:
+= -- 2588
+> -- 1410
+< -- 58
++ -- 488
+- -- 423
+* -- 2204
+:= -- 4350
+add.period$ -- 201
+call.type$ -- 65
+change.case$ -- 323
+chr.to.int$ -- 65
+cite$ -- 134
+duplicate$ -- 1383
+empty$ -- 2493
+format.name$ -- 526
+if$ -- 6018
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 46
-newline$ -- 220
-num.names$ -- 168
-pop$ -- 425
+missing$ -- 69
+newline$ -- 334
+num.names$ -- 260
+pop$ -- 669
 preamble$ -- 1
-purify$ -- 169
+purify$ -- 269
 quote$ -- 0
-skip$ -- 662
+skip$ -- 1037
 stack$ -- 0
-substring$ -- 786
-swap$ -- 90
-text.length$ -- 8
+substring$ -- 1209
+swap$ -- 145
+text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 422
-warning$ -- 1
-while$ -- 185
+type$ -- 670
+warning$ -- 4
+while$ -- 286
 width$ -- 0
-write$ -- 552
-(There was 1 error message)
+write$ -- 846
+(There were 3 error messages)

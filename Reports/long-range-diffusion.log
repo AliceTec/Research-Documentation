@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.5.2)  15 OCT 2017 10:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.5.2)  25 JAN 2018 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -757,12 +757,16 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Citation `newman2010networks' on page 2 undefined on input line 
+88.
+
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 101.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 102.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 101.
- [2]
-Overfull \hbox (0.38483pt too wide) in paragraph at lines 148--151
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 102.
+[2]
+Overfull \hbox (0.38483pt too wide) in paragraph at lines 149--152
 \OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 20038\OML/cmm/m/it/10 ; \OT
 1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 20038\OML/cmm/m/it/10 ; \OT1/cm
 r/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 20031\OML/cmm/m/it/10 ; \OT1/cmr/m/
@@ -775,372 +779,369 @@ mm/m/it/10 :\OT1/cmr/m/n/10 19972\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m
 \OT1/cmr/m/n/10 19918]$. This ex-plains the
  []
 
-<images/diffusion-graph.pdf, id=130, 53.19875pt x 34.1275pt>
+<images/diffusion-graph.pdf, id=129, 53.19875pt x 34.1275pt>
 File: images/diffusion-graph.pdf Graphic file (type pdf)
 
 <use images/diffusion-graph.pdf>
-Package pdftex.def Info: images/diffusion-graph.pdf used on input line 155.
+Package pdftex.def Info: images/diffusion-graph.pdf used on input line 156.
 (pdftex.def)             Requested size: 131.35764pt x 84.28429pt.
 
-<images/simple-quantity-time.png, id=131, 554.07pt x 381.425pt>
+<images/simple-quantity-time.png, id=130, 554.07pt x 381.425pt>
 File: images/simple-quantity-time.png Graphic file (type png)
 
 <use images/simple-quantity-time.png>
-Package pdftex.def Info: images/simple-quantity-time.png used on input line 160
+Package pdftex.def Info: images/simple-quantity-time.png used on input line 161
 .
 (pdftex.def)             Requested size: 203.83417pt x 140.32187pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/star-difusion.pdf, id=145, 45.16875pt x 46.1725pt>
+ [3 <./images/diffusion-graph.pdf> <./images/simple-quantity-time.png>]
+<images/star-difusion.pdf, id=156, 45.16875pt x 46.1725pt>
 File: images/star-difusion.pdf Graphic file (type pdf)
 
 <use images/star-difusion.pdf>
-Package pdftex.def Info: images/star-difusion.pdf used on input line 178.
+Package pdftex.def Info: images/star-difusion.pdf used on input line 179.
 (pdftex.def)             Requested size: 122.30325pt x 125.033pt.
 
-<images/star-quantity-time.png, id=146, 546.04pt x 369.38pt>
+<images/star-quantity-time.png, id=157, 546.04pt x 369.38pt>
 File: images/star-quantity-time.png Graphic file (type png)
 
 <use images/star-quantity-time.png>
-Package pdftex.def Info: images/star-quantity-time.png used on input line 183.
+Package pdftex.def Info: images/star-quantity-time.png used on input line 184.
 (pdftex.def)             Requested size: 203.83417pt x 137.8859pt.
- [3]
-<images/regular-dif.pdf, id=161, 47.17625pt x 46.1725pt>
+
+<images/regular-dif.pdf, id=162, 47.17625pt x 46.1725pt>
 File: images/regular-dif.pdf Graphic file (type pdf)
 
 <use images/regular-dif.pdf>
-Package pdftex.def Info: images/regular-dif.pdf used on input line 194.
+Package pdftex.def Info: images/regular-dif.pdf used on input line 195.
 (pdftex.def)             Requested size: 122.30325pt x 119.71165pt.
 
-<images/regular-quantity-time.png, id=162, 570.13pt x 376.40625pt>
+<images/regular-quantity-time.png, id=163, 570.13pt x 376.40625pt>
 File: images/regular-quantity-time.png Graphic file (type png)
 
 <use images/regular-quantity-time.png>
-Package pdftex.def Info: images/regular-quantity-time.png used on input line 19
-9.
+Package pdftex.def Info: images/regular-quantity-time.png used on input line 20
+0.
 (pdftex.def)             Requested size: 203.83417pt x 134.56995pt.
 
-<images/newdiff-nodesize0.png, id=170, 433.62pt x 289.08pt>
+<images/newdiff-nodesize0.png, id=171, 433.62pt x 289.08pt>
 File: images/newdiff-nodesize0.png Graphic file (type png)
 
 <use images/newdiff-nodesize0.png>
-Package pdftex.def Info: images/newdiff-nodesize0.png used on input line 217.
+Package pdftex.def Info: images/newdiff-nodesize0.png used on input line 218.
 (pdftex.def)             Requested size: 172.13pt x 114.75215pt.
 
-<images/newdiff-nodesize4.png, id=171, 433.62pt x 289.08pt>
+<images/newdiff-nodesize4.png, id=172, 433.62pt x 289.08pt>
 File: images/newdiff-nodesize4.png Graphic file (type png)
 
 <use images/newdiff-nodesize4.png>
-Package pdftex.def Info: images/newdiff-nodesize4.png used on input line 222.
+Package pdftex.def Info: images/newdiff-nodesize4.png used on input line 223.
 (pdftex.def)             Requested size: 172.13pt x 114.75215pt.
 
-<images/newdiff-nodesize14.png, id=172, 433.62pt x 289.08pt>
+<images/newdiff-nodesize14.png, id=173, 433.62pt x 289.08pt>
 File: images/newdiff-nodesize14.png Graphic file (type png)
 
 <use images/newdiff-nodesize14.png>
-Package pdftex.def Info: images/newdiff-nodesize14.png used on input line 227.
+Package pdftex.def Info: images/newdiff-nodesize14.png used on input line 228.
 (pdftex.def)             Requested size: 172.13pt x 114.75215pt.
 
-<images/newdiff-nodesize29.png, id=173, 433.62pt x 289.08pt>
+<images/newdiff-nodesize29.png, id=174, 433.62pt x 289.08pt>
 File: images/newdiff-nodesize29.png Graphic file (type png)
 
 <use images/newdiff-nodesize29.png>
-Package pdftex.def Info: images/newdiff-nodesize29.png used on input line 232.
+Package pdftex.def Info: images/newdiff-nodesize29.png used on input line 233.
 (pdftex.def)             Requested size: 172.13pt x 114.75215pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./images/diffusion-graph.pdf> <./images/simple-quantity-time.png> <./images
-/star-difusion.pdf> <./images/star-quantity-time.png> <./images/regular-dif.pdf
-> <./images/regular-quantity-time.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 255--259
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--260
 
  []
 
-[5 <./images/newdiff-nodesize0.png> <./images/newdiff-nodesize4.png> <./images/
-newdiff-nodesize14.png> <./images/newdiff-nodesize29.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 284--286
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--294
+[4 <./images/star-difusion.pdf> <./images/star-quantity-time.png> <./images/reg
+ular-dif.pdf> <./images/regular-quantity-time.png>] [5 <./images/newdiff-nodesi
+ze0.png> <./images/newdiff-nodesize4.png> <./images/newdiff-nodesize14.png> <./
+images/newdiff-nodesize29.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 285--287
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--303
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 305--308
+Underfull \hbox (badness 10000) in paragraph at lines 302--304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
+Underfull \hbox (badness 10000) in paragraph at lines 306--309
 
  []
 
-[6] <images/barabasi-x0.png, id=221, 563.10374pt x 382.42876pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--323
+
+ []
+
+[6] <images/barabasi-x0.png, id=219, 563.10374pt x 382.42876pt>
 File: images/barabasi-x0.png Graphic file (type png)
 
 <use images/barabasi-x0.png>
-Package pdftex.def Info: images/barabasi-x0.png used on input line 332.
+Package pdftex.def Info: images/barabasi-x0.png used on input line 333.
 (pdftex.def)             Requested size: 203.83417pt x 138.43283pt.
 
-<images/erdos-x0.png, id=222, 557.08125pt x 370.38374pt>
+<images/erdos-x0.png, id=220, 557.08125pt x 370.38374pt>
 File: images/erdos-x0.png Graphic file (type png)
 
 <use images/erdos-x0.png>
-Package pdftex.def Info: images/erdos-x0.png used on input line 337.
+Package pdftex.def Info: images/erdos-x0.png used on input line 338.
 (pdftex.def)             Requested size: 203.83417pt x 135.51955pt.
 
-<images/barabasi-x02.png, id=223, 571.13374pt x 380.42125pt>
+<images/barabasi-x02.png, id=221, 571.13374pt x 380.42125pt>
 File: images/barabasi-x02.png Graphic file (type png)
 
 <use images/barabasi-x02.png>
-Package pdftex.def Info: images/barabasi-x02.png used on input line 342.
+Package pdftex.def Info: images/barabasi-x02.png used on input line 343.
 (pdftex.def)             Requested size: 203.83417pt x 135.76736pt.
 
-<images/erdos-x02.png, id=224, 543.02875pt x 377.41pt>
+<images/erdos-x02.png, id=222, 543.02875pt x 377.41pt>
 File: images/erdos-x02.png Graphic file (type png)
 
 <use images/erdos-x02.png>
-Package pdftex.def Info: images/erdos-x02.png used on input line 347.
+Package pdftex.def Info: images/erdos-x02.png used on input line 348.
 (pdftex.def)             Requested size: 203.83417pt x 141.66661pt.
 
-<images/barabasi-x04.png, id=225, 574.145pt x 377.41pt>
+<images/barabasi-x04.png, id=223, 574.145pt x 377.41pt>
 File: images/barabasi-x04.png Graphic file (type png)
 
 <use images/barabasi-x04.png>
-Package pdftex.def Info: images/barabasi-x04.png used on input line 352.
+Package pdftex.def Info: images/barabasi-x04.png used on input line 353.
 (pdftex.def)             Requested size: 203.83417pt x 133.98436pt.
 
-<images/erdos-x04.png, id=226, 545.03625pt x 372.39125pt>
+<images/erdos-x04.png, id=224, 545.03625pt x 372.39125pt>
 File: images/erdos-x04.png Graphic file (type png)
 
 <use images/erdos-x04.png>
-Package pdftex.def Info: images/erdos-x04.png used on input line 357.
+Package pdftex.def Info: images/erdos-x04.png used on input line 358.
 (pdftex.def)             Requested size: 203.83417pt x 139.26566pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/barabasi-average.png, id=228, 559.08875pt x 398.48875pt>
+<images/barabasi-average.png, id=226, 559.08875pt x 398.48875pt>
 File: images/barabasi-average.png Graphic file (type png)
 
 <use images/barabasi-average.png>
-Package pdftex.def Info: images/barabasi-average.png used on input line 373.
+Package pdftex.def Info: images/barabasi-average.png used on input line 374.
 (pdftex.def)             Requested size: 203.83417pt x 145.27997pt.
 
-<images/E-R-average.png, id=229, 554.07pt x 392.46625pt>
+<images/E-R-average.png, id=227, 554.07pt x 392.46625pt>
 File: images/E-R-average.png Graphic file (type png)
 
 <use images/E-R-average.png>
-Package pdftex.def Info: images/E-R-average.png used on input line 378.
+Package pdftex.def Info: images/E-R-average.png used on input line 379.
 (pdftex.def)             Requested size: 203.83417pt x 144.3838pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/grid-t0-x0.png, id=231, 433.62pt x 289.08pt>
+<images/grid-t0-x0.png, id=229, 433.62pt x 289.08pt>
 File: images/grid-t0-x0.png Graphic file (type png)
 
 <use images/grid-t0-x0.png>
-Package pdftex.def Info: images/grid-t0-x0.png used on input line 394.
+Package pdftex.def Info: images/grid-t0-x0.png used on input line 395.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t05-x0.png, id=232, 433.62pt x 289.08pt>
+<images/grid-t05-x0.png, id=230, 433.62pt x 289.08pt>
 File: images/grid-t05-x0.png Graphic file (type png)
 
 <use images/grid-t05-x0.png>
-Package pdftex.def Info: images/grid-t05-x0.png used on input line 399.
+Package pdftex.def Info: images/grid-t05-x0.png used on input line 400.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t3-x0.png, id=233, 433.62pt x 289.08pt>
+<images/grid-t3-x0.png, id=231, 433.62pt x 289.08pt>
 File: images/grid-t3-x0.png Graphic file (type png)
 
 <use images/grid-t3-x0.png>
-Package pdftex.def Info: images/grid-t3-x0.png used on input line 404.
+Package pdftex.def Info: images/grid-t3-x0.png used on input line 405.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t5-x0.png, id=234, 433.62pt x 289.08pt>
+<images/grid-t5-x0.png, id=232, 433.62pt x 289.08pt>
 File: images/grid-t5-x0.png Graphic file (type png)
 
 <use images/grid-t5-x0.png>
-Package pdftex.def Info: images/grid-t5-x0.png used on input line 409.
+Package pdftex.def Info: images/grid-t5-x0.png used on input line 410.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-Overfull \hbox (13.33328pt too wide) in paragraph at lines 393--415
+Overfull \hbox (13.33328pt too wide) in paragraph at lines 394--416
  [][]  []  []  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/grid-t0-x01.png, id=235, 433.62pt x 289.08pt>
+<images/grid-t0-x01.png, id=233, 433.62pt x 289.08pt>
 File: images/grid-t0-x01.png Graphic file (type png)
 
 <use images/grid-t0-x01.png>
-Package pdftex.def Info: images/grid-t0-x01.png used on input line 420.
+Package pdftex.def Info: images/grid-t0-x01.png used on input line 421.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t05-x01.png, id=236, 433.62pt x 289.08pt>
+<images/grid-t05-x01.png, id=234, 433.62pt x 289.08pt>
 File: images/grid-t05-x01.png Graphic file (type png)
 
 <use images/grid-t05-x01.png>
-Package pdftex.def Info: images/grid-t05-x01.png used on input line 425.
+Package pdftex.def Info: images/grid-t05-x01.png used on input line 426.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t3-x01.png, id=237, 433.62pt x 289.08pt>
+<images/grid-t3-x01.png, id=235, 433.62pt x 289.08pt>
 File: images/grid-t3-x01.png Graphic file (type png)
 
 <use images/grid-t3-x01.png>
-Package pdftex.def Info: images/grid-t3-x01.png used on input line 430.
+Package pdftex.def Info: images/grid-t3-x01.png used on input line 431.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t5-x01.png, id=238, 433.62pt x 289.08pt>
+<images/grid-t5-x01.png, id=236, 433.62pt x 289.08pt>
 File: images/grid-t5-x01.png Graphic file (type png)
 
 <use images/grid-t5-x01.png>
-Package pdftex.def Info: images/grid-t5-x01.png used on input line 435.
+Package pdftex.def Info: images/grid-t5-x01.png used on input line 436.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-Overfull \hbox (13.33328pt too wide) in paragraph at lines 419--439
+Overfull \hbox (13.33328pt too wide) in paragraph at lines 420--440
  [][]  []  []  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/grid-t0-x02.png, id=239, 433.62pt x 289.08pt>
+<images/grid-t0-x02.png, id=237, 433.62pt x 289.08pt>
 File: images/grid-t0-x02.png Graphic file (type png)
 
 <use images/grid-t0-x02.png>
-Package pdftex.def Info: images/grid-t0-x02.png used on input line 444.
+Package pdftex.def Info: images/grid-t0-x02.png used on input line 445.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t05-x02.png, id=240, 433.62pt x 289.08pt>
+<images/grid-t05-x02.png, id=238, 433.62pt x 289.08pt>
 File: images/grid-t05-x02.png Graphic file (type png)
 
 <use images/grid-t05-x02.png>
-Package pdftex.def Info: images/grid-t05-x02.png used on input line 449.
+Package pdftex.def Info: images/grid-t05-x02.png used on input line 450.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t3-x02.png, id=241, 433.62pt x 289.08pt>
+<images/grid-t3-x02.png, id=239, 433.62pt x 289.08pt>
 File: images/grid-t3-x02.png Graphic file (type png)
 
 <use images/grid-t3-x02.png>
-Package pdftex.def Info: images/grid-t3-x02.png used on input line 454.
+Package pdftex.def Info: images/grid-t3-x02.png used on input line 455.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t5-x02.png, id=242, 433.62pt x 289.08pt>
+<images/grid-t5-x02.png, id=240, 433.62pt x 289.08pt>
 File: images/grid-t5-x02.png Graphic file (type png)
 
 <use images/grid-t5-x02.png>
-Package pdftex.def Info: images/grid-t5-x02.png used on input line 459.
+Package pdftex.def Info: images/grid-t5-x02.png used on input line 460.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-Overfull \hbox (13.33328pt too wide) in paragraph at lines 443--462
+Overfull \hbox (13.33328pt too wide) in paragraph at lines 444--463
  [][]  []  []  [] 
  []
 
-<images/colour-bar-grid.png, id=243, 738.76pt x 69.25874pt>
+<images/colour-bar-grid.png, id=241, 738.76pt x 69.25874pt>
 File: images/colour-bar-grid.png Graphic file (type png)
 
 <use images/colour-bar-grid.png>
-Package pdftex.def Info: images/colour-bar-grid.png used on input line 465.
+Package pdftex.def Info: images/colour-bar-grid.png used on input line 466.
 (pdftex.def)             Requested size: 271.7835pt x 25.47948pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `gridatx0' on page 7 undefined on input line 471.
+LaTeX Warning: Reference `gridatx0' on page 7 undefined on input line 472.
 
 
-LaTeX Warning: Reference `gridatx02' on page 7 undefined on input line 471.
+LaTeX Warning: Reference `gridatx02' on page 7 undefined on input line 472.
 
-<images/quantity-time-exponents-x0.png, id=245, 551.05875pt x 359.3425pt>
+<images/quantity-time-exponents-x0.png, id=243, 551.05875pt x 359.3425pt>
 File: images/quantity-time-exponents-x0.png Graphic file (type png)
 
 <use images/quantity-time-exponents-x0.png>
 Package pdftex.def Info: images/quantity-time-exponents-x0.png used on input li
-ne 747.
+ne 748.
 (pdftex.def)             Requested size: 135.89174pt x 88.61266pt.
 
-<images/quantity-time-exponents-x01.png, id=246, 545.03625pt x 363.3575pt>
+<images/quantity-time-exponents-x01.png, id=244, 545.03625pt x 363.3575pt>
 File: images/quantity-time-exponents-x01.png Graphic file (type png)
 
 <use images/quantity-time-exponents-x01.png>
 Package pdftex.def Info: images/quantity-time-exponents-x01.png used on input l
-ine 752.
+ine 753.
 (pdftex.def)             Requested size: 135.89174pt x 90.58965pt.
 
-<images/quantity-time-exponents-x03.png, id=247, 474.77374pt x 309.155pt>
+<images/quantity-time-exponents-x03.png, id=245, 474.77374pt x 309.155pt>
 File: images/quantity-time-exponents-x03.png Graphic file (type png)
 
 <use images/quantity-time-exponents-x03.png>
 Package pdftex.def Info: images/quantity-time-exponents-x03.png used on input l
-ine 757.
+ine 758.
 (pdftex.def)             Requested size: 135.89174pt x 88.48747pt.
  [7]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Barabasi-highest-degree.png, id=255, 540.0175pt x 346.29375pt>
+<images/Barabasi-highest-degree.png, id=253, 540.0175pt x 346.29375pt>
 File: images/Barabasi-highest-degree.png Graphic file (type png)
 
 <use images/Barabasi-highest-degree.png>
 Package pdftex.def Info: images/Barabasi-highest-degree.png used on input line 
-768.
+769.
 (pdftex.def)             Requested size: 181.18439pt x 116.18481pt.
 
-<images/barabasi-random-selection.png, id=256, 548.0475pt x 347.2975pt>
+<images/barabasi-random-selection.png, id=254, 548.0475pt x 347.2975pt>
 File: images/barabasi-random-selection.png Graphic file (type png)
 
 <use images/barabasi-random-selection.png>
 Package pdftex.def Info: images/barabasi-random-selection.png used on input lin
-e 773.
+e 774.
 (pdftex.def)             Requested size: 181.18439pt x 114.8152pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/Simple-network-eigenplot.png, id=257, 544.0325pt x 346.29375pt>
+<images/Simple-network-eigenplot.png, id=255, 544.0325pt x 346.29375pt>
 File: images/Simple-network-eigenplot.png Graphic file (type png)
 
 <use images/Simple-network-eigenplot.png>
 Package pdftex.def Info: images/Simple-network-eigenplot.png used on input line
- 785.
+ 786.
 (pdftex.def)             Requested size: 144.95303pt x 92.26938pt.
 
-<images/Star-network-eigenplot.png, id=258, 556.0775pt x 349.305pt>
+<images/Star-network-eigenplot.png, id=256, 556.0775pt x 349.305pt>
 File: images/Star-network-eigenplot.png Graphic file (type png)
 
 <use images/Star-network-eigenplot.png>
 Package pdftex.def Info: images/Star-network-eigenplot.png used on input line 7
-90.
+91.
 (pdftex.def)             Requested size: 144.95303pt x 91.05167pt.
 
-<images/Path-network-eigenplot.png, id=259, 471.7625pt x 298.11375pt>
+<images/Path-network-eigenplot.png, id=257, 471.7625pt x 298.11375pt>
 File: images/Path-network-eigenplot.png Graphic file (type png)
 
 <use images/Path-network-eigenplot.png>
 Package pdftex.def Info: images/Path-network-eigenplot.png used on input line 7
-95.
+96.
 (pdftex.def)             Requested size: 144.95303pt x 91.60005pt.
 
-<images/legend-eigenvalues.png, id=260, 770.88pt x 62.2325pt>
+<images/legend-eigenvalues.png, id=258, 770.88pt x 62.2325pt>
 File: images/legend-eigenvalues.png Graphic file (type png)
 
 <use images/legend-eigenvalues.png>
-Package pdftex.def Info: images/legend-eigenvalues.png used on input line 800.
+Package pdftex.def Info: images/legend-eigenvalues.png used on input line 801.
 (pdftex.def)             Requested size: 385.02547pt x 31.08199pt.
 
 
@@ -1148,104 +1149,23 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [8 <./images/barabasi-x0.png> <./images/erdos-x0.png> <./images/barabasi-x02.pn
 g> <./images/erdos-x02.png> <./images/barabasi-x04.png> <./images/erdos-x04.png
->] [9 <./images/barabasi-average.png> <./images/E-R-average.png> <./images/grid
--t0-x0.png> <./images/grid-t05-x0.png> <./images/grid-t3-x0.png> <./images/grid
--t5-x0.png> <./images/grid-t0-x01.png> <./images/grid-t05-x01.png> <./images/gr
-id-t3-x01.png> <./images/grid-t5-x01.png> <./images/grid-t0-x02.png> <./images/
-grid-t05-x02.png> <./images/grid-t3-x02.png> <./images/grid-t5-x02.png> <./imag
-es/colour-bar-grid.png>] [10 <./images/quantity-time-exponents-x0.png> <./image
-s/quantity-time-exponents-x01.png> <./images/quantity-time-exponents-x03.png> <
-./images/Barabasi-highest-degree.png> <./images/barabasi-random-selection.png> 
-<./images/Simple-network-eigenplot.png> <./images/Star-network-eigenplot.png> <
-./images/Path-network-eigenplot.png> <./images/legend-eigenvalues.png>]
-(./long-range-diffusion.bbl
+>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 813.
+ [9 <./images/barabasi-average.png> <./images/E-R-average.png> <./images/grid-t
+0-x0.png> <./images/grid-t05-x0.png> <./images/grid-t3-x0.png> <./images/grid-t
+5-x0.png> <./images/grid-t0-x01.png> <./images/grid-t05-x01.png> <./images/grid
+-t3-x01.png> <./images/grid-t5-x01.png> <./images/grid-t0-x02.png> <./images/gr
+id-t05-x02.png> <./images/grid-t3-x02.png> <./images/grid-t5-x02.png> <./images
+/colour-bar-grid.png>] [10 <./images/quantity-time-exponents-x0.png> <./images/
+quantity-time-exponents-x01.png> <./images/quantity-time-exponents-x03.png> <./
+images/Barabasi-highest-degree.png> <./images/barabasi-random-selection.png> <.
+/images/Simple-network-eigenplot.png> <./images/Star-network-eigenplot.png> <./
+images/Path-network-eigenplot.png> <./images/legend-eigenvalues.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 813.
 
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72 \newblock The bridges of k{\"o}nigsbergâ€
-                                              ”a historical perspective.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72 \newblock The bridges of k{\"o}nigsbergâ€”
-                                               a historical perspective.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-[11
-
-]
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.185 \newblock Collective dynamics of â€
-                                         ˜small-worldâ€™networks.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.185 \newblock Collective dynamics of â€˜
-                                          small-worldâ€™networks.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.185 ...k Collective dynamics of â€˜small-worldâ€
-                                                  ™networks.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.185 ... Collective dynamics of â€˜small-worldâ€™
-                                                  networks.
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-) [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 812.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 812.
- (./long-range-diffusion.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 812.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 812.
+(./long-range-diffusion.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 813.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 813.
 Package rerunfilecheck Info: File `long-range-diffusion.out' has not changed.
 (rerunfilecheck)             Checksum: BF1043C3675BC7E0C780DE45A858857A;1835.
 
@@ -1255,14 +1175,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 812.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 813.
  ) 
 Here is how much of TeX's memory you used:
- 19065 strings out of 494317
- 358637 string characters out of 6162925
- 426643 words of memory out of 5000000
- 21912 multiletter control sequences out of 15000+600000
- 18465 words of font info for 77 fonts, out of 8000000 for 9000
+ 18986 strings out of 494317
+ 357014 string characters out of 6162925
+ 425206 words of memory out of 5000000
+ 21875 multiletter control sequences out of 15000+600000
+ 18119 words of font info for 76 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
  48i,11n,55p,1061b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
@@ -1280,12 +1200,11 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on long-range-diffusion.pdf (12 pages, 1173905 bytes).
+dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on long-range-diffusion.pdf (10 pages, 1143467 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 311 compressed objects within 4 object streams
- 96 named destinations out of 1000 (max. 500000)
+ 381 PDF objects out of 1000 (max. 8388607)
+ 258 compressed objects within 3 object streams
+ 58 named destinations out of 1000 (max. 500000)
  373 words of extra memory for PDF output out of 10000 (max. 10000000)
 

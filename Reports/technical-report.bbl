@@ -1,14 +1,37 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{65}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[Adiga and Smitha(2009)]{adiga2009skew}
+C.~Adiga and M.~Smitha.
+\newblock On the skew laplacian energy of a digraph.
+\newblock In \emph{Int. Math. Forum}, volume~4, pages 1907--1914, 2009.
+
+\bibitem[Alahakoon et~al.(2011)Alahakoon, Tripathi, Kourtellis, Simha, and
+  Iamnitchi]{alahakoon2011k}
+T.~Alahakoon, R.~Tripathi, N.~Kourtellis, R.~Simha, and A.~Iamnitchi.
+\newblock K-path centrality: A new centrality measure in social networks.
+\newblock In \emph{Proceedings of the 4th workshop on social network systems},
+  page~1. ACM, 2011.
+
 \bibitem[Albert and Barab{\'a}si(2002)]{albert2002statistical}
 R.~Albert and A.-L. Barab{\'a}si.
 \newblock Statistical mechanics of complex networks.
 \newblock \emph{Reviews of modern physics}, 74\penalty0 (1):\penalty0 47, 2002.
+
+\bibitem[Anthonisse(1971)]{anthonisse1971rush}
+J.~M. Anthonisse.
+\newblock The rush in a directed graph.
+\newblock \emph{Stichting Mathematisch Centrum. Mathematische Besliskunde},
+  \penalty0 (BN 9/71):\penalty0 1--10, 1971.
+
+\bibitem[Barab{\'a}si(2016)]{barabasi2016network}
+A.-L. Barab{\'a}si.
+\newblock \emph{Network science}.
+\newblock Cambridge university press, 2016.
 
 \bibitem[Barab{\'a}si and Albert(1999)]{barabasi1999emergence}
 A.-L. Barab{\'a}si and R.~Albert.
@@ -29,16 +52,33 @@ M.~Belkin and P.~Niyogi.
 \newblock \emph{Neural computation}, 15\penalty0 (6):\penalty0 1373--1396,
   2003.
 
+\bibitem[Byrne et~al.(2005)Byrne, Feddema, and Abdallah]{byrne2005algebraic}
+R.~Byrne, J.~Feddema, and C.~Abdallah.
+\newblock Algebraic connectivity and graph robustness.
+\newblock \emph{Sandia National Laboratories, Albuquerque, New Mexico}, 87185,
+  2005.
+
 \bibitem[Das(2004)]{das2004laplacian}
 K.~C. Das.
 \newblock The laplacian spectrum of a graph.
 \newblock \emph{Computers \& Mathematics with Applications}, 48\penalty0
   (5):\penalty0 715--724, 2004.
 
+\bibitem[De~Meo et~al.(2012)De~Meo, Ferrara, Fiumara, and
+  Ricciardello]{de2012novel}
+P.~De~Meo, E.~Ferrara, G.~Fiumara, and A.~Ricciardello.
+\newblock A novel measure of edge centrality in social networks.
+\newblock \emph{Knowledge-based systems}, 30:\penalty0 136--150, 2012.
+
 \bibitem[Edwards and Penney(2004)]{edwards2004differential}
 C.~H. Edwards and D.~E. Penney.
 \newblock \emph{Differential equations and boundary value problems}, volume~2.
 \newblock Prentice Hall, 2004.
+
+\bibitem[Ellens and Kooij(2013)]{ellens2013graph}
+W.~Ellens and R.~E. Kooij.
+\newblock Graph measures and network robustness.
+\newblock \emph{arXiv preprint arXiv:1311.5064}, 2013.
 
 \bibitem[Erdos and R{\'e}nyi(1960)]{erdos1960evolution}
 P.~Erdos and A.~R{\'e}nyi.
@@ -69,6 +109,11 @@ E.~Estrada.
 \newblock In \emph{Evolutionary Equations with Applications in Natural
   Sciences}, pages 93--131. Springer, 2015.
 
+\bibitem[Estrada and Hatano(2008)]{estrada2008communicability}
+E.~Estrada and N.~Hatano.
+\newblock Communicability in complex networks.
+\newblock \emph{Physical Review E}, 77\penalty0 (3):\penalty0 036111, 2008.
+
 \bibitem[Estrada and Rodriguez-Velazquez(2005)]{estrada2005subgraph}
 E.~Estrada and J.~A. Rodriguez-Velazquez.
 \newblock Subgraph centrality in complex networks.
@@ -86,10 +131,28 @@ E.~Estrada, P.~Knight, et~al.
 \newblock \emph{A first course in network theory}.
 \newblock Oxford University Press, USA, 2015.
 
+\bibitem[Estrada et~al.(2017)Estrada, Hameed, Hatano, and
+  Langer]{estrada2017path}
+E.~Estrada, E.~Hameed, N.~Hatano, and M.~Langer.
+\newblock Path laplacian operators and superdiffusive processes on graphs. i.
+  one-dimensional case.
+\newblock \emph{Linear Algebra and its Applications}, 523:\penalty0 307--334,
+  2017.
+
 \bibitem[Euler(1953)]{euler1953leonhard}
 L.~Euler.
 \newblock Leonhard euler and the k{\"o}nigsberg bridges.
 \newblock \emph{Scientific American}, 189\penalty0 (1):\penalty0 66--70, 1953.
+
+\bibitem[Euler(1976)]{euler1976solution}
+L.~Euler.
+\newblock The solution of a problem relating to the geometry of position.
+\newblock 1976.
+
+\bibitem[Freeman(1978)]{freeman1978centrality}
+L.~C. Freeman.
+\newblock Centrality in social networks conceptual clarification.
+\newblock \emph{Social networks}, 1\penalty0 (3):\penalty0 215--239, 1978.
 
 \bibitem[Gower(1980)]{gower1980modified}
 J.~Gower.
@@ -97,6 +160,12 @@ J.~Gower.
   eigenvalues.
 \newblock \emph{Linear Algebra and its Applications}, 31:\penalty0 61--70,
   1980.
+
+\bibitem[Grady(2006)]{grady2006random}
+L.~Grady.
+\newblock Random walks for image segmentation.
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 28\penalty0 (11):\penalty0 1768--1783, 2006.
 
 \bibitem[Gribkovskaia et~al.(2007)Gribkovskaia, Halskau, and
   Laporte]{gribkovskaia2007bridges}
@@ -115,6 +184,10 @@ J.~M. Harris, J.~L. Hirst, and M.~J. Mossinghoff.
 \newblock \emph{Combinatorics and graph theory}, volume~2.
 \newblock Springer, 2008.
 
+\bibitem[Huberman(2001)]{huberman2001laws}
+B.~A. Huberman.
+\newblock The laws of the web, 2001.
+
 \bibitem[Internet()]{googleimages}
 Internet.
 \newblock Network.
@@ -122,11 +195,24 @@ Internet.
   \url{https://www.google.com/search?q=internet+network&client=ubuntu&hs=xZp&channel=fs&gl=za&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiZsrLOueTMAhVMCcAKHS_8AysQ_AUIBygB&biw=1215&bih=900#channel=fs&gl=za&tbm=isch&q=computer+network&imgrc=_}.
 \newblock [Online; accessed 2016-03-29].
 
+\bibitem[Jamakovic and Van~Mieghem(2008)]{jamakovic2008robustness}
+A.~Jamakovic and P.~Van~Mieghem.
+\newblock On the robustness of complex networks by using the algebraic
+  connectivity.
+\newblock \emph{NETWORKING 2008 Ad Hoc and Sensor Networks, Wireless Networks,
+  Next Generation Internet}, pages 183--194, 2008.
+
 \bibitem[Kasprzak(2012)]{kasprzak2012diffusion}
 R.~Kasprzak.
 \newblock Diffusion in networks.
 \newblock \emph{Journal of Telecommunications and Information Technology},
   pages 99--106, 2012.
+
+\bibitem[Kissani and Mizoguchi(2010)]{kissani2010laplacian}
+P.~Kissani and Y.~Mizoguchi.
+\newblock Laplacian energy of directed graphs and minimizing maximum outdegree
+  algorithms.
+\newblock \emph{Kyushu University Institutional Repository}, 2010.
 
 \bibitem[Kondor and Vert(2004)]{kondor2004diffusion}
 R.~Kondor and J.-P. Vert.
@@ -151,6 +237,13 @@ H.~Ma, H.~Yang, M.~R. Lyu, and I.~King.
   candidates selection.
 \newblock In \emph{Proceedings of the 17th ACM conference on Information and
   knowledge management}, pages 233--242. ACM, 2008.
+
+\bibitem[Magouirk et~al.(2008)Magouirk, Atran, and
+  Sageman]{magouirk2008connecting}
+J.~Magouirk, S.~Atran, and M.~Sageman.
+\newblock Connecting terrorist networks.
+\newblock \emph{Studies in Conflict \& Terrorism}, 31\penalty0 (1):\penalty0
+  1--16, 2008.
 
 \bibitem[Milgram(1967)]{milgram1967small}
 S.~Milgram.
@@ -184,6 +277,11 @@ M.~E. Newman.
 \newblock The structure and function of complex networks.
 \newblock \emph{SIAM review}, 45\penalty0 (2):\penalty0 167--256, 2003.
 
+\bibitem[Newman and Girvan(2004)]{newman2004finding}
+M.~E. Newman and M.~Girvan.
+\newblock Finding and evaluating community structure in networks.
+\newblock \emph{Physical review E}, 69\penalty0 (2):\penalty0 026113, 2004.
+
 \bibitem[Nexus(2012)]{zacharydataset}
 Nexus.
 \newblock Zachary's karate club [karate], 2012.
@@ -206,6 +304,14 @@ T.~Opsahl, F.~Agneessens, and J.~Skvoretz.
   shortest paths.
 \newblock \emph{Social Networks}, 32\penalty0 (3):\penalty0 245--251, 2010.
 
+\bibitem[Ortiz~Gaona et~al.(2016)Ortiz~Gaona, Postigo~Boix, and
+  Melus~Moreno]{ortiz2016centrality}
+R.~Ortiz~Gaona, M.~Postigo~Boix, and J.~L. Melus~Moreno.
+\newblock Centrality metrics and line-graph to measure the importance of links
+  in online social networks.
+\newblock \emph{International Journal of New Technology and Research},
+  2\penalty0 (12):\penalty0 20--26, 2016.
+
 \bibitem[Qi et~al.(2012)Qi, Fuller, Wu, Wu, and Zhang]{qi2012laplacian}
 X.~Qi, E.~Fuller, Q.~Wu, Y.~Wu, and C.-Q. Zhang.
 \newblock Laplacian centrality: A new centrality measure for weighted networks.
@@ -226,6 +332,16 @@ R.~O. Saber and R.~M. Murray.
 \newblock In \emph{Decision and Control, 2003. Proceedings. 42nd IEEE
   Conference on}, volume~4, pages 4126--4132. IEEE, 2003.
 
+\bibitem[Sydney et~al.(2008)Sydney, Scoglio, Schumm, and
+  Kooij]{sydney2008elasticity}
+A.~Sydney, C.~Scoglio, P.~Schumm, and R.~E. Kooij.
+\newblock Elasticity: topological characterization of robustness in complex
+  networks.
+\newblock In \emph{Proceedings of the 3rd International Conference on
+  Bio-Inspired Models of Network, Information and Computing Sytems}, page~19.
+  ICST (Institute for Computer Sciences, Social-Informatics and
+  Telecommunications Engineering), 2008.
+
 \bibitem[Thanou et~al.(2017)Thanou, Dong, Kressner, and
   Frossard]{thanou2017learning}
 D.~Thanou, X.~Dong, D.~Kressner, and P.~Frossard.
@@ -244,9 +360,34 @@ D.~J. Watts and S.~H. Strogatz.
 \newblock Collective dynamics of ‘small-world’networks.
 \newblock \emph{nature}, 393\penalty0 (6684):\penalty0 440--442, 1998.
 
+\bibitem[Williams et~al.(1993)Williams, Dawson, and
+  Slooten]{williams1993abundance}
+J.~A. Williams, S.~M. Dawson, and E.~Slooten.
+\newblock The abundance and distribution of bottlenosed dolphins (tursiops
+  truncatus) in doubtful sound, new zealand.
+\newblock \emph{Canadian journal of zoology}, 71\penalty0 (10):\penalty0
+  2080--2088, 1993.
+
 \bibitem[Wilson(1970)]{wilson1970introduction}
 R.~J. Wilson.
 \newblock \emph{An introduction to graph theory}.
 \newblock Pearson Education India, 1970.
+
+\bibitem[Xiao et~al.(2009)Xiao, Hancock, and Wilson]{xiao2009graph}
+B.~Xiao, E.~R. Hancock, and R.~C. Wilson.
+\newblock Graph characteristics from the heat kernel trace.
+\newblock \emph{Pattern Recognition}, 42\penalty0 (11):\penalty0 2589--2606,
+  2009.
+
+\bibitem[Yang et~al.(2016)Yang, Mao, and Wei]{yang2016air}
+C.~Yang, J.~Mao, and P.~Wei.
+\newblock Air traffic network optimization via laplacian energy maximization.
+\newblock \emph{Aerospace Science and Technology}, 49:\penalty0 26--33, 2016.
+
+\bibitem[Zachary(1977)]{zachary1977information}
+W.~W. Zachary.
+\newblock An information flow model for conflict and fission in small groups.
+\newblock \emph{Journal of anthropological research}, 33\penalty0 (4):\penalty0
+  452--473, 1977.
 
 \end{thebibliography}

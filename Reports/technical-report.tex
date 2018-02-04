@@ -2,7 +2,7 @@
 % usepackages
 \usepackage[utf8]{inputenc}
 %\usepackage[latin1]{inputenc}
-\usepackage[english]{babel}
+%\usepackage[english]{babel}
 % math
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -47,7 +47,8 @@
 %\theoremstyle{definition} 
 \newtheorem{defn}{Definition}
 \newtheorem{exa}{Example}
-
+\newtheorem{prop}{Proposition}
+\newtheorem{cor}{Corollary}
 
 \title{Technical Report}
 \date{\today}
@@ -56,9 +57,11 @@
 	
 	\vspace{1cm}
 	\section*{Outline}
+	\section{Literature Review}
+	\subsection{Networks Review}
 	\section{Diffusion on networks}
 	\subsection{Motivation}
-	Diffusion on networks is one of the dynamic processes that occur on networks. Diffusion processes on networks are used to develop models for the study of real-world processes such as the spread of infections with in a group of people, spread of information in a social network, studying failures in power supply on the grid with in an area, etc.
+	Diffusion on networks is one of the dynamic processes that occur on networks. Diffusion processes on networks are used to develop models for the study of real-world processes such as spread of infections with in a group of people, spread of information in a social network, failures in power supply on the grid, etc.
 	\subsection{Ideas}
 	\begin{enumerate}[a)]
 		\item  Diffusion on networks through direct interactions
@@ -68,10 +71,10 @@
 	\end{enumerate}
     \section{Image Segmentation}
     \subsection{Motivation}
-    Image Segmentation is the problem of localising regions of an image relative to content. It aids in the extraction of objects of interest from an image. Image segmentation has applications in medical field, engineering field, computer science among others. A number of segmentation techniques have been developed based on graph theory concepts which include intelligent scissors, Normalised cut algorithm, random walker algorithm, etc. Our interest is in the segmentation of images using the random walk process on graph as put forward by Grady.
+    Image Segmentation is the problem of localising regions of an image relative to content. It aids in the extraction of objects of interest from an image. Image segmentation has applications in medical field, engineering field, computer science among others. A number of segmentation techniques have been developed based on graph theory concepts which include intelligent scissors, Normalised cut algorithm, random walker algorithm, etc. Our interest, however, lies in the segmentation of images using the random walk process on graph as explored in \citep{grady2006random}.
     \subsection{Ideas}
     \begin{enumerate}[a)]
-    	\item To extend the idea of image segmentation using random walks on networks by accounting for long-range links in the network. Our aims is to ascertain whether a better image segmentation can be obtained on including long-range links.  
+    	\item To extend the idea of image segmentation using random walks on networks by accounting for long-range links in the network. The aim is to ascertain whether this approach yields image segmentation than the existing approach which does not involve long range interactions.
     \end{enumerate}
     \section{Systemic Risk and Contagion in Financial Systems}
     \subsection{Motivation}
@@ -84,7 +87,7 @@
     \end{enumerate}
 	\section{Laplacian centrality of an edge}
 	\subsection{Motivation}
-	Centrality measures in networks have proved to be relevant tools in network analysis. They are indicators of the 'importance' of nodes and edges in the networks. Though most work has been geared towards the study of importance of nodes ( i.e degree, closeness, betweeness, subgraph, eigenvector, Laplacian centralities,etc.), interest in the study of edge centralities is now gaining ground with prominent works of  Girvan and Newman. some of the known edge centralities include edge-betweenness, k-path edge centrality, among others. The motivation for the introduction of edge centrality measures lies in real-world applications in a wide range of context such as in identifying communities in networks, identifying strong relationships among people in social networks, etc. 
+	Centrality measures in networks have proved to be relevant tools in network analysis. They are indicators of the 'importance' of a given node or edge in a network. Though most work has been geared towards the study of importance of nodes ( i.e degree, closeness, betweeness, subgraph, eigenvector, Laplacian centralities,etc.), interest in the study of edge centralities is now gaining ground with prominent work of  Girvan and Newman. Some of the known edge centralities include edge-betweenness, k-path edge centrality, among others. The motivation for the introduction of edge centrality measures lies in its applicability in real-world for example identification of communities in networks, identifying strong relationships among people in social networks, etc. 
 	\subsection{Ideas}
 	\begin{enumerate}[a)]
 		\item Extend the concept of Laplacian centrality of  nodes to edges, obtain the graph theoretical description of the edge centrality.
@@ -92,7 +95,7 @@
 		\item Can we apply the concept of edge centrality to the minimum cut problem in graphs?
 		\item Yang et.al, in his work "Air traffic network optimization via Laplacian energy maximization" highlights the change in Laplacian energy due to edge removal as a promising fair measure of network robustness. We consider comparing this measure with other measures of network robustness.
 		\item How can we apply the edge laplacian centrality to the concept of robustness in targeted edge attacks
-		\item Application of laplcaian centrality of an edge to edge consensus, that is, addition or removal of edges so the relative difference in centrality of edges is small.
+		\item Application of laplcaian centrality of an edge to edge consensus, that is, addition or removal of edges so that the relative difference in centrality of edges is small.
 		\item Application to electric flow in circuits
 	\end{enumerate}
 	
@@ -103,7 +106,7 @@
 	\begin{enumerate}[a)]
 	\item Investigate whether there exists a unique feature or behaviour for the nodes around the minimum cut.
 	\item Whether the minimum cut edges can be obtained by their Laplacian centrality.
-	\item  relation between Laplacian energy and the minimum cut of a network.
+	\item  Relationship between Laplacian energy and minimum cut of a network.
 	\end{enumerate}
 	\section{Noise on networks}
 	\subsection{Motivation}
@@ -117,11 +120,12 @@
 	
 	\section{Communicability in Networks}
 	\subsection{Motivation}
-	Communicability in networks in a concept introduced by Estrada \& Hatano based on the motivation that most real networks, communication between nodes does not necessarily follow shortest paths only as normally assumed. Evidence shows that communication can occur along any paths which are not shortest path. Communicability between a pair of nodes accounts for all possible walks through which a given pair of nodes can communicate. Some of the applications of this concept include community detection in networks. We are looking forward to research possibilities in this area which include the following:
+	Communicability in networks in a concept introduced by Estrada \& Hatano \citep{estrada2008communicability} motivated by the fact that in most real networks, communication between nodes does not necessarily follow shortest paths only as normally assumed. Evidence shows that communication can occur along any paths which are not shortest path. Communicability between a pair of nodes accounts for all possible walks through which a given pair of nodes can communicate. Some of the applications of this concept include community detection in networks. We are looking forward to research possibilities in this area which include the following: 
 	\subsection{Ideas}
 	\begin{enumerate}[a)]
+		\item Communicability through an edge which is the sum of the total number of walks between all pairs of nodes in the network that go through the edge of interest.
 		\item Consider the impact of long range interactions to communicability in networks
-		\item Other possible real-world application of communicability in networks
+		\item Other possible real-world applications of communicability in networks
 	\end{enumerate}
 	
 	
@@ -130,7 +134,71 @@
 	%\subsection{Ideas}
 	
 	\newpage
-	\section*{Work Progress}
+	\section{Literature Review}
+	\subsection{Complex Networks}
+	Complex systems play an important role in our daily lives for instance in social, economic, science, technology among others.  During his interview with San Jose Mercury News in January 2000, Stephen Hawking referred to the $21$st century as a century of complexity. However,though complex systems consist of interconnected components, they display some properties that quite different from those of individual components.  Due to the fact that complex systems play a vital role in our lives, it is necessary to be able to understand and predict the properties of these systems. One approach to realise the mentioned task is by use of network theory. First, as Estrada \citep{estrada2015first} mentioned that complex networks are the skeletons of complex systems, we represent such systems by networks whose nodes (vertices) and links(edges) represent the components and the interactions among components respectively. For instance, a transportation system can be represented by network where nodes are cities or towns and the links are the roads, railways or flight routes.  Second, is network analysis which entails studying the structure of the network from which the properties of the network (and the system) are drawn.
+	An interestingly early historical application of network theory to the study of complex systems is the K\"{a}onigsberg bridge problem where Euler \citep{euler1976solution;euler1953leonhard} solved the problem by reformulating problem in terms of a graph where vertices represent islands while edges represent the seven bridges joining any two islands. Work published by Leonhard Euler \citep{euler1976solution} is considered the genesis of the story of network theory.
+	Due to the adverse increase in network size from just graphs of tens or hundreds of nodes which could easily be analysed by direct use of eye so as to ascertain the structure of the network  to complex networks consisting of million or billion of nodes which call for advanced analytic approach that involves development of statistical methods to quantify such large networks. The statistical methods aid in answering questions such as how many nodes or edges should be removed for the network to break down?, what is the shortest path length of the network?, and many others. 
+	
+	
+	\subsection{characteristics of complex systems}
+	\begin{enumerate}
+		\item Emergence
+		\item Self organisation
+		\item uncertainty
+	\end{enumerate}
+	
+	\subsection{Networks in the Real World}
+	In his work in \citep{newman2003structure}, Newman considered a loose categorisation of networks: social networks, communication networks, technological networks, and biological networks.
+	\begin{enumerate}[a.]
+		\item Social Networks
+		Networks considered as social networks are ones whose nodes correspond to people or groups of people while the edges represent the interactions or relationship between them. For instance friendship networks such as facebook, twitter in which the interactions represent friendship ties among acquaintances, networks of intermarriages between families, social interaction networks which capture peoples' interactions through social activities or events, employee networks with companies, and many others.
+		Some common networks that researchers have frequently experimented upon include: the Zachary karate network which consists of two communities centred at the administrator and instructor as a result of misunderstanding that prevailed with the karate club earlier on. The nodes in the network are the members of the club as the links represent interactions between members during non-club activities \citep{zachary1977information}. Other networks include the Dolphine network \citep{williams1993abundance}, terrorist network\citep{magouirk2008connecting} among others .
+		
+		\item Information networks: 
+		Information networks are also referred to as knowledge networks. Examples of networks under this category include: 
+		The world wide web which consists of billions of web pages as nodes that are linked together through links known as hyperlinks \citep{huberman2001laws}.
+		Another network categorised as information networks are citation networks that are composed of nodes which are articles while directed link between two nodes written as $i\longrightarrow j$ indicate article $i$ cites article $j$.
+		\item Technological networks: 
+		This category consist of networks made by man to aid in distribution or transfer of resources, services or commodities such as electricity, water, transportation services, and many others. Examples of such networks include the internet, transportation networks, power grids, to mention but a few.
+		\item Biological networks: 
+		Biological networks exists in areas related human and processes that take place with in the human body, animals and their ways of survival, chemistry. Such networks are the human brain network, protein-protein interaction network, network of metabolic path ways, ecological networks.
+	\end{enumerate}
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{images/social-network_3.png}
+			\caption{}
+			\label{socialnetwork}
+		\end{subfigure}
+		\quad 
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{images/citation.jpg}
+			\caption{}
+			\label{citationntk}
+		\end{subfigure}
+		
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{images/foodweb.jpeg}
+			\caption{}
+			\label{foodweb}
+		\end{subfigure}
+		\quad 
+		\begin{subfigure}[b]{0.4\textwidth}
+			\includegraphics[width=\textwidth]{images/computer-2.png}
+			\caption{}
+			\label{internet}
+		\end{subfigure}
+		\caption{Networks in real world: (\subref{socialnetwork}) A social network. (\subref{citationntk}) A citation network. (\subref{foodweb}) A food web.  (\subref{internet}) Computer network. Source: \citep{googleimages}}
+	\end{figure} 
+	
+	\section{Robustness of Complex Systems}
+	A complex systems is considered robust if it can with stand failures or perturbations that is to say a system can still perform as expected even in circumstances of failure of one or more components in the system. Robustness of systems plays an important role in a number of fields for instance in Engineering, understanding robustness acts as a basis for designing communication, transportation systems, power grids that can perform basic operation despite failure of some system components. In biology,robustness explains why some mutations lead to diseases while others do not. For ecologists and environmental experts, robustness helps in predicting the failure of an ecosystem when faced with disruptive human behaviours. 
+	As mentioned earlier, the study of networks underlying complex systems provides insights about the properties and characteristics of the systems. Thus, Barabasi \citep{barabasi2016network} suggested that networks play a vital role in robustness of complex systems which implies that exploring robustness of the network reflects that of the system.
+	 
+	\subsection{Robustness measures in networks}
+	According to Ellens \citep{ellens2013graph}, robustness of a network as its ability to perform well when subject to failures or attacks. The attacks take on two forms namely: random attacks and targeted attacks. However, in order to tell whether a particular network is robust, there is need to a measure that quantifies the robustness. In the past, various robustness measures have been put forward by researchers \citep{sydney2008elasticity}. Some of the measures are:
+	
     \section{Diffusion on networks}
     Diffusion is, among others, the movement of substance from a region of high concentration to a region of low concentration. Such substance include heat, gas, etc. \citep{newman2010networks}.
     
@@ -139,7 +207,7 @@
     \subsection{Heat Diffusion Models}
     In this work, we consider spread of heat on a network. Recently, various models have been developed to depict the spread of heat heat diffusion process on networks which include selection of marketing candidates in social network marketing, data analysis and processing in which the observed data is considered as a sum of diffusion processes, dimensionality reduction and classification problems   \citep{ma2008mining,thanou2017learning,belkin2003laplacian}.
     
-    Let us consider a simple example illustrating the diffusion process on a simple network. Let $G=(V,E)$ be a simple connected undirected graph with vertex set $V$ and edge set $E$. Suppose we randomly select a few nodes ( that is, sources) to which we assign specific amounts of heat as in vector $\phi_0$. With the heat diffusion coefficient, $C \in [0,1]$ which controls the rate of diffusion. When $C$ tends to $0$, heat transfer among nodes becomes difficult and as a result, heat does not spread to each of the nodes with in the network. However, as $C$ tends to $1$, heat spreads rapidly among nodes and thus, with out loss, heat is distributed to all nodes in the network.
+    Let $G=(V,E)$ be a simple connected undirected graph with vertex set $V$ and edge set $E$. Suppose we randomly select a few nodes ( that is, sources) to which we assign specific amounts of heat as in vector $\phi_0$. With the heat diffusion coefficient, $C \in [0,1]$ which controls the rate of diffusion. When $C$ tends to $0$, heat transfer among nodes becomes difficult and as a result, heat does not spread to each of the nodes with in the network. However, as $C$ tends to $1$, heat spreads rapidly among nodes and thus, with out loss, heat is distributed to all nodes in the network.
     
    At each time $t$, we obtain the quantities of heat at each node, $\phi_t$. The spread of heat is considered to occur following the edges connecting nodes, that is to say, through direct interactions.  
 %     We then try to understand how the heat will spread through out the network, whether equilibrium can be attained and if so, when does this happens?? We then explore the impact of network structure and node centralities on heat diffusion.
@@ -203,15 +271,121 @@
     	 		\caption{(\subref{difn-plot}) is an illustration of the diffusion process over the network in (\subref{difn-graph}). }
     	 		\label{graph-plot}
     	 	\end{figure}
-     	  We observe that at each time step $t$, nodes that initially have high amounts of heat (i.e $1,3,5,6,$ and $10$) exchange heat with adjacent nodes that initially had none or little amounts of heat. The latter gain heat from the former and eventually all nodes in the network have relatively equal amounts of heat. This explains the fact that as time $t$ increases, the quantity of heat $\boldsymbol{\phi}_j(t)$ at each node tends to the equilibrium value of $0.2$.  From the fig, we can observe a tendency to equilibrium at around $t=35$. 
+     	  From Fig.\ref{graph-plot},we observe that at each time step $t$, nodes that initially have high amounts of heat (i.e $1,3,5,6,$ and $10$) exchange heat with adjacent nodes that initially had none or little amounts of heat. The latter gain heat from the former and eventually all nodes in the network have relatively equal amounts of heat. This explains the fact that as time $t$ increases, the quantity of heat $\boldsymbol{\phi}_j(t)$ at each node tends to the equilibrium value of $0.2$ which is attained at $t=35$. 
     	 \end{exa}
-        
-         
+     
+     \section{Impact of Structure on the rate of diffusion}
+     The structure of a network basically means the way in which nodes are connected in the network. For instance, in a regular network each node is connected to equal number of nodes, for a star network one node is positioned in a way that all other nodes are connected to it.
+     Let us consider two structures of networks that manifest in many artificial and real world networks.  First, the Erdos-Renyi (ER) network in which a pair of nodes is connected by random probability, $p$. The degree of nodes in ER network follow a Poisson distribution \cite{erdos1960evolution}. Second, we consider the Barabasi-Albert(BA) network in which connection of nodes follows scale free power-law distribution, that is to say, the probability of finding a node with degree $k$ decreases as the negative power of $k$. It therefore less likely to find a node with high degree (hub) compared to low degrees \cite{barabasi1999emergence, estrada2011structure} . 
+     Consider ER and BA networks with $n=100$ and average degree $\bar{k}= 6$, we randomly assign quantities(range of 0 to 20) of heat to each node and allow diffusion to occur at different values of conductance $x$. After every time step $t$,we compute the quantities at each node as depicted in Figure \ref{barabasi-Erdos-compare}.
+     
+     %\newpage
+     \begin{figure}[H]
+     	\centering
+     	\begin{subfigure}[b]{0.45\textwidth}
+     		\includegraphics[width=\textwidth]{images/barabasi-x0.png}
+     		\caption{$x=0$}
+     		\label{barabasi-x0}
+     	\end{subfigure}~
+     	\begin{subfigure}[b]{0.45\textwidth}
+     		\includegraphics[width= \textwidth]{images/erdos-x0.png}
+     		\caption{$x=0$}
+     		\label{erdos-x01}
+     	\end{subfigure}\\
+     	\begin{subfigure}[b]{0.45\textwidth}
+     		\includegraphics[width= \textwidth]{images/barabasi-x02.png}
+     		\caption{$x=0.2$}
+     		\label{barabasi-x02}
+     	\end{subfigure}~
+     	\begin{subfigure}[b]{0.45\textwidth}
+     		\includegraphics[width= \textwidth]{images/erdos-x02.png}
+     		\caption{$x=0.2$}
+     		\label{erdos-x02}
+     	\end{subfigure}\\
+     	\begin{subfigure}[b]{0.45\textwidth}
+     		\includegraphics[width= \textwidth]{images/barabasi-x04.png}
+     		\caption{$x=0.4$}
+     		\label{barabasi-x04}
+     	\end{subfigure}~
+     	\begin{subfigure}[b]{0.45\textwidth}
+     		\includegraphics[width= \textwidth]{images/erdos-x04.png}
+     		\caption{$x=0.4$}
+     		\label{erdos-x04}
+     	\end{subfigure}
+     	\caption{Barabasi networks (left) and Erdos Renyi networks(right) of 1000 nodes and average degree of 6. Top row is illustration of diffusion process at $x=0$ ( i.e accounting for direct interactions only), middle row corresponds to $x=0.2$ followed by $x=0.4$ in the last row}
+     	\label{barabasi-Erdos-compare}
+     \end{figure}
+     
+     From Fig \ref{barabasi-Erdos-compare} at the top row, we observe that at $x=0$, equilibrium is reached faster for Barabasi-Alberto(BA) network ( that is after about $4$ time steps) compared to Erdos-Renyi(ER) network in which equilibrium is reached after about $10$ time steps. This is explained based on the fact that in BA networks there are more hubs compared to ER networks. These hubs tend to interact with a number of nodes with in the network thus fastening the diffusion process. On increasing $x$ to $0.2$, we observe a drastic drop in equilibrium time from  $4$ to $0.15$ time steps and from $10$ to $0.8$ time steps for BA and ER networks respectively. It is important to note that drop in equilibrium time is relatively higher in ER than in BA and this is because of the few hubs in ER networks which aids a larger number of long range interactions than in BA networks. As $x$ increases further to $0.4$, equilibrium time further drops to $0.03$ and $0.06$ for BA and ER networks respectively.
+     
+     \section{Influence of Heterogeneity on Diffusion over network}
+     The heterogeneity of a network is the irregularity characterised by the existence of a nodes with degree significantly larger than the average degree of the network \cite{estrada2010quantifying,albert2002statistical,newman2003structure}.
+     The quantification of heterogeneity is one the areas where tremendous research has been on going and various measures have been introduced \cite{estrada2010quantifying}.
+     Here, we consider heterogeneity in scale free networks with $n=1000$ and average degree $\bar{k}=20$ by varying power exponent, $\gamma$. For different conductances $x$, we assign initial quantities of heat to each of the $200$ nodes with highest degree. Figure \ref{quantity-exponents} illustrates how the average quantities of heat of the selected initial diffusion nodes varies with time.
+     \begin{figure}[!h]
+     	\centering
+     	\begin{subfigure}[b]{0.32\textwidth}
+     		\includegraphics[width=\textwidth]{images/quantity-time-exponents-x0.png}
+     		%\caption{$x=0.1, t=0$}
+     		%\label{gridt0x01}
+     	\end{subfigure}~
+     	\begin{subfigure}[b]{0.32\textwidth}
+     		\includegraphics[width= \textwidth]{images/quantity-time-exponents-x01.png}
+     		%\caption{$x=0.1, t=0.5$}
+     		%\label{gridt05x01}
+     	\end{subfigure}~
+     	\begin{subfigure}[b]{0.32\textwidth}
+     		\includegraphics[width= \textwidth]{images/quantity-time-exponents-x03.png}
+     		%\caption{$x=0.1, t=3.0$}
+     		%\label{gridt3x01}
+     	\end{subfigure} \\
+     	\begin{subfigure}[b]{0.80\textwidth}
+     		\includegraphics[width= \textwidth]{images/legend-gamma.png}
+     	\end{subfigure}
+     	\caption{Plots of the average quantity of heat for $200$ nodes with the highest degree centrality against time for $3$ scale free networks having different values of the power exponent($2.0$,$2.3$,$2.7$, and $3.0$), n=1000 and average degree=$6$. The figures to the left, centre and right correspond to x values $0$,$0.1$, and $0.3$ respectively.}
+     	\label{quantity-exponents}
+     \end{figure}
+ 
+     \section{Impact of choice of Initial diffusion nodes on the diffusion process on networks}
+     %We take a Barabasi-Albert network and Erdos-Renyi network, both of 100 nodes and average of 6. We choose $5$ nodes with the highest degree centrality to which we assign specific amounts of heat. At each time $t$, we measure the average quantity of heat at the $5$ nodes as illustrated by figure. 
+     
+     \begin{figure}[H]
+     	\centering
+     	\begin{subfigure}[b]{0.45\textwidth}
+     		\includegraphics[width= \textwidth]{images/Barabasi-highest-degree.png}
+     		\caption{}
+     		\label{}
+     	\end{subfigure}~
+     	\begin{subfigure}[b]{0.45\textwidth}
+     		\includegraphics[width= \textwidth]{images/E-R-largest.png}
+     		\caption{}
+     		\label{}
+     	\end{subfigure}\\
+     	\begin{subfigure}[b]{0.45\textwidth}
+     		\includegraphics[width= \textwidth]{images/barabasi-random-selection.png}
+     		\caption{}
+     		\label{}
+     	\end{subfigure}~
+     	\begin{subfigure}[b]{0.45\textwidth}
+     		\includegraphics[width= \textwidth]{images/E-R-random.png}
+     		\caption{}
+     		\label{}
+     	\end{subfigure}
+     	\caption{ Results of the simulations for two networks. One is the Barabasi-Albert(BA) network and  the other is Erdos-Renyi(ER) network, both of $100$ nodes and average degree of $6$. Taking $5$ of the most important (by degree) nodes in the network from which diffusion is initiated by assigning certain quantities of heat to those nodes, the simulation of the diffusion is illustrated in plots (a) and (b) for the BA and ER networks respectively.}
+     	\label{key}
+     \end{figure}
+     
+     We observe that in BA network, heat spreads quite faster than in ER network that is to say by $t=0.6$, all the $5$ hubs in BA have levelled to equal amount while for ER, nodes still have un equal amounts of heat. This is because we assign quantities of heat to $5$ hubs of a network and they quickly spread heat to other nodes compared to ER where there are relatively fewer hubs among the five chosen nodes to initiate the diffusion process.
+     
+     \newpage
+     
         \subsection{Diffusion on Directed Networks}
         A directed graph, also known as a Digraph or directed network, is one in which all the edges are directed from one vertex to another. 
         
-        There are various complex systems whose skeleton can be captured by directed networks. Examples include ecological  networks, power grids, transportation networks, communication networks, metabolic networks, gene regulatory networks, citation networks among others. It is therefore paramount to study how dynamic processes such as diffusion, consensus, occur on such networks.
-        
+        There are various complex systems whose skeleton can be captured by directed networks. Examples include ecological  networks, power grids, transportation networks, communication networks, metabolic networks, gene regulatory networks, citation networks among others. It is therefore paramount to study how dynamic processes such as diffusion, consensus, occur on such networks. There are various categories of directed networks which include:
+        \begin{defn}[Weakly connected Digraph]
+        	A directed graph is called weakly connected if replacing all of its directed edges with undirected edges produces a connected (undirected) graph.
+          \end{defn}   
         \begin{defn}[Strongly connected Digraph]
         	A digraph is called strongly connected if and only if any two distinct nodes of the graph can be connected via a path that respects the orientation of the edges of the digraph \citep{saber2003agreement}.
         \end{defn}        
@@ -221,7 +395,11 @@
         \end{equation}
         For undirected graph $G$, the graph Laplacian,$L$, is symmetric positive semi-definite. However, for directed graphs $L$ is non-symmetric which implies that the diffusion on the former and latter graphs is not necessarily the same.
         
-        \subsection{Equilibrium behaviour in Directed Network}
+         \begin{defn}[Balanced Graphs]
+        	We say the node $v_i$ of a digraph $G=(V,E)$ is balanced if and only if its in-degree and out-degree are equal, that is, $d_{out}(v_i) =d_{in}(v_i)$. A graph $G$ is balanced if and only if all its nodes are balanced, i.e $\sum_j a_{ij} = \sum_j a_{ji}, \forall i$. 
+        \end{defn}
+        
+        \subsection{Diffusion and Equilibrium behaviour in Directed Network}
         In order to understand the process of attainment of steady state in networks, we need to study the spectral properties of graph Laplacian. Let $G=(V,E)$ be a digraph with Laplacian $L(G)$ with eigenvalues $\lambda_1, \lambda_2, \cdots, \lambda_n$ in non-decreasing order. 
         \subsubsection{Estimation of Eigenvalues of the Laplacian}
         Let $d_{max}$ be the maximum node out-degree of $G$, then following from Gershgorin disk theorem, then all the eigenvalues of $L(G)$ are located in the following disk
@@ -235,102 +413,541 @@
         \end{equation}
         
         \begin{thm}[Limit Theorem for Exponential Matrices]
-        	Assume $G$ is a strongly connected digraph with Laplacian $mathbf{L}$ satisfying $\mathbf{L} \mathbf{v_r} = \mathbf{0}$, $\mathbf{v_{l} ^T} \mathbf{L} =\mathbf{0}$, and $\mathbf{v_{l} ^T} \mathbf{w_r}=1$. Then 
+        	Assume $G$ is a strongly connected digraph with Laplacian $\mathbf{L}$ satisfying $\mathbf{L} \mathbf{v_r} = \mathbf{0}$, $\mathbf{v_{l} ^T} \mathbf{L} =\mathbf{0}$, and $\mathbf{v_{l} ^T} \mathbf{v_r}=1$. Then 
         	
         	\begin{equation}
-        	 R = \lim_{t \longrightarrow +\infty} exp(-Lt) = v_r  v_{l} ^T ]in M_n,
+        	 R = \lim_{t \longrightarrow +\infty} exp(-Lt) = v_r  v_{l} ^T \in M_n,
         	\end{equation}
         	where $M_n$ denotes a set of square $n\times n$ matrices, $v_r$,and $v_{l} ^T$ denote the right and left eigenvalues of $L$ associated with eigenvalue $\lambda_1 = 0$ \citep{saber2003agreement}.
+        	\label{exponentialTheorem}
         \end{thm}
-    From the theorem, we deduce the for a strongly connected digraph, equilibrium state can be attained and the quantity of heat at the nodes is given by
+    From the theorem, we deduce that for a strongly connected digraph, equilibrium state can be attained and the quantity of heat at the nodes is given by
     \begin{equation}
     \lim_{t \longrightarrow \infty} =  \boldsymbol{\phi}_0  \mathbf{v_r}  \mathbf{v_{l} ^T}
     \label{equildirected}
     \end{equation}
-    It is important to note that following Equation \ref{equildirected}, any equilibrium value $x^*$ can be attained such that $x^*_i =x^*_j$ for all $i$, $j$. This therefore draws to find out which classes of digraphs attain equilibrium similar to that of undirected graphs where the value at each node is the average of the initial values at all nodes in the network.
+    It is important to note that following Equation \ref{equildirected}, any equilibrium value $x^*$ can be attained such that $x^*_i =x^*_j$ for all $i$, $j$. This therefore motivates the search for which classes of digraphs attain equilibrium similar to that of undirected graphs where the value at each node is the average of the initial values at all nodes in the network.
+    
+    \begin{prop}
+    Consider a directed network $G=(V,E)$ that is strongly connected. Then the digraph $G$ globally attains average equilibrium if and only if $\mathbf{1}^T \mathbf{L}= 0$.
+    \label{prop1}
+    \end{prop} 
+
     \subsubsection{Equilibrium state for Balanced Graphs}
-    \begin{defn}[Balanced Graphs]
-    	We say the node $v_i$ of a digraph $G=(V,E)$ is balanced if and only if its in-degree and out-degree are equal, that is, $d_{out}(v_i) =d_{in}(v_i)$. A graph $G$ is balanced if and only if all its nodes are balanced, i.e $\sum_j a_{ij} = \sum_j a_{ji}, \forall i$. 
-    \end{defn}
      The proposition in \citep{saber2003agreement} states that 
-     
+     \begin{prop}
      Let $G=(V,E)$ be a digraph with an adjacency matrix $A=[a_{ij}]$ satisfying $a_{ii}=0, \forall i$. Then, all the following statements are equivalent:
-     \begin{enumerate}
+     \begin{enumerate}[i)]
      	\item $G$ is balanced,
      	\item $\mathbf{v_l}= \mathbf{1}$ is the left eigenvector of the Laplacian of $G$ associated with the zero eigenvalue, that is, $\mathbf{1}^T \mathbf{L} = 0$.
      	\item $\sum_{i=1} ^ n u_i = 0, \forall x \in  \mathbb{R}^n$ with $u_i = \sum_{j \in N_i} a_{i,j} (x_j -x_i).$
      \end{enumerate}
-    
-    
-    	\subsection{ k-path Laplacian matrices}
-    	
-    	The k-path Laplacian matrices are a natural generalisation of the combinatorial Laplacian of a graph. The entries of these matrices are accounts of the existence of shortest paths of length $k$ between two nodes.
-    	
-    	The $k$-path laplacian matrix $\mathbf{L}_{k} (k \leq d_{max})$ of a connected undirected graph $G=(V,E)$ is defined as the square symmetric $n\times n$ matrix whose entries are given by:
-    	\begin{equation}
-    	\mathbf{L}_k(i,j) =  \begin{cases*}
-    	-1 & if  $d_{i,j} = k,$  \\
-    	\delta_{k}(i) & if $i = j,$ \\
-    	0 & otherwise.
-    	\end{cases*}
-    	\label{kpathlap}
-    	\end{equation}
-    	
-    	where $d_{i,j}$ is the shortest path distance between nodes $i$ and $j$, $delta_{k}(i)$ known as the $k$-path degree is the number of irreducible shortest paths of length $k$ having node $i$ as an endpoint.
-    	
-    	The concept of $k$-path Laplacians defined in Equation \ref{kpathlap} for finite undirected graphs was extended for connected and locally finite infinite graphs as follows:
-    	Consider $\Gamma = (V,E)$ to be an indirected finite or infinite graph with vertices $V$ and edges $E$. We assume that $\Gamma$ is connected and locally finite that is to say each vertex has only finitely many edges emanating from it. Let $d$ be the distance metric on $\Gamma$, i.e. $d(v,w)$ is the length of the shortest path from $v$ to $w$, and let $\delta_{k}(v)$ be the $k$-path degree of the vertex $v$, i.e.
-    	\begin{equation}
-    	\delta_{k}(v) := \#\{w \in V : d(v,w) = k\}.
-    	\end{equation}
-    	Since $\gamma$ is locally finite, $\delta_{k}(v)$ is finite for every $v \in V$. Denote by $C(V)$ the set of all complex-valued functions on $V$ and by $C_{0}(V)$ the set of the complex-valued functions on $V$ with finite support. Moreover, let $\ell^2(V)$ be the Hilbert space of square-summable functions on $V$ with inner product
-    	\begin{equation}
-    	\langle f,g\rangle = \sum_{v\in V} f(v) \overline{g(v)}, \quad f,g \in \ell^2(V) 
-    	\end{equation}
-    	In $\ell^2(V)$ there is a standard orthonormal basis consisting of the vectors $e_v, v\in V$, where
-    	\begin{equation}
-    	e_v(w) :=  \begin{cases*}
-    	1 & if  w = v,  \\
-    	0 & otherwise.
-    	\end{cases*}
-    	\end{equation}
-    	Let $\mathbf{L}_{k}$ be the following mapping from $C(V)$ into itself:
-    	\begin{equation}
-    	(\mathbf{L}_{k}) (f) := \sum_{w\in V: d(v,w)=k} (f(v) -f(w)), \quad f \in C(V).
-    	\label{infinite-dif}
-    	\end{equation}
-    	
-    	\subsection{Diffusion on network with long-range interactions (generalisation of diffusion equation on Graphs) }
-    	
-    	   	In this case, we consider diffusion on a graph where by both direct and long range interactions are involved. One interesting study of long range interactions is by Estrada on modelling epidermic spread in networks. Here, the long range interactions are considered to be nonrandom and depend on the social distances between individuals in the social network.
-    	    Recently, Estrada introduced a method of generalisation of the diffusion process on a given graph based on the k-path Laplacian operators $\mathbf{L}_k$ in which we consider the fact that the diffusive particle at a given node can hop to not only its nearest neighbours (captured by the classical laplacian operator $\mathbf{L}$) but to any other nodes in the graph with a probability that decays with the increase of the shortest path distance between the current node where the particle is residing to the one it will hop to. Thus, for a diffusive node hopping to other nodes separated at a distance $k$ form its current location, such a diffusion process can be captured by replacing $\mathbf{L}$ in (\ref{dif-final-eqn}) by $\mathbf{L}_k$ in (\ref{infinite-dif}). That is 
+     \label{prop1}
+     \end{prop}
+ 
+      Since for a balanced digraph $\mathbf{v_l}$ is an all ones vector, it therefore follows from Proposition \ref{prop1} that at equilibrium, the value at all nodes in a balanced graph is the average of the initial values at all nodes.
+      
+      \begin{exa}
+      	Let us consider two directed graphs, one is a balanced digraph and the other is not. We then assign initial quantities of heat to all nodes in the order $0$ to $4$ as in the vector $\phi_0=[2,0,3,0,0]$ and set the diffusion coefficient, $C=1$. We then obtain plots for diffusion on both graphs after a specific time $t$ as shown in 
+      	
+      	\begin{figure}[H]
+      		\centering
+      	    \begin{subfigure}[b]{0.40\textwidth}
+      	    	\includegraphics[width=\textwidth]{images/balanceDigraph.pdf}
+      	    	\caption{}
+      	    	\label{balanced-graph}
+      	    \end{subfigure}~
+      	    \begin{subfigure}[b]{0.5\textwidth}
+      	    	\includegraphics[width= \textwidth]{images/Balanced-digraph-diffusion.png}
+      	    	\caption{}
+      	    	\label{plot-balanced}
+      	    \end{subfigure} \\
+            \begin{subfigure}[b]{0.40\textwidth}
+            	\includegraphics[width=\textwidth]{images/UnbalanceDigraph.pdf}
+            	\caption{}
+            	\label{unbalanced-graph}
+            \end{subfigure}~
+            \begin{subfigure}[b]{0.5\textwidth}
+            	\includegraphics[width= \textwidth]{images/non-balnceddigraph-difusion.png}
+            	\caption{}
+            	\label{plot-unbalanced}
+            \end{subfigure}
+      		\caption{Diffusion over different categories of directed networks. (\subref{unbalanced-graph}) is an illustration of diffusion over weakly connected and unbalanced digraph in (\subref{balanced-graph}). (\subref{unbalanced-graph}) is an illustration of diffusion over strongly connected and balanced digraph (\subref{unbalanced-graph}).  }  
+      		\label{unbalanced-diffusion}		
+      	\end{figure} 
+   For the balanced graph in Fig.~\ref{balanced-graph}, its Laplacian matrix $\mathbf{L}$,$v_r$ and $v_l$ are respectively:
+   \begin{equation*}
+   \mathbf{L} = \begin{pmatrix}
+    2 &  0 & -1 & -1 &  0 \\
+   -1 & 1  & 0  & 0  &  0 \\ 
+    0 & -1 & 1  & 0  &  0 \\
+    0 &  0 & 0  & 1  & -1 \\
+    -1&  0 & 0  & 0  & 1
+   \end{pmatrix}, \quad 
+   v_r = v_l = \begin{pmatrix}
+   0.4472136 \\  
+   0.4472136 \\  
+   0.4472136 \\ 
+   0.4472136 \\
+   0.4472136
+   \end{pmatrix}
+   \end{equation*} 
+   The values for $v_r$ and $v_l$ satisfy Theorem \ref{exponentialTheorem} as well as Proposition \ref{prop1} and thus, equilibrium is attained at $x^*=1.0$ which is the average of initial values $x_0$.\\
+   On the other hand, for the unbalanced graph in Fig.~\ref{unbalanced-graph}, we have the following matrices
+    \begin{equation*}
+   \mathbf{L} = \begin{pmatrix}
+    3 &  0 & -1 & -1 & -1 \\
+   -1 &  1 & 0  & 0  & 0  \\
+    0 & -1 & 1  & 0  & 0  \\
+    0 &  0 & 0  & 1  & -1 \\
+    0 &  0 & 0  & 0  & 0
+   \end{pmatrix}, \quad 
+   v_r = \begin{pmatrix}
+   0.4472136 \\  
+   0.4472136 \\  
+   0.4472136 \\ 
+   0.4472136 \\
+   0.4472136
+   \end{pmatrix}, \text{ and }
+   v_l = \begin{pmatrix}
+   0.0 \\  
+   0.0 \\  
+   0.0 \\ 
+   0.0 \\
+   1.0
+   \end{pmatrix}
+   \end{equation*}
+   We observe that $Lv_r = 0$ and $v_l^TL = 0$. However, the condition $v_l^T v_r = 1$  is not satisfied and therefore equilibrium cannot be attained as shown in Fig.~\ref{unbalanced-diffusion}. In addition, we observe that considering the structure, vertex $4$ has only in coming edges which signifies that during the diffusion process, vertex $4$ only receives heat from the immediate neighbours vertices $0$ and $3$ without giving out any due to lack of out going links. As a result, quantity of heat at vertex $4$ keeps on increasing as shown in Fig.~\ref{unbalanced-diffusion}.
+   \end{exa}	
+    \subsection{Diffusion on network with long-range interactions}
+    	    The 'classical' case considers diffusion over a network where a substance under consideration say heat flows along the edges of the network. However, long range interactions during diffusive processes on networks are evident in real world situations. Such interactions result into superdiffussion on networks which has been modelled by various models that include the random walks with Levy flights (RWLF), model based on fractional diffusion equation (FDE), and many more. Recently, an elegant model has been put forward by Estrada \citep{estrada2017path} which accounts for longrange interactions by use of $k$-path Laplacian matrices resulting into a generalised diffusion process on networks.
+    	    
+%    	    However, long-range interactions over networks have been evident in real world situations, for instance in attaining consensus in networked multi-agent systems, an agent is influenced not only by the nearest neighbours but also by the non-nearest neighbours. 
+    	    
+    	    
+    	   	In this case, we consider diffusion on a graph where by both direct and long range interactions are involved. One interesting study of long range interactions is by Estrada on modelling epidermic spread in networks \citep{estrada2011epidemic}. Here, the long range interactions are considered to be nonrandom and depend on the social distances between individuals in the social network.
+    	    Recently, work in \citep{estrada2012path} introduced a method of generalisation of the diffusion process on a given graph based on the k-path Laplacian operators $\mathbf{L}_k$ in which we consider the fact that the diffusive particle at a given node can hop to not only its nearest neighbours (captured by the classical Laplacian operator $\mathbf{L}$) but to any other nodes in the graph with a probability that decays with the increase of the shortest path distance between the current node where the particle is residing to the one it will hop to. Thus, for a diffusive node hopping to other nodes separated at a distance $k$ form its current location, such a diffusion process can be captured by replacing $\mathbf{L}$ in (\ref{dif-final-eqn}) by $\mathbf{L}_k$ in (\ref{infinite-dif}). That is 
     	    \begin{equation}
     	    \frac{d\boldsymbol{\phi}}{dt} = -C\mathbf{L}_{k}\boldsymbol{\phi}, \quad \boldsymbol{\phi}(0) = \boldsymbol{\phi}_0 .
     	    \label{gen-difeqn}
     	    \end{equation}
-    	    We then consider the generalised diffusion on graph where interactions occur not only among neighbouring nodes but also among any other nodes with in the graph. This process follows from(\ref{dif-final-eqn}) where $\mathbf{L}$ is any of the transformed $k-$-path Laplacians given as
-    	    \begin{enumerate}
+    	    \subsubsection{ k-path Laplacian matrices, $\mathbf{L}_k$}
+    	    
+    	    The k-path Laplacian matrices are a natural generalisation of the combinatorial Laplacian of a graph. The entries of these matrices account for the existence of shortest paths of length $k$ between pairs of nodes in the network.
+    	    
+    	    The $k$-path Laplacian matrix $\mathbf{L}_{k} (k \leq d_{max})$ of a connected undirected graph $G=(V,E)$ is defined as the square symmetric $n\times n$ matrix whose entries are given by:
+    	    \begin{equation}
+    	    \mathbf{L}_k(i,j) =  \begin{cases*}
+    	    -1 & if  $d_{i,j} = k,$  \\
+    	    \delta_{k}(i) & if $i = j,$ \\
+    	    0 & otherwise.
+    	    \end{cases*}
+    	    \label{kpathlap}
+    	    \end{equation}
+    	    
+    	    where $d_{i,j}$ is the shortest path distance between nodes $i$ and $j$, $delta_{k}(i)$ known as the $k$-path degree is the number of irreducible shortest paths of length $k$ having node $i$ as an endpoint.
+    	    
+    	    The concept of $k$-path Laplacians defined in Equation \ref{kpathlap} for finite undirected graphs was extended for connected and locally finite infinite graphs as follows:
+    	    Consider $\Gamma = (V,E)$ to be an indirected finite or infinite graph with vertices $V$ and edges $E$. We assume that $\Gamma$ is connected and locally finite that is to say each vertex has only finitely many edges emanating from it. Let $d$ be the distance metric on $\Gamma$, i.e. $d(v,w)$ is the length of the shortest path from $v$ to $w$, and let $\delta_{k}(v)$ be the $k$-path degree of the vertex $v$, i.e.
+    	    \begin{equation}
+    	    \delta_{k}(v) := \#\{w \in V : d(v,w) = k\}.
+    	    \end{equation}
+    	    Since $\gamma$ is locally finite, $\delta_{k}(v)$ is finite for every $v \in V$. Denote by $C(V)$ the set of all complex-valued functions on $V$ and by $C_{0}(V)$ the set of the complex-valued functions on $V$ with finite support. Moreover, let $\ell^2(V)$ be the Hilbert space of square-summable functions on $V$ with inner product
+    	    \begin{equation}
+    	    \langle f,g\rangle = \sum_{v\in V} f(v) \overline{g(v)}, \quad f,g \in \ell^2(V) 
+    	    \end{equation}
+    	    In $\ell^2(V)$ there is a standard orthonormal basis consisting of the vectors $e_v, v\in V$, where
+    	    \begin{equation}
+    	    e_v(w) :=  \begin{cases*}
+    	    1 & if  w = v,  \\
+    	    0 & otherwise.
+    	    \end{cases*}
+    	    \end{equation}
+    	    Let $\mathbf{L}_{k}$ be the following mapping from $C(V)$ into itself:
+    	    \begin{equation}
+    	    (\mathbf{L}_{k}) (f) := \sum_{w\in V: d(v,w)=k} (f(v) -f(w)), \quad f \in C(V).
+    	    \label{infinite-dif}
+    	    \end{equation}
+    	    
+    	    \subsubsection{Generalisation of diffusion equation on Graphs}
+    	    We then consider the generalised diffusion on graph where interactions occur not only among neighbouring nodes but also among any other nodes with in the graph. In accounting for indirect interaction, we consider the fact that longer paths contribute less compared to shorter ones. This is achieved by considering Equation \ref{dif-final-eqn} where $\mathbf{L}$ is any of the transformed $k$-path Laplacians given as
+    	    \begin{enumerate}[i)]
+    	    	\item Social Distance Method
+    	    	
+    	    	In this method, long range interactions are accounted for based on an analogy of the time value of money in quantitative finance. An example of application of this method is in \citep{estrada2011epidemic} where it is indicated that for effective modelling of how airborne or close contact infections are transmitted, a contact network capturing the pattern of human interactions is a requirement. These interactions are of two fold: close contacts  which are frequent interactions among individual while casual or long range interactions are the non frequent encounters among individuals which facilitate the spread of infections.The latter are considered to be non-random.
+    	    	The casual contacts are accounted for by means of long range interactions which are considered to depend on the social distance between two individuals drawn from the structure of the social network of close contacts.
+    	    	 The weight assigned to long range interaction between a pair of nodes $i$ and $j$ is given by
+    	    	
+    	        \begin{equation}
+    	        e_{i,j} = d_{i,j} \cdot  x^{d_{i,j}-1}
+    	        \label{casual}
+    	        \end{equation}
+    	        where $d_{i,j}$ is the shortest path distance between $i$ and $j$ and $x$ is a parameter called the conductance as it controls the extent to which casual contacts are allowed in the network. From Equation \ref{casual}, we can evidently observe that the strength of the casual contact  between two nodes reduces with decrease in social distance between them.
+    	        
     	    	\item The Laplace-transformed $k$-Laplacian
     	    	\begin{equation}
-    	    	\tilde{\mathbf{L}}_{L,\lambda} = \sum_{k=1}^{\infty} e^{-\lambda k} \mathbf{L}_k 
+    	    	\tilde{\mathbf{L}}_{L,\lambda} = \mathbf{L} + \sum_{k=2}^{\infty} e^{-\lambda k} \mathbf{L}_k 
+    	    	\label{laplacetransform}
     	    	\end{equation}
     	    	\item The factorial-transformed $k$-Laplacian
     	    	\begin{equation}
-    	    	\tilde{\mathbf{L}}_{F,z} = \sum_{k=1}^{\infty} \frac{z^k}{k!} \mathbf{L}_k 
+    	    	\tilde{\mathbf{L}}_{F,z} =  \mathbf{L} + \sum_{k=2}^{\infty} \frac{z^k}{k!} \mathbf{L}_k 
     	    	\end{equation}
     	    	\item The Mellin-transformed $k$-Laplacian
     	    	\begin{equation}
-    	    	\tilde{\mathbf{L}}_{M,s} = \sum_{k=1}^{\infty} \frac{1}{k^s} \mathbf{L}_k 
+    	    	\tilde{\mathbf{L}}_{M,s} = \sum_{k=1}^{\infty} k^{-s} \mathbf{L}_k,
+    	    	\label{mellin-transforms}
     	    	\end{equation}
+    	    	
+    	    	In \citep{estrada2017path}, it is shown that normal diffusion occurs only when $s > 3$. On the other hand, superdiffusion occurs when $1 <s < 3$ with superdiffusive exponent being $ \kappa = \frac{2}{s-1}$,
+    	    	which leads to arbitrary values for $\kappa \in (1,\infty)$. 
+    	    	The Mean Square Distance, $MSD \sim t^\kappa$. Normal diffusion is attained  at $\kappa =1$, superdiffusion is attained at $\kappa > 1$. However, a special type of diffusion known as Ballistic diffusion is characterised by the fact that at small times the particles are not hindered yet
+    	    	by collisions and diffuse very fast. it is attained at $\kappa = 2$.
     	    \end{enumerate}
+        
+        \subsection{Spectrum of the Generalised Laplacian matrix}
+        The spectrum of the Laplacian matrix is the set of eigenvalues and their multiplicities \cite{estrada2011epidemic}. Let $\lambda_1 < \lambda_2 < \cdots < \lambda_n$ be the eigenvalues of $L(x)$!h and their corresponding multiplicities $m(\lambda_1), m(\lambda_2), \cdots, m(\lambda_n)$. The spectrum of $L$ is given by
+        \begin{equation}
+        S_p L = \big(\lambda_1 \quad \lambda_2 \quad \cdots \quad \lambda_n \\
+        m(\lambda_1) \quad m(\lambda_2) \quad \cdots \quad m(\lambda_n)  \big).!h
+        \end{equation}
+        Some analytical expressions for the spectra of the Laplacian matrix of some common simple networks are:\\
+        \begin{itemize}
+        	\item Star, $S_n$: $S_p(L) = {0~ 1^{n-2}~ n}$\\
+        	\item Path, $P_n$: $S_p(L) = {2-2\cos\big( \frac{\pi(j-1)}{n}\big) }$
+        \end{itemize}
+        For generalised Laplacian matrix $L(x)$, the above expressions as a function of conductance $x$ are given by
+        \begin{itemize}
+        	\item Star, $S_n$: $S_p(L(x)) = {0~ (1+8x)^{n-2}~ n}$\\
+        	\item Path, $P_n$: $S_p(L(x)) = { }$
+        \end{itemize}
+        \begin{figure}[!h]
+        	\centering
+        	\begin{subfigure}[b]{0.45\textwidth}
+        		\includegraphics[width= \textwidth]{images/Star-network-eigenplot.png}
+        		%\caption{$x=0.1, t=0.5$}
+        		\label{star-spectra}
+        	\end{subfigure}~
+        	\begin{subfigure}[b]{0.45\textwidth}
+        		\includegraphics[width= \textwidth]{images/Path-network-eigenplot.png}
+        		%\caption{$x=0.1, t=3.0$}
+        		\label{path-spectra}
+        	\end{subfigure} \\
+        	\begin{subfigure}[b]{0.85\textwidth}
+        		\includegraphics[width= \textwidth]{images/legend-eigenvalues.png}
+        		%\caption{$x=0.1, t=3.0$}
+        		%\label{gridt3x01}
+        	\end{subfigure}
+        	\caption{Illustrations of variation of eigenvalues with conductance $x$ two networks. The first figure from the left a star network, $S_{10}$ (in Fig. \ref{stardifn-graph}) and the other is a path network. Both networks have $10$ nodes each.}
+        	\label{eigen-xvalues}
+        \end{figure}
+        As discussed before, the eigenvalues $\lambda_i(x)$ of the Laplacian matrix $L(x)$ are an increasing function of $x$ except for the smallest eigenvalue $\lambda_1(x) = 0$ which remains almost constant as observed in Figure \ref{eigen-xvalues}. For the star network , both $\lambda_1(x) = 0$ and $\lambda_1(n) = 5$ remain constant the analytical expressions mentioned before. However, the rest of the eigenvalues increase linearly with increase in $x$ values. At $x=0.5$, we observe that all eigenvalues are equal with a value of $10$. This is because at $x=0.5$, all edges of the star network have a weight of $1$ and thus, a complete network,$K_n$, whose spectrum is given by $S_p(L) = \{0~ n^{n-1} \}$. On the other hand, the path network follows a similar trend as that of the star network but the $x$ value at which all eigenvalues (except $\lambda_i=0$) are equal is relatively higher than $0.5$ that is to say the point lies at $x=0.7$. 
+        
+        \newpage
+        
+        %\begin{figure}[!h]
+        %	\centering
+        %	\begin{subfigure}[b]{0.45\textwidth}
+        %		\includegraphics[width=\textwidth]{images/Barabasi-highest-degree.png}
+        %		%\caption{$x=0.1, t=0$}
+        %		%\label{gridt0x01}
+        %	\end{subfigure}~
+        %	\begin{subfigure}[b]{0.45\textwidth}
+        %		\includegraphics[width= \textwidth]{images/barabasi-random-selection.png}
+        %		%\caption{$x=0.1, t=0.5$}
+        %		%\label{gridt05x01}
+        %	\end{subfigure}
+        %	\caption{Illustration of the impact of the choice of the initial nodes from which diffusion starts. We consider Barabasi-Albert networks of $100$ nodes. The left plot corresponds to one in which the $5$ most important node according to degree centrality(hubs) are chosen. On the other hand, the plot at the right is as a result of random selection of initial nodes. }
+        %	\label{}
+        %\end{figure}
+        
+        \subsection{The Heat Kernel}
+        As discussed earlier, diffusion of heat on a graph can be modelled by the equation 
+        
+        \begin{equation}
+        \frac{d \phi}{dt} = -L \phi,
+        \label{heateqn}
+        \end{equation}
+        where $L$ is either the Laplacian matrix or it's normalised version. 
+        
+        The heat kernel is the fundamental solution to the diffusion equation (\ref{heateqn}). It is obtained by exponentiating the Laplacian eigensystem and it is given by
+        \begin{equation}
+        \phi(t) = exp(-Lt) 
+        \label{kernel}
+        \end{equation}
+        It literally describes the flow of substance (heat) across edges (direct interactions) in the graph \citep{xiao2009graph}.
        
-        \subsection{Results}
+        When $t$ tends to zero, the kernel behaviour can be obtained from the Taylor's expansion of (\ref{kernel}) which is 
+        \begin{equation}
+        e^{-\mathbf{L}t} = \sum_{k=0}^{\infty} \frac{(-t)^k}{k!} \mathbf{L}^k = \mathbf{I} -\mathbf{L}t + \frac{\mathbf{L}^2 t^2}{2!} + \frac{\mathbf{L}^3 t^3}{3!}+ \cdots
+        \end{equation}
+        Thus,
+        \begin{equation}
+        \lim_{t\longrightarrow 0} \Big(e^{-\mathbf{L}t}\Big) = \mathbf{I} - \mathbf{L}t.
+        \label{kerneltozero}
+        \end{equation}
+        It therefore implies that for $t$ tending to zero, the heat kernel depends on the local connectivity structure of the graph.
+        On the other hand, as $t$ tends to infinity, we apply the spectral decomposition of Equation \ref{kernel} which is 
+        \begin{equation}
+        \phi(t) = \mathbf{V} e^{(-\Lambda t)} \mathbf{V^T} =  \sum_{i=0}^n e^{(-\lambda_i t)} v_i v_i^T 
+        \end{equation}
+        where $\lambda_i$s are the eigenvalues of $L$ in a non-decreasing order $0=\lambda_1 \leq  \lambda_2 \leq, \cdots \leq \lambda_n$ and $v_i$ is the eigenvector corresponding to the eigenvalue $\lambda_i$. Thus,
+        \begin{equation}
+        \lim_{t\longrightarrow 0} \Big(e^{-\mathbf{L}t}\Big) = e^{(-\lambda_2 t)} v_2 v_2^T.
+        \label{kernelinfinity}  
+        \end{equation}
+        From Equation \ref{kernelinfinity},its evident that for large $t$, the heat kernel behaviour is determined by the global structure of the graph. 
+        \subsubsection{The Heat Kernel Invariants}
+        \begin{enumerate}[1]
+        	\item Heat Kernel Trace
+        	Like the trace of any other matrix, the trace of heat kernel is the summation of the main diagonal elements of the heat kernel matrix of a graph. It is therefore given by
+        	\begin{equation}
+        	Z(t) = Tr(h_t) = \sum_{i=1}^{|V|} e^{-\lambda_i t},
+        	\label{kerneltrace}
+        	\end{equation}
+        	where $\lambda_i$ is the eigenvalue of the normalised Laplacian matrix \cite{xiao2009graph}. 
+        	For a connected graph ($\lambda_1 = 0$), Equation \ref{kerneltrace} can be written as 
+        	\begin{equation}
+        	Z(t) =  1+ e^{-\lambda_2 t} + e^{-\lambda_3t} + \cdots + e^{-\lambda_N t}
+        	\end{equation}
+        	Xiao \cite{xiao2009graph} developed a potential application of the trace formula as a basis for distinguishing different graphs based on the shape of the curves obtained by plots of the trace of the heat kernel as a function of time. Let us consider $3$ simple graphs namely a star, path and $2$-regular graph of size $10$. Fig shows the plot heat kernel trace against time for the three graphs.
+        	
+        	\begin{figure}[H]
+        		\centering
+        		\begin{subfigure}[b]{0.45\textwidth}
+        			\includegraphics[width= \textwidth]{images/kernel-graphs.pdf}
+        			\caption{}
+        			\label{kernelgraphs}
+        		\end{subfigure}~
+        		\begin{subfigure}[b]{0.45\textwidth}
+        			\includegraphics[width= \textwidth]{images/Trace-kernel-plot}
+        			\caption{}
+        			\label{plot-kernel}
+        		\end{subfigure}
+        	\caption{(\ref{kernelgraphs}) are the three graphs used for heat kernel analysis. (\ref{plot-kernel}) plot of the heat kernel trace against time for star (blue), path (orange) and regular(green) graphs. From \ref{plot-kernel}, we observe that since the $3$ graphs are different in terms of structure, the curves too take on different shapes. It is evident that since path and $2$-regular graphs have similar topologies, their corresponding graphs are close to each other while for star graph, its curve has a deeper trough. }
+        	\end{figure}
         
-        We considered a lattice where each node is connected to $8$ nearest neighbours. We assigned specific heat quantities to a few selected nodes and then illustrated how the heat diffuses through the lattice based on direct interactions only and also based on both direct and long-range interactions among nodes.
-        We observed that diffusion occurs much more faster by considering long-range interactions than when only direct interactions are accounted for. 
-        
-   % \end{enumerate}
-    
+            \item Zeta function
+            The Zeta function associated with the Laplacian eigenvalues is obtained by exponentiating and summing the reciprocal of the non-zero Laplacian eigenvalues. It is thus defined by
+            \begin{equation}
+            \zeta(s) = \sum_{\lambda_i \neq 0} \lambda_i ^{-s}
+            \end{equation}. 
+            Xiao \cite{xiao2009graph} established a relationship between the zeta function and the heat kernel trace by use of the Mellin transform. For a function $f(t)$, it's Mellin transform is given by
+            \begin{equation}
+            F(s) = \int_{0}^{\infty} t^{s-1} f(t) dt.
+            \end{equation}
+            Taking a function $f(t)=e^{-\lambda_i t}$, applying the Mellin transform gives 
+            \begin{equation}
+            \lambda_i ^{-s} = \frac{1}{\Gamma(s)} \int_{0}^{\infty} t^{s-1} e^{-\lambda_i t} dt,
+            \label{exponentlambda}
+            \end{equation}
+            where $\Gamma(s)$ is the gamma function defined as 
+            \begin{equation}
+            \Gamma(s) = \frac{0}{\infty} t^{s-1} e^{-t} dt
+            \end{equation}.
+            On summation for all non-zero eigenvalues of the Laplacian, Equation \ref{exponentlambda} becomes
+            \begin{equation}
+            \zeta(s) = \sum_{\lambda_i \neq 0} \lambda_i ^{-s} = \frac{1}{\Gamma(s)} \int_{0}^{\infty} t^{s-1} \sum_{\lambda_i \neq 0} e^{-\lambda_i t} dt
+            \label{label-kernel}
+            \end{equation}
+            The heat kernel trace can be also expressed as 
+            \begin{equation}
+            Tr(h_t) = C + \sum_{\lambda_i \neq 0} e^{-\lambda_i t}
+            \label{kernelexp2},
+            \end{equation}
+            where $C$ is the multiplicity of zero eigenvalues of the Laplacian that is the number of connected components of a graph.
+            Substituting Equation \ref{kernelexp2} into Equation 
+            \ref{label-kernel} gives
+            \begin{equation}
+            \zeta(s) = \frac{1}{\Gamma(s)} \int_{0}^{\infty} t^{s-1} \left \{ Tr(h_t)-C \right \} dt
+            \end{equation}.
+            Thus the zeta function is related to the moments of the heat kernel trace. It is the moment generating function and thus a way of characterising the shape of the heat kernel trace.
+          \item Derivative of Zeta Function at the Origin
+        	The derivative or slope of the zeta function at the origin is another characterisation of the heat kernel trace second to the zeta function which measures it's shape.
+        	\item Heat Content
+        	
+        \end{enumerate}
+        \subsubsection{Simulations of diffusion on lattice}
+         We consider a 2-dimensional discrete grid in which each point is connected to 8 of its nearest neighbours. Initially, we assign heat quantities to all the points on the grid and then we investigate how the diffusion process occurs and at each time $t$. 
+   
+         Let us take a $20$ by $20$ grid on which we assigned heat quantities of amounts $5$, $7$ and $10$ to a few points and the rest are assigned zero. The diffusion on the lattice through direct interactions only as well as through both direct and indirect interactions by using the Social distance concept, Laplace and Mellin tranforms.
+         
+         \begin{enumerate}[i)]
+         	\item Diffusion on lattice through Direct interactions only
+         	\begin{figure}[!h]
+         		\centering
+         		\begin{subfigure}[b]{0.25\textwidth}
+         			\includegraphics[width=\textwidth]{images/grid-t0-x0.png}
+         			\caption{$t=0$}
+         			\label{gridt0x0}
+         		\end{subfigure}~
+         		\begin{subfigure}[b]{0.25\textwidth}
+         			\includegraphics[width= \textwidth]{images/grid-t05-x0.png}
+         			\caption{$t=0.5$}
+         			\label{gridt05x0}
+         		\end{subfigure}~
+         		\begin{subfigure}[b]{0.25\textwidth}
+         			\includegraphics[width= \textwidth]{images/grid-t3-x0.png}
+         			\caption{$t=3.0$}
+         			\label{gridt3x0}
+         		\end{subfigure}~
+         		\begin{subfigure}[b]{0.25\textwidth}
+         			\includegraphics[width= \textwidth]{images/grid-t5-x0.png}
+         			\caption{$t=5.0$}
+         			\label{gridt5x0}
+         		\end{subfigure}
+         		\caption{Sample illustrations for progression of diffusion over a $20 \times 20$ lattice where specific regions are assigned particular heat quantities which in turn spread to other regions of low heat quantities through interactions along links in the network.}
+         		\label{gridx0}
+         	\end{figure}
+         
+            
+         	
+         	\item Diffusion on lattice through both direct and indirect interactions.
+         	Considering a similar lattice with initial heat quantity assignments as in the directed case discussed before, we account for the diffusion process where interactions among nodes occurs through both direct and indirect interactions.
+         	
+         	As discussed previously, long-range interactions can be accounted for by using various techniques as illustrated by the following illustrations.
+         	\begin{enumerate}[a)]
+         		\item Long range interactions using social distance 
+         		Taking $x=0.1$ and $x=0.2$.
+         		\begin{figure}[!h]
+         			\centering
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width=\textwidth]{images/grid-t0-x01.png}
+         				\caption{$t=0$}
+         				\label{gridt0x01}
+         			\end{subfigure}~
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width= \textwidth]{images/grid-t05-x01.png}
+         				\caption{$t=0.5$}
+         				\label{gridt05x01}
+         			\end{subfigure}~
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width= \textwidth]{images/grid-t3-x01.png}
+         				\caption{$t=3.0$}
+         				\label{gridt3x01}
+         			\end{subfigure}~
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width= \textwidth]{images/grid-t5-x01.png}
+         				\caption{$t=5.0$}
+         				\label{gridt5x01}
+         			\end{subfigure}
+         		   \label{gridx01}
+         		\end{figure}
+         		
+         		\begin{figure}[!h]
+         			\centering
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width=\textwidth]{images/grid-t0-x02.png}
+         				\caption{$t=0$}
+         				\label{gridt0x02}
+         			\end{subfigure}~
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width= \textwidth]{images/grid-t05-x02.png}
+         				\caption{$t=0.5$}
+         				\label{gridt05x02}
+         			\end{subfigure}~
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width= \textwidth]{images/grid-t3-x02.png}
+         				\caption{$t=3.0$}
+         				\label{gridt3x02}
+         			\end{subfigure}~
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width= \textwidth]{images/grid-t5-x02.png}
+         				\caption{$t=5.0$}
+         				\label{gridt5x02}
+         			\end{subfigure}\\
+         			\vspace{0.25cm}
+         			\begin{subfigure}[b]{0.60\textwidth}
+         				\includegraphics[width= \textwidth]{images/colour-bar-grid.png}
+         			\end{subfigure}
+         			\caption{Illustrations for diffusion over a grid with long-range interactions accounted for by the social distance technique. The upper row corresponds to diffusion with conductance $x=0.1$ while lower row corresponds to results obtained $x=0.2$. The intensity of heat follows a color grid where by red implies higher intensity followed by yellow and blue implies low heat intensities.}
+         			\label{gridlongrange}
+         		\end{figure}
+         		
+         		At $t=0$, diffusion on the grid starts off with $3$ strong regions having high quantities of heat as observed from figures \ref{gridx0}, and \ref{gridlongrange} which correspond to diffusion with direct interactions only and diffusion with conductance $x = 0.1$ and $0.2$ respectively. As the diffusion process continues, we see that at $t=0.5$, strong heat points can still be spotted for direct interactions, relatively strong points in $x=0.1$ and almost complete diffusion in $x=0.2$. We can also observe that by $t=2.0$, heat is uniformly distributed across the grid for $x=0.1$ and $x=0.2$. However, for the case of direct interactions (Fig.\ref{gridt5x0}) diffusion is still ongoing and we can notice strong heat points at the centre of the grid. Following the sequences in the figures, we can conclude that as $x$ (i.e increase in intensity of long range interactions), the diffusion process goes faster and equilibrium across the grid is reached faster as observed in the above simulations where for $x=0.2$, $x=0.1$ equilibrium is reached by $t=3$ while for $x=0$, equilibrium is not yet reached by then.
+         		 
+         		\item Longrange interactions using Laplace Transforms
+         		\begin{figure}[!h]
+         			\centering
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width=\textwidth]{images/laplace-x1-t0.png}
+         				\caption{$t=0$}
+         				\label{laplacet0x01}
+         			\end{subfigure}~
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width= \textwidth]{images/laplace-x1-t05.png}
+         				\caption{$t=0.5$}
+         				\label{laplacet05x01}
+         			\end{subfigure}~
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width= \textwidth]{images/laplace-x1-t3.png}
+         				\caption{$t=3.0$}
+         				\label{laplacet3x01}
+         			\end{subfigure}~
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width= \textwidth]{images/laplace-x1-t5.png}
+         				\caption{$t=5.0$}
+         				\label{laplacet5x01}
+         			\end{subfigure}
+         		\caption{Illustration for diffusion on the lattice with both direct and long range interactions. These longrange interactions are accounted for by Laplace transforms given by Equation \ref{laplacetransform}  with $\lambda=1$.}
+         		\end{figure}
+         		
+         		\item Longrange interactions using Mellin Transforms of the $k$-Laplacian matrices.
+         		\begin{figure}[!h]
+         			\centering
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width=\textwidth]{images/mellin-x2-t0.png}
+         				%\caption{$x=0, t=0$}
+         				%\label{gridt0x0}
+         			\end{subfigure}~
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width= \textwidth]{images/mellin-x2-t05.png}
+         				%\caption{$x=0, t=0.5$}
+         				%\label{gridt05x01}
+         			\end{subfigure}~
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width= \textwidth]{images/mellin-x2-t3.png}
+         				%\caption{$x=0, t=3.0$}
+         				%\label{gridt3x01}
+         			\end{subfigure}~
+         			\begin{subfigure}[b]{0.25\textwidth}
+         				\includegraphics[width= \textwidth]{images/mellin-x2-t5.png}
+         				%\caption{$x=0, t=5.0$}
+         				%\label{gridt5x01}
+         			\end{subfigure}
+         			\caption{}
+         			%\label{gridatx0}
+         		\end{figure}
+         	    \begin{figure}[!h]
+         	    	\centering
+         	    	\begin{subfigure}[b]{0.25\textwidth}
+         	    		\includegraphics[width=\textwidth]{images/mellin-x4-t0.png}
+         	    		%\caption{$x=0, t=0$}
+         	    		%\label{gridt0x0}
+         	    	\end{subfigure}~
+         	    	\begin{subfigure}[b]{0.25\textwidth}
+         	    		\includegraphics[width= \textwidth]{images/mellin-x4-t05.png}
+         	    		%\caption{$x=0, t=0.5$}
+         	    		%\label{gridt05x01}
+         	    	\end{subfigure}~
+         	    	\begin{subfigure}[b]{0.25\textwidth}
+         	    		\includegraphics[width= \textwidth]{images/mellin-x4-t3.png}
+         	    		%\caption{$x=0, t=3.0$}
+         	    		%\label{gridt3x01}
+         	    	\end{subfigure}~
+         	    	\begin{subfigure}[b]{0.25\textwidth}
+         	    		\includegraphics[width= \textwidth]{images/mellin-x4-t5.png}
+         	    		%\caption{$x=0, t=5.0$}
+         	    		%\label{gridt5x01}
+         	    	\end{subfigure}
+         	    	\caption{Illustrations of diffusion process on the lattice allowing for both direct and longrange interations. The latter are accounted for using Mellin transforms of the $k$-Laplacian matrices as in Equation.~\ref{mellin-transforms}. The top row corresponds to the case for which $s=2$ and the bottom row corresponds to case $s=4$.}
+         	    	\label{mellintransformsfig}
+         	    \end{figure}
+         	 For the case of Mellin transforms, we observe that rate of diffusion is quite faster at $k=2$(upper row) than at $k=4$(lower row).This is due to the fact that at $k<3$, super diffusion occurs, however normal diffusion occurs when $k>3$ as shown in lower row of Fig.\ref{mellintransformsfig}.
+         	\end{enumerate}
+         \end{enumerate}
+         
+  
 \newpage
 \section{Image segmentation}
 Image segmentation is defined as the problem of localising regions of an image relative to content such as image homogeneity. There are various algorithms that perform image segmentation based on specific content localisation such as intensity, color, texture, etc.
@@ -416,12 +1033,12 @@ w_{i,j} = exp(-\beta (g_i -g_j)^2),
 \label{edgeweights}
 \end{equation}
 where $\beta$ is a free parameter, $g_i$ is the intensity at pixel $i$.
-To capture colour,filter coefficients, texture or any other desired image features, we can modify (\ref{edgeweights}). For instance, to capture colour, we replace$(g_i -g_j)^2$ with $\|g_i -g_j\|^2$  $ \forall e_{i,j} \in E$.
+To capture colour,filter coefficients, texture or any other desired image features, we can modify (\ref{edgeweights}). For instance, to capture colour, we replace $(g_i -g_j)^2$ with $\|g_i -g_j\|^2$  $ \forall e_{i,j} \in E$ \citep{grady2006random}.
 
 Having represented the image as a graph and given user-defined seeds that represent regions of belonging to the desired objects, we obtain an interactive image segmentation by assigning each unseeded node or pixel to the seed to which a random walker starting at the unseeded node first reaches a particular seed. The random walker is biased by the edge weights to avoid crossing sharp intensity gradients for respect of boundary objects.
 
 Suppose we have an image that we would like to segment into $K$ regions or objects that is to say a $k$-way image segmentation.
-First, seeds are selected by user to represent the desired $k$ regions. The main task involves obtaining a $k$-tuples of probabilities with which a random walker starting at each unseeded node reaches the seeds. Each unseeded node is then assigned a label for the seed for which the largest probability was obtained. One approach to this problem would be simulation of the random walker process though unfortunately, the method would be infeasible for certain image segmentation problems of interest. Alternatively, work in [references ] indicates that the probability with which a random walker first reaches a given seed can be found as a solution to the Combinatorial Dirichlet problem  with boundary conditions at the location of the seed points with the seed in question set to $1$ as the rest of the seeds are set to $0$. With this approach, we can then analytically compute the desire probabilities as we will discuss in the next subsections. 
+First, seeds are selected by user to represent the desired $k$ regions. The main task involves obtaining a $k$-tuples of probabilities with which a random walker starting at each unseeded node reaches the seeds. Each unseeded node is then assigned a label for the seed for which the largest probability was obtained. One approach to this problem would be simulation of the random walker process though unfortunately, the method would be infeasible for certain image segmentation problems of interest. Alternatively, work in \citep{grady2006random} indicates that the probability with which a random walker first reaches a given seed can be found as a solution to the Combinatorial Dirichlet problem  with boundary conditions at the location of the seed points with the seed in question set to $1$ as the rest of the seeds are set to $0$. With this approach, we can then analytically compute the desired probabilities as we will discuss in the next subsections. 
 \subsubsection {Combinatorial Dirichlet Problem}
 Dirichlet problem is the problem of finding a harmonic function subject to its boundary conditions. A harmonic function is a function that satisfies the Laplace equation
 \begin{equation}
@@ -431,17 +1048,70 @@ for a field $u$. The harmonic function that satisfies the boundary conditions mi
 \begin{equation}
 D[u]= \frac{1}{2} \int_{\Omega} |\nabla|^2 d\Omega,
 \end{equation}
-for region $\Omega$.
+for region $\Omega$.\\
+Let us consider an image represented as a graph G=(V,E) where nodes represent pixels while edges represent the neighbourhood among the pixels. The Combinatorial Laplacian matrix of the graph is defined as
+
+\begin{equation}
+L_{ij} = \begin{cases}
+d_i & \text{if } i=j, \\
+-w_{ij} & \text{if } v_i \text{ and } v_j \text{ are adjacent nodes},\\
+0 & \text{otherwise,}
+\end{cases}
+\end{equation}
+where $L_{i,j}$ is indexed by vertices $v_i$ and $v_j$.
+The combinatorial formulation of the Dirichlet integral is 
+\begin{equation}
+D[x] = \frac{1}{2} x^T L x = \sum_{e_{ij} \in E} w_{ij} (x_i -x_j)^2.
+\label{combDirichlet}
+\end{equation}
+A combinatorial harmonic is a function $x$ that minimises \ref{combDirichlet}.
 \subsubsection{Implementation of Algorithm}
+\begin{enumerate}
+	\item Computing probabilities:
+	
+	With Graph $G=(V,E)$ representing the image to be segmented, partition the vertex set into two such that is $V_m$ and $V_u$ which are the seeded/marked and unseeded vertices respectively such that $V_m \bigcup V_u = V$ and $V_m \bigcap V_u = \emptyset$.
+	Without loss of generality, we assume that the nodes in $L$ are arranged such that the seeded nodes are first followed by the unseeded ones. Then equation \ref{combDirichlet} can be written as 
+	\begin{equation}
+	D[x_u] = \frac{1}{2} \begin{bmatrix}
+	x_m ^T x_m ^T
+	\end{bmatrix} \begin{bmatrix}
+	L_m & & B \\\\
+	B^T & & L_u
+	\end{bmatrix} \begin{bmatrix}
+	x_m \\ \\
+	x_u
+	\end{bmatrix} = 
+	\frac{1}{2}( x_m ^T L_m x_m + x_u ^T B^T x_m + x_u ^T L_u x_u),
+	\end{equation}
+	where $x_m$ and $x_u$ correspond to the potentials at the seeded and unseeded nodes respectively.
+	Differentiating $D[x]$ with respect to $x_u$ and then finding the critical points gives  the following system of linear equations with $|V_u|$ unknowns
+	\begin{equation}
+	L_u x_u = -B^T x_m.
+	\end{equation} 
+	Let $x_i ^s $ be the probability of a random walker starting at node $v_i$ first reaches label $s$. Then for each label $s$ the probabilities with each unlabelled nodes first reach $s$ is given by
+	\begin{equation}
+	L_u x^s = -B^T m^s,
+	\end{equation}
+	and for all labels, we have 
+		\begin{equation}
+	L_u X = -B^T M,
+	\label{finalprobs}
+	\end{equation}
+	where $X$ has $K$ columns taken by each $x^s$ and $M$ has columns given by each $m^s$.
+	
+	\item Assigning labels to unseeded nodes
+	Having computed the probabilities for each unseeded nodes, we assign a label to each node for which the highest probability was obtained.
+\end{enumerate}
+\subsection{Possible application of Long range interactions to Image Segmentation}
+We considered a possible application of long range interaction to segmentation of image based on random walks. This was implemented by replacing the Combinatorial Laplacian matrix $L$ in equation \ref{finalprobs}  with the the $k$-path Laplacian matrices to account for long range jumps of the random walker. However, the output obtained using this method was not a better image segmentation due to the fact that the long-range jumps do not take into account the localisation of objects in an image which results into less intuitive image segmentation. 
 
 \newpage
 \section{Laplacian Centrality of weighted Networks}
-The centrality of a node is a measure of how important or central a node is with in a network. A variety of centrality measures have been introduced for undirected unweighted networks based on various definitions of importance of a node. These include: degree, closeness, betweenness, eigenvector and subgraph centralities. Standard centrality measures i.e degree, closeness, and betweenness  were extended to weighted networks due to the fact that weighted networks provide more information about the network and therefore measures applied to these networks are of great importance.
-%\citep{newman2001scientific}; \citep{barrat2004architecture}; \citep{opsahl2009structure}; \citep{opsahl2010node}. 
-These standard centrality measures give information on either the local environment of a node (i.e degree centrality) or the global position of the node in the network (i.e closeness, betweenness and subgraph centralities). This implies that information about the intermediate (between local and global) environment of a node cannot be captured by any of the standard centralities, yet, such information is very useful in the study of real-world networks. For instance, quantifying the relative importance of a particular actor in a social network. It is for this reason that a new type of centrality known as the Laplacian centrality was introduced by Qui.,et al. %\citep{qi2012laplacian}. 
+The centrality of a node is a measure of how important or central a node is with in a network. A variety of centrality measures have been introduced for undirected unweighted networks based on various definitions of importance of a node. These include: degree, closeness, betweenness, eigenvector and subgraph centralities \citep{freeman1978centrality,estrada2005subgraph}. Standard centrality measures i.e degree, closeness, and betweenness  were extended to weighted networks due to the fact that weighted networks provide more information about the network and therefore measures applied to these networks are of great importance \citep{newman2001scientific,barrat2004architecture,opsahl2009structure,opsahl2010node}. 
+These standard centrality measures give information on either the local environment of a node (i.e degree centrality) or the global position of a node in the network (i.e closeness, betweenness and subgraph centralities). This implies that information about the intermediate (between local and global) environment of a node cannot be captured by any of the standard centralities, yet, such information is very useful in the study of real-world networks. For instance, quantifying the relative importance of a particular actor in a social network. It is for this reason that a new type of centrality known as the Laplacian centrality was introduced \citep{qi2012laplacian}. 
 
 
-With Laplacian centrality measure, the importance of a node is determined by the ability of the network to respond to the deactivation  of the node from the network. In other words, it is a measure of the relative drop of Laplacian energy in the network due to the removal (or deactivation) of the node from the network. The drop of Laplacian energy with respect to node $v$ is determined by the number of $2$-walks that $v$ participates in the network. 
+With Laplacian centrality measure, the importance of a node is determined by the ability of the network to respond to the deactivation  of the node from the network. In other words, it is a measure of the relative drop of Laplacian energy in the network due to the removal (or deactivation) of the node from the network. The drop of Laplacian energy with respect to node $v$ is determined by the number of $2$-walks that $v$ participates in the network \citep{qi2012laplacian}. 
 
 \subsection{Laplacian energy of a network}
 Let $G = (V,E,W)$ be a simple undirected weighted network with the vertex set $V(G) = \{v_1,v_2,\cdots, v_n\}$, edge set $E$, where each edge $e=(v_i,v_j)$ is attached with a weight $w_{ij}$. If there is no edge between $v_i$ and $v_j$, $w_{i,j}=0$. In addition, $w_{i,i} =0$ and $w_{i,j} = w_{j,i}$. We define 
@@ -480,13 +1150,20 @@ As networks become larger, computing eigenvalues of the Laplacian matrix becomes
 	\label{theorem:1}
 \end{thm}
 
-\subsection{Laplacian centrality of  node}
-	If $G=(V,E,W)$ is a network with $n$ nodes $V=\{v_1,v_2,\ldots, v_n\}$. Let $G_i$ be the network obtained by deleting $v_i$ from $G$. The Laplacian centrality is given by
+\begin{cor}
+	If $H$ is an arbitrary subgraph of a network $G$, then $E_L(H) \leq E_L(G)$. And equality holds if and only if $V(G)-V(H)$ is a set of isolated vertices.
+	\label{cor:1}
+\end{cor}
+
+\subsection{Laplacian centrality for a vertex}
+\begin{defn}
+	If $G=(V,E,W)$ is a network with $n$ vertices $\{v_1,v_2,\ldots, v_n\}$. Let $G_i$ be the network obtained by deleting $v_i$ from $G$. The Laplacian centrality is given by
 	\begin{eqnarray}
 	C_L(v_i,G) = \frac{(\Delta E)_i}{E_L(G)} = \frac{E_L(G) - E_L(G_i)}{E_L(G)}
 	\end{eqnarray} 
-
-For any vertex $v$, the denominator remains unchanged and from Corollary \ref{cor:1}, we can tell that $E_L(G) - E_L(G_i)$ is non-negative. We then focus on obtaining the expression for $(\Delta E)_i$. In order to obtain the graph theoretical descriptions of Laplacian centrality, we will study the $k$-walks (discussed in Chapter 2) for the weighted graph, specifically, for $k=2$. For better understanding of the weighted network concept, we represent a weighted network as an unweighted multigraph network by replacing each edge $e=(v_i,v_j)$ with $w_ij$ copies of multiedges as shown in Fig.~\ref{walks}(\subref{edge-copies}). For instance, for a $2$-walk $v_1v_2v_3$ in a weighted network, the number of $2$-walks in its corresponding unweighted network is  $w_{v_1,v_2}w_{v_2,v_3}$. 
+	\label{lapcentrality-undirected}
+\end{defn}
+For any vertex $v$, the denominator remains unchanged and from Corollary \ref{cor:1}, we can tell that $E_L(G) - E_L(G_i)$ is non-negative. We then focus on obtaining the expression for $(\Delta E)_i$. In order to obtain the graph theoretical descriptions of Laplacian centrality, we will study the $k$-walks (discussed in Chapter 2) for the weighted graph, specifically, for $k=2$. For better understanding of the weighted network concept, we represent a weighted network as an unweighted multigraph network by replacing each edge $e=(v_i,v_j)$ with $w_ij$ copies of multiedges. For instance, for a $2$-walk $v_1v_2v_3$ in a weighted network, the number of $2$-walks in its corresponding unweighted network is  $w_{v_1,v_2}w_{v_2,v_3}$. 
 
 \begin{thm}
 	Let $G=(V,E,W)$ be a weighted network of $n$ vertices ${v_1,v_2,\ldots,v_n}$. Let $G_i$ be the network obtained by deleting vertex $v$ from $G$, then the drop of Laplacian energy with respect to $v_i$ is
@@ -495,11 +1172,15 @@ For any vertex $v$, the denominator remains unchanged and from Corollary \ref{co
 	\label{energychange}
 	\end{eqnarray}
 	where
-	$NW_{2} ^C(v_i)$, $NW_{2} ^E(v_i)$, and $NW_{2} ^M(v_i)$ are closed $2$-walks containing vertex $v_i$, non-closed $2$-walks with vertex $v_i$ as one of the end points and non-closed $2$-walks with vertex $v_i$ as the middle point (Qi et al., 2012).
+	$NW_{2} ^C(v_i)$, $NW_{2} ^E(v_i)$, and $NW_{2} ^M(v_i)$ are closed $2$-walks containing vertex $v_i$, non-closed $2$-walks with vertex $v_i$ as one of the end points and non-closed $2$-walks with vertex $v_i$ as the middle point\citep{qi2012laplacian}.
 	\label{thm2}
 \end{thm}
+%\subsection{Edge Centralities in Networks}
+
 \subsection{Laplacian Centrality of an edge}
-The identification of the most central nodes in a network is an important concept that has applications in the control of spread of an epidermic, faster dissemination of information with in a social networks, etc. On the other hand, we believe that it is also vital to identify how central an edge is with in the network. this therefore prompts us to study the Laplacian centrality centrality of an edge and define a graph theoretical expression for the drop in energy when an edge is removed from the network.
+
+	Centrality measures in networks have proved to be relevant tools in network analysis. They are indicators of the 'importance' of nodes and edges in the networks. Though most work has been geared towards the study of importance of nodes ( i.e degree, closeness, betweeness, subgraph, eigenvector, Laplacian centralities,etc.), interest in the study of edge centralities is now gaining ground with earlier works by  Anthonisse \citep{anthonisse1971rush} and then following by prominent work by Girvan and Newman \citep{newman2004finding}. Some of the known edge centralities include edge degree, edge closeness \citep{ortiz2016centrality}, edge-betweenness which is calculated based on either shortest path distances or random walks as in \citep{newman2004finding}, k-path edge centrality \cite{alahakoon2011k}, among others. The motivation for the introduction of edge centrality measures lies in real-world applications in a wide range of context such as community detection in networks \citep{newman2004finding}, identifying significant power lines, communication or transportation lines whose failure cause serious breakdown of the  power, communication and transportation systems respectively \citep{ortiz2016centrality}, identification of strong relationships among people in social networks, etc. 
+%The identification of the most central nodes in a network is an important concept that has applications in the control of spread of an epidermic, faster dissemination of information with in a social networks, etc. On the other hand, we believe that it is also vital to identify how central an edge is with in the network. This therefore prompts us to study the Laplacian centrality centrality of an edge and define a graph theoretical expression for the drop in energy when an edge is removed from the network.
 
 Similar to laplacian centrality of a node, we define the Laplacian centrality of an edge as the drop in Laplacian energy when an edge is removed from a network.
 Let us consider an undirected weighted network $G=(V,E)$. The Laplacian energy of $G$ is given by
@@ -553,7 +1234,7 @@ $NW^{U}_{2} (v_{1}(E), v_{2}(M))$ is the number of non-closed walks of length $2
 
 $NW_{2} ^{C} (v_{1},v_{2})$ is the number of closed walks of length $2$ between vertices $v_1$ and $v_2$.
 
-From (\ref{walksenergyeqn}), we can easily tell the energy drop can be obtained by taking into account the immediate neighbourhood around the edge, that is, the nearest neighbours of the two nodes that are incident to the edge in question. 
+From (\ref{walksenergyeqn}), we can easily tell the energy drop can be obtained by taking into account the immediate neighbourhood around the edge, that is, the nearest neighbours of the two nodes that are incident to the edge of interest. 
 
 \begin{exa}
 	Let us consider the weighted graph in Fig.~\ref{fig:centralities-weighted}. We compute the drop in Laplacian energy by  
@@ -596,15 +1277,86 @@ E_L(G) &=& \sum_{i=1}^n x_i^2 + 2 \sum_{i<j} w_{i,j}^2 \\
 From Table \ref{edgelaptab}, we observe the drop in energy 
 computed by the difference between Laplacian energy of the graph $G$ and that of the subgraph, $H$ obtained on removing edge $e$ is equal to that obtained using closed and non-closed walks in  (\ref{walksenergyeqn}).
 
+\subsection{Laplacian Energy of Directed Networks}
+Though a lot of research has been inclined towards the study of undirected networks, however, directed networks are equally important as well. For instance, directed  networks are used in the representation and study of structures of various real world networks such as communication networks, transportation networks, web-graphs among others.
+
+The concept of Laplacian matrix and Laplacian energy of directed networks has been explored in various ways in \cite{kissani2010laplacian}, \cite{adiga2009skew}.
+
+\begin{defn}[Skew Laplacian Energy of a simple, connected digraph] \cite{adiga2009skew}
+	Let $G$ be a simple $(n, m)$ digraph with vertex set $V(G)=\{v_1,v_2, ..., v_n\}$ and arc set $\Gamma(G)\in V(G)\times V(G)$. 
+	The skew-adjacency matrix of $G$ is the $n \times n$ matrix $S(G)=[
+	a_{ij}]$ where $a_{ij}= 1$ whenever $(v_i,v_j)\in E(G),a_{ij}=-1$
+	whenever $(v_j,v_i)\in \Gamma(G),a_{ij}= 0 otherwise$. Let $D(G)= diag(d_1,d_2,d_3, \cdots, d_n)$ the diagonal matrix with vertex degrees $d_1,d_2, \cdots, d_n$ for vertices $v_1,v_2, \cdots, v_n$. The skew Laplacian energy of a digraph $G$ is defined as
+	\begin{equation}
+	E_{SL}(G) = \sum_{i=1}^n \lambda_i ^2
+	\end{equation}
+	where $n$ is the order of $G$ and $\lambda_1,\lambda_2,\cdots, \lambda_n$ are the eigenvalues of the Laplacian energy $L(G)=D(G)-S(G)$ of the digraph $G$.
+\end{defn}
+
+\begin{defn}[Laplacian Energy of a directed graph]\cite{kissani2010laplacian}
+	Let $A(G)$ be the adjacency matrix of a directed graph $G$ whose entries are given as $A=(a_{ij})$, where $a_{ij}=1$ whenever $(v_i,v_j)$ is a directed edge and $0$ otherwise. Let $D(G) = diag(d_{1}^{out},d_{2}^{out}, \cdots, d_{n}^{out}$ be diagonal matrix with outdegree of the vertices $v_1,v_2, \cdots, v_n$. The Laplacian matrix $L(G)= D(G)-A(G)$. Then the Laplacian energy of $G$ is defined as 
+	\begin{equation}
+	LE(G) = \sum_{i=1}^n \mu_i ^2 
+	\end{equation}
+	where $n$ is the order of $G$ and $\mu_i$ for $(i=1,2,\cdots,n)$ are the eigenvalues of $L(G)$.
+	\label{Kissani-laplace}
+\end{defn}
+From Definition \ref{Kissani-laplace}, the following theorems hold:
+\begin{thm}
+	Let $G$ be a directed graph with vertex degrees $d_{1}^{out}, d_{2}^{out}, \cdots, d_{n}^{out}.$ Then 
+	If $G$ is a simple directed graph, then
+	\begin{equation}
+	LE(G) = \sum_{i=1} ^n (d_{i}^{out})^2
+	\end{equation}
+	If $G$ is a symmetric directed graph (i.e a graph in which each edge is bidirected) then 
+	\begin{equation}
+	LE(G) = \sum_{i=1}^n d_{i}^{out}(d_{i}^{out} + 1).
+	\end{equation}	
+\end{thm}
+
+\begin{thm}
+	If $G$ is a disconnected directed graph with components $G_1,G_2, \cdots, G_n$,
+	\begin{equation}
+	LE(G) = \sum_{i=1}^n LE(G_i).
+	\end{equation}	
+\end{thm}
+
+\subsection{Laplacian Centrality of a node in directed network}
+Earlier on in this chapter, for simple undirected networks, we defined Laplacian Centrality of a vertex as the relative drop in Laplacian energy when the vertex is removed from the network. Similarly, we adopt the same definition for vertices in directed networks.
+Based on Definition \ref{Kissani-laplace}, the drop in Laplacian energy of a simple directed graph $G =(V,E)$ due to the removal of vertex $v$ is given by
+\begin{eqnarray*}
+\Delta LE &=& LE(G) - LE(G-v)\\
+&=& \sum_{i=1}^n (d^{out}_i)^2 - \Big(\sum_{i \in N(v_{in})} (d^{out}_i - 1)^2 +   \sum_{ i \notin N(v_{in}); i \neq v} (d^{out}_i)^2 \Big) \text{ where } N(v_{in}) = \{i \in N(v)| e_{iv} \in E \}\\
+&=& (d^{out}_v)^2 +  \sum_{i \in N(v_{in})} (2 d_{i}^{out} -1) 
+\end{eqnarray*}
+
+\subsection{Edge Centrality based Edge reversal}
+Instead of measuring the importance of an edge based on the drop in energy on edge removal as discussed for undirected networks, we consider the importance of an edge in a directed network as the relative change in energy on edge reversal.
+
 \subsection{Laplacian Energy as a fair measure of robustness of network}
-With the fast increasing usage of air transport in most regions of the world, there is a pressing need to design robust air traffic networks that will ensure robustness when one or more flights are removed or added to the network. The second smallest eigenvalue of the Laplacian matrix of air traffic networks, $\lambda_2$, also known as the algebraic connectivity is a common measure of robustness in networks. Unfortunately, the algebraic connectivity captures only the global information about the connectivity of a network.
-Recently, the laplacian energy was introduced as another measure of robustness that is considered fair and effective compared to the algebraic connectivity. This is so because the Laplacian centrality captures the local information of the network (Yang,etal, 2015). 
-In order to illustrate the relationship between Laplacian energy and air traffic network
-robustness, a real air traffic network of Jet-star Asia Airway among Indonesia, Australia,
-and New Zealand (Fig.~\ref{jetstarnetwork} ) was investigated.
+Apart of its application in identifying the most important nodes and edges that is the Laplacian centrality, the Laplacian energy of a network has been recently identified as a measure of robustness of network \citep{yang2016air}. Robustness of networks is defined as the response of a network on edge or node removal or addition. The study of robustness of networks plays a vital role in design of systems, understanding the performance and stability of systems such as ecological systems, technological systems, biological system among others. For instance, in air transportation sector, it is paramount to design air traffic networks that will ensure robustness when one or more flights are removed or added to the network thereby posing a need for an effective measure of robustness in such networks.
+The algebraic connectivity which is the second smallest eigenvalue ( $\lambda_2$) of the Laplacian matrix of a network is one of the most common measure of robustness in networks \citep{jamakovic2008robustness,byrne2005algebraic}. Unfortunately, the algebraic connectivity captures only the global information about the connectivity of a network which implies that some changes in network through addition or removal of edges may not be captured as the algebraic connectivity remains constant. However, work in \citep{yang2016air} introduces the Laplacian energy of a network as a fair and effective measure of robustness compared to the algebraic connectivity. This is so because the Laplacian centrality captures the local information of the network thus a change in network structure by edge or node removal or addition is captured by a change in Laplacian energy. This therefore justifies Laplacian energy as a fair and effective measure of robustness compared to algebraic connectivity.
 
-
+\subsection{Comparison of Laplacian Energy and Algebraic Connectivity as measures of robustness of networks}
+Let us consider a simple example in which we illustrate how the both the algebraic connectivity and Laplacian energy capture the changes in networks due to edge addition or removal. 
 \begin{figure}[!h]
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{images/lap-algebraic.pdf}
+		\caption{}
+		\label{algebraic1}
+	\end{subfigure}~
+	\begin{subfigure}[b]{0.3\textwidth}
+		\includegraphics[width= \textwidth]{images/lap-algebraic2.pdf}
+		\caption{}
+		\label{algebraic2}
+	\end{subfigure}
+	\caption{The simple network in (\subref{algebraic1}) has algebraic connectivity $\lambda_2 = 2$ and Laplacian energy of $24$. Adding a new edge,$e_{2,3}$ to form a network in (\subref{algebraic2}) with algebraic connectivity $\lambda_2 = 2$ and Laplacian energy $36$. We observe that on a change in network through edge addition, the algebraic connectivity remains constant while the Laplacian energy changes to reflect a change in network structure.}
+	\label{}
+\end{figure}
+
+Further more, let us consider the comparison between the two measures on real work network that is the air traffic network of Jet-star Asia Airway among Indonesia, Australia, and New Zealand shown in  (Fig.~\ref{jetstarnetwork} ).
+\begin{figure}[H]
 	\centering
 	\begin{subfigure}[b]{0.45\textwidth}
 		\includegraphics[width=\textwidth]{images/jetstar-airnetwork.png}
@@ -616,12 +1368,9 @@ and New Zealand (Fig.~\ref{jetstarnetwork} ) was investigated.
 		\caption{}
 		\label{connectivitycurve}
 	\end{subfigure}
-	\caption{(\subref{jetstarnetwork}) is the air traffic network route map for Jetstar Asia Airway (Indonesia, Australia, and New Zealand) in 2015,  (\subref{connectivitycurve}) is a plot of Laplacian energy $E_L$ and algebraic connectivity $\lambda_2$ against the number of randomly failed edges from the or Jetstar Asia Airway (Indonesia, Australia, and New Zealand). }
+	\caption{(\subref{jetstarnetwork}) is the air traffic network route map for Jetstar Asia Airway (Indonesia, Australia, and New Zealand) in 2015,  (\subref{connectivitycurve}) is a plot of Laplacian energy $E_L$ and algebraic connectivity $\lambda_2$ against the number of randomly failed edges from the or Jetstar Asia Airway (Indonesia, Australia, and New Zealand). Source: \citep{yang2016air} }
 	\label{robustness}
 \end{figure}
-
-
-
 
 From the Fig.~(\ref{connectivitycurve}), we observe that values for both the laplacian energy and algebraic connectivity decreases with removal of edges from the network. However, on removal of $20$ to $30$ edges, the algebraic connectivity abruptly drops from $0.9$ to close to $0$ (that is in only one instance) which signifies a disconnection in the network that is, more than one connected component in the network. on the other hand though, the laplacian curve indicates gradual degradation of the network robustness on removal of $20$ to $30$ edges of the network. The ability of the Laplacian energy measure to capture the change from one connected component to more connected components in much more instances makes it an effective measure for network robustness over algebraic connectivity.
 
