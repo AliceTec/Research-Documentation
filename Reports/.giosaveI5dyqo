@@ -1,0 +1,260 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{grady2006random}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Literature Review}{1}{section.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Networks Review}{1}{subsection.1.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Diffusion on networks}{1}{section.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Motivation}{1}{subsection.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Ideas}{1}{subsection.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Image Segmentation}{1}{section.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Motivation}{1}{subsection.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Ideas}{2}{subsection.3.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Systemic Risk and Contagion in Financial Systems}{2}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Motivation}{2}{subsection.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Ideas}{2}{subsection.4.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Laplacian centrality of an edge}{2}{section.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Motivation}{2}{subsection.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Ideas}{2}{subsection.5.2}}
+\citation{estrada2008communicability}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Minimum-maximum cut}{3}{section.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Motivation}{3}{subsection.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Ideas}{3}{subsection.6.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Noise on networks}{3}{section.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Motivation}{3}{subsection.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Ideas}{3}{subsection.7.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Communicability in Networks}{4}{section.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Motivation}{4}{subsection.8.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Ideas}{4}{subsection.8.2}}
+\citation{estrada2015first}
+\citation{euler1976solution;euler1953leonhard}
+\citation{euler1976solution}
+\citation{newman2003structure}
+\citation{zachary1977information}
+\citation{williams1993abundance}
+\citation{magouirk2008connecting}
+\citation{huberman2001laws}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Literature Review}{5}{section.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Complex Networks}{5}{subsection.9.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}characteristics of complex systems}{5}{subsection.9.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Networks in the Real World}{5}{subsection.9.3}}
+\citation{googleimages}
+\citation{googleimages}
+\citation{estrada2015first}
+\citation{estrada2011structure}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{socialnetwork}{{1a}{6}{\relax }{figure.caption.2}{}}
+\newlabel{sub@socialnetwork}{{a}{6}{\relax }{figure.caption.2}{}}
+\newlabel{citationntk}{{1b}{6}{\relax }{figure.caption.2}{}}
+\newlabel{sub@citationntk}{{b}{6}{\relax }{figure.caption.2}{}}
+\newlabel{foodweb}{{1c}{6}{\relax }{figure.caption.2}{}}
+\newlabel{sub@foodweb}{{c}{6}{\relax }{figure.caption.2}{}}
+\newlabel{internet}{{1d}{6}{\relax }{figure.caption.2}{}}
+\newlabel{sub@internet}{{d}{6}{\relax }{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Networks in real world: (\subref  {socialnetwork}) A social network. (\subref  {citationntk}) A citation network. (\subref  {foodweb}) A food web. (\subref  {internet}) Computer network. Source: \citep  {googleimages}\relax }}{6}{figure.caption.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {10}Paths and Walks}{6}{section.10}}
+\citation{estrada2011structure}
+\citation{estrada2012path}
+\citation{newman2010networks}
+\citation{estrada2011structure}
+\citation{estrada2011structure}
+\@writefile{toc}{\contentsline {section}{\numberline {11}Laplacian Matrix}{7}{section.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.1}Definitions and Properties of the Laplacian Matrix}{7}{subsection.11.1}}
+\newlabel{lintermsb}{{3}{7}{Laplacian Matrix}{equation.11.3}{}}
+\citation{das2004laplacian}
+\citation{das2004laplacian}
+\citation{estrada2015first}
+\citation{estrada2011structure}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces A Network $G$.\relax }}{8}{figure.caption.3}}
+\newlabel{fig:laplace-graph}{{2}{8}{A Network $G$.\relax }{figure.caption.3}{}}
+\newlabel{example:laplace}{{2}{8}{}{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.2}Real and symmetric matrix}{8}{subsection.11.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.3}Singular matrix}{8}{subsection.11.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.4}Positive semi-definite}{8}{subsection.11.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.5}Spectrum of the Laplacian Matrix}{8}{subsection.11.5}}
+\citation{estrada2011structure}
+\citation{estrada2011structure}
+\citation{das2004laplacian}
+\citation{estrada2015first}
+\citation{estrada2015first}
+\citation{harris2008combinatorics}
+\newlabel{fiedler}{{1}{9}{Fiedler, 1975}{equation.11.5}{}}
+\newlabel{whole-graph}{{3a}{9}{\relax }{figure.caption.4}{}}
+\newlabel{sub@whole-graph}{{a}{9}{\relax }{figure.caption.4}{}}
+\newlabel{cluster-graph}{{3b}{9}{\relax }{figure.caption.4}{}}
+\newlabel{sub@cluster-graph}{{b}{9}{\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces (\subref  {whole-graph}) A network (\subref  {cluster-graph}) and its two clusters of size $3$ and $1$.\relax }}{9}{figure.caption.4}}
+\newlabel{clusters}{{3}{9}{(\subref {whole-graph}) A network (\subref {cluster-graph}) and its two clusters of size $3$ and $1$.\relax }{figure.caption.4}{}}
+\newlabel{thm:kirchoff}{{2}{9}{Kirchoff's Matrix-Tree Theorem}{thm.2}{}}
+\citation{barabasi2016network}
+\citation{ellens2013graph}
+\citation{sydney2008elasticity}
+\citation{newman2010networks}
+\citation{estrada2011epidemic,kasprzak2012diffusion,lopez2008diffusion}
+\citation{ma2008mining,thanou2017learning,belkin2003laplacian}
+\@writefile{toc}{\contentsline {section}{\numberline {12}Robustness of Complex Systems}{10}{section.12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {12.1}Robustness measures in networks}{10}{subsection.12.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {13}Diffusion on networks}{10}{section.13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.1}Heat Diffusion Models}{10}{subsection.13.1}}
+\newlabel{difusion}{{6}{11}{Heat Diffusion Models}{equation.13.6}{}}
+\newlabel{dif-final-eqn}{{7}{11}{Heat Diffusion Models}{equation.13.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {13.2} Equilibrium behaviour }{11}{subsection.13.2}}
+\citation{erdos1960evolution}
+\citation{barabasi1999emergence,estrada2011structure}
+\newlabel{difn-graph}{{4a}{12}{\relax }{figure.caption.5}{}}
+\newlabel{sub@difn-graph}{{a}{12}{\relax }{figure.caption.5}{}}
+\newlabel{difn-plot}{{4b}{12}{\relax }{figure.caption.5}{}}
+\newlabel{sub@difn-plot}{{b}{12}{\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces (\subref  {difn-plot}) is an illustration of the diffusion process over the network in (\subref  {difn-graph}). \relax }}{12}{figure.caption.5}}
+\newlabel{graph-plot}{{4}{12}{(\subref {difn-plot}) is an illustration of the diffusion process over the network in (\subref {difn-graph}). \relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {14}Impact of Structure on the rate of diffusion}{12}{section.14}}
+\citation{estrada2010quantifying,albert2002statistical,newman2003structure}
+\citation{estrada2010quantifying}
+\newlabel{barabasi-x0}{{5a}{13}{$x=0$\relax }{figure.caption.6}{}}
+\newlabel{sub@barabasi-x0}{{a}{13}{$x=0$\relax }{figure.caption.6}{}}
+\newlabel{erdos-x01}{{5b}{13}{$x=0$\relax }{figure.caption.6}{}}
+\newlabel{sub@erdos-x01}{{b}{13}{$x=0$\relax }{figure.caption.6}{}}
+\newlabel{barabasi-x02}{{5c}{13}{$x=0.2$\relax }{figure.caption.6}{}}
+\newlabel{sub@barabasi-x02}{{c}{13}{$x=0.2$\relax }{figure.caption.6}{}}
+\newlabel{erdos-x02}{{5d}{13}{$x=0.2$\relax }{figure.caption.6}{}}
+\newlabel{sub@erdos-x02}{{d}{13}{$x=0.2$\relax }{figure.caption.6}{}}
+\newlabel{barabasi-x04}{{5e}{13}{$x=0.4$\relax }{figure.caption.6}{}}
+\newlabel{sub@barabasi-x04}{{e}{13}{$x=0.4$\relax }{figure.caption.6}{}}
+\newlabel{erdos-x04}{{5f}{13}{$x=0.4$\relax }{figure.caption.6}{}}
+\newlabel{sub@erdos-x04}{{f}{13}{$x=0.4$\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Barabasi networks (left) and Erdos Renyi networks(right) of 1000 nodes and average degree of 6. Top row is illustration of diffusion process at $x=0$ ( i.e accounting for direct interactions only), middle row corresponds to $x=0.2$ followed by $x=0.4$ in the last row\relax }}{13}{figure.caption.6}}
+\newlabel{barabasi-Erdos-compare}{{5}{13}{Barabasi networks (left) and Erdos Renyi networks(right) of 1000 nodes and average degree of 6. Top row is illustration of diffusion process at $x=0$ ( i.e accounting for direct interactions only), middle row corresponds to $x=0.2$ followed by $x=0.4$ in the last row\relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {15}Influence of Heterogeneity on Diffusion over network}{14}{section.15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Plots of the average quantity of heat for $200$ nodes with the highest degree centrality against time for $3$ scale free networks having different values of the power exponent($2.0$,$2.3$,$2.7$, and $3.0$), n=1000 and average degree=$6$. The figures to the left, centre and right correspond to x values $0$,$0.1$, and $0.3$ respectively.\relax }}{14}{figure.caption.7}}
+\newlabel{quantity-exponents}{{6}{14}{Plots of the average quantity of heat for $200$ nodes with the highest degree centrality against time for $3$ scale free networks having different values of the power exponent($2.0$,$2.3$,$2.7$, and $3.0$), n=1000 and average degree=$6$. The figures to the left, centre and right correspond to x values $0$,$0.1$, and $0.3$ respectively.\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {16}Impact of choice of Initial diffusion nodes on the diffusion process on networks}{15}{section.16}}
+\newlabel{}{{7a}{15}{\relax }{figure.caption.8}{}}
+\newlabel{sub@}{{a}{15}{\relax }{figure.caption.8}{}}
+\newlabel{}{{7b}{15}{\relax }{figure.caption.8}{}}
+\newlabel{sub@}{{b}{15}{\relax }{figure.caption.8}{}}
+\newlabel{}{{7c}{15}{\relax }{figure.caption.8}{}}
+\newlabel{sub@}{{c}{15}{\relax }{figure.caption.8}{}}
+\newlabel{}{{7d}{15}{\relax }{figure.caption.8}{}}
+\newlabel{sub@}{{d}{15}{\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces  Results of the simulations for two networks. One is the Barabasi-Albert(BA) network and the other is Erdos-Renyi(ER) network, both of $100$ nodes and average degree of $6$. Taking $5$ of the most important (by degree) nodes in the network from which diffusion is initiated by assigning certain quantities of heat to those nodes, the simulation of the diffusion is illustrated in plots (a) and (b) for the BA and ER networks respectively.\relax }}{15}{figure.caption.8}}
+\newlabel{key}{{7}{15}{Results of the simulations for two networks. One is the Barabasi-Albert(BA) network and the other is Erdos-Renyi(ER) network, both of $100$ nodes and average degree of $6$. Taking $5$ of the most important (by degree) nodes in the network from which diffusion is initiated by assigning certain quantities of heat to those nodes, the simulation of the diffusion is illustrated in plots (a) and (b) for the BA and ER networks respectively.\relax }{figure.caption.8}{}}
+\citation{saber2003agreement}
+\citation{saber2003agreement}
+\citation{saber2003agreement}
+\@writefile{toc}{\contentsline {subsection}{\numberline {16.1}Diffusion on Directed Networks}{16}{subsection.16.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {16.2}Diffusion and Equilibrium behaviour in Directed Network}{16}{subsection.16.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {16.2.1}Estimation of Eigenvalues of the Laplacian}{16}{subsubsection.16.2.1}}
+\newlabel{exponentialTheorem}{{3}{16}{Limit Theorem for Exponential Matrices}{equation.16.15}{}}
+\citation{saber2003agreement}
+\newlabel{equildirected}{{16}{17}{Estimation of Eigenvalues of the Laplacian}{equation.16.16}{}}
+\newlabel{prop1}{{1}{17}{}{prop.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {16.2.2}Equilibrium state for Balanced Graphs}{17}{subsubsection.16.2.2}}
+\newlabel{prop1}{{2}{17}{}{Item.34}{}}
+\citation{estrada2017path}
+\newlabel{balanced-graph}{{8a}{18}{\relax }{figure.caption.9}{}}
+\newlabel{sub@balanced-graph}{{a}{18}{\relax }{figure.caption.9}{}}
+\newlabel{plot-balanced}{{8b}{18}{\relax }{figure.caption.9}{}}
+\newlabel{sub@plot-balanced}{{b}{18}{\relax }{figure.caption.9}{}}
+\newlabel{unbalanced-graph}{{8c}{18}{\relax }{figure.caption.9}{}}
+\newlabel{sub@unbalanced-graph}{{c}{18}{\relax }{figure.caption.9}{}}
+\newlabel{plot-unbalanced}{{8d}{18}{\relax }{figure.caption.9}{}}
+\newlabel{sub@plot-unbalanced}{{d}{18}{\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Diffusion over different categories of directed networks. (\subref  {unbalanced-graph}) is an illustration of diffusion over weakly connected and unbalanced digraph in (\subref  {balanced-graph}). (\subref  {unbalanced-graph}) is an illustration of diffusion over strongly connected and balanced digraph (\subref  {unbalanced-graph}). \relax }}{18}{figure.caption.9}}
+\newlabel{unbalanced-diffusion}{{8}{18}{Diffusion over different categories of directed networks. (\subref {unbalanced-graph}) is an illustration of diffusion over weakly connected and unbalanced digraph in (\subref {balanced-graph}). (\subref {unbalanced-graph}) is an illustration of diffusion over strongly connected and balanced digraph (\subref {unbalanced-graph}). \relax }{figure.caption.9}{}}
+\citation{estrada2011epidemic}
+\citation{estrada2012path}
+\citation{estrada2012path}
+\citation{estrada2012path}
+\@writefile{toc}{\contentsline {subsection}{\numberline {16.3}Diffusion on network with long-range interactions}{19}{subsection.16.3}}
+\newlabel{gen-difeqn}{{17}{19}{Diffusion on network with long-range interactions}{equation.16.17}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {16.3.1} k-path Laplacian matrices, $\mathbf  {L}_k$}{19}{subsubsection.16.3.1}}
+\citation{estrada2012path}
+\citation{estrada2012path}
+\newlabel{particle1}{{9a}{20}{\relax }{figure.caption.10}{}}
+\newlabel{sub@particle1}{{a}{20}{\relax }{figure.caption.10}{}}
+\newlabel{polarity2}{{9b}{20}{\relax }{figure.caption.10}{}}
+\newlabel{sub@polarity2}{{b}{20}{\relax }{figure.caption.10}{}}
+\newlabel{polarity3}{{9c}{20}{\relax }{figure.caption.10}{}}
+\newlabel{sub@polarity3}{{c}{20}{\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces  Illustration of how the polarisation analogy used as a motivation for the $k$-path Laplacian concept for networks. Starting with a positively charged particle at node $1$ as shown in (\subref  {polarity1}), taking $d=1$, the particle polarises all its nearest neighbours at a distance $d$ from it (that is nodes $2$ and $3$) as depicted in (\subref  {polarity2}). The particle can therefore jump to the non-polarised nearest neighbours namely nodes $4$ and $5$ and $6$( though node $6$ is further compared to other two alternatives). Suppose the particle jumps to node $4$, similar polarisation process as the particle polarises the new nearest neighbours. The particle either jumps to node $3$ or returns to node $1$ as shown in (\subref  {polarity3}).\relax }}{20}{figure.caption.10}}
+\newlabel{1-path-particle}{{9}{20}{Illustration of how the polarisation analogy used as a motivation for the $k$-path Laplacian concept for networks. Starting with a positively charged particle at node $1$ as shown in (\subref {polarity1}), taking $d=1$, the particle polarises all its nearest neighbours at a distance $d$ from it (that is nodes $2$ and $3$) as depicted in (\subref {polarity2}). The particle can therefore jump to the non-polarised nearest neighbours namely nodes $4$ and $5$ and $6$( though node $6$ is further compared to other two alternatives). Suppose the particle jumps to node $4$, similar polarisation process as the particle polarises the new nearest neighbours. The particle either jumps to node $3$ or returns to node $1$ as shown in (\subref {polarity3}).\relax }{figure.caption.10}{}}
+\newlabel{polarityl21}{{10a}{20}{\relax }{figure.caption.11}{}}
+\newlabel{sub@polarityl21}{{a}{20}{\relax }{figure.caption.11}{}}
+\newlabel{polarityl22}{{10b}{20}{\relax }{figure.caption.11}{}}
+\newlabel{sub@polarityl22}{{b}{20}{\relax }{figure.caption.11}{}}
+\newlabel{polarityl23}{{10c}{20}{\relax }{figure.caption.11}{}}
+\newlabel{sub@polarityl23}{{c}{20}{\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Illustration of how the a charged particle navigates the network taking jumps of length $d=2$. As discussed before, a particle starting off at node $1$ will polarise neighbouring nodes separated at not more than distance $2$ from it (that is nodes $2$,$3$, $5$, and $4$) as shown in (\subref  {polarityl22}). The particle then has only an option of jumping to the non-polarised node $6$ after which a similar process occurs again as in (\subref  {polarityl23}). \relax }}{20}{figure.caption.11}}
+\newlabel{2-path-particle}{{10}{20}{Illustration of how the a charged particle navigates the network taking jumps of length $d=2$. As discussed before, a particle starting off at node $1$ will polarise neighbouring nodes separated at not more than distance $2$ from it (that is nodes $2$,$3$, $5$, and $4$) as shown in (\subref {polarityl22}). The particle then has only an option of jumping to the non-polarised node $6$ after which a similar process occurs again as in (\subref {polarityl23}). \relax }{figure.caption.11}{}}
+\newlabel{k-laplacian}{{12}{20}{$k$-path Laplacian matrix}{equation.16.18}{}}
+\citation{estrada2012path}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces  A network of size 4.\relax }}{21}{figure.caption.12}}
+\newlabel{spanning}{{11}{21}{A network of size 4.\relax }{figure.caption.12}{}}
+\newlabel{infinite-dif}{{22}{21}{k-path Laplacian matrices, $\mathbf {L}_k$}{equation.16.22}{}}
+\citation{von2007tutorial}
+\citation{estrada2012path}
+\newlabel{equatezero}{{16.3.1}{22}{k-path Laplacian matrices, $\mathbf {L}_k$}{equation.16.24}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {16.4}k-path Laplacian for Weighted Networks}{23}{subsection.16.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces  A weighted network with $6$ nodes and $6$ weighted edges.\relax }}{23}{figure.caption.14}}
+\newlabel{weighted}{{12}{23}{A weighted network with $6$ nodes and $6$ weighted edges.\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces  A weighted network with $6$ nodes\relax }}{23}{figure.caption.16}}
+\newlabel{weighted3}{{13}{23}{A weighted network with $6$ nodes\relax }{figure.caption.16}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces k-hopping components of a graph in Fig.\ref  {weighted}\relax }}{24}{table.caption.15}}
+\newlabel{tablecomponentsg1}{{1}{24}{k-hopping components of a graph in Fig.\ref {weighted}\relax }{table.caption.15}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces k-hopping components of a graph in Fig.\ref  {weighted}\relax }}{24}{table.caption.17}}
+\newlabel{tablecomponentsg1}{{2}{24}{k-hopping components of a graph in Fig.\ref {weighted}\relax }{table.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces  A weighted network with $6$ nodes\relax }}{24}{figure.caption.18}}
+\newlabel{weighted3}{{14}{24}{A weighted network with $6$ nodes\relax }{figure.caption.18}{}}
+\citation{estrada2012path}
+\citation{estrada2011epidemic}
+\citation{estrada2011epidemic}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces k-hopping components of a graph in Fig.\ref  {weighted3}\relax }}{25}{table.caption.19}}
+\newlabel{tablecomponentsg3}{{3}{25}{k-hopping components of a graph in Fig.\ref {weighted3}\relax }{table.caption.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {16.5}Generalisation of diffusion equation on Graphs}{25}{subsection.16.5}}
+\newlabel{kgen-difeqn}{{27}{25}{Generalisation of diffusion equation on Graphs}{equation.16.27}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {16.5.1}Social Influence}{25}{subsubsection.16.5.1}}
+\citation{estrada2011epidemic}
+\citation{estrada2011epidemic}
+\citation{estrada2017path}
+\citation{estrada2011epidemic}
+\@writefile{toc}{\contentsline {subsection}{\numberline {16.6}Physical Influence}{26}{subsection.16.6}}
+\newlabel{laplacetransform}{{31}{26}{Physical Influence}{equation.16.31}{}}
+\newlabel{mellin-transforms}{{33}{26}{Physical Influence}{equation.16.33}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {16.7}Spectrum of the Generalised Laplacian matrix}{27}{subsection.16.7}}
+\newlabel{star-spectra}{{\caption@xref {star-spectra}{ on input line 1224}}{27}{Spectrum of the Generalised Laplacian matrix}{figure.caption.20}{}}
+\newlabel{sub@star-spectra}{{}{27}{Spectrum of the Generalised Laplacian matrix}{figure.caption.20}{}}
+\newlabel{path-spectra}{{\caption@xref {path-spectra}{ on input line 1229}}{27}{Spectrum of the Generalised Laplacian matrix}{figure.caption.20}{}}
+\newlabel{sub@path-spectra}{{}{27}{Spectrum of the Generalised Laplacian matrix}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Illustrations of variation of eigenvalues with conductance $x$ two networks. The first figure from the left a star network, $S_{10}$ (in Fig. \ref  {stardifn-graph}) and the other is a path network. Both networks have $10$ nodes each.\relax }}{27}{figure.caption.20}}
+\newlabel{eigen-xvalues}{{15}{27}{Illustrations of variation of eigenvalues with conductance $x$ two networks. The first figure from the left a star network, $S_{10}$ (in Fig. \ref {stardifn-graph}) and the other is a path network. Both networks have $10$ nodes each.\relax }{figure.caption.20}{}}
+\citation{xiao2009graph}
+\citation{xiao2009graph}
+\citation{xiao2009graph}
+\@writefile{toc}{\contentsline {subsection}{\numberline {16.8}The Heat Kernel}{28}{subsection.16.8}}
+\newlabel{heateqn}{{35}{28}{The Heat Kernel}{equation.16.35}{}}
+\newlabel{kernel}{{36}{28}{The Heat Kernel}{equation.16.36}{}}
+\newlabel{kerneltozero}{{38}{28}{The Heat Kernel}{equation.16.38}{}}
+\newlabel{kernelinfinity}{{40}{28}{The Heat Kernel}{equation.16.40}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {16.8.1}The Heat Kernel Invariants}{28}{subsubsection.16.8.1}}
+\newlabel{kerneltrace}{{41}{28}{The Heat Kernel Invariants}{equation.16.41}{}}
+\citation{xiao2009graph}
+\newlabel{kernelgraphs}{{16a}{29}{\relax }{figure.caption.21}{}}
+\newlabel{sub@kernelgraphs}{{a}{29}{\relax }{figure.caption.21}{}}
+\newlabel{plot-kernel}{{16b}{29}{\relax }{figure.caption.21}{}}
+\newlabel{sub@plot-kernel}{{b}{29}{\relax }{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces (\ref  {kernelgraphs}) are the thr

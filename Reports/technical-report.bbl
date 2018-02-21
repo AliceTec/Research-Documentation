@@ -1,4 +1,4 @@
-\begin{thebibliography}{65}
+\begin{thebibliography}{70}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -38,6 +38,14 @@ A.-L. Barab{\'a}si and R.~Albert.
 \newblock Emergence of scaling in random networks.
 \newblock \emph{science}, 286\penalty0 (5439):\penalty0 509--512, 1999.
 
+\bibitem[Baras and Hovareshti(2009)]{baras2009efficient}
+J.~S. Baras and P.~Hovareshti.
+\newblock Efficient and robust communication topologies for distributed
+  decision making in networked systems.
+\newblock In \emph{Decision and Control, 2009 held jointly with the 2009 28th
+  Chinese Control Conference. CDC/CCC 2009. Proceedings of the 48th IEEE
+  Conference on}, pages 3751--3756. IEEE, 2009.
+
 \bibitem[Barrat et~al.(2004)Barrat, Barthelemy, Pastor-Satorras, and
   Vespignani]{barrat2004architecture}
 A.~Barrat, M.~Barthelemy, R.~Pastor-Satorras, and A.~Vespignani.
@@ -45,12 +53,23 @@ A.~Barrat, M.~Barthelemy, R.~Pastor-Satorras, and A.~Vespignani.
 \newblock \emph{Proceedings of the National Academy of Sciences of the United
   States of America}, 101\penalty0 (11):\penalty0 3747--3752, 2004.
 
+\bibitem[Barrat et~al.(2008)Barrat, Barthelemy, and
+  Vespignani]{barrat2008dynamical}
+A.~Barrat, M.~Barthelemy, and A.~Vespignani.
+\newblock \emph{Dynamical processes on complex networks}.
+\newblock Cambridge university press, 2008.
+
 \bibitem[Belkin and Niyogi(2003)]{belkin2003laplacian}
 M.~Belkin and P.~Niyogi.
 \newblock Laplacian eigenmaps for dimensionality reduction and data
   representation.
 \newblock \emph{Neural computation}, 15\penalty0 (6):\penalty0 1373--1396,
   2003.
+
+\bibitem[Brouwer and Haemers(2011)]{brouwer2011spectra}
+A.~E. Brouwer and W.~H. Haemers.
+\newblock \emph{Spectra of graphs}.
+\newblock Springer Science \& Business Media, 2011.
 
 \bibitem[Byrne et~al.(2005)Byrne, Feddema, and Abdallah]{byrne2005algebraic}
 R.~Byrne, J.~Feddema, and C.~Abdallah.
@@ -245,6 +264,12 @@ J.~Magouirk, S.~Atran, and M.~Sageman.
 \newblock \emph{Studies in Conflict \& Terrorism}, 31\penalty0 (1):\penalty0
   1--16, 2008.
 
+\bibitem[McDonald and Meyers(2002)]{mcdonald2002diffusions}
+P.~McDonald and R.~Meyers.
+\newblock Diffusions on graphs, poisson problems and spectral geometry.
+\newblock \emph{Transactions of the American Mathematical Society},
+  354\penalty0 (12):\penalty0 5111--5136, 2002.
+
 \bibitem[Milgram(1967)]{milgram1967small}
 S.~Milgram.
 \newblock The small world problem.
@@ -372,6 +397,11 @@ J.~A. Williams, S.~M. Dawson, and E.~Slooten.
 R.~J. Wilson.
 \newblock \emph{An introduction to graph theory}.
 \newblock Pearson Education India, 1970.
+
+\bibitem[Wu et~al.()Wu, Tan, Deng, Li, Liu, and Lv]{wu2564spectral}
+J.~Wu, Y.~Tan, H.~Deng, Y.~Li, B.~Liu, and X.~Lv.
+\newblock Spectral measure of robustness in complex networks, 2008.
+\newblock \emph{arXiv preprint arXiv:0802.2564}.
 
 \bibitem[Xiao et~al.(2009)Xiao, Hancock, and Wilson]{xiao2009graph}
 B.~Xiao, E.~R. Hancock, and R.~C. Wilson.

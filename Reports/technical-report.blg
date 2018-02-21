@@ -25,45 +25,47 @@ Warning--can't use both volume and number fields in adiga2009skew
 Warning--there's a number but no volume in anthonisse1971rush
 Warning--empty journal in euler1976solution
 Warning--empty year in googleimages
-You've used 65 entries,
+Warning--empty year in wu2564spectral
+Warning--empty year in wu2564spectral
+You've used 70 entries,
             2773 wiz_defined-function locations,
-            972 strings with 14704 characters,
-and the built_in function-call counts, 28543 in all, are:
-= -- 2588
-> -- 1410
-< -- 58
-+ -- 488
-- -- 423
-* -- 2204
-:= -- 4350
-add.period$ -- 201
-call.type$ -- 65
-change.case$ -- 323
-chr.to.int$ -- 65
-cite$ -- 134
-duplicate$ -- 1383
-empty$ -- 2493
-format.name$ -- 526
-if$ -- 6018
+            993 strings with 15544 characters,
+and the built_in function-call counts, 30972 in all, are:
+= -- 2800
+> -- 1560
+< -- 62
++ -- 538
+- -- 468
+* -- 2393
+:= -- 4716
+add.period$ -- 217
+call.type$ -- 70
+change.case$ -- 351
+chr.to.int$ -- 70
+cite$ -- 146
+duplicate$ -- 1498
+empty$ -- 2687
+format.name$ -- 582
+if$ -- 6534
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 69
-newline$ -- 334
-num.names$ -- 260
-pop$ -- 669
+missing$ -- 76
+newline$ -- 359
+num.names$ -- 280
+pop$ -- 741
 preamble$ -- 1
-purify$ -- 269
+purify$ -- 294
 quote$ -- 0
-skip$ -- 1037
+skip$ -- 1126
 stack$ -- 0
-substring$ -- 1209
-swap$ -- 145
-text.length$ -- 13
+substring$ -- 1290
+swap$ -- 162
+text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 670
-warning$ -- 4
-while$ -- 286
+type$ -- 715
+warning$ -- 6
+while$ -- 306
 width$ -- 0
-write$ -- 846
+write$ -- 908
 (There were 3 error messages)
