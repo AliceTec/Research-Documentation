@@ -207,42 +207,45 @@
 	\begin{eqnarray*}
 		(u_1,v_1),(u_2,v_2),\ldots,(u_l,v_l), \quad \text{ for which }  v_i=u_{i+1} ~(i=1,2,\ldots,l-1).
 	\end{eqnarray*}
-	A walk from $v_1 $ to $v_{l+1}$ is one of length $l$.   \citep{estrada2015first}
+	A walk from $v_1 $ to $v_{l+1}$ is one of length $l$ \citep{estrada2015first}.
 \end{defn}
 
-\begin{defn}[Path]
-	A path of length $l$ is a walk of length $l$ in which all the nodes and edges are distinct. A closed path is called a cycle \citep{estrada2011structure}.
-\end{defn}
+A walk of length $k$ is referred to as a $k$-walk. We can compute the number of $k$-walks between any pair of nodes in a simple undirected unweighed graph using the entries of $\mathbf{A}^k$ where $A$ is the adjacency matrix whose entries a given by
+\begin{eqnarray}
+A_{ij} = \begin{cases} 1 &\mbox{if } i \text{ and } j \text{ are adjacent}, \\
+0 & \text{otherwise}.
+\end{cases}
+\end{eqnarray}
 
-A walk of length $k$ is referred to as a $k$-walk. We can compute the number of $k$-walks between any pair of nodes in a network using the entries of $\mathbf{A}^k$. 
 
-\begin{exa}
-	Let us compute the number of $2$-walks and $3$-walks between pairs of nodes in network in Fig.~\ref{matrixgraph}.
-	\begin{eqnarray*}
-		\mathbf{A}^2 = \begin{pmatrix}
-			2 & 1 & 2 & 1 \\
-			1 & 3 & 2 & 2 \\
-			2 & 1 & 2 & 1  \\
-			1 & 2 & 1 & 3
-		\end{pmatrix}, \quad
-		\mathbf{A}^3 = \begin{pmatrix}
-			2 & 5 & 2 & 5 \\
-			5 & 4 & 5 & 5 \\
-			2 & 5 & 2 & 5 \\
-			5 & 5 & 5 & 4
-		\end{pmatrix}
-	\end{eqnarray*}
-	From the matrix $\mathbf{A}^2$, we can tell that there are $2$ walks of length $2$ between nodes $1$ and $3$, $1$ walk of length $2$ between nodes $3$ and $4$, $2$ walks of length $2$ between nodes $2$ and $4$, etc.
-	From matrix $\mathbf{A}^3$, there are $2$ walks of length $3$ between nodes $1$ and $3$, node $3$ to it self, and node $1$ to it self. There are $5$ walks of length $3$ between nodes $2$ and $3$, nodes $2$ and $4$, etc.
-	%The diagonal entries of  $\mathbf{A}^2$ are the node degrees because the only $2$-walks from a node and back to it self are the closed walks from the node to its neighbors and then back to the node which implies the total number of such $2$-walks is equal to the number of the node's neighbors.
-	%The diagonal entries of $\mathbf{A}^3$ correspond to the number of triangles a particular node is a part of.
-\end{exa}
+%\begin{exa}
+%	Let us compute the number of $2$-walks and $3$-walks between pairs of nodes in network in Fig.~\ref{matrixgraph}.
+%	\begin{eqnarray*}
+%		\mathbf{A}^2 = \begin{pmatrix}
+%			2 & 1 & 2 & 1 \\
+%			1 & 3 & 2 & 2 \\
+%			2 & 1 & 2 & 1  \\
+%			1 & 2 & 1 & 3
+%		\end{pmatrix}, \quad
+%		\mathbf{A}^3 = \begin{pmatrix}
+%			2 & 5 & 2 & 5 \\
+%			5 & 4 & 5 & 5 \\
+%			2 & 5 & 2 & 5 \\
+%			5 & 5 & 5 & 4
+%		\end{pmatrix}
+%	\end{eqnarray*}
+%	From the matrix $\mathbf{A}^2$, we can tell that there are $2$ walks of length $2$ between nodes $1$ and $3$, $1$ walk of length $2$ between nodes $3$ and $4$, $2$ walks of length $2$ between nodes $2$ and $4$, etc.
+%	From matrix $\mathbf{A}^3$, there are $2$ walks of length $3$ between nodes $1$ and $3$, node $3$ to it self, and node $1$ to it self. There are $5$ walks of length $3$ between nodes $2$ and $3$, nodes $2$ and $4$, etc.
+%	%The diagonal entries of  $\mathbf{A}^2$ are the node degrees because the only $2$-walks from a node and back to it self are the closed walks from the node to its neighbors and then back to the node which implies the total number of such $2$-walks is equal to the number of the node's neighbors.
+%	%The diagonal entries of $\mathbf{A}^3$ correspond to the number of triangles a particular node is a part of.
+%\end{exa}
 
 \begin{defn}[Path]
 	A path of length $l$ is a walk of length $l$ in which all the nodes and edges are distinct. A closed path is called a cycle \citep{estrada2011structure}. For any pair of nodes $v_i$,$v_j$ in a connected graph, there exists at least one path connecting $v_i$ to $v_j$. The paths with minimum length are referred as shortest-paths.
 \end{defn}
 
 \begin{defn}[Irreducible set of shortest paths]
+	
 	An irreducible set of shortest paths of length $l$ is the set $P_l ={P_l(v_i,v_j),P_l(v_i,v_r),\cdots, P_l(v_s,v_t)}$ in which the endpoints of every shortest-path $P_l(v_i,v_j)$ in the set are different.
 	Each path in this set is referred to as an irreducible shortest-path \citep{estrada2012path}.\end{defn}
 
@@ -251,6 +254,13 @@ A walk of length $k$ is referred to as a $k$-walk. We can compute the number of 
 	A connected component is also referred to as a maximal connected subgraph of a graph.
 \end{defn}
 
+\begin{defn}[Transition matrix of the random walk on a Graph]
+	It is the $n \times n$ matrix $P_G$ whose entries are given by
+	\begin{equation}
+	P_{ij} = \frac{1}{d_i} A_{ij},
+	\end{equation}
+	In otherwords, $P_G = D_{G} ^ {-1} A$
+\end{defn}
 
 \section{Laplacian Matrix}
 The Laplacian matrix is one of matrices used for representation of a network. Previously, a lot of research efforts were geared towards the study of the adjacency matrix and its spectral properties. However, it has lately been discovered that the spectral properties of a Laplacian matrix give more information pertaining the structure of the network as compared to the adjacency matrix. In this essay therefore, we study the spectrum of the Laplacian matrix of the network with the aim of obtaining information about the structure of the network. In addition, we explore the various applications of the Laplacian of a network in real-world.
@@ -357,7 +367,9 @@ The entries of the Laplacian matrix are real numbers and are symmetric with resp
 The Laplacian matrix is a square matrix that is not invertible. Its determinant is equal to zero \citep{das2004laplacian}.
 \item{Positive semi-definite}
 
-A matrix is positive semi-definite if and only if all its eigenvalues are non-negative. Suppose the eigenvalues of a Laplacian matrix are: $\lambda_1,\lambda_2,\ldots, \lambda_n$, we show that $\lambda_i \geq 0 ~\forall~i$.
+A matrix is positive semi-definite if and only if all its eigenvalues are non-negative. For a given matrix $L$, this property is denoted by $A\geq 0$. 
+
+Suppose the eigenvalues of a Laplacian matrix are: $\lambda_1,\lambda_2,\ldots, \lambda_n$, we show that $\lambda_i \geq 0 ~\forall~i$.
 \begin{proof}
 	Let $\mathbf{v}_i$ be a normalised eigenvector of $\mathbf{L}$ with eigenvalue $\lambda_i$. Then, using Equation (\ref{lintermsb})
 	\begin{eqnarray*}
@@ -366,23 +378,29 @@ A matrix is positive semi-definite if and only if all its eigenvalues are non-ne
 	Thus, any eigenvalue $\lambda_i$ of the Laplacian matrix is equal 
 	to $(\mathbf{v}_i^T \mathbf{B}^T \mathbf{B} \mathbf{v}_i)$ which can be written as $(\mathbf{v}_i \mathbf{B})^T (\mathbf{B} \mathbf{v}_i)$. The quantity $(\mathbf{v}_i \mathbf{B})^T (\mathbf{B} \mathbf{v}_i)$  is the inner product of a real vector $(\mathbf{B} \mathbf{v}_i)$ with itself, that is, the sum of the squares of the real elements of the vector $(\mathbf{B} \mathbf{v}_i)$ and hence it is non-negative \citep{estrada2015first}.
 \end{proof}
+
 \end{enumerate}
 \subsection{Spectrum of the Laplacian Matrix}
 The spectrum of the Laplacian provides useful information about the structure of a network. The spectrum of the Laplacian matrix is the set of all its eigenvalues and their multiplicities \citep{estrada2011structure}. Let $\lambda_1 < \lambda_2 < \ldots < \lambda_n$ be the distinct eigenvalues of $\mathbf{L}$ and let $m(\lambda_1),m(\lambda_2), \ldots,m(\lambda_n)$ be their multiplicities. Then, the spectrum of $\mathbf{L}$ is written as
 \begin{eqnarray}
 Sp\mathbf{L} = 
 \renewcommand*{\arraystretch}{1.1}
-\begin{pmatrix*}[l]
+\begin{pmatrix*}
 \lambda_1 & \lambda_2 & \ldots & \lambda_n \\
-m(\lambda_1) & m(\lambda_2) & \ldots & m(\lambda_n).
-\end{pmatrix*}
+m(\lambda_1) & m(\lambda_2) & \ldots & m(\lambda_n)
+\end{pmatrix*}.
 \end{eqnarray}
 
 Let us write the eigenvalues of $\mathbf{L}$ in decreasing order: $\lambda_n  \geq \lambda_{n-1} \geq  \cdots \geq \lambda_2 \geq \lambda_1 =0 $. Some of the results associated with the spectrum of the Laplacian matrix include:
 \begin{itemize}
 	\item The eigenvalues of $\mathbf{L}$ are bounded as 
 	$ 0 \leq \lambda_j \leq 2k_{max} \quad \text{and} \quad \lambda_n \geq k_{max} $.
-	\item The eigenvalue $\lambda_1$ is always equal to zero \citep{estrada2011structure}.
+	\item The eigenvalue $\lambda_1$ is always equal to zero \citep{estrada2011structure}. Atleast one eigenvalue of the Laplacian is $0$.
+	\begin{proof}
+		Consider the vector $v= (1/\sqrt{n}, \cdots, 1/\sqrt{n}) $. We know that the $i$th entry of $Lv$ is 
+		
+		$\sum_{i\sim j} v_{(i)}- v_{(j)} = \sum_{i\sim j} (1/\sqrt{n} - 1/\sqrt{n}) = 0 = 0 \cdot v_{(i)}$.
+	\end{proof}
 	%\item The smallest non-zero eigenvalue of $\mathbf{L}$ is called the spectral gap.
 	\item The multiplicity of $0$ as an eigenvalue of $\mathbf{L}$ is equal to the number of connected components in the network \citep{estrada2011structure}.
 	\item Every row sum and column sum of $\mathbf{L}$ is zero. Thus, the vector $\mathbf{v_1}$ of all ones is an eigenvector associated with $\lambda_1 =0$, since $\mathbf{Lv_1} = \mathbf{0} $ \citep{das2004laplacian}.
@@ -391,7 +409,7 @@ Let us write the eigenvalues of $\mathbf{L}$ in decreasing order: $\lambda_n  \g
 	
 	\item Let $G$ be a graph with connected components $G_i (1 \leq i \leq s)$. Then the spectrum of $G$ is the union of the spectra of $G_i$ (and multiplicities are added) \citep{brouwer2011spectra}.
 	
-	\item For a graph $G$, the sum of the eigenvalues, that is, the trace of $L$ is twice the number of edges of $G$. Mathematically, $\sum_{i=1}^n \lambda_i = Tr(L) = 2E.$
+	\item For a graph $G$, the sum of the eigenvalues, that is, the trace of $L$ is twice the number of edges of $G$. Mathematically, $\sum_{i=1}^n \lambda_i = Tr(L) = 2E.$\\
 	
 \end{itemize}
 
@@ -872,25 +890,18 @@ Some analytic expressions for the spectra of different kinds of simple networks 
    \end{equation*}
    We observe that $Lv_r = 0$ and $v_l^TL = 0$. However, the condition $v_l^T v_r = 1$  is not satisfied and therefore equilibrium cannot be attained as shown in Fig.~\ref{unbalanced-diffusion}. In addition, we observe that considering the structure, vertex $4$ has only in coming edges which signifies that during the diffusion process, vertex $4$ only receives heat from the immediate neighbours vertices $0$ and $3$ without giving out any due to lack of out going links. As a result, quantity of heat at vertex $4$ keeps on increasing as shown in Fig.~\ref{unbalanced-diffusion}.
    \end{exa}	
-    \subsection{Diffusion on network with long-range interactions}
-    	    The 'classical' case considers diffusion over a network where a substance under consideration say heat flows along the edges of the network. However, long range interactions during diffusive processes on networks are evident in real world situations. Such interactions result into superdiffussion on networks which has been modelled by various models that include the random walks with Levy flights (RWLF), model based on fractional diffusion equation (FDE), and many more. Recently, an elegant model has been put forward by Estrada \citep{estrada2017path} which accounts for longrange interactions by use of $k$-path Laplacian matrices resulting into a generalised diffusion process on networks.
+    \section{The Generalised Laplacian Matrix}
     	    
 %    	    However, long-range interactions over networks have been evident in real world situations, for instance in attaining consensus in networked multi-agent systems, an agent is influenced not only by the nearest neighbours but also by the non-nearest neighbours. 
     	    
     	    
-    	   	In this case, we consider diffusion on a graph where by both direct and long-range interactions are involved. One interesting study of long-range interactions is by Estrada on modelling epidermic spread in networks \citep{estrada2011epidemic}. Here, the long range interactions are considered to be nonrandom and depend on the social distances between individuals in the social network.
-    	    Recently, work in \citep{estrada2012path} introduced a method of generalisation of the diffusion process on a given graph based on the k-path Laplacian operators $\mathbf{L}_k$ in which we consider the fact that the diffusive particle at a given node can hop to not only its nearest neighbours (captured by the classical Laplacian operator $\mathbf{L}$) but to any other nodes in the graph with a probability that decays with the increase of the shortest path distance between the current node where the particle is residing to the one it will hop to. Thus, for a diffusive node hopping to other nodes separated at a distance $k$ form its current location, such a diffusion process can be captured by replacing $\mathbf{L}$ in (\ref{dif-final-eqn}) by $\mathbf{L}_G$ in (\ref{infinite-dif}). That is 
-    	    \begin{equation}
-    	    \frac{d\boldsymbol{\phi}}{dt} = -\varepsilon \mathbf{L}_{G}\boldsymbol{\phi}, \quad \boldsymbol{\phi}(0) = \boldsymbol{\phi}_0 ,
-    	    \label{gen-difeqn}
-    	    \end{equation}
-    	    where $L_G$ is the generalised Laplacian matrix. 
+    	  
     	    There exists various ways in which the generalised matrix $L_G$ can be defined. In this work, however, we explore the elegant definition that is based on the $k$-path Laplacian matrices as introduced by Estrada in \citep{estrada2012path}. First, let us understand what the $k$-path Laplacian matrices are.
     	    \subsubsection{ k-path Laplacian matrices, $\mathbf{L}_k$}
     	    The k-path laplacian matrices are a natural generalisation of the combinatorial laplacian of a graph \citep{estrada2012path}. The motivation behind this generalisation is the idea of determining whether every node in a graph can be visited by means of a process that involves hopping from one node to another separated at a distance $k$. We can better understand the concept of k-path Laplacian through considering a polarisation process on a network, that is to say as, suppose a particle with a positive charge resides at a given node of simple graph $G= (V,E)$ and while at that node, it polarises all nodes at a distance $d$ from it. Consequently, the particle's movement to another is such that it hops to any nearest non-positively charged node. While at the new node, the particle polarises neighbouring nodes in the same manner as before. As a result, the particle either hops to the nearest non-positive nodes or returns to the origin node as illustrated in Fig. \ref{1-path-particle} and Fig.\ref{2-path-particle} for $d=1$ and $d=2$ respectively.
     	    
     	    
-    	    \begin{figure}[H]
+    	    \begin{figure}[!h]
     	    	\centering
     	    	\begin{subfigure}[b]{0.3\textwidth}
     	    		\includegraphics[width=\textwidth]{images/nodecharge1.png}
@@ -953,7 +964,7 @@ Some analytic expressions for the spectra of different kinds of simple networks 
     	    \end{defn}
     	    
     	    \begin{exa}
-    	    	Let us compute the $k$-path laplacians for a simple graph $G$ in Fig.\ref{spanning}.
+    	    	Let us compute the $k$-path Laplacians for a simple graph $G$ in Fig.\ref{spanning}.
     	    	
     	    	\begin{figure}[H]
     	    		\centering
@@ -1234,16 +1245,64 @@ Some analytic expressions for the spectra of different kinds of simple networks 
     	    	From Table.~\ref{tablecomponentsg3}, we observe that for $k=1$ and $k=2$, the number of components computed based on the multiplicity of the smallest eigenvector corresponds with the number of components obtained through navigating the graph (actual value). However, for $k=3$, we observe inconsistency in the two values.
     	    \end{exa}
     	    
-    	    \subsection{Generalisation of diffusion equation on Graphs}
-    	    We then consider the generalised diffusion on graph where interactions are both short-range and long-range. The long-range interactions are accounted for by use of $k$-path Laplacian matrices. Following this generalisation, Eqn.\ref{gen-difeqn} then becomes
-%    	    In accounting for indirect interaction, we consider the fact that longer paths contribute less compared to shorter ones. This is achieved by considering Equation \ref{dif-final-eqn} where $\mathbf{L}$ is any of the transformed $k$-path Laplacians given as
-
-			\begin{equation}
-			\frac{d\boldsymbol{\phi}}{dt} =  -\varepsilon \Big(\sum_{k=1}^{\Delta}c_k\mathbf{L}_{k} \Big) \boldsymbol{\phi}, \quad \boldsymbol{\phi}(0) = \boldsymbol{\phi}_0 ,
-			\label{kgen-difeqn}
-			\end{equation}
+    	    Following from the definition of the $k$-path Laplacian matrices, we thus define the generalised Laplacian matrix as
+    	    \begin{equation}
+    	    L_{G} = \sum_{k=1}^{\Delta} c_{k}L_{k}
+    	    \end{equation}
 			where $1 \leq \Delta \leq d_{max}$ and $c_k$ are the coefficients.
 		    The coefficients $c_k$ play a crucial role in the generalisation of diffusion process on network and so determining the values of these coefficients is an important task. The values of $c_k$ are expected to give more weight to shorter than to the longer range interactions. In \citep{estrada2012path} Estrada proposed two approaches categorised as social and physical ways of influence.
+		    
+		    \subsection{Properties of the Generalised Laplacian Matrix }
+		    The generalised matrix $L_G$ is real and symmetric. It is also a semi-positive definite matrix as shown in the proof:
+		    \begin{proof}
+		    	For any column vector $\mathbf{y}$
+		    	\begin{equation}
+		    	\mathbf{y}^T L_{G} \mathbf{y} = \mathbf{y}^T(c_{1}L_{1} + c_{2}L_{2} + \cdots + c_{\delta}L_{\delta} )\mathbf{y}
+		    	= \mathbf{y}^Tc_{1}L_{1}\mathbf{y} + \mathbf{y}^Tc_{2}L_{2}\mathbf{y} + \cdots + \mathbf{y}^Tc_{\delta}L_{\delta}\mathbf{y} 
+		    	\end{equation}
+		    	Since $\mathbf{y}^Tc_{k}L_{k}\mathbf{y} \geq 0$ for $c_{k}>0$ and $1 \leq k \leq \delta$ as in Eqn.\ref{equatezero}, then
+		    	\begin{equation}
+		    	\mathbf{y}^T L_{G} \mathbf{y} \geq 0	
+		    	\end{equation}
+		    \end{proof}
+		    %    	    	 \subsubsection{Spectrum of the Generalised Laplacian matrix}
+		    The spectrum of the Laplacian matrix is the set of eigenvalues and their multiplicities \citep{estrada2011epidemic}. Let $\lambda_1 < \lambda_2 < \cdots < \lambda_n$ be the eigenvalues of $L(x)$ and their corresponding multiplicities $m(\lambda_1), m(\lambda_2), \cdots, m(\lambda_n)$. The spectrum of $L$ is given by
+		    \begin{equation}
+		    S_p L = \big(\lambda_1 \quad \lambda_2 \quad \cdots \quad \lambda_n \\
+		    m(\lambda_1) \quad m(\lambda_2) \quad \cdots \quad m(\lambda_n)  \big).!h
+		    \end{equation}
+		    Some analytical expressions for the spectra of the Laplacian matrix of some common simple networks are:\\
+		    \begin{itemize}
+		    	\item Star, $S_n$: $S_p(L) = {0~ 1^{n-2}~ n}$\\
+		    	\item Path, $P_n$: $S_p(L) = {2-2\cos\big( \frac{\pi(j-1)}{n}\big) }$
+		    \end{itemize}
+		    For generalised Laplacian matrix $L(x)$, the above expressions as a function of conductance $x$ are given by
+		    \begin{itemize}
+		    	\item Star, $S_n$: $S_p(L(x)) = {0~ (1+8x)^{n-2}~ n}$\\
+		    	\item Path, $P_n$: $S_p(L(x)) = { }$
+		    \end{itemize}
+		    \begin{figure}[H]
+		    	\centering
+		    	\begin{subfigure}[b]{0.45\textwidth}
+		    		\includegraphics[width= \textwidth]{images/Star-network-eigenplot.png}
+		    		%\caption{$x=0.1, t=0.5$}
+		    		\label{star-spectra}
+		    	\end{subfigure}~
+		    	\begin{subfigure}[b]{0.45\textwidth}
+		    		\includegraphics[width= \textwidth]{images/Path-network-eigenplot.png}
+		    		%\caption{$x=0.1, t=3.0$}
+		    		\label{path-spectra}
+		    	\end{subfigure} \\
+		    	\begin{subfigure}[b]{0.85\textwidth}
+		    		\includegraphics[width= \textwidth]{images/legend-eigenvalues.png}
+		    		%\caption{$x=0.1, t=3.0$}
+		    		%\label{gridt3x01}
+		    	\end{subfigure}
+		    	\caption{Illustrations of variation of eigenvalues with conductance $x$ two networks.
+		    		(\subref{star-spectra}) corresponds to that a star network, $S_{10}$ and  (\subref{path-spectra}) corresponds to that of a path graph, $P_{10}$}.
+		    	\label{eigen-xvalues}
+		    \end{figure}
+		    As discussed before, the eigenvalues $\lambda_i(x)$ of the Laplacian matrix $L(x)$ are an increasing function of $x$ except for the smallest eigenvalue $\lambda_1(x) = 0$ which remains almost constant as observed in Figure \ref{eigen-xvalues}. For the star network , both $\lambda_1(x) = 0$ and $\lambda_1(n) = 5$ remain constant the analytical expressions mentioned before. However, the rest of the eigenvalues increase linearly with increase in $x$ values. At $x=0.5$, we observe that all eigenvalues are equal with a value of $10$. This is because at $x=0.5$, all edges of the star network have a weight of $1$ and thus, a complete network,$K_n$, whose spectrum is given by $S_p(L) = \{0~ n^{n-1} \}$. On the other hand, the path network follows a similar trend as that of the star network but the $x$ value at which all eigenvalues (except $\lambda_i=0$) are equal is relatively higher than $0.5$ that is to say the point lies at $x=0.7$. 
     	    \subsubsection{Social Influence}    	
     	    	Here we consider a social network where nodes represent the people with in a society and the links are the social relationship or ties among the people for instance friendship, family relations, collaboration, among others. In such networks, influence between two people connected to each other in the network can be accounted for. However, it is quite challenging to account for the indirect influence between two people that are not directly connected in the network. An approach introduced in \citep{estrada2011epidemic}considers that which on empirical evidence, the indirect influence or long range interactions among people can be thought of as a pre-conditioner for establishment of a new social tie. In otherwords, new social ties among humans are created as an investment in the future as justified by empirical evidence in \citep{estrada2011epidemic}. it is quite obvious that two individuals that influence each other, probability is high that the two become friends compared to those that have no mutual influence. This process can be considered as an analogy in which the future value of money, in particular the future
     	    	value of a growing annuity, is determined in quantitative finance but for this case we consider a transaction involving information instead of money. Suppose an individual A lends information to individual B whose present value is $PVI$ at an interest rate $r$ and for a time period $t$. The future value of the information $FVI$ is given by
@@ -1277,57 +1336,7 @@ Some analytic expressions for the spectra of different kinds of simple networks 
     	    	where $\delta_{Gv_i}$ denotes the generalised degree.
     	    	 In modelling the spread of epidermic, Estrada in \citep{estrada2011epidemic} considered two types of contacts that is   close contacts  which are frequent interactions among individuals and casual or long range interactions are the non frequent encounters among individuals which facilitate the spread of infections.The latter which were considered as non-random where accounted by use of the social influence approach.
     	    	 
-    	    	 \subsection{Properties of the Generalised Laplacian Matrix }
-    	    	         The generalised matrix $L_G$ is real and symmetric. It is also a semi-positive definite matrix as shown in the proof:
-    	    	         \begin{proof}
-    	    	          For any column vector $\mathbf{y}$
-    	    	         \begin{equation}
-    	    	         \mathbf{y}^T L_{G} \mathbf{y} = \mathbf{y}^T(c_{1}L_{1} + c_{2}L_{2} + \cdots + c_{\delta}L_{\delta} )\mathbf{y}
-    	    	         = \mathbf{y}^Tc_{1}L_{1}\mathbf{y} + \mathbf{y}^Tc_{2}L_{2}\mathbf{y} + \cdots + \mathbf{y}^Tc_{\delta}L_{\delta}\mathbf{y} 
-    	    	         \end{equation}
-    	    	         Since $\mathbf{y}^Tc_{k}L_{k}\mathbf{y} \geq 0$ for $c_{k}>0$ and $1 \leq k \leq \delta$ as in Eqn.\ref{equatezero}, then
-    	    	         \begin{equation}
-    	    	         \mathbf{y}^T L_{G} \mathbf{y} \geq 0	
-    	    	         \end{equation}
-    	    	        \end{proof}
-%    	    	 \subsubsection{Spectrum of the Generalised Laplacian matrix}
-    	    	 The spectrum of the Laplacian matrix is the set of eigenvalues and their multiplicities \citep{estrada2011epidemic}. Let $\lambda_1 < \lambda_2 < \cdots < \lambda_n$ be the eigenvalues of $L(x)$ and their corresponding multiplicities $m(\lambda_1), m(\lambda_2), \cdots, m(\lambda_n)$. The spectrum of $L$ is given by
-    	    	 \begin{equation}
-    	    	 S_p L = \big(\lambda_1 \quad \lambda_2 \quad \cdots \quad \lambda_n \\
-    	    	 m(\lambda_1) \quad m(\lambda_2) \quad \cdots \quad m(\lambda_n)  \big).!h
-    	    	 \end{equation}
-    	    	 Some analytical expressions for the spectra of the Laplacian matrix of some common simple networks are:\\
-    	    	 \begin{itemize}
-    	    	 	\item Star, $S_n$: $S_p(L) = {0~ 1^{n-2}~ n}$\\
-    	    	 	\item Path, $P_n$: $S_p(L) = {2-2\cos\big( \frac{\pi(j-1)}{n}\big) }$
-    	    	 \end{itemize}
-    	    	 For generalised Laplacian matrix $L(x)$, the above expressions as a function of conductance $x$ are given by
-    	    	 \begin{itemize}
-    	    	 	\item Star, $S_n$: $S_p(L(x)) = {0~ (1+8x)^{n-2}~ n}$\\
-    	    	 	\item Path, $P_n$: $S_p(L(x)) = { }$
-    	    	 \end{itemize}
-    	    	 \begin{figure}[H]
-    	    	 	\centering
-    	    	 	\begin{subfigure}[b]{0.45\textwidth}
-    	    	 		\includegraphics[width= \textwidth]{images/Star-network-eigenplot.png}
-    	    	 		%\caption{$x=0.1, t=0.5$}
-    	    	 		\label{star-spectra}
-    	    	 	\end{subfigure}~
-    	    	 	\begin{subfigure}[b]{0.45\textwidth}
-    	    	 		\includegraphics[width= \textwidth]{images/Path-network-eigenplot.png}
-    	    	 		%\caption{$x=0.1, t=3.0$}
-    	    	 		\label{path-spectra}
-    	    	 	\end{subfigure} \\
-    	    	 	\begin{subfigure}[b]{0.85\textwidth}
-    	    	 		\includegraphics[width= \textwidth]{images/legend-eigenvalues.png}
-    	    	 		%\caption{$x=0.1, t=3.0$}
-    	    	 		%\label{gridt3x01}
-    	    	 	\end{subfigure}
-    	    	 	\caption{Illustrations of variation of eigenvalues with conductance $x$ two networks.
-    	    	 		(\subref{star-spectra}) corresponds to that a star network, $S_{10}$ and  (\subref{path-spectra}) corresponds to that of a path graph, $P_{10}$}.
-    	    	 	\label{eigen-xvalues}
-    	    	 \end{figure}
-    	    	 As discussed before, the eigenvalues $\lambda_i(x)$ of the Laplacian matrix $L(x)$ are an increasing function of $x$ except for the smallest eigenvalue $\lambda_1(x) = 0$ which remains almost constant as observed in Figure \ref{eigen-xvalues}. For the star network , both $\lambda_1(x) = 0$ and $\lambda_1(n) = 5$ remain constant the analytical expressions mentioned before. However, the rest of the eigenvalues increase linearly with increase in $x$ values. At $x=0.5$, we observe that all eigenvalues are equal with a value of $10$. This is because at $x=0.5$, all edges of the star network have a weight of $1$ and thus, a complete network,$K_n$, whose spectrum is given by $S_p(L) = \{0~ n^{n-1} \}$. On the other hand, the path network follows a similar trend as that of the star network but the $x$ value at which all eigenvalues (except $\lambda_i=0$) are equal is relatively higher than $0.5$ that is to say the point lies at $x=0.7$. 
+    	    	 
     	    	
     	    	\subsection{Physical Influence}
     	    	It is observed in many man-made and naturally evolving systems that communication among the agents of the system follows a spatial decay as illustrated in sensor systems where sensors far away from the target display low noise-signal ratio as a result of attenuation (spatial decay) of signal energy, in earthquake incidences where the aftershocks follow a spatial decay, that is, areas further from the main shock are less affected compared to nearer areas. This spatial decay takes on the form $r ^{-\alpha}$ , where $r$ is the distance from the main shock. Other examples of similar physical scenarios include the brain in which the interconnectivity certain neurons in mammalian neo-
@@ -1396,6 +1405,17 @@ Some analytic expressions for the spectra of different kinds of simple networks 
     	    	The Mean Square Distance, $MSD \sim t^\kappa$. Normal diffusion is attained  at $\kappa =1$, superdiffusion is attained at $\kappa > 1$. However, a special type of diffusion known as Ballistic diffusion is characterised by the fact that at small times the particles are not hindered yet
     	    	by collisions and diffuse very fast. It is attained at $\kappa = 2$.
     	    \end{enumerate}
+        \subsection{The Long Range Interaction Model LRI-model}
+        We consider that given a simple graph $G=(V,E)$ with diameter denoted by $d_{max}$. Its $k$-path Laplacian matrices can be transformed in various ways. However, in this work we consider two types of transforms as covered in \citep{estrada2017path} namely the Mellin and Laplace transforms given by
+        
+        \begin{equation}
+        \tilde{L}_{\tau} = \begin{cases} \sum_{d=1}^{d_{max}} d^{-s} L_d &\mbox{for } \tau = Mell, s>0 \\
+        L + \sum_{d=2}^{d_{max}} e^{-\lambda d} L_d   & \mbox{for } \tau = Lapl, \lambda>0. \end{cases} 
+        \end{equation}
+        
+        Estrada, et.al \citep{estrada2017long} gave an insightful interpretation of the  LRI-model in the following way.
+        Let us consider a simple connected graph $G=(V,E)$ and the transformation: $f: G(V,E) \longrightarrow G'=(V, E', \phi, W)$, such that $E' ={E \bigcup (p,q)\mid p,q \in V, (p,q) \notin E} $ and $\phi:W \longrightarrow E'$ is a surjective mapping that assigns a weight to each of the elements of $E'$. The weights $w_{ij} \in W$ are given by the Mellin or Laplace transforms and they are specific for each graph, that is $w_{ij} = d_{ij}^{-s}$ or $w_{ij} = e^{-\lambda d_{ij}}$ for $d_{ij} >1$, and $w_{ij} =1$ for connected pairs of nodes. We this interpretation, it is important to note that when $ s, \lambda \longrightarrow \infty$ the weighted graph $G'=(V, E', \phi, W)$ tends to the original graph $G(V,E)$. On the other hand, when $ s, \lambda \longrightarrow 0$ the weighted graph $G'=(V, E', \phi, W)$ tends to the complete graph with $N$ nodes ($N = |V|$), $K_{N}$.
+        
         
         \newpage
         
@@ -1414,6 +1434,25 @@ Some analytic expressions for the spectra of different kinds of simple networks 
         %	\caption{Illustration of the impact of the choice of the initial nodes from which diffusion starts. We consider Barabasi-Albert networks of $100$ nodes. The left plot corresponds to one in which the $5$ most important node according to degree centrality(hubs) are chosen. On the other hand, the plot at the right is as a result of random selection of initial nodes. }
         %	\label{}
         %\end{figure}
+        \subsection{Diffusion on network with long-range interactions}
+        The 'classical' case considers diffusion over a network where a substance under consideration say heat flows along the edges of the network. However, long range interactions during diffusive processes on networks are evident in real world situations. Such interactions result into superdiffussion on networks which has been modelled by various models that include the random walks with Levy flights (RWLF), model based on fractional diffusion equation (FDE), and many more. Recently, an elegant model has been put forward by Estrada \citep{estrada2017path} which accounts for longrange interactions by use of $k$-path Laplacian matrices resulting into a generalised diffusion process on networks.
+        
+        In this case, we consider diffusion on a graph where by both direct and long-range interactions are involved. One interesting study of long-range interactions is by Estrada on modelling epidermic spread in networks \citep{estrada2011epidemic}. Here, the long range interactions are considered to be nonrandom and depend on the social distances between individuals in the social network.
+        Recently, work in \citep{estrada2012path} introduced a method of generalisation of the diffusion process on a given graph based on the k-path Laplacian operators $\mathbf{L}_k$ in which we consider the fact that the diffusive particle at a given node can hop to not only its nearest neighbours (captured by the classical Laplacian operator $\mathbf{L}$) but to any other nodes in the graph with a probability that decays with the increase of the shortest path distance between the current node where the particle is residing to the one it will hop to. Thus, for a diffusive node hopping to other nodes separated at a distance $k$ form its current location, such a diffusion process can be captured by replacing $\mathbf{L}$ in (\ref{dif-final-eqn}) by $\mathbf{L}_G$ in (\ref{infinite-dif}). That is 
+        \begin{equation}
+        \frac{d\boldsymbol{\phi}}{dt} = -\varepsilon \mathbf{L}_{G}\boldsymbol{\phi}, \quad \boldsymbol{\phi}(0) = \boldsymbol{\phi}_0 ,
+        \label{gen-difeqn}
+        \end{equation}
+        where $L_G$ is the generalised Laplacian matrix. 
+        
+        
+        We then consider the generalised diffusion on graph where interactions are both short-range and long-range. The long-range interactions are accounted for by use of $k$-path Laplacian matrices. Following this generalisation, Eqn.\ref{gen-difeqn} then becomes
+        %    	    In accounting for indirect interaction, we consider the fact that longer paths contribute less compared to shorter ones. This is achieved by considering Equation \ref{dif-final-eqn} where $\mathbf{L}$ is any of the transformed $k$-path Laplacians given as
+        
+        \begin{equation}
+        \frac{d\boldsymbol{\phi}}{dt} =  -\varepsilon \Big(\sum_{k=1}^{\Delta}c_k\mathbf{L}_{k} \Big) \boldsymbol{\phi}, \quad \boldsymbol{\phi}(0) = \boldsymbol{\phi}_0 ,
+        \label{kgen-difeqn}
+        \end{equation}
         
         \subsection{The Heat Kernel}
         As discussed earlier, diffusion of heat on a graph can be modelled by the equation 
@@ -1426,7 +1465,7 @@ Some analytic expressions for the spectra of different kinds of simple networks 
         
         The heat kernel is the fundamental solution to the diffusion equation (\ref{heateqn}). It is obtained by exponentiating the Laplacian eigensystem and it is given by
         \begin{equation}
-        \phi(t) = exp(-Lt) 
+        H_t = exp(-Lt) 
         \label{kernel}
         \end{equation}
         It literally describes the flow of substance (heat) across edges (direct interactions) in the graph \citep{xiao2009graph}.
@@ -1443,11 +1482,11 @@ Some analytic expressions for the spectra of different kinds of simple networks 
         It therefore implies that for $t$ tending to zero, the heat kernel depends on the local connectivity structure of the graph.
         On the other hand, as $t$ tends to infinity, we apply the spectral decomposition of Equation \ref{kernel} which is 
         \begin{equation}
-        \phi(t) = \mathbf{V} e^{(-\Lambda t)} \mathbf{V^T} =  \sum_{i=0}^n e^{(-\lambda_i t)} v_i v_i^T 
+        H_t = \mathbf{V} e^{(-\Lambda t)} \mathbf{V}^T =  \sum_{i=0}^n e^{(-\lambda_i t)} v_i v_i^T 
         \end{equation}
         where $\lambda_i$s are the eigenvalues of $L$ in a non-decreasing order $0=\lambda_1 \leq  \lambda_2 \leq, \cdots \leq \lambda_n$ and $v_i$ is the eigenvector corresponding to the eigenvalue $\lambda_i$. Thus,
         \begin{equation}
-        \lim_{t\longrightarrow 0} \Big(e^{-\mathbf{L}t}\Big) = e^{(-\lambda_2 t)} v_2 v_2^T.
+        \lim_{t\longrightarrow 0} \Big(e^{-\mathbf{L}t}\Big) = e^{(-\lambda_2 t)} v_2 v _2^T.
         \label{kernelinfinity}  
         \end{equation}
         From Equation \ref{kernelinfinity},its evident that for large $t$, the heat kernel behaviour is determined by the global structure of the graph. 
@@ -1455,9 +1494,18 @@ Some analytic expressions for the spectra of different kinds of simple networks 
         \begin{enumerate}[1]
         	\item \textbf{Heat Kernel Trace}
         	
-        	Like the trace of any other matrix, the trace of heat kernel is the summation of the main diagonal elements of the heat kernel matrix of a graph. It is therefore given by
+        	The trace of the heat kernel $Tr(H_t)$ is given by
         	\begin{equation}
-        	Z(t) = Tr(h_t) = \sum_{i=1}^{|V|} e^{-\lambda_i t},
+        	Tr(H_t) = Tr(\mathbf{V} e^{(-\Lambda t)} \mathbf{V}^T)=Tr( e^{(-\Lambda t)} (\mathbf{V}^T \mathbf{V})) = Tr(e^{(-\Lambda t)})
+        	%&=& Tr(\mathbf{V} (e^{(-\Lambda t)} \mathbf{V}^T)) \\
+        	%&=& Tr( (e^{(-\Lambda t)} \mathbf{V}^T) \mathbf{V})\\
+        	%&=& Tr( e^{(-\Lambda t)} (\mathbf{V}^T \mathbf{V})) \\
+        	%&=& Tr(e^{(-\Lambda t)})
+        	\end{equation}
+%        	Like the trace of any other matrix, the trace of heat kernel is the summation of the main diagonal elements of the heat kernel matrix of a graph. 
+        	Thus, the trace function of the heat kernel is given by 
+        	\begin{equation}
+        	Z(t) = Tr(H_t) = Tr(e^{(-\Lambda t)}) = \sum_{i=1}^{|V|} e^{-\lambda_i t},
         	\label{kerneltrace}
         	\end{equation}
         	where $\lambda_i$ is the eigenvalue of the normalised Laplacian matrix \cite{xiao2009graph}. 
@@ -1478,10 +1526,22 @@ Some analytic expressions for the spectra of different kinds of simple networks 
         			\includegraphics[width= \textwidth]{images/Trace-kernel-plot}
         			\caption{}
         			\label{plot-kernel}
+        		\end{subfigure}\\
+        		\begin{subfigure}[b]{0.45\textwidth}
+        			\includegraphics[width= \textwidth]{images/mellin-s-2.png}
+        			\caption{}
+        			\label{starpathmellins2}
+        		\end{subfigure}~
+        		\begin{subfigure}[b]{0.45\textwidth}
+        			\includegraphics[width= \textwidth]{images/mellin-s-3.png}
+        			\caption{}
+        			\label{starpathmellins3}
         		\end{subfigure}
-        	\caption{(\ref{kernelgraphs}) are the three graphs used for heat kernel analysis. (\ref{plot-kernel}) plot of the heat kernel trace against time for star (blue), path (orange) and regular(green) graphs. From \ref{plot-kernel}, we observe that since the $3$ graphs are different in terms of structure, the curves too take on different shapes. It is evident that since path and $2$-regular graphs have similar topologies, their corresponding graphs are close to each other while for star graph, its curve has a deeper trough. }
+        	\caption{(\subref{kernelgraphs}) are the three graphs used for heat kernel analysis. (\subref{plot-kernel}) plot of the heat kernel trace against time for star (blue), path (orange) and regular(green) graphs. Figures (\subref{starpathmellins2}) and (\subref{starpathmellins3}) are the plots of trace function against time for the $3$ graphs based on the Mellin transforms of the $k$-Laplacians for $s=2$ and $s=3$ respectively.}
         	\end{figure}
-        
+            From (\subref{plot-kernel}), we observe that since the $3$ graphs are different in terms of structure, the curves too take on different shapes. It is evident that since path and $2$-regular graphs have similar topologies, their corresponding graphs are close to each other while for star graph, its curve has a deeper trough. 
+            On comparing the plots for $s=2$ and $s=3$, we observe drastic shift in the curves for the former than the latter in comparison with the plot for the normal graph Laplacian in Fig.(\subref{plot-kernel}).
+            
             \item \textbf{Zeta function}
             
             The Zeta function associated with the Laplacian eigenvalues is obtained by exponentiating and summing the reciprocal of the non-zero Laplacian eigenvalues. It is thus defined by
@@ -1499,7 +1559,7 @@ Some analytic expressions for the spectra of different kinds of simple networks 
             \end{equation}
             where $\Gamma(s)$ is the gamma function defined as 
             \begin{equation}
-            \Gamma(s) = \frac{0}{\infty} t^{s-1} e^{-t} dt
+            \Gamma(s) = \int_{0}^{\infty} t^{s-1} e^{-t} dt
             \end{equation}.
             On summation for all non-zero eigenvalues of the Laplacian, Equation \ref{exponentlambda} becomes
             \begin{equation}
@@ -1534,6 +1594,7 @@ Some analytic expressions for the spectra of different kinds of simple networks 
 	        \zeta'(s) = -\sum_{\lambda_i \neq 0}\ln \lambda_i
         	\end{equation}
         	\item \textbf{Heat Content}
+        	
         	The heat content is defined as the sum of the entries of the heat kernel matrix of a graph. Its given by
         	\begin{equation}
         	Q(t) = \sum_{u \in V} \sum_{v i\in V} h_{t}(u,v)
@@ -1549,22 +1610,38 @@ Some analytic expressions for the spectra of different kinds of simple networks 
         \end{enumerate}
     
         \subsection{Generalised Heat kernel}
-        As mentioned earlier, diffusion on networks with long-range interactions can be captured by Eqn.\ref{gen-difeqn} whose fundamental solution or heat kernel is given by 
+        In the previous section, we have discussed the heat kernel for diffusion process that occurs through direct interactions between nearest neighbours in the network. In this section however, we consider the fact that in many observed real-world process, it is observed that interactions do not only occur among nearest neighbours but also among non-nearest which we term as the long range interactions. The heat equation in this case is based the the concept of $k$-path Laplacian introduced by Estrada \citep{estrada2012path} and is given by
+        
+        \begin{equation}
+        \frac{d\boldsymbol{\phi}}{dt} =  -\varepsilon L_{G} \boldsymbol{\phi}, \quad \boldsymbol{\phi}(0) = \boldsymbol{\phi}_0 ,
+        \label{genheateq}
+        \end{equation}
+        where
+        \begin{equation}
+        L_{G} =  \Big(\sum_{k=1}^{\Delta}c_k\mathbf{L}_{k} \Big) = c_{1}L_{1} + c_{2}L_{2} + \cdots + c_{\Delta}L_{\Delta}, 
+        \label{}
+        \end{equation}
+        where $1 \leq \Delta \leq d_{max}$ and $c_k$ are the coefficients. As discussed earlier, 
+        the coefficients $c_k$  are chosen in a way that as distance $k$ increases, the long range effect is weakened. Some of the common expressions for coefficients $c_k$ are $c_1 =1, c_{k\geq 2} = e^{-s k}$, $ c_{k\geq 2} =k^{-s}$ which depict physical influence while $c_k = kx^{k-1}$ for the social influence.
+        
+        The heat kernel $H_{Gt}$ of the generalised diffusion process which we refer to as the generalised heat kernel, the fundamental solution to eqn.\ref{genheateq} is given by 
         \begin{equation}
         H_{Gt} = e^{-L_{G}t},
         \end{equation}
         which on expansion can be written as 
         \begin{equation}
-        H_{Gt} = e^{-t(c_{1}L_{1} + c_{2}L_{2} + \cdots + c_{\Delta}L_{\Delta})}.
+        H_{Gt} = e^{-t(c_{1}L_{1} + c_{2}L_{2} + \cdots + c_{\Delta}L_{\Delta})},
         \end{equation}
-        The Trace of the generalised heat kernel is therefore given by
+        where $L_1, L_2, \cdots, L{\Delta}$ are the matrices, known as $k$-path Laplacian matrices, which are obtained by considering hops of length $k=1,2,\cdots, \Delta$ respectively. At $k=1$, we recover the normal heat kernel in eqn.\ref{kernel}.
+        \subsection{Trace of the Generalised Heat Kernel}
+        The trace of the generalised heat kernel is therefore given by
         \begin{equation}
-        Z_{G}(t) = Tr(h_{Gt}) = \sum_{i=1}^{|V|} e^{-\lambda_{iG} t}.
+        Z_{G}(t) = Tr(H_{Gt}) = \sum_{i=1}^{|V|} e^{-\lambda_{iG} t}.
         \label{Genkerneltrace}
         \end{equation}
         Alternatively, Eqn. \ref{gen-difeqn} can be written as 
         \begin{equation}
-        Z_{G}(t) =  1+ e^{-\lambda_{2G} t} + e^{-\lambda_{3G}} + \cdots + e^{-\lambda_{GN} t}
+        Z_{G}(t) =  1+ e^{-\lambda_{2G} t} + e^{-\lambda_{3G}} + \cdots + e^{-\lambda_{NG} t}
         \end{equation}
         Let us consider two toy examples to illustrate the variation of the trace generalised heat kernel with time.
          \begin{figure}[H]
@@ -1594,7 +1671,9 @@ Some analytic expressions for the spectra of different kinds of simple networks 
 				\includegraphics[width= \textwidth]{images/model-2-mellin.png}
 				\caption{}
 				\label{model2-mellin}
-			\end{subfigure} \\
+			\end{subfigure} 
+		\end{figure}
+		   \begin{figure}[H]
 		    \begin{subfigure}[b]{0.45\textwidth}
 		    	\includegraphics[width= \textwidth]{images/model-1-klap.png}
 		    	\caption{}
@@ -1612,10 +1691,46 @@ Some analytic expressions for the spectra of different kinds of simple networks 
 	  
 	  Let us then focus on the plots for the trace function for the individual $k$-path Laplacians against time. Figure (\subref{model1-kpath}) corresponds to the simple graph in (\ref{keneltoymodel1}). We observe that there is a clear distinction for the trace functions of each of the $3$-path Laplacian matrices namely $L_1$, $L_2$, and $L_3$. For $k=1$ which is the combinatorial Laplacian, the curve has a deeper trough followed by $k=2$ and lastly $k=3$. This distinction in curves is possibly based on the change in eigenvalues for each of the $k$-path Laplacian following a decreasing of this format: $\lambda_i(L_1) \geq \lambda_i(L_2) \geq \lambda_i(L_3)$. On the other hand, however, Figure (\subref{model2-kpath}) shows a slightly different trend from what we observe in Figure (\subref{model1-kpath}) that is there is no clear distinction among the curves corresponding to different $k$-path Laplacian matrices. This is attributed to the fact that for some graphs, the eigenvalues for the $k$-path Laplacians do not necessarily follow a decreasing order as explained earlier.
 	  
-	  \subsection{Comparison with Complete Graph based on Trace of the diffusion kernel}
+	  \subsection{Zeta function of the Generalised Zeta Function}
 	  \begin{figure}[H]
 	  	\centering
 	  	\begin{subfigure}[b]{0.35\textwidth}
+	  		\includegraphics[width= \textwidth]{images/zeta-laplace.png}
+	  		\caption{}
+	  		\label{zeta-laplace}
+	  	\end{subfigure}~
+	  	\begin{subfigure}[b]{0.35\textwidth}
+	  		\includegraphics[width= \textwidth]{images/zeta-mellin.png}
+	  		\caption{}
+	  		\label{zeta-mellin}
+	  	\end{subfigure} 
+	  	\caption{Illustration of the Zeta function of the graph in Fig.~\ref{keneltoymodel1} against exponent $\delta$. (\subref{zeta-laplace}) corresponds to the Laplace transform of the graph Laplacian with $\lambda = 1.5, 2,$ and $2.5$. (\subref{zeta-mellin}) corresponds to the Mellin transform of the graph Laplacian with $s = 2, 3,$ and $4$. }
+	  	\label{}
+	  \end{figure}
+  
+      \begin{figure}[H]
+      	\centering
+      	\begin{subfigure}[b]{0.35\textwidth}
+      		\includegraphics[width= \textwidth]{images/zeta-laplace2.png}
+      		\caption{}
+      		\label{zeta-laplace}
+      	\end{subfigure}~
+      	\begin{subfigure}[b]{0.35\textwidth}
+      		\includegraphics[width= \textwidth]{images/zeta-mellin2.png}
+      		\caption{}
+      		\label{zeta-mellin}
+      	\end{subfigure} 
+      	\caption{Illustration of the Zeta function of the graph in Fig.~\ref{keneltoymodel2} against exponent $\delta$. (\subref{zeta-laplace}) corresponds to the Laplace transform of the graph Laplacian with $\lambda = 1.5, 2,$ and $2.5$. (\subref{zeta-mellin}) corresponds to the Mellin transform of the graph Laplacian with $s = 2, 3,$ and $4$. }
+      	\label{}
+      \end{figure}
+	  
+	  \subsection{Comparison with Complete Graph based on Trace of the diffusion kernel}
+	  \begin{figure}[H]
+	  	\centering	\begin{subfigure}[b]{0.32\textwidth}
+	  		\includegraphics[width= \textwidth]{images/complete_5.pdf}
+	  		\caption{G}
+	  		\label{G}~
+	  	\end{subfigure}	  	\begin{subfigure}[b]{0.30\textwidth}
 	  		\includegraphics[width= \textwidth]{images/cycle-khop.pdf}
 	  		\caption{G1}
 	  		\label{G1}
@@ -1635,7 +1750,7 @@ Some analytic expressions for the spectra of different kinds of simple networks 
 	  		\caption{G4}
 	  		\label{G4}
 	  	\end{subfigure}
-	  	\caption{The four graphs of size $5$ whose trace function is to be compared with that of a complete graph of size $5$, $K_5$.}
+	  	\caption{The five graphs of size $5$. (\subref{G2}) is the complete graph,$K_5$ whose trace function is to be compared with that of the other $4$ graphs.}
 	  	\label{}
 	  \end{figure}
  
@@ -1647,10 +1762,20 @@ Some analytic expressions for the spectra of different kinds of simple networks 
 	  		\label{completeL1}
 	  	\end{subfigure}~
 	  	\begin{subfigure}[b]{0.45\textwidth}
-	  		\includegraphics[width= \textwidth]{images/complete-mellins3.png}
+	  		\includegraphics[width= \textwidth]{images/s2-graphcomp.png}
 	  		\caption{}
 	  		\label{completeMellins3}
-	  	\end{subfigure}
+	  	\end{subfigure} \\
+  	    \begin{subfigure}[b]{0.45\textwidth}
+  	    	\includegraphics[width= \textwidth]{images/s3-graphcomp.png}
+  	    	\caption{}
+  	    	\label{completeL1}
+  	    \end{subfigure}~
+  	    \begin{subfigure}[b]{0.45\textwidth}
+  	    	\includegraphics[width= \textwidth]{images/s4-graphcomp.png}
+  	    	\caption{}
+  	    	\label{completeMellins3}
+  	    \end{subfigure}
   	\end{figure}
       Figure \ref{completeL1} is a plot of the trace function of the graph Laplacian against time for a complete graph,G (blue) and other graphs $G1$(orange), $G2$(green), $G3$(red), and $G4$(purple). To the right, is a plot of the trace function of the Mellin transformed Laplacian matrix at $s=3$ against time. We observe that the two plots follow a similar shape, however, plot in Figure \ref{completeMellins3}, the curves for graphs $G1$,$G2$, $G3$, and $G4$ get closer to the curves corresponding to the complete graph$G$. This can loosely be explained by the longrange interactions involved that result into a flow of information closer to that of a complete graph.
   
@@ -2064,7 +2189,46 @@ For any vertex $v$, the denominator remains unchanged and from Corollary \ref{co
 	\label{thm2}
 \end{thm}
 %\subsection{Edge Centralities in Networks}
+\subsection{Laplacian Centrality of a node of a Graph with long-range interactions}
+In this section, we study the impact of long-range interactions in a graph on the Laplacian centrality of the nodes in the network. For example, let us consider a simple graph in Fig.\ref{toymodel}. We account for the long range interactions (shown by the brocken red edges) by the mellin transform($c_k = k^{-s}$) of the $k$-Laplacian matrices of the graph for $s=2$ as  visible in Fig.~\ref{graph-longrange}.
 
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{images/kenel-toymodel.pdf}
+		\caption{}
+		\label{toymodel}
+	\end{subfigure}~
+	\begin{subfigure}[b]{0.3\textwidth}
+		\includegraphics[width= \textwidth]{images/graph-longrange.pdf}
+		\caption{}
+		\label{graph-longrange}
+	\end{subfigure}
+	\caption{(\subref{toymodel}) is a simple graph. (\subref{graph-longrange}) is the mellin transformation of the graph in (\subref{toymodel}) with $s=2$.   }
+	\label{}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\caption{Laplacian Centralities of nodes with and without long range interactions}
+	%\setlength{\tabcolsep}{16pt}
+	%\scalebox{0.7}{
+	\begin{tabular}{|l| c|c|c|}
+		\hline 
+		Node & Centrality without longrange & Centrality with longrange \\
+		\hline
+		1 & 0.2500 & 0.3175 \\
+		2 & 0.6875 & 0.6712  \\
+		3 & 0.5000 & 0.5185  \\
+		4 & 0.4375 & 0.4702 \\
+		5 & 0.5000 & 0.5185 \\
+		\hline
+	\end{tabular}
+	\label{laplacian-longrange}
+\end{table}
+From the table, we observe that accounting for longrange interactions results into a change in the laplacian centrality of the nodes in the graph. For instance, for nodes $1$,$3$,$4$, and $5$ the centralities increase while for node $2$, its  centrality decreases. 
+
+We can observe from Fig.\ref{laplacian-longrange} that nodes with high degrees such as node $2$ have less long-range links incident to them than their counter parts with lower degree (such as node $1$). Since the Laplacian centrality of a given node is determined from the walks within the intermediate environment of the node that is the nearest and second nearest neighbourhood. As a result, removal of a given node from a graph with long-range interactions results into a drop in larger drop in energy compared to a scenario with no longrange interactions. However, despite a greater drop in energy, in some cases it is observed that for high degree nodes, the ratio of drop in energy on node removal to the total energy in a graph is lower than the case with no long range interactions as observed in the table for node $2$.
 \subsection{Laplacian Centrality of an edge}
 
 	Centrality measures in networks have proved to be relevant tools in network analysis. They are indicators of the 'importance' of nodes and edges in the networks. Though most work has been geared towards the study of importance of nodes ( i.e degree, closeness, betweeness, subgraph, eigenvector, Laplacian centralities,etc.), interest in the study of edge centralities is now gaining ground with earlier works by  Anthonisse \citep{anthonisse1971rush} and then following by prominent work by Girvan and Newman \citep{newman2004finding}. Some of the known edge centralities include edge degree, edge closeness \citep{ortiz2016centrality}, edge-betweenness which is calculated based on either shortest path distances or random walks as in \citep{newman2004finding}, k-path edge centrality \cite{alahakoon2011k}, among others. The motivation for the introduction of edge centrality measures lies in real-world applications in a wide range of context such as community detection in networks \citep{newman2004finding}, identifying significant power lines, communication or transportation lines whose failure cause serious breakdown of the  power, communication and transportation systems respectively \citep{ortiz2016centrality}, identification of strong relationships among people in social networks, etc. 
