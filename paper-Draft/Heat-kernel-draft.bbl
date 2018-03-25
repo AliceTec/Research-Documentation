@@ -1,0 +1,148 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Albert and Barab{\'a}si(2002)]{albert2002statistical}
+R.~Albert and A.-L. Barab{\'a}si.
+\newblock Statistical mechanics of complex networks.
+\newblock \emph{Reviews of modern physics}, 74\penalty0 (1):\penalty0 47, 2002.
+
+\bibitem[Barrat et~al.(2008)Barrat, Barthelemy, and
+  Vespignani]{barrat2008dynamical}
+A.~Barrat, M.~Barthelemy, and A.~Vespignani.
+\newblock \emph{Dynamical processes on complex networks}.
+\newblock Cambridge university press, 2008.
+
+\bibitem[Das(2004)]{das2004laplacian}
+K.~C. Das.
+\newblock The laplacian spectrum of a graph.
+\newblock \emph{Computers \& Mathematics with Applications}, 48\penalty0
+  (5):\penalty0 715--724, 2004.
+
+\bibitem[Edwards and Penney(2004)]{edwards2004differential}
+C.~H. Edwards and D.~E. Penney.
+\newblock \emph{Differential equations and boundary value problems}, volume~2.
+\newblock Prentice Hall, 2004.
+
+\bibitem[Estrada(2011)]{estrada2011structure}
+E.~Estrada.
+\newblock \emph{The structure of complex networks: theory and applications}.
+\newblock OUP Oxford, 2011.
+
+\bibitem[Estrada(2012)]{estrada2012path}
+E.~Estrada.
+\newblock Path laplacian matrices: introduction and application to the analysis
+  of consensus in networks.
+\newblock \emph{Linear Algebra and its Applications}, 436\penalty0
+  (9):\penalty0 3373--3391, 2012.
+
+\bibitem[Estrada(2015)]{estrada2015introduction}
+E.~Estrada.
+\newblock Introduction to complex networks: structure and dynamics.
+\newblock In \emph{Evolutionary Equations with Applications in Natural
+  Sciences}, pages 93--131. Springer, 2015.
+
+\bibitem[Estrada et~al.(2011)Estrada, Kalala-Mutombo, and
+  Valverde-Colmeiro]{estrada2011epidemic}
+E.~Estrada, F.~Kalala-Mutombo, and A.~Valverde-Colmeiro.
+\newblock Epidemic spreading in networks with nonrandom long-range
+  interactions.
+\newblock \emph{Physical Review E}, 84\penalty0 (3):\penalty0 036110, 2011.
+
+\bibitem[Estrada et~al.(2015)Estrada, Knight, et~al.]{estrada2015first}
+E.~Estrada, P.~Knight, et~al.
+\newblock \emph{A first course in network theory}.
+\newblock Oxford University Press, USA, 2015.
+
+\bibitem[Estrada et~al.(2017{\natexlab{a}})Estrada, Gambuzza, and
+  Frasca]{estrada2017long}
+E.~Estrada, L.~V. Gambuzza, and M.~Frasca.
+\newblock Long-range interactions and network synchronization.
+\newblock \emph{arXiv preprint arXiv:1704.01349}, 2017{\natexlab{a}}.
+
+\bibitem[Estrada et~al.(2017{\natexlab{b}})Estrada, Hameed, Hatano, and
+  Langer]{estrada2017path}
+E.~Estrada, E.~Hameed, N.~Hatano, and M.~Langer.
+\newblock Path laplacian operators and superdiffusive processes on graphs. i.
+  one-dimensional case.
+\newblock \emph{Linear Algebra and its Applications}, 523:\penalty0 307--334,
+  2017{\natexlab{b}}.
+
+\bibitem[Kasprzak(2012)]{kasprzak2012diffusion}
+R.~Kasprzak.
+\newblock Diffusion in networks.
+\newblock \emph{Journal of Telecommunications and Information Technology},
+  pages 99--106, 2012.
+
+\bibitem[Kondor and Vert(2004)]{kondor2004diffusion}
+R.~Kondor and J.-P. Vert.
+\newblock Diffusion kernels.
+\newblock \emph{kernel methods in computational biology}, pages 171--192, 2004.
+
+\bibitem[Lafferty and Lebanon(2005)]{lafferty2005diffusion}
+J.~Lafferty and G.~Lebanon.
+\newblock Diffusion kernels on statistical manifolds.
+\newblock \emph{Journal of Machine Learning Research}, 6\penalty0
+  (Jan):\penalty0 129--163, 2005.
+
+\bibitem[L{\'o}pez-Pintado(2008)]{lopez2008diffusion}
+D.~L{\'o}pez-Pintado.
+\newblock Diffusion in complex social networks.
+\newblock \emph{Games and Economic Behavior}, 62\penalty0 (2):\penalty0
+  573--590, 2008.
+
+\bibitem[Ma et~al.(2008)Ma, Yang, Lyu, and King]{ma2008mining}
+H.~Ma, H.~Yang, M.~R. Lyu, and I.~King.
+\newblock Mining social networks using heat diffusion processes for marketing
+  candidates selection.
+\newblock In \emph{Proceedings of the 17th ACM conference on Information and
+  knowledge management}, pages 233--242. ACM, 2008.
+
+\bibitem[Molitierno(2012)]{molitierno2012applications}
+J.~J. Molitierno.
+\newblock \emph{Applications of combinatorial matrix theory to Laplacian
+  matrices of graphs}.
+\newblock CRC Press, 2012.
+
+\bibitem[Mutombo(2012)]{frankthesis}
+F.~K. Mutombo.
+\newblock \emph{Long-range interactions in complex networks}.
+\newblock PhD thesis, University of Strathclyde, 2012.
+
+\bibitem[Newman(2010)]{newman2010networks}
+M.~Newman.
+\newblock \emph{Networks: an introduction}.
+\newblock OUP Oxford, 2010.
+
+\bibitem[Newman(2003)]{newman2003structure}
+M.~E. Newman.
+\newblock The structure and function of complex networks.
+\newblock \emph{SIAM review}, 45\penalty0 (2):\penalty0 167--256, 2003.
+
+\bibitem[Newman and Girvan(2004)]{newman2004finding}
+M.~E. Newman and M.~Girvan.
+\newblock Finding and evaluating community structure in networks.
+\newblock \emph{Physical review E}, 69\penalty0 (2):\penalty0 026113, 2004.
+
+\bibitem[Thanou et~al.(2017)Thanou, Dong, Kressner, and
+  Frossard]{thanou2017learning}
+D.~Thanou, X.~Dong, D.~Kressner, and P.~Frossard.
+\newblock Learning heat diffusion graphs.
+\newblock \emph{IEEE Transactions on Signal and Information Processing over
+  Networks}, 3\penalty0 (3):\penalty0 484--499, 2017.
+
+\bibitem[Wilson(1970)]{wilson1970introduction}
+R.~J. Wilson.
+\newblock \emph{An introduction to graph theory}.
+\newblock Pearson Education India, 1970.
+
+\bibitem[Xiao et~al.(2009)Xiao, Hancock, and Wilson]{xiao2009graph}
+B.~Xiao, E.~R. Hancock, and R.~C. Wilson.
+\newblock Graph characteristics from the heat kernel trace.
+\newblock \emph{Pattern Recognition}, 42\penalty0 (11):\penalty0 2589--2606,
+  2009.
+
+\end{thebibliography}

@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Heat-kernel-draft.aux
+The style file: abbrvnat.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "ed"
+You've used 24 entries,
+            2773 wiz_defined-function locations,
+            733 strings with 7953 characters,
+and the built_in function-call counts, 10231 in all, are:
+= -- 915
+> -- 481
+< -- 21
++ -- 169
+- -- 144
+* -- 769
+:= -- 1568
+add.period$ -- 74
+call.type$ -- 24
+change.case$ -- 111
+chr.to.int$ -- 23
+cite$ -- 48
+duplicate$ -- 522
+empty$ -- 913
+format.name$ -- 178
+if$ -- 2160
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 30
+newline$ -- 128
+num.names$ -- 96
+pop$ -- 250
+preamble$ -- 1
+purify$ -- 95
+quote$ -- 0
+skip$ -- 377
+stack$ -- 0
+substring$ -- 420
+swap$ -- 60
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 229
+warning$ -- 0
+while$ -- 103
+width$ -- 0
+write$ -- 314
+(There was 1 warning)

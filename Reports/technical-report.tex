@@ -71,6 +71,13 @@
 		\item k-path Laplacians, that is, the generalised Laplacian matrices. Considerations of Mellin and Laplace transforms of the k-path Laplacians to account for longrange interactions
 		\item Illustration of Diffusion of heat on a lattice. First, considering direct interactions only and then accounting both direct and long-range interactions. 
 	\end{enumerate}
+    \subsection{Suggestions}
+    
+    \begin{enumerate}[a)]
+    	\item  Done- work on write up
+    \end{enumerate}
+    
+    
     \section{Image Segmentation}
     \subsection{Motivation}
     Image Segmentation is the problem of localising regions of an image relative to content. It aids in the extraction of objects of interest from an image. Image segmentation has applications in medical field, engineering field, computer science among others. A number of segmentation techniques have been developed based on graph theory concepts which include intelligent scissors, Normalised cut algorithm, random walker algorithm, etc. Our interest, however, lies in the segmentation of images using the random walk process on graph as explored in \citep{grady2006random}.
@@ -78,6 +85,13 @@
     \begin{enumerate}[a)]
     	\item To extend the idea of image segmentation using random walks on networks by accounting for long-range links in the network. The aim is to ascertain whether this approach yields image segmentation than the existing approach which does not involve long range interactions.
     \end{enumerate}
+     \subsection{Suggestions}
+     
+     \begin{enumerate}[a)]
+     	\item  Check connection between image segmentation and grapg clustering method in the thesis \citep{xiao2009graph}.
+     	\item Think about $k$-hopping random walks.
+     \end{enumerate}
+
     \section{Systemic Risk and Contagion in Financial Systems}
     \subsection{Motivation}
     The financial crisis of $2008$ stimulated intense research in the area of financial systems. The use of complex networks in the study of financial systems is one of the avenues that have been used by a number of research in uncovering the root causes of the crisis, which financial institutions sparked off the cascaded failure leading to system break down, the impact of the network structure, strategies to  either prevent the re-occurance or to guarantee minimal impact of the crisis etc. 
@@ -87,6 +101,12 @@
     	\item Can the centrality based on generalised degree centrality capture the node which is too interconnected to fail?
     	\item How can we apply the concept of long-range interactions to financial networks? What does the long-range interactions mean?
     \end{enumerate}
+    \subsection{Suggestions}
+    
+    \begin{enumerate}[a)]
+    	\item  Read about robustness, reliability and vulnerability due to connectivity
+    \end{enumerate}
+
 	\section{Laplacian centrality of an edge}
 	\subsection{Motivation}
 	Centrality measures in networks have proved to be relevant tools in network analysis. They are indicators of the 'importance' of a given node or edge in a network. Though most work has been geared towards the study of importance of nodes ( i.e degree, closeness, betweeness, subgraph, eigenvector, Laplacian centralities,etc.), interest in the study of edge centralities is now gaining ground with prominent work of  Girvan and Newman. Some of the known edge centralities include edge-betweenness, k-path edge centrality, among others. The motivation for the introduction of edge centrality measures lies in its applicability in real-world for example identification of communities in networks, identifying strong relationships among people in social networks, etc. 
@@ -100,6 +120,15 @@
 		\item Application of laplcaian centrality of an edge to edge consensus, that is, addition or removal of edges so that the relative difference in centrality of edges is small.
 		\item Application to electric flow in circuits
 	\end{enumerate}
+
+	\subsection{Suggestions}
+	
+	\begin{enumerate}[a)]
+		\item  Is the concept of Edge centrality publishable?
+		\item Is the edge of high centrality related with the node of high centrality?
+		\item Show cases where edge centrality is relevant than node centrality (read motivation about edge centrality measures).
+		\item check out the answered questions and their explanations. Pending questions may be considered under future work.
+	\end{enumerate}
 	
 	\section{Minimum-maximum cut}
 	\subsection{Motivation}
@@ -110,6 +139,11 @@
 	\item Whether the minimum cut edges can be obtained by their Laplacian centrality.
 	\item  Relationship between Laplacian energy and minimum cut of a network.
 	\end{enumerate}
+    \subsection{Suggestions}
+    
+    \begin{enumerate}[a)]
+    	\item  Finalise with toy models and report the results.
+    \end{enumerate}
 	\section{Noise on networks}
 	\subsection{Motivation}
 	In systems made of interconnections of sensors, it's observed that the reported results from  the systems are normally subject to errors due to noise. In order to obtain accurate results, we need to ascertain the effect of noise on the reported results. Since these systems can be represented as networks, we can then formulate this problem as one of studying the impact of noise on sensor network. 
@@ -569,6 +603,7 @@ Some analytic expressions for the spectra of different kinds of simple networks 
 		\end{equation}
 		Unlike the algebraic connectivity, the natural connectivity changes monotonically when edges are added or deleted which is one of the desired properties of a robustness measure.
 	\end{enumerate}
+	\section{Principal Component Analysis}
 	
     \section{Diffusion on networks}
     Diffusion is, among others, the movement of substance from a region of high concentration to a region of low concentration. Such substance include heat, gas, etc. \citep{newman2010networks}.
@@ -969,7 +1004,7 @@ Some analytic expressions for the spectra of different kinds of simple networks 
     	    	\begin{figure}[H]
     	    		\centering
     	    		\includegraphics[width=0.25\textwidth]{images/compute-spanning.pdf}
-    	    		\captionof{figure}{ A network of size 4.}
+    	    		\captionof{figure}{ A Graph of size 4.}
     	    		\label{spanning}
     	    	\end{figure}
     	    	
@@ -2200,7 +2235,7 @@ In this section, we study the impact of long-range interactions in a graph on th
 		\label{toymodel}
 	\end{subfigure}~
 	\begin{subfigure}[b]{0.3\textwidth}
-		\includegraphics[width= \textwidth]{images/graph-longrange.pdf}
+		\includegraphics[width= \textwidth]{images/graph-longrange-demo.pdf}
 		\caption{}
 		\label{graph-longrange}
 	\end{subfigure}
@@ -2426,6 +2461,25 @@ Further more, let us consider the comparison between the two measures on real wo
 
 From the Fig.~(\ref{connectivitycurve}), we observe that values for both the laplacian energy and algebraic connectivity decreases with removal of edges from the network. However, on removal of $20$ to $30$ edges, the algebraic connectivity abruptly drops from $0.9$ to close to $0$ (that is in only one instance) which signifies a disconnection in the network that is, more than one connected component in the network. on the other hand though, the laplacian curve indicates gradual degradation of the network robustness on removal of $20$ to $30$ edges of the network. The ability of the Laplacian energy measure to capture the change from one connected component to more connected components in much more instances makes it an effective measure for network robustness over algebraic connectivity.
 
+
+\section{Graph Clustering}
+
+\subsection{Principal Component Analysis (PCA) on objects}
+In performing PCA on a given number $m$ of objects. we follow the following steps:
+\begin{enumerate}[i)]
+	\item Select the objects from a database to which PCA is to be applied say $m$ objects.
+	\item Obtain the graph representation of each object using Delanauy triangulation with the harris corner detection technique. This results into graphs $G_1, G_2, \cdots, G_m$.
+	\item Construct the feature vector $\mathbf{B}$ for each graph. For instance the vector can be obtained from the $k$ leading co-efficients of the heat content polynomial that is $\mathbf{B} = (q_1,q_2, \cdots, q_k)^T$. Alternatively $\mathbf{B} = (l_1, l_2, \cdots, l_k)^T$ from the $k$ leading Laplacian eigenvalues.
+	\item Construct the matrix $\mathbf{S}=[ \mathbf{B_1}|\mathbf{B_2}| \cdots | \mathbf{B_m}]$. The feature vectors form the columns of $\mathbf{S}$.
+	\item Compute the convariance matrix $C$, which is given by $C = \hat{\mathbf{S}} \hat{\mathbf{S}}^T$, where $\hat{\mathbf{S}}$ is matrix of normalised data which is computed by subtracting the mean of the feature vectors from each column of the matrix $\mathbf{S}$.
+	\item Obtain the principal components direction by performing eigendecomposition on the covariance matrix $C$ that is 
+	\begin{equation}
+	C = \sum _{i=1} ^m \lambda_i \mathbf{v}_i \mathbf{v}_i^T,
+	\end{equation}
+	where $\lambda_i$ are the eigenvalues and $\mathbf{v}_i$ are the eigenvectors. This is followed by selection of the first $s$ leading eigenvectors termed as the principal components. The matrix $\mathbf{V} = (\mathbf{v}_1, \mathbf{v}_2, \cdots, \mathbf{v}_s)$. By selecting the principal components, we reduce the dimension of the data.
+	\item Finally, we project individual graphs on to the co-ordinate eigenspace by $\mathcal{B} = \mathbf{U} \mathbf{B}_k$. Therefore, each graph $G_k$ is represented by an $s$-component vector $\mathbf{B}_k$ in the eigenspace.
+	 
+\end{enumerate}
 \renewcommand{\bibname}{References}
 \nocite{*}
 \bibliographystyle{abbrvnat}

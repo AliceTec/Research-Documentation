@@ -3,78 +3,86 @@
 \BOOKMARK [1][-]{section.2}{Diffusion on networks}{}% 3
 \BOOKMARK [2][-]{subsection.2.1}{Motivation}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.2}{Ideas}{section.2}% 5
-\BOOKMARK [1][-]{section.3}{Image Segmentation}{}% 6
-\BOOKMARK [2][-]{subsection.3.1}{Motivation}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.2}{Ideas}{section.3}% 8
-\BOOKMARK [1][-]{section.4}{Systemic Risk and Contagion in Financial Systems}{}% 9
-\BOOKMARK [2][-]{subsection.4.1}{Motivation}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.2}{Ideas}{section.4}% 11
-\BOOKMARK [1][-]{section.5}{Laplacian centrality of an edge}{}% 12
-\BOOKMARK [2][-]{subsection.5.1}{Motivation}{section.5}% 13
-\BOOKMARK [2][-]{subsection.5.2}{Ideas}{section.5}% 14
-\BOOKMARK [1][-]{section.6}{Minimum-maximum cut}{}% 15
-\BOOKMARK [2][-]{subsection.6.1}{Motivation}{section.6}% 16
-\BOOKMARK [2][-]{subsection.6.2}{Ideas}{section.6}% 17
-\BOOKMARK [1][-]{section.7}{Noise on networks}{}% 18
-\BOOKMARK [2][-]{subsection.7.1}{Motivation}{section.7}% 19
-\BOOKMARK [2][-]{subsection.7.2}{Ideas}{section.7}% 20
-\BOOKMARK [1][-]{section.8}{Communicability in Networks}{}% 21
-\BOOKMARK [2][-]{subsection.8.1}{Motivation}{section.8}% 22
-\BOOKMARK [2][-]{subsection.8.2}{Ideas}{section.8}% 23
-\BOOKMARK [1][-]{section.9}{Literature Review}{}% 24
-\BOOKMARK [2][-]{subsection.9.1}{Complex Systems and Complex Networks}{section.9}% 25
-\BOOKMARK [2][-]{subsection.9.2}{Characteristics of complex systems}{section.9}% 26
-\BOOKMARK [2][-]{subsection.9.3}{Real-World Networks}{section.9}% 27
-\BOOKMARK [1][-]{section.10}{Paths and Walks}{}% 28
-\BOOKMARK [1][-]{section.11}{Laplacian Matrix}{}% 29
-\BOOKMARK [2][-]{subsection.11.1}{Definitions and Properties of the Laplacian Matrix}{section.11}% 30
-\BOOKMARK [2][-]{subsection.11.2}{Spectrum of the Laplacian Matrix}{section.11}% 31
-\BOOKMARK [1][-]{section.12}{Robustness of Complex Systems}{}% 32
-\BOOKMARK [2][-]{subsection.12.1}{Robustness measures in networks}{section.12}% 33
-\BOOKMARK [3][-]{subsubsection.12.1.1}{Connectivity-based measures}{subsection.12.1}% 34
-\BOOKMARK [3][-]{subsubsection.12.1.2}{Distance-based measures}{subsection.12.1}% 35
-\BOOKMARK [2][-]{subsection.12.2}{Reliability Polynomial}{section.12}% 36
-\BOOKMARK [2][-]{subsection.12.3}{Spectral Graph measures}{section.12}% 37
-\BOOKMARK [1][-]{section.13}{Diffusion on networks}{}% 38
-\BOOKMARK [2][-]{subsection.13.1}{Heat Diffusion Models}{section.13}% 39
-\BOOKMARK [2][-]{subsection.13.2}{ Equilibrium behaviour }{section.13}% 40
-\BOOKMARK [1][-]{section.14}{Impact of Structure on the rate of diffusion}{}% 41
-\BOOKMARK [1][-]{section.15}{Influence of Heterogeneity on Diffusion over network}{}% 42
-\BOOKMARK [1][-]{section.16}{Impact of choice of Initial diffusion nodes on the diffusion process on networks}{}% 43
-\BOOKMARK [2][-]{subsection.16.1}{Diffusion on Directed Networks}{section.16}% 44
-\BOOKMARK [2][-]{subsection.16.2}{Diffusion and Equilibrium behaviour in Directed Network}{section.16}% 45
-\BOOKMARK [3][-]{subsubsection.16.2.1}{Estimation of Eigenvalues of the Laplacian}{subsection.16.2}% 46
-\BOOKMARK [3][-]{subsubsection.16.2.2}{Equilibrium state for Balanced Graphs}{subsection.16.2}% 47
-\BOOKMARK [1][-]{section.17}{The Generalised Laplacian Matrix}{}% 48
-\BOOKMARK [2][-]{subsubsection.17.0.1}{ k-path Laplacian matrices, Lk}{section.17}% 49
-\BOOKMARK [2][-]{subsection.17.1}{k-path Laplacian for Weighted Networks}{section.17}% 50
-\BOOKMARK [2][-]{subsection.17.2}{Properties of the Generalised Laplacian Matrix }{section.17}% 51
-\BOOKMARK [3][-]{subsubsection.17.2.1}{Social Influence}{subsection.17.2}% 52
-\BOOKMARK [2][-]{subsection.17.3}{Physical Influence}{section.17}% 53
-\BOOKMARK [2][-]{subsection.17.4}{The Long Range Interaction Model LRI-model}{section.17}% 54
-\BOOKMARK [2][-]{subsection.17.5}{Diffusion on network with long-range interactions}{section.17}% 55
-\BOOKMARK [2][-]{subsection.17.6}{The Heat Kernel}{section.17}% 56
-\BOOKMARK [3][-]{subsubsection.17.6.1}{The Heat Kernel Invariants}{subsection.17.6}% 57
-\BOOKMARK [2][-]{subsection.17.7}{Generalised Heat kernel}{section.17}% 58
-\BOOKMARK [2][-]{subsection.17.8}{Trace of the Generalised Heat Kernel}{section.17}% 59
-\BOOKMARK [2][-]{subsection.17.9}{Zeta function of the Generalised Zeta Function}{section.17}% 60
-\BOOKMARK [2][-]{subsection.17.10}{Comparison with Complete Graph based on Trace of the diffusion kernel}{section.17}% 61
-\BOOKMARK [3][-]{subsubsection.17.10.1}{Simulations of diffusion on lattice}{subsection.17.10}% 62
-\BOOKMARK [1][-]{section.18}{Image segmentation}{}% 63
-\BOOKMARK [2][-]{subsection.18.1}{Image segmentation based on Random Walks}{section.18}% 64
-\BOOKMARK [2][-]{subsection.18.2}{Random Walks and Electric potential}{section.18}% 65
-\BOOKMARK [2][-]{subsection.18.3}{The Random walker Algorithm}{section.18}% 66
-\BOOKMARK [3][-]{subsubsection.18.3.1}{Problem Formulation}{subsection.18.3}% 67
-\BOOKMARK [3][-]{subsubsection.18.3.2}{Combinatorial Dirichlet Problem}{subsection.18.3}% 68
-\BOOKMARK [3][-]{subsubsection.18.3.3}{Implementation of Algorithm}{subsection.18.3}% 69
-\BOOKMARK [2][-]{subsection.18.4}{Possible application of Long range interactions to Image Segmentation}{section.18}% 70
-\BOOKMARK [1][-]{section.19}{Laplacian Centrality of weighted Networks}{}% 71
-\BOOKMARK [2][-]{subsection.19.1}{Laplacian energy of a network}{section.19}% 72
-\BOOKMARK [2][-]{subsection.19.2}{Laplacian centrality for a vertex}{section.19}% 73
-\BOOKMARK [2][-]{subsection.19.3}{Laplacian Centrality of a node of a Graph with long-range interactions}{section.19}% 74
-\BOOKMARK [2][-]{subsection.19.4}{Laplacian Centrality of an edge}{section.19}% 75
-\BOOKMARK [2][-]{subsection.19.5}{Laplacian Energy of Directed Networks}{section.19}% 76
-\BOOKMARK [2][-]{subsection.19.6}{Laplacian Centrality of a node in directed network}{section.19}% 77
-\BOOKMARK [2][-]{subsection.19.7}{Edge Centrality based Edge reversal}{section.19}% 78
-\BOOKMARK [2][-]{subsection.19.8}{Laplacian Energy as a fair measure of robustness of network}{section.19}% 79
-\BOOKMARK [2][-]{subsection.19.9}{Comparison of Laplacian Energy and Algebraic Connectivity as measures of robustness of networks}{section.19}% 80
+\BOOKMARK [2][-]{subsection.2.3}{Suggestions}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Image Segmentation}{}% 7
+\BOOKMARK [2][-]{subsection.3.1}{Motivation}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.2}{Ideas}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.3}{Suggestions}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Systemic Risk and Contagion in Financial Systems}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Motivation}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.2}{Ideas}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.3}{Suggestions}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Laplacian centrality of an edge}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{Motivation}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.2}{Ideas}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.3}{Suggestions}{section.5}% 18
+\BOOKMARK [1][-]{section.6}{Minimum-maximum cut}{}% 19
+\BOOKMARK [2][-]{subsection.6.1}{Motivation}{section.6}% 20
+\BOOKMARK [2][-]{subsection.6.2}{Ideas}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.3}{Suggestions}{section.6}% 22
+\BOOKMARK [1][-]{section.7}{Noise on networks}{}% 23
+\BOOKMARK [2][-]{subsection.7.1}{Motivation}{section.7}% 24
+\BOOKMARK [2][-]{subsection.7.2}{Ideas}{section.7}% 25
+\BOOKMARK [1][-]{section.8}{Communicability in Networks}{}% 26
+\BOOKMARK [2][-]{subsection.8.1}{Motivation}{section.8}% 27
+\BOOKMARK [2][-]{subsection.8.2}{Ideas}{section.8}% 28
+\BOOKMARK [1][-]{section.9}{Literature Review}{}% 29
+\BOOKMARK [2][-]{subsection.9.1}{Complex Systems and Complex Networks}{section.9}% 30
+\BOOKMARK [2][-]{subsection.9.2}{Characteristics of complex systems}{section.9}% 31
+\BOOKMARK [2][-]{subsection.9.3}{Real-World Networks}{section.9}% 32
+\BOOKMARK [1][-]{section.10}{Paths and Walks}{}% 33
+\BOOKMARK [1][-]{section.11}{Laplacian Matrix}{}% 34
+\BOOKMARK [2][-]{subsection.11.1}{Definitions and Properties of the Laplacian Matrix}{section.11}% 35
+\BOOKMARK [2][-]{subsection.11.2}{Spectrum of the Laplacian Matrix}{section.11}% 36
+\BOOKMARK [1][-]{section.12}{Robustness of Complex Systems}{}% 37
+\BOOKMARK [2][-]{subsection.12.1}{Robustness measures in networks}{section.12}% 38
+\BOOKMARK [3][-]{subsubsection.12.1.1}{Connectivity-based measures}{subsection.12.1}% 39
+\BOOKMARK [3][-]{subsubsection.12.1.2}{Distance-based measures}{subsection.12.1}% 40
+\BOOKMARK [2][-]{subsection.12.2}{Reliability Polynomial}{section.12}% 41
+\BOOKMARK [2][-]{subsection.12.3}{Spectral Graph measures}{section.12}% 42
+\BOOKMARK [1][-]{section.13}{Principal Component Analysis}{}% 43
+\BOOKMARK [1][-]{section.14}{Diffusion on networks}{}% 44
+\BOOKMARK [2][-]{subsection.14.1}{Heat Diffusion Models}{section.14}% 45
+\BOOKMARK [2][-]{subsection.14.2}{ Equilibrium behaviour }{section.14}% 46
+\BOOKMARK [1][-]{section.15}{Impact of Structure on the rate of diffusion}{}% 47
+\BOOKMARK [1][-]{section.16}{Influence of Heterogeneity on Diffusion over network}{}% 48
+\BOOKMARK [1][-]{section.17}{Impact of choice of Initial diffusion nodes on the diffusion process on networks}{}% 49
+\BOOKMARK [2][-]{subsection.17.1}{Diffusion on Directed Networks}{section.17}% 50
+\BOOKMARK [2][-]{subsection.17.2}{Diffusion and Equilibrium behaviour in Directed Network}{section.17}% 51
+\BOOKMARK [3][-]{subsubsection.17.2.1}{Estimation of Eigenvalues of the Laplacian}{subsection.17.2}% 52
+\BOOKMARK [3][-]{subsubsection.17.2.2}{Equilibrium state for Balanced Graphs}{subsection.17.2}% 53
+\BOOKMARK [1][-]{section.18}{The Generalised Laplacian Matrix}{}% 54
+\BOOKMARK [2][-]{subsubsection.18.0.1}{ k-path Laplacian matrices, Lk}{section.18}% 55
+\BOOKMARK [2][-]{subsection.18.1}{k-path Laplacian for Weighted Networks}{section.18}% 56
+\BOOKMARK [2][-]{subsection.18.2}{Properties of the Generalised Laplacian Matrix }{section.18}% 57
+\BOOKMARK [3][-]{subsubsection.18.2.1}{Social Influence}{subsection.18.2}% 58
+\BOOKMARK [2][-]{subsection.18.3}{Physical Influence}{section.18}% 59
+\BOOKMARK [2][-]{subsection.18.4}{The Long Range Interaction Model LRI-model}{section.18}% 60
+\BOOKMARK [2][-]{subsection.18.5}{Diffusion on network with long-range interactions}{section.18}% 61
+\BOOKMARK [2][-]{subsection.18.6}{The Heat Kernel}{section.18}% 62
+\BOOKMARK [3][-]{subsubsection.18.6.1}{The Heat Kernel Invariants}{subsection.18.6}% 63
+\BOOKMARK [2][-]{subsection.18.7}{Generalised Heat kernel}{section.18}% 64
+\BOOKMARK [2][-]{subsection.18.8}{Trace of the Generalised Heat Kernel}{section.18}% 65
+\BOOKMARK [2][-]{subsection.18.9}{Zeta function of the Generalised Zeta Function}{section.18}% 66
+\BOOKMARK [2][-]{subsection.18.10}{Comparison with Complete Graph based on Trace of the diffusion kernel}{section.18}% 67
+\BOOKMARK [3][-]{subsubsection.18.10.1}{Simulations of diffusion on lattice}{subsection.18.10}% 68
+\BOOKMARK [1][-]{section.19}{Image segmentation}{}% 69
+\BOOKMARK [2][-]{subsection.19.1}{Image segmentation based on Random Walks}{section.19}% 70
+\BOOKMARK [2][-]{subsection.19.2}{Random Walks and Electric potential}{section.19}% 71
+\BOOKMARK [2][-]{subsection.19.3}{The Random walker Algorithm}{section.19}% 72
+\BOOKMARK [3][-]{subsubsection.19.3.1}{Problem Formulation}{subsection.19.3}% 73
+\BOOKMARK [3][-]{subsubsection.19.3.2}{Combinatorial Dirichlet Problem}{subsection.19.3}% 74
+\BOOKMARK [3][-]{subsubsection.19.3.3}{Implementation of Algorithm}{subsection.19.3}% 75
+\BOOKMARK [2][-]{subsection.19.4}{Possible application of Long range interactions to Image Segmentation}{section.19}% 76
+\BOOKMARK [1][-]{section.20}{Laplacian Centrality of weighted Networks}{}% 77
+\BOOKMARK [2][-]{subsection.20.1}{Laplacian energy of a network}{section.20}% 78
+\BOOKMARK [2][-]{subsection.20.2}{Laplacian centrality for a vertex}{section.20}% 79
+\BOOKMARK [2][-]{subsection.20.3}{Laplacian Centrality of a node of a Graph with long-range interactions}{section.20}% 80
+\BOOKMARK [2][-]{subsection.20.4}{Laplacian Centrality of an edge}{section.20}% 81
+\BOOKMARK [2][-]{subsection.20.5}{Laplacian Energy of Directed Networks}{section.20}% 82
+\BOOKMARK [2][-]{subsection.20.6}{Laplacian Centrality of a node in directed network}{section.20}% 83
+\BOOKMARK [2][-]{subsection.20.7}{Edge Centrality based Edge reversal}{section.20}% 84
+\BOOKMARK [2][-]{subsection.20.8}{Laplacian Energy as a fair measure of robustness of network}{section.20}% 85
+\BOOKMARK [2][-]{subsection.20.9}{Comparison of Laplacian Energy and Algebraic Connectivity as measures of robustness of networks}{section.20}% 86
+\BOOKMARK [1][-]{section.21}{Graph Clustering}{}% 87
+\BOOKMARK [2][-]{subsection.21.1}{Principal Component Analysis \(PCA\) on objects}{section.21}% 88
