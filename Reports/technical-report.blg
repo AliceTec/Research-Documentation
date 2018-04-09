@@ -4,68 +4,76 @@ The top-level auxiliary file: technical-report.aux
 The style file: abbrvnat.bst
 Database file #1: references.bib
 Warning--entry type for "zacharydataset" isn't style-file defined
---line 362 of file references.bib
+--line 364 of file references.bib
 Warning--entry type for "googleimages" isn't style-file defined
---line 371 of file references.bib
-Repeated entry---line 401 of file references.bib
+--line 373 of file references.bib
+Repeated entry---line 403 of file references.bib
  : @article{belkin2003laplacian
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 576 of file references.bib
+Repeated entry---line 578 of file references.bib
  : @article{newman2003structure
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 650 of file references.bib
+Repeated entry---line 652 of file references.bib
  : @article{estrada2017path
  :                         ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "EncyBrit" isn't style-file defined
+--line 709 of file references.bib
+Repeated entry---line 718 of file references.bib
+ : @book{barrat2008dynamical
+ :                          ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "euler1976solution;euler1953leonhard"
 Warning--I didn't find a database entry for "von2007tutorial"
 Warning--can't use both volume and number fields in adiga2009skew
 Warning--there's a number but no volume in anthonisse1971rush
 Warning--empty journal in euler1976solution
+Warning--can't use both volume and number fields in harris1988combined
 Warning--empty year in googleimages
+Warning--empty institution in smith2002tutorial
 Warning--empty year in wu2564spectral
 Warning--empty year in wu2564spectral
-You've used 71 entries,
+You've used 84 entries,
             2773 wiz_defined-function locations,
-            997 strings with 15706 characters,
-and the built_in function-call counts, 31389 in all, are:
-= -- 2834
-> -- 1590
-< -- 62
-+ -- 549
-- -- 477
-* -- 2431
-:= -- 4783
-add.period$ -- 220
-call.type$ -- 71
-change.case$ -- 357
-chr.to.int$ -- 70
-cite$ -- 148
-duplicate$ -- 1518
-empty$ -- 2718
-format.name$ -- 592
-if$ -- 6618
+            1066 strings with 17487 characters,
+and the built_in function-call counts, 36426 in all, are:
+= -- 3307
+> -- 1795
+< -- 77
++ -- 622
+- -- 537
+* -- 2766
+:= -- 5553
+add.period$ -- 261
+call.type$ -- 84
+change.case$ -- 417
+chr.to.int$ -- 83
+cite$ -- 176
+duplicate$ -- 1783
+empty$ -- 3179
+format.name$ -- 675
+if$ -- 7693
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 77
-newline$ -- 364
-num.names$ -- 284
-pop$ -- 753
+missing$ -- 88
+newline$ -- 429
+num.names$ -- 336
+pop$ -- 875
 preamble$ -- 1
-purify$ -- 299
+purify$ -- 345
 quote$ -- 0
-skip$ -- 1138
+skip$ -- 1340
 stack$ -- 0
-substring$ -- 1292
-swap$ -- 165
-text.length$ -- 14
+substring$ -- 1468
+swap$ -- 196
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 726
-warning$ -- 6
-while$ -- 309
+type$ -- 864
+warning$ -- 8
+while$ -- 362
 width$ -- 0
-write$ -- 920
-(There were 3 error messages)
+write$ -- 1086
+(There were 4 error messages)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{71}
+\begin{thebibliography}{84}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -27,6 +27,23 @@ J.~M. Anthonisse.
 \newblock The rush in a directed graph.
 \newblock \emph{Stichting Mathematisch Centrum. Mathematische Besliskunde},
   \penalty0 (BN 9/71):\penalty0 1--10, 1971.
+
+\bibitem[Anton and Rorres(2007)]{anton2007elementary}
+H.~Anton and C.~Rorres.
+\newblock Elementary linear algebra, (2000).
+\newblock \emph{Anton Textbook Inc, Ottawa}, 2007.
+
+\bibitem[Aurenhammer and Klein(2000)]{aurenhammer2000voronoi}
+F.~Aurenhammer and R.~Klein.
+\newblock Voronoi diagrams.
+\newblock \emph{Handbook of computational geometry}, 5:\penalty0 201--290,
+  2000.
+
+\bibitem[Aurenhammer et~al.(2013)Aurenhammer, Klein, and
+  Lee]{aurenhammer2013voronoi}
+F.~Aurenhammer, R.~Klein, and D.-T. Lee.
+\newblock \emph{Voronoi diagrams and Delaunay triangulations}.
+\newblock World Scientific Publishing Company, 2013.
 
 \bibitem[Barab{\'a}si(2016)]{barabasi2016network}
 A.-L. Barab{\'a}si.
@@ -76,6 +93,12 @@ R.~Byrne, J.~Feddema, and C.~Abdallah.
 \newblock Algebraic connectivity and graph robustness.
 \newblock \emph{Sandia National Laboratories, Albuquerque, New Mexico}, 87185,
   2005.
+
+\bibitem[Casti(September 26, 2017)]{EncyBrit}
+J.~L. Casti.
+\newblock {MS Windows NT} complexity, September 26, 2017.
+\newblock URL
+  \url{https://www.britannica.com/science/complexity-scientific-theory}.
 
 \bibitem[Das(2004)]{das2004laplacian}
 K.~C. Das.
@@ -203,6 +226,12 @@ I.~Gutman and O.~E. Polansky.
 \newblock \emph{Mathematical concepts in organic chemistry}.
 \newblock Springer Science \& Business Media, 2012.
 
+\bibitem[Harris and Stephens(1988)]{harris1988combined}
+C.~Harris and M.~Stephens.
+\newblock A combined corner and edge detector.
+\newblock In \emph{Alvey vision conference}, volume~15, pages 10--5244.
+  Citeseer, 1988.
+
 \bibitem[Harris et~al.(2008)Harris, Hirst, and
   Mossinghoff]{harris2008combinatorics}
 J.~M. Harris, J.~L. Hirst, and M.~J. Mossinghoff.
@@ -287,6 +316,19 @@ J.~J. Molitierno.
   matrices of graphs}.
 \newblock CRC Press, 2012.
 
+\bibitem[Moravec(1979)]{moravec1979visual}
+H.~P. Moravec.
+\newblock Visual mapping by a robot rover.
+\newblock In \emph{Proceedings of the 6th international joint conference on
+  Artificial intelligence-Volume 1}, pages 598--600. Morgan Kaufmann Publishers
+  Inc., 1979.
+
+\bibitem[Moravec(1980)]{moravec1980obstacle}
+H.~P. Moravec.
+\newblock Obstacle avoidance and navigation in the real world by a seeing robot
+  rover.
+\newblock Technical report, STANFORD UNIV CA DEPT OF COMPUTER SCIENCE, 1980.
+
 \bibitem[Mutombo(2012)]{frankthesis}
 F.~K. Mutombo.
 \newblock \emph{Long-range interactions in complex networks}.
@@ -318,6 +360,12 @@ Nexus.
 \newblock Zachary's karate club [karate], 2012.
 \newblock URL \url{http://nexus.igraph.org/api/dataset_info?id=1&format=html}.
 \newblock [Online; accessed 2016-04-25].
+
+\bibitem[Nikoli{\'c}(2012)]{nikolic2012measuring}
+M.~Nikoli{\'c}.
+\newblock Measuring similarity of graph nodes by neighbor matching.
+\newblock \emph{Intelligent Data Analysis}, 16\penalty0 (6):\penalty0 865--878,
+  2012.
 
 \bibitem[Opsahl(2009)]{opsahl2009structure}
 T.~Opsahl.
@@ -363,6 +411,23 @@ R.~O. Saber and R.~M. Murray.
 \newblock In \emph{Decision and Control, 2003. Proceedings. 42nd IEEE
   Conference on}, volume~4, pages 4126--4132. IEEE, 2003.
 
+\bibitem[Shlens(2014)]{shlens2014tutorial}
+J.~Shlens.
+\newblock A tutorial on principal component analysis.
+\newblock \emph{arXiv preprint arXiv:1404.1100}, 2014.
+
+\bibitem[Smith(2002)]{smith2002tutorial}
+L.~I. Smith.
+\newblock A tutorial on principal components analysis.
+\newblock Technical report, 2002.
+
+\bibitem[Stoica(2011)]{stoica2011delaunay}
+A.~R. Stoica.
+\newblock Delaunay diagram representations for use in image near-duplicate
+  detection.
+\newblock \emph{Senior project submittd tot he division of science, mathematics
+  and computing of Bard College. New York}, 2011.
+
 \bibitem[Sydney et~al.(2008)Sydney, Scoglio, Schumm, and
   Kooij]{sydney2008elasticity}
 A.~Sydney, C.~Scoglio, P.~Schumm, and R.~E. Kooij.
@@ -379,6 +444,12 @@ D.~Thanou, X.~Dong, D.~Kressner, and P.~Frossard.
 \newblock Learning heat diffusion graphs.
 \newblock \emph{IEEE Transactions on Signal and Information Processing over
   Networks}, 3\penalty0 (3):\penalty0 484--499, 2017.
+
+\bibitem[Trajkovi{\'c} and Hedley(1998)]{trajkovic1998fast}
+M.~Trajkovi{\'c} and M.~Hedley.
+\newblock Fast corner detection.
+\newblock \emph{Image and vision computing}, 16\penalty0 (2):\penalty0 75--87,
+  1998.
 
 \bibitem[Wang and Chen(2003)]{wang2003complex}
 X.~F. Wang and G.~Chen.
@@ -425,5 +496,11 @@ W.~W. Zachary.
 \newblock An information flow model for conflict and fission in small groups.
 \newblock \emph{Journal of anthropological research}, 33\penalty0 (4):\penalty0
   452--473, 1977.
+
+\bibitem[Zager and Verghese(2008)]{zager2008graph}
+L.~A. Zager and G.~C. Verghese.
+\newblock Graph similarity scoring and matching.
+\newblock \emph{Applied mathematics letters}, 21\penalty0 (1):\penalty0 86--94,
+  2008.
 
 \end{thebibliography}

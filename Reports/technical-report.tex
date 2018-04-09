@@ -72,7 +72,6 @@
 		\item Illustration of Diffusion of heat on a lattice. First, considering direct interactions only and then accounting both direct and long-range interactions. 
 	\end{enumerate}
     \subsection{Suggestions}
-    
     \begin{enumerate}[a)]
     	\item  Done- work on write up
     \end{enumerate}
@@ -85,8 +84,8 @@
     \begin{enumerate}[a)]
     	\item To extend the idea of image segmentation using random walks on networks by accounting for long-range links in the network. The aim is to ascertain whether this approach yields image segmentation than the existing approach which does not involve long range interactions.
     \end{enumerate}
-     \subsection{Suggestions}
-     
+
+     \subsection{Suggestions}   
      \begin{enumerate}[a)]
      	\item  Check connection between image segmentation and grapg clustering method in the thesis \citep{xiao2009graph}.
      	\item Think about $k$-hopping random walks.
@@ -104,12 +103,13 @@
     \subsection{Suggestions}
     
     \begin{enumerate}[a)]
+    	\item Find data that we can visualize and the proceed with the analysis.
     	\item  Read about robustness, reliability and vulnerability due to connectivity
     \end{enumerate}
 
 	\section{Laplacian centrality of an edge}
 	\subsection{Motivation}
-	Centrality measures in networks have proved to be relevant tools in network analysis. They are indicators of the 'importance' of a given node or edge in a network. Though most work has been geared towards the study of importance of nodes ( i.e degree, closeness, betweeness, subgraph, eigenvector, Laplacian centralities,etc.), interest in the study of edge centralities is now gaining ground with prominent work of  Girvan and Newman. Some of the known edge centralities include edge-betweenness, k-path edge centrality, among others. The motivation for the introduction of edge centrality measures lies in its applicability in real-world for example identification of communities in networks, identifying strong relationships among people in social networks, etc. 
+	Centrality measures in networks have proved to be relevant tools in network analysis. They are indicators of the 'importance' of a given node or edge in a network. Though most work has been geared towards the study of importance of nodes ( i.e degree, closeness, betweenness, subgraph, eigenvector, Laplacian centralities,etc.), interest in the study of edge centralities is now gaining ground with prominent work of  Girvan and Newman. Some of the known edge centralities include edge-betweenness, k-path edge centrality, among others. The motivation for the introduction of edge centrality measures lies in its applicability in real-world for example identification of communities in networks, identifying strong relationships among people in social networks, etc. 
 	\subsection{Ideas}
 	\begin{enumerate}[a)]
 		\item Extend the concept of Laplacian centrality of  nodes to edges, obtain the graph theoretical description of the edge centrality.
@@ -139,21 +139,30 @@
 	\item Whether the minimum cut edges can be obtained by their Laplacian centrality.
 	\item  Relationship between Laplacian energy and minimum cut of a network.
 	\end{enumerate}
+
     \subsection{Suggestions}
-    
     \begin{enumerate}[a)]
     	\item  Finalise with toy models and report the results.
     \end{enumerate}
+
+
 	\section{Noise on networks}
 	\subsection{Motivation}
 	In systems made of interconnections of sensors, it's observed that the reported results from  the systems are normally subject to errors due to noise. In order to obtain accurate results, we need to ascertain the effect of noise on the reported results. Since these systems can be represented as networks, we can then formulate this problem as one of studying the impact of noise on sensor network. 
+	
 	\subsection{Ideas}
 	\begin{enumerate}[a)]
 		\item How do we define noise on networks? Could the noise be applied to nodes or edges? 
 		\item What could be the effect of noise on the structure of a network
 		\item What insights do we draw from simulation of noise on networks by considering additive White Gaussian noise for instance?
 	\end{enumerate}
-	
+
+	\subsection{Suggestions:}
+    \begin{enumerate}
+	\item Need references to review literature about noise on networks
+	\item Trial on simple case 
+    \end{enumerate}
+
 	\section{Communicability in Networks}
 	\subsection{Motivation}
 	Communicability in networks in a concept introduced by Estrada \& Hatano \citep{estrada2008communicability} motivated by the fact that in most real networks, communication between nodes does not necessarily follow shortest paths only as normally assumed. Evidence shows that communication can occur along any paths which are not shortest path. Communicability between a pair of nodes accounts for all possible walks through which a given pair of nodes can communicate. Some of the applications of this concept include community detection in networks. We are looking forward to research possibilities in this area which include the following: 
@@ -164,16 +173,68 @@
 		\item Other possible real-world applications of communicability in networks
 	\end{enumerate}
 	
+	\subsection{Suggestions:}
+	\begin{enumerate}[a)]
+	\item \textcolor{blue}{Relationship between communicability and heat kernel of a network. Also look at total communicability.}
+	\item Idea $b$ is already done as it is captured when accounting for longrange interactions.
+	\item For idea $c$, look at graph clustering.
+	\item \textcolor{blue}{Introduce a centrality measure based on the idea of k-hop.}
+    \end{enumerate}
 	
-	%\section{Consensus in Networks}
-	%\subsection{Motivation}
-	%\subsection{Ideas}
+	\section{Heat Kernel of a Graph}
+	\subsection{Motivation}
+    The heat kernel of a graph is the fundamental solution of the heat equation. It literally explains the transfer of information or any other substance over a network. Some of the invariants of the heat kernel include the trace, zeta function, derivative of the zeta function and heat content. The trace of the heat kernel can provide a basis for graph analysis. The zeta function is related to the moments of the trace of the heat kernel and thus can be used as a measure of its shape. The derivative of the zeta function at the origin can also be considered as a graph characteristic and can be used to differentiate graphs. Another important invariant is the heat content which is the summation of all entries of the heat kernel matrix. The four invariants can used in graph clustering as they can form feature vectors which can be used for principal component analysis to form clusters.
+	\subsection{Ideas}
+	\begin{enumerate}[a)]
+		\item Extend the idea of heat kernel to generalised heat diffusion.
+		\item Extend the idea of heat kernel invariants for generalised heat diffusion, perform simulation to find out whether the generalised formats of the invariants can also be used to characterised graphs.
+		\item \textcolor{blue}{Perform graph clustering using feature vectors obtained from invariants of the generalised Heat kernel.}
+		\item \textcolor{blue}{Relationship between heat kernel and subgraph centrality.}
+		\item \textcolor{blue}{New node centrality measure based on the heat kernel.}
+	\end{enumerate}
+
+
+    \newpage
+	\section*{Outline of the Thesis}
+	\begin{enumerate}
+		\item Abstract
+		\item Introduction
+		\begin{itemize}
+			\item Brief intro of networks
+			\item Say what you are going to do
+			\item why and how are you going to do the above 
+			\item Context - compare to others
+			\item Structure of the thesis
+		\end{itemize}
+	    \item Chapter 1: Review of networks
+	     \begin{itemize}
+	     	\item Similarity in networks
+	     	\item Voronnoi Tensselation
+	     	\item Delauny graphs
+	     	\item Harris corner detection
+	     	\item Image manipulation such as cropping, rotation, etc
+	     	\item Data analysis include PCA, etc
+	     \end{itemize}
+        \item Chapter 2: Diffusion on networks
+        \item Chapter 3: Laplacian centrality of an edge
+        \begin{itemize}
+        	\item Laplacian centrality of a node
+        	\item Motivation for edge centrality
+        \end{itemize}
+        \item Chapter 4: New horizon
+        \begin{itemize}
+        	\item Heat kernel Centrality
+        	\item Communicability Centrality with $k$-hop (Do some toy models)
+        \end{itemize}
+        \item Conclusion
+	\end{enumerate}
 	
 	\newpage
-	\section{Literature Review}
+	\section{Review of Networks}
 	\subsection{Complex Systems and Complex Networks}
-	Complex systems play an important role in our daily lives for instance in social, economic, science, technology among others.  During his interview with San Jose Mercury News in January 2000, Stephen Hawking referred to the $21$st century as a century of complexity. However,though complex systems consist of interconnected components, they display some properties that quite different from those of individual components.  Due to the fact that complex systems play a vital role in our lives, it is necessary to be able to understand and predict the properties of these systems. One approach to realise the mentioned task is by use of network theory. First, as Estrada \citep{estrada2015first} mentioned that complex networks are the skeletons of complex systems, we represent such systems by networks whose nodes (vertices) and links(edges) represent the components and the interactions among components respectively. For instance, a transportation system can be represented by network where nodes are cities or towns and the links are the roads, railways or flight routes.  Second, is network analysis which entails studying the structure of the network from which the properties of the network (and the system) are drawn.
-	An interestingly early historical application of network theory to the study of complex systems is the K\"{a}onigsberg bridge problem where Euler \citep{euler1976solution;euler1953leonhard} solved the problem by reformulating problem in terms of a graph where vertices represent islands while edges represent the seven bridges joining any two islands. Work published by Leonhard Euler \citep{euler1976solution} is considered the genesis of the story of network theory.
+	Complex systems play an important role in our daily lives for instance in social, economic, science, technology among others.  During his interview with San Jose Mercury News in January 2000, Stephen Hawking referred to the $21$st century as a century of complexity. However, though complex systems are composed of interconnected components, it has been observed that many complex systems display a behaviour phenomena (also known as emergent behaviour) that cannot be explained by any conventional analysis of the system's constituent parts \citep{EncyBrit}. In otherwords, for one to understand the behaviour of a system, it is necessary to consider a holistic system-level view point.  There are different approaches to study of complex systems for instance statistical description, empirical data analysis, simulations, analytical approach and network approach. In this work, we will use the network approach in which we represent complex systems by complex networks whose nodes (vertices) and links(edges) represent the components and the interactions among components respectively.  For instance, a transportation system can be represented by network where nodes are cities or towns and the links are the roads, railways or flight routes. This is then followed by mathematical formulation of the problem, modelling and validation.  
+%	Second, is network analysis which entails studying the structure of the network from which the properties of the network (and the system) are drawn.  First, as Estrada \citep{estrada2015first} mentioned that complex networks are the skeletons of complex systems,
+	An interesting early historical application of the network approach to the study of complex systems is the K\"{a}onigsberg bridge problem where Euler \citep{euler1976solution;euler1953leonhard} solved the problem by reformulating problem in terms of a graph where vertices represent islands while edges represent the seven bridges joining any two islands. Work published by Leonhard Euler \citep{euler1976solution} is considered the genesis of the story of network theory.
 	Due to the adverse increase in network size from just graphs of tens or hundreds of nodes which could easily be analysed by direct use of eye so as to ascertain the structure of the network  to complex networks consisting of million or billion of nodes which call for advanced analytic approach that involves development of statistical methods to quantify such large networks. The statistical methods aid in answering questions such as how many nodes or edges should be removed for the network to break down?, what is the shortest path length of the network?, and many others. 
 	
 	
@@ -181,30 +242,42 @@
 	\begin{enumerate}
 	\item Emergence
 	
-	Complex systems are emergent phenomena as they are the spontaneous outcome of the interactions among the many constituent units (Alain Barrat). These systems are not formed based on a blue print as is the case with many engineering systems. It is important to note that these systems evolve to form emergent architecture and they exhibit unexpected properties and characteristics.
-	\item Self organisation
-	
+	Complex systems are emergent phenomena as they are the spontaneous outcome of the interactions among the many constituent units \citep{barrat2008dynamical}. These systems are not formed based on a blue print as is the case with many engineering systems. It is important to note that complex systems evolve to form emergent architecture and they exhibit unexpected properties and characteristics.
+	\item Self organisation	
 	Complex systems are characterised by self organising properties that are exhibited through the collective and unsupervised dynamics of the components of the system. The collective behaviour justifies the fact that one cannot understand the whole system and its dynamics by dismantling the system and studying each component in isolation. Taking the internet for example, there is no central authority responsible for controlling the addition of new computers(nodes) or connection lines (links) onto the network. Another example is the eco-system in which feeding pattern followed by animals is in no way controlled by any central agent. 
+
+	\item No central organising mind
 	
-	\item The presence of
-	complications on all scales possible within the physical constraints of the system.
-	\item uncertainty
+	In complex systems, it appears that there exists a central control. However, in reality control is spread over a decentralised structure that is to say system behaviour is due to the combination of the different components that make up the system \citep{EncyBrit}. This property of complex systems makes them resilient as failure of some of the components may not critically affect the functioning of the whole system.
+	
+	\item Uncertainty
+	
+	Complex systems exhibit an unpredictable kind of behaviour. FOr instance, in a transportation system of a city, opening new free ways may result into an increase in traffic jam.
+		
+	Other characteristics of complex systems include their evolving and adaptive nature. In addition, no conventional way can be used to describe complex systems.
+%	\item Evolving
+%	\item Adaptive
+%	\item No conventional way of description
 \end{enumerate}
 	
 	\subsection{Real-World Networks}
-	In his work in \citep{newman2003structure}, Newman considered a loose categorisation of networks: social networks, communication networks, technological networks, and biological networks.
+	In his work \citep{newman2003structure}, Newman considered a loose categorisation of networks: social networks, communication networks, technological networks, and biological networks.
 	\begin{enumerate}[a.]
 		\item Social Networks
+		
 		Networks considered as social networks are ones whose nodes correspond to people or groups of people while the edges represent the interactions or relationship between them. For instance friendship networks such as facebook, twitter in which the interactions represent friendship ties among acquaintances, networks of intermarriages between families, social interaction networks which capture peoples' interactions through social activities or events, employee networks with companies, and many others.
 		Some common networks that researchers have frequently experimented upon include: the Zachary karate network which consists of two communities centred at the administrator and instructor as a result of misunderstanding that prevailed with the karate club earlier on. The nodes in the network are the members of the club as the links represent interactions between members during non-club activities \citep{zachary1977information}. Other networks include the Dolphine network \citep{williams1993abundance}, terrorist network\citep{magouirk2008connecting} among others .
 		
 		\item Information networks: 
+		
 		Information networks are also referred to as knowledge networks. Examples of networks under this category include: 
 		The world wide web which consists of billions of web pages as nodes that are linked together through links known as hyperlinks \citep{huberman2001laws}.
 		Another network categorised as information networks are citation networks that are composed of nodes which are articles while directed link between two nodes written as $i\longrightarrow j$ indicate article $i$ cites article $j$.
-		\item Technological networks: 
+		\item Technological networks:
+		 
 		This category consist of networks made by man to aid in distribution or transfer of resources, services or commodities such as electricity, water, transportation services, and many others. Examples of such networks include the internet, transportation networks, power grids, to mention but a few.
 		\item Biological networks: 
+		
 		Biological networks exists in areas related human and processes that take place with in the human body, animals and their ways of survival, chemistry. Such networks are the human brain network, protein-protein interaction network, network of metabolic path ways, ecological networks.
 	\end{enumerate}
 	\begin{figure}[H]
@@ -340,23 +413,23 @@ It is for this reason that researchers have in studying the Laplacian matrix.
 %\end{eqnarray*}
 %\end{defn}
 
-\begin{exa} We compute the Laplacian matrix of the network in Fig.~\ref{fig:laplace-graph}.
-	\begin{figure}[!h]
-		\centering 
-		\includegraphics[width=0.24\textwidth]{images/laplace-graph.pdf}
-		\caption{A Network $G$.}
-		\label{fig:laplace-graph}
-	\end{figure} 
-	
-	\begin{align*}
-	\mathbf{L} = \begin{pmatrix*}[r]
-	2 & 0 &-1 & -1  & 0 \\
-	0 & 2 & 0 & -1 & -1 \\
-	-1 & 0 &  3 & -1 & -1  \\
-	-1 & -1 & -1 & 3 & 0 \\
-	0 & -1 & -1 & 0 &  2
-	\end{pmatrix*}.
-	\end{align*}
+%\begin{exa} We compute the Laplacian matrix of the network in Fig.~\ref{fig:laplace-graph}.
+%	\begin{figure}[!h]
+%		\centering 
+%		\includegraphics[width=0.24\textwidth]{images/laplace-graph.pdf}
+%		\caption{A Network $G$.}
+%		\label{fig:laplace-graph}
+%	\end{figure} 
+%	
+%	\begin{align*}
+%	\mathbf{L} = \begin{pmatrix*}[r]
+%	2 & 0 &-1 & -1  & 0 \\
+%	0 & 2 & 0 & -1 & -1 \\
+%	-1 & 0 &  3 & -1 & -1  \\
+%	-1 & -1 & -1 & 3 & 0 \\
+%	0 & -1 & -1 & 0 &  2
+%	\end{pmatrix*}.
+%	\end{align*}
 	
 	%\begin{minipage}{.25\textwidth}
 	% align*}
@@ -388,8 +461,8 @@ It is for this reason that researchers have in studying the Laplacian matrix.
 	%  \end{pmatrix*}.
 	%\end{align*}
 	%\end{minipage}
-	\label{example:laplace}
-\end{exa}
+%	\label{example:laplace}
+%\end{exa}
 
 The properties of the Laplacian matrix of a network are very useful in understanding the structure of a network. We therefore discuss some of these properties.
 \begin{enumerate}	
@@ -425,7 +498,7 @@ m(\lambda_1) & m(\lambda_2) & \ldots & m(\lambda_n)
 \end{pmatrix*}.
 \end{eqnarray}
 
-Let us write the eigenvalues of $\mathbf{L}$ in decreasing order: $\lambda_n  \geq \lambda_{n-1} \geq  \cdots \geq \lambda_2 \geq \lambda_1 =0 $. Some of the results associated with the spectrum of the Laplacian matrix include:
+We consider the non increasing order of the eigenvalues of $\mathbf{L}$: $\lambda_n  \geq \lambda_{n-1} \geq  \cdots \geq \lambda_2 \geq \lambda_1 =0 $. Some of the results associated with the spectrum of the Laplacian matrix include:
 \begin{itemize}
 	\item The eigenvalues of $\mathbf{L}$ are bounded as 
 	$ 0 \leq \lambda_j \leq 2k_{max} \quad \text{and} \quad \lambda_n \geq k_{max} $.
@@ -603,8 +676,194 @@ Some analytic expressions for the spectra of different kinds of simple networks 
 		\end{equation}
 		Unlike the algebraic connectivity, the natural connectivity changes monotonically when edges are added or deleted which is one of the desired properties of a robustness measure.
 	\end{enumerate}
-	\section{Principal Component Analysis}
-	
+
+     \section{Graph Similarity}
+     Graph similarity has a wide range of applications such as web searching, comparing chemical structures, synonym extraction, image clustering, among others \citep{zager2008graph, nikolic2012measuring}. 
+     The notion of graph similarity can be defined in many different ways based on the application for instance similarity of graphs can be based on whether graphs are identical copies of each other, how much the neighbourhood of a given node in one graph is similar to neighbourhood of a given node in the other graph, how much changes (node or edge deletion, redirection or addition) can be performed to one graph to obtain the other graph, among others \cite{zager2008graph}. In this work, however, we consider one of the most common notions of similarity which is isomorphism of graphs.
+     Two graphs are isomorphic if there exists a bijective (one-to-one and onto) function between the sets of nodes
+     such that two nodes are connected in one graph if and only if their images under the bijection are connected \citep{zager2008graph}. In otherwords, two graphs are isomorphic if they are structurally identical. The graphs in Fig.~\ref{isomorphism} are an example of isomorphic graphs.
+     
+     	\begin{figure}[!h]
+     	\centering
+     	\begin{subfigure}[b]{0.35\textwidth}
+     		\includegraphics[width=\textwidth]{images/graph-isomorphism1.pdf}
+     		\caption{}
+     		\label{isomorphic1}
+     	\end{subfigure}
+     	\begin{subfigure}[b]{0.35\textwidth}
+     		\includegraphics[width=\textwidth]{images/graph-isomorphism2.pdf}
+     		\caption{}
+     		\label{isomorphic2}
+     	\end{subfigure} 
+     	\caption{Two isomorphic graphs} 
+     	\label{isomorphism}
+     \end{figure}
+ 
+     \section{Voronoi Diagrams}
+     Voronoi diagrams (also called Voronoi tessellations, Voronoi
+     decompositions, or Dirichlet tessellations) are important geometrical structures that are found almost everywhere in the world. They have a wide range of applications such as modeling of biological structures such as cells, study of growth patterns of forests and forest canopies in ecology, tracing sources of infections in epidemics, in finding clear routes in autonomous robot navigations, among others. However, in later chapters, we will explore the application of Voronoi diagrams to image segmentation as explained in \citep{stoica2011delaunay}.
+     \\
+     \begin{defn}
+     	A Voronoi diagram is a special kind of decomposition of a metric space (or plane) into regions based on distances to a specified discrete set of objects in the space (usually denoted by a
+     	set of points normally referred to as seeds, sites or generators), according to the nearest-neighbor rule, such that each point is associated with the region of the plane closest to it. The regions are referred to as Voronoi cells. The Voronoi vertices are the vertices of a complex formed from a set of all Voronoi cells and their faces.In other words, a Voronoi vertex is the common boundary of 3 adjacent cells. The Voronoi edge, on the otherhand, is the common boundary of two adjacent cells.
+     \end{defn}
+     Let us consider a simple example of $n$ ambulances placed at different spots of a city. The spots are considered as a subset of points denoted by $S = {p_1, p_2, \cdots, p_n}$. Let us assume that the distance between two points is given by the Euclidean distance function:
+      \begin{equation}
+      \ell_2 = d[(a_1,a_2),(b_1,b_2)] = \sqrt{(a_1 -b_1)^2 + (a_2 -b_2)^2}.
+      \end{equation} Suppose other factors remain constant and that the nearest ambulance is contacted in cases of emergency, then the area to be served by an ambulance located at spot $p_k$ is given by the region $R_k$ around point $p_k$.
+      
+      Before we go any further, we first discuss some of the common terminology used in Voronoi diagrams:
+      \\
+      \begin{defn}[Convex Set]
+      	In a Euclidean space, a convex region (or set) is a region where, for every pair of points within the region, every point on the straight line segment that joins the pair of points is also within the region.
+      \end{defn}
+ 
+      \begin{defn}[Convex Hull]
+      	The convex hull (or convex envelope) of a set $P$ of points in the Euclidean plane or in a Euclidean space is the smallest convex set that contains $P$.
+      \end{defn}
+       \begin{defn}[Simplex]
+       	A $k$-simplex is a k-dimensional polytope (a geometric object with flat sides) which is the convex hull of its $k+1$ vertices.
+       \end{defn}
+       \begin{defn}[Planar graph]
+       	A planar graph is a graph that can be drawn in the plane without any edges crossing. A planar graph drawn in this way divides the plane into regions bounded by the edges of the graph. These regions are called faces. 
+       \end{defn} 
+       \begin{defn}[Dual Graph]
+       	The dual graph $G^*$ of a plane graph $G$ is a plane graph whose vertices correspond to the faces of $G$ and whose edges correspond to the edges of $G$.
+       \end{defn}
+      
+      Voronoi diagrams exhibit interesting properties which include:
+      \begin{itemize}
+      	\item The closest pair of points corresponds to two adjacent cells in the Voronoi diagram.
+      	\item Assume the setting is the Euclidean plane and a group of different points are given. Then two points are adjacent on the convex hull if and only if their Voronoi cells share an infinitely long side.
+      	\item The Voronoi diagram on $n$ points (or sites) is a planar graph with $n$ faces and by Euler's formula for planar graphs, the number of Voronoi vertices and edges are atmost $2n-5$ and $3n-6$ respectively. The time complexity is $O(n \log{n})$.
+      	\item Each point on an edge of the Voronoi diagram is equidistant from its two nearest neighbors $p_i$ and $p_j$. Thus, there is a circle centered at such a point such that $p_i$ and $p_j$ lie
+      	on this circle, and no other site is interior to the circle.
+      	\item It follows that vertex at which three Voronoi cells $V(p_i)$, $V(p_j)$, and $V(p_k)$ intersect is equidistant from all sites. Thus it is the center of the circle passing through these sites, and this circle contains no other sites in its interior.
+      	\item If we assume that no four points are co-circular, then the vertices of the Voronoi diagram all have degree three.
+      	
+      \end{itemize}
+      
+      \section{Delaunay Triangulation}
+      Let $P={p_1, p_2, \hdots,p_n} \subset \mathbb{R}^2$ be a point set. A triangulation $\mathcal{T}$ of $P$ is a maximal planar subdivision with vertex set $P$. Following the Empty circle property, $\mathcal{T}$ is a Delaunay triangulation of $P$ if and only if the circumcircle of any triangle in $\mathcal{T}$ does not contain a point of $P$ in its interior. Delaunay Triangulation is used in constructing Euclidean minimum Spanning Trees (EMST) used in solving the famous traveling salesman problem.
+      
+      There are various methods of computing the Delaunay Triangulations namely: plane sweeping, iterative flipping from any other triangulation, randomized incremental construction, and conversion from Voronoi diagram. For this work, however, we will consider the Voronoi diagram based method. For a Euclidean space with point sites, the dual graph of the Voronoi diagram corresponds to the Delaunay Triangulation whose vertices are the point sites. 
+      Delaunay triangulations have interesting properties which include the following:
+      \begin{itemize}
+      	\item Circum-circle property: The circum-circle of any triangle in the Delaunay triangulation
+      	is empty that is it contains no sites of $P$.
+      	\item Empty circle property: Two sites $p_i$ and $p_j$ are connected by an edge in the Delaunay
+      	triangulation, if and only if there is an empty circle passing through $p_i$ and $p_j$.
+      	\item Closest pair property: The closest pair of sites in P are neighbors in the Delaunay triangulation.
+      	\item Given a point set $P$ with $n$ sites where there are h sites on the convex hull, in the plane, the Delaunay triangulation has $2n – 2 – h$ triangles, and $3n – 3 – h$ edges.
+      	\item The exterior face of the Delaunay triangulation is the convex hull of the
+      	point set.
+      \end{itemize}
+  
+      \section{The Harris Corner Point Detector}
+      The detection of feature points in an image is vital in a number of tasks such as object tracking, $3$D scene reconstruction from stereo image pairs and many other tasks in machine vision \citep{trajkovic1998fast}.
+      The Harris corner point detector is one of the famous methods used in corner points detection. This method was introduced by Harris and Stephens \citep{harris1988combined} as an improvement to the Moravec's corner detector \citep{moravec1979visual,moravec1980obstacle}. In his method, Moravec considered corner points as the points where there is intensity variation in all directions. The Harris corner Detector in widely used because it is simple to compute, fast and most importantly, the corner points obtained based n this method are invariant in position to rotation, scale, illumination, and partially to affine intensity changes. On the other hand, Harris corner detector method is not invariant to image scaling, however, there are various ways of going about this problem as explained in \citep{stoica2011delaunay}.
+  
+      The Harris Corner Detector method determines the nature of the point by computing the average change of intensity in the image when shifting a small local window in the image by small amount in any direction. For instance for a flat region, all shifts of the window result into very small changes in intensity, for an edge, a shift in the perpendicular results into a large change while for corner points, all shifts result into a large change in intensity. For a given image with intensities, $I$, a change due to a shift of a window $w$ of size $u,v$ by $(x,y)$ is given by
+      \begin{equation}
+      E_{x,y} = \sum_{u,v} w_{u,v} |I_{x+u, y+v} - I_{u,v}|^2,
+      \end{equation}
+      where $E$ is the change due to the shift, $x$ and $y$ are the window's displacements in the $x$ and $y$ directions respectively, $I$ is the intensity of image at a position $(u,v)$, and $w$ is the Gaussian window function  $e^{-\frac{u^2 + v^2}{2 \sigma^2}}$.
+      
+      The Taylors expansion of $E$ gives:
+      \begin{equation}
+      E_{x,y} = \sum_{u,v} \{[I_x (u,v)x]^2 + [I_y(u,v)y]^2 + 2I_x(u,v)I_y (u,v)xy\},
+      \end{equation}  
+      where $I_x = \partial I / \partial x$ and $I_y = \partial I /\partial y$. $E$ is a close approximation of the local autocorrelation function given by
+      \begin{equation}
+      E(x,y) = \mathbb{M}\begin{bmatrix}
+      x & y
+      \end{bmatrix} \Bigg(\sum_{u,v} w(u,v)  
+       \begin{bmatrix}
+       I_x ^2 & I_x I_y  \\
+       I_xI_y & I_y ^2
+       \end{bmatrix}  \Bigg)\begin{bmatrix}
+      x \\
+      y
+      \end{bmatrix}  = \begin{bmatrix}
+      x & y
+      \end{bmatrix} \mathbb{M}\begin{bmatrix}
+      x \\
+      y
+      \end{bmatrix}
+      \end{equation}
+      Matrix $\mathbb{M}$ describes the shape of the local autocorrelation function $E$ at the origin.
+      Let $\lambda_1$ and $\lambda_2$ be the eigenvalues of $\mathbb{M}$, according to \citep{harris1988combined}, the measure of corner and edge quality used for selecting core pixels known as the response function, denoted as $R$ is given by
+      \begin{equation}
+      R = det(\mathbb{M}) - kTrace(\mathbb{M})^2,
+      \end{equation}       
+      where $det(\mathbb{M})=\lambda_1 \lambda_2$, $Trace(\mathbb{M}) = \lambda_1+ \lambda_2$ and $k$ is an empirical constant such that $0.04 <k < 0.06$.
+      A corner region with $R>0$ is selected as a nominated corner pixel only if its response is an $8$-way local maximum.
+      
+      A clear step-by-step algorithm and Matlab code for the Harris corner Detector can be reviewed \citep{stoica2011delaunay}.
+      
+      
+     \section{Principal Component Analysis}
+	  Principal Component Analysis (PCA) is a very important and widely used statistical technique in various applications such as image compression, face recognition, pattern identification in high dimensional data, among others. It is such a powerful tool for data analysis. Before we dive into details of PCA, let us first define some of the statistical concepts that we will come across most often. Given a sample of size $n$ of a population. We have the following definitions:
+	  
+	  \begin{defn}[Mean]
+	  	The mean, $\bar{X}$, of a sample is the average of elements of the sample and is given by
+	  	\begin{equation}
+	  	\bar{X} = \frac{\sum_{i=1}^{n} X_i}{n}
+	  	\end{equation}
+	  \end{defn}
+    
+      \begin{defn}[Standard Deviation]
+      	The standard deviation of a data set is a measure of how spread out the data is. It is average distance of a given point from the mean of the data set. The standard deviation, denoted by $\sigma$ is given by
+      	\begin{equation}
+      	\sigma = \sqrt{\frac{\sum_{i=1}^{n} (X_i - \bar{X})^2}{(n-1)}}
+      	\end{equation}
+      \end{defn}
+  
+      \begin{defn}[Variance]
+      	The variance, $\sigma^2$, is the square of the standard deviation. It is also a measure of spread of a data set. It is given by
+      	\begin{equation}
+      	\sigma^2 =  \frac{\sum_{i=1}^{n} (X_i - \bar{X})^2}{(n-1)}
+      	\end{equation}
+      	It is important to note that both the standard deviation and variance measure the spread of data set that is $1$-dimensional. 
+      \end{defn}
+  
+      \begin{defn}[Covariance]
+      	For data sets with more than $1$ dimension, we use the covariance instead of variance (or standard deviation) measure the deviation from the mean amongst any pair of dimensions. The covariance of two dimensions $x$ and $y$ is given by
+      	\begin{equation}
+      	cov(X,Y) = \frac{\sum_{i=1}^{n} (X_i - \bar{X}) (Y_i - \bar{Y})}{(n-1)}
+      	\end{equation}
+      \end{defn}
+  
+       \begin{defn}[Covariance Matrix]
+       	For a set of data with $n$ dimensions, the covariance matrix is given by
+       	\begin{equation}
+       	C^{n \times n} = (c_{i,j}, c_{i,j} = cov(Dim_i, Dim_j)),
+       	\end{equation}
+       	where $C^{n \times n}$ is a matrix with $n$ rows and $n$ columns, $Dim_i$ is the $i$th dimension. 
+       \end{defn}
+       For example, for a data set with $3$ dimensions $x$,$y$, and $z$, we write the covariance matrix as
+       \begin{equation}
+       C = \begin{pmatrix}
+       cov(x,x) & cov(x,y) & cov(x,z) \\
+       cov(y,x) & cov(y,y) & cov(y,z) \\
+       cov(z,x) & cov(z,y) & cov(z,z)
+       \end{pmatrix}
+       \end{equation}
+       
+       Given a set of data with $n$ dimensions, we perform PCA on the data set following the steps below:
+       \begin{itemize}
+       	\item Compute the mean for each dimension and then subtract the mean from the respective dimension for instance for dimensions $x$ and $y$, subtract each $x$ value, compute $x-\bar{x}$ and for each $y$ value, compute $y-\bar{y}$. The data obtained after subtracting the mean is referred to as Normalised data.
+       	\item Calculate the covariance matrix as explained previously.
+       	\item Compute the eigenvalues and eigenvectors of the covariance matrix.
+       	\item For dimensional reduction and data compression, choose principal components which are the eigenvectors with large eigenvalues. The number of principal components corresponds to the new dimensionality.
+       	\item Feature vector formation. Having chosen which eigenvectors to keep, we construct the feature vector which is a matrix with the chosen eigenvectors as columns.
+       	\item New data set. We obtain the new data set (with reduced dimensions) by 
+       	 \begin{equation}
+       	 NewData = FeatureVector^T \times NormalisedData^T
+       	 \end{equation}
+       	
+       \end{itemize}
+    
     \section{Diffusion on networks}
     Diffusion is, among others, the movement of substance from a region of high concentration to a region of low concentration. Such substance include heat, gas, etc. \citep{newman2010networks}.
     
