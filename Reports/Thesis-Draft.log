@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.5.2)  4 APR 2018 13:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.1.25)  22 APR 2018 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Thesis-Draft.tex
 (./Thesis-Draft.tex
 LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 35 language(s) loaded.
+Babel <3.9r> and hyphenation patterns for 43 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -975,6 +975,9 @@ Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 
 (./Thesis-Draft.aux
 
+LaTeX Warning: Label `eqn:eff' multiply defined.
+
+
 LaTeX Warning: Label `' multiply defined.
 
 
@@ -1002,27 +1005,6 @@ LaTeX Warning: Label `' multiply defined.
 LaTeX Warning: Label `' multiply defined.
 
 
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `zeta-laplace' multiply defined.
-
-
-LaTeX Warning: Label `sub@zeta-laplace' multiply defined.
-
-
-LaTeX Warning: Label `zeta-mellin' multiply defined.
-
-
-LaTeX Warning: Label `sub@zeta-mellin' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
 LaTeX Warning: Label `completeL1' multiply defined.
 
 
@@ -1036,6 +1018,114 @@ LaTeX Warning: Label `sub@completeMellins3' multiply defined.
 
 
 LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `sub@' multiply defined.
 
 
 LaTeX Warning: Label `' multiply defined.
@@ -1140,844 +1230,1065 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 65.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<images/social-network_3.png, id=328, 602.25pt x 360.34625pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<images/koningsberg.png, id=300, 363.3575pt x 139.52126pt>
+File: images/koningsberg.png Graphic file (type png)
+
+<use images/koningsberg.png>
+Package pdftex.def Info: images/koningsberg.png used on input line 107.
+(pdftex.def)             Requested size: 203.83417pt x 78.26974pt.
+
+<images/bridge-graph.pdf, id=301, 38.1425pt x 38.1425pt>
+File: images/bridge-graph.pdf Graphic file (type pdf)
+
+<use images/bridge-graph.pdf>
+Package pdftex.def Info: images/bridge-graph.pdf used on input line 113.
+(pdftex.def)             Requested size: 86.065pt x 86.0689pt.
+
+
+LaTeX Warning: Reference `fig:graphtypes' on page 2 undefined on input line 139
+.
+
+
+LaTeX Warning: Hyper reference `weightedgraph' on page 2 undefined on input lin
+e 139.
+
+
+LaTeX Warning: Reference `sub@weightedgraph' on page 2 undefined on input line 
+139.
+
+[2 <./images/koningsberg.png> <./images/bridge-graph.pdf>] [3]
+<images/social-network_3.png, id=394, 602.25pt x 360.34625pt>
 File: images/social-network_3.png Graphic file (type png)
 
 <use images/social-network_3.png>
-Package pdftex.def Info: images/social-network_3.png used on input line 149.
+Package pdftex.def Info: images/social-network_3.png used on input line 191.
 (pdftex.def)             Requested size: 181.18439pt x 108.40712pt.
 
-<images/citation.jpg, id=329, 501.875pt x 362.35374pt>
+<images/citation.jpg, id=395, 501.875pt x 362.35374pt>
 File: images/citation.jpg Graphic file (type jpg)
 
 <use images/citation.jpg>
-Package pdftex.def Info: images/citation.jpg used on input line 155.
+Package pdftex.def Info: images/citation.jpg used on input line 197.
 (pdftex.def)             Requested size: 181.18439pt x 130.81769pt.
 
-<images/foodweb.jpeg, id=330, 445.665pt x 319.1925pt>
+<images/foodweb.jpeg, id=396, 445.665pt x 319.1925pt>
 File: images/foodweb.jpeg Graphic file (type jpg)
 
 <use images/foodweb.jpeg>
-Package pdftex.def Info: images/foodweb.jpeg used on input line 161.
+Package pdftex.def Info: images/foodweb.jpeg used on input line 203.
 (pdftex.def)             Requested size: 181.18439pt x 129.76903pt.
 
-<images/computer-2.png, id=331, 1075.01625pt x 727.71875pt>
+<images/computer-2.png, id=397, 1075.01625pt x 727.71875pt>
 File: images/computer-2.png Graphic file (type png)
 
 <use images/computer-2.png>
-Package pdftex.def Info: images/computer-2.png used on input line 167.
+Package pdftex.def Info: images/computer-2.png used on input line 209.
 (pdftex.def)             Requested size: 181.18439pt x 122.64455pt.
- [3] [4 <./images/social-network_3.png (PNG copy)> <./images/citation.jpg> <./i
-mages/foodweb.jpeg> <./images/computer-2.png>]
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 380--381
+ [4 <./images/social-network_3.png (PNG copy)> <./images/citation.jpg> <./image
+s/foodweb.jpeg> <./images/computer-2.png>] [5]
+[6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
-[6] [7] [8] <images/graph-isomorphism1.pdf, id=507, 198.7425pt x 109.40875pt>
+[8] [9] <images/degree-prob.pdf, id=578, 49.18375pt x 32.12pt>
+File: images/degree-prob.pdf Graphic file (type pdf)
+
+<use images/degree-prob.pdf>
+Package pdftex.def Info: images/degree-prob.pdf used on input line 529.
+(pdftex.def)             Requested size: 135.89174pt x 88.76642pt.
+
+<images/gaussian.png, id=582, 586.8324pt x 442.2924pt>
+File: images/gaussian.png Graphic file (type png)
+
+<use images/gaussian.png>
+Package pdftex.def Info: images/gaussian.png used on input line 559.
+(pdftex.def)             Requested size: 203.83417pt x 153.62361pt.
+ <images/pois.png, id=584, 586.8324pt x 442.2924pt>
+File: images/pois.png Graphic file (type png)
+
+<use images/pois.png>
+Package pdftex.def Info: images/pois.png used on input line 564.
+(pdftex.def)             Requested size: 203.83417pt x 153.62361pt.
+ <images/exp.png, id=585, 586.8324pt x 442.2924pt>
+File: images/exp.png Graphic file (type png)
+
+<use images/exp.png>
+Package pdftex.def Info: images/exp.png used on input line 569.
+(pdftex.def)             Requested size: 203.83417pt x 153.62361pt.
+ <images/p-law.png, id=586, 586.8324pt x 442.2924pt>
+File: images/p-law.png Graphic file (type png)
+
+<use images/p-law.png>
+Package pdftex.def Info: images/p-law.png used on input line 574.
+(pdftex.def)             Requested size: 203.83417pt x 153.62361pt.
+ [10 <./images/degree-prob.pdf>]
+<images/noisyplot.png, id=612, 411.136pt x 308.352pt>
+File: images/noisyplot.png Graphic file (type png)
+
+<use images/noisyplot.png>
+Package pdftex.def Info: images/noisyplot.png used on input line 599.
+(pdftex.def)             Requested size: 172.13pt x 129.09761pt.
+ <images/cfdplot.png, id=613, 423.984pt x 338.063pt>
+File: images/cfdplot.png Graphic file (type png)
+
+<use images/cfdplot.png>
+Package pdftex.def Info: images/cfdplot.png used on input line 605.
+(pdftex.def)             Requested size: 172.13pt x 137.25006pt.
+ [11 <./images/gaussian.png> <./images/pois.png> <./images/exp.png> <./images/p
+-law.png>] [12 <./images/noisyplot.png (PNG copy)> <./images/cfdplot.png (PNG c
+opy)>] [13] [14] [15]
+<images/graph-isomorphism1.pdf, id=726, 198.7425pt x 109.40875pt>
 File: images/graph-isomorphism1.pdf Graphic file (type pdf)
 
 <use images/graph-isomorphism1.pdf>
-Package pdftex.def Info: images/graph-isomorphism1.pdf used on input line 550.
+Package pdftex.def Info: images/graph-isomorphism1.pdf used on input line 757.
 (pdftex.def)             Requested size: 158.54152pt x 87.28001pt.
 
-<images/graph-isomorphism2.pdf, id=508, 176.66pt x 129.48375pt>
+<images/graph-isomorphism2.pdf, id=727, 176.66pt x 129.48375pt>
 File: images/graph-isomorphism2.pdf Graphic file (type pdf)
 
 <use images/graph-isomorphism2.pdf>
-Package pdftex.def Info: images/graph-isomorphism2.pdf used on input line 555.
+Package pdftex.def Info: images/graph-isomorphism2.pdf used on input line 762.
 (pdftex.def)             Requested size: 158.54152pt x 116.20432pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 564--567
+Underfull \hbox (badness 10000) in paragraph at lines 771--774
 
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 576--578
+[16 <./images/graph-isomorphism1.pdf> <./images/graph-isomorphism2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 783--785
 
  []
 
-[10 <./images/graph-isomorphism1.pdf> <./images/graph-isomorphism2.pdf>]
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 618.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 618.
+LaTeX Warning: Command \textendash invalid in math mode on input line 825.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 618.
+LaTeX Warning: Command \textendash invalid in math mode on input line 825.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 618.
+LaTeX Warning: Command \textendash invalid in math mode on input line 825.
 
-[11] [12] [13]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 825.
+
+[17] <images/VoronoiDiagram.png, id=753, 384.43625pt x 349.305pt>
+File: images/VoronoiDiagram.png Graphic file (type png)
+
+<use images/VoronoiDiagram.png>
+Package pdftex.def Info: images/VoronoiDiagram.png used on input line 833.
+(pdftex.def)             Requested size: 135.89174pt x 123.4738pt.
+
+<images/voronoiandDelanauy.png, id=754, 383.4325pt x 349.305pt>
+File: images/voronoiandDelanauy.png Graphic file (type png)
+
+<use images/voronoiandDelanauy.png>
+Package pdftex.def Info: images/voronoiandDelanauy.png used on input line 838.
+(pdftex.def)             Requested size: 135.89174pt x 123.79893pt.
+ [18 <./images/VoronoiDiagram.png> <./images/voronoiandDelanauy.png>] [19] [20]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 758.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 980.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <5> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 758.
- [14]
-<images/diffusion-graph.pdf, id=617, 53.19875pt x 34.1275pt>
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 980.
+ [21]
+<images/diffusion-graph.pdf, id=840, 53.19875pt x 34.1275pt>
 File: images/diffusion-graph.pdf Graphic file (type pdf)
 
 <use images/diffusion-graph.pdf>
-Package pdftex.def Info: images/diffusion-graph.pdf used on input line 796.
+Package pdftex.def Info: images/diffusion-graph.pdf used on input line 1018.
 (pdftex.def)             Requested size: 131.35764pt x 84.28429pt.
 
-<images/Diffusion-on-network-new.png, id=618, 561.09625pt x 383.4325pt>
+<images/Diffusion-on-network-new.png, id=841, 561.09625pt x 383.4325pt>
 File: images/Diffusion-on-network-new.png Graphic file (type png)
 
 <use images/Diffusion-on-network-new.png>
 Package pdftex.def Info: images/Diffusion-on-network-new.png used on input line
- 801.
+ 1023.
 (pdftex.def)             Requested size: 203.83417pt x 139.28764pt.
- [15 <./images/diffusion-graph.pdf> <./images/Diffusion-on-network-new.png>]
-<images/Barabasi-normalDiffusion.png, id=637, 551.05875pt x 379.4175pt>
+ [22 <./images/diffusion-graph.pdf> <./images/Diffusion-on-network-new.png>]
+<images/Barabasi-normalDiffusion.png, id=860, 551.05875pt x 379.4175pt>
 File: images/Barabasi-normalDiffusion.png Graphic file (type png)
 
 <use images/Barabasi-normalDiffusion.png>
 Package pdftex.def Info: images/Barabasi-normalDiffusion.png used on input line
- 821.
+ 1043.
 (pdftex.def)             Requested size: 203.83417pt x 140.34174pt.
 
-<images/E-R-normalDiffusion.png, id=638, 554.07pt x 373.395pt>
+<images/E-R-normalDiffusion.png, id=861, 554.07pt x 373.395pt>
 File: images/E-R-normalDiffusion.png Graphic file (type png)
 
 <use images/E-R-normalDiffusion.png>
-Package pdftex.def Info: images/E-R-normalDiffusion.png used on input line 826.
-
+Package pdftex.def Info: images/E-R-normalDiffusion.png used on input line 1048
+.
 (pdftex.def)             Requested size: 203.83417pt x 137.36772pt.
 
-<images/quantity-time-exponents-x0.png, id=652, 551.05875pt x 359.3425pt>
+<images/quantity-time-exponents-x0.png, id=875, 551.05875pt x 359.3425pt>
 File: images/quantity-time-exponents-x0.png Graphic file (type png)
 
 <use images/quantity-time-exponents-x0.png>
 Package pdftex.def Info: images/quantity-time-exponents-x0.png used on input li
-ne 881.
+ne 1103.
 (pdftex.def)             Requested size: 144.95303pt x 94.52347pt.
 
-<images/quantity-time-exponents-x01.png, id=653, 545.03625pt x 363.3575pt>
+<images/quantity-time-exponents-x01.png, id=876, 545.03625pt x 363.3575pt>
 File: images/quantity-time-exponents-x01.png Graphic file (type png)
 
 <use images/quantity-time-exponents-x01.png>
 Package pdftex.def Info: images/quantity-time-exponents-x01.png used on input l
-ine 886.
+ine 1108.
 (pdftex.def)             Requested size: 144.95303pt x 96.63303pt.
 
-<images/quantity-time-exponents-x03.png, id=654, 474.77374pt x 309.155pt>
+<images/quantity-time-exponents-x03.png, id=877, 474.77374pt x 309.155pt>
 File: images/quantity-time-exponents-x03.png Graphic file (type png)
 
 <use images/quantity-time-exponents-x03.png>
 Package pdftex.def Info: images/quantity-time-exponents-x03.png used on input l
-ine 891.
+ine 1113.
 (pdftex.def)             Requested size: 144.95303pt x 94.38884pt.
 
-<images/legend-gamma.png, id=655, 777.90625pt x 63.23625pt>
+<images/legend-gamma.png, id=878, 777.90625pt x 63.23625pt>
 File: images/legend-gamma.png Graphic file (type png)
 
 <use images/legend-gamma.png>
-Package pdftex.def Info: images/legend-gamma.png used on input line 896.
+Package pdftex.def Info: images/legend-gamma.png used on input line 1118.
 (pdftex.def)             Requested size: 362.37569pt x 29.45857pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[16 <./images/Barabasi-normalDiffusion.png> <./images/E-R-normalDiffusion.png>]
-<images/BA-degreesource.png, id=667, 532.99126pt x 355.3275pt>
+ [23 <./images/Barabasi-normalDiffusion.png> <./images/E-R-normalDiffusion.png>
+]
+<images/BA-degreesource.png, id=890, 532.99126pt x 355.3275pt>
 File: images/BA-degreesource.png Graphic file (type png)
 
 <use images/BA-degreesource.png>
-Package pdftex.def Info: images/BA-degreesource.png used on input line 908.
+Package pdftex.def Info: images/BA-degreesource.png used on input line 1130.
 (pdftex.def)             Requested size: 203.83417pt x 135.88791pt.
 
-<images/BA-randomsource.png, id=668, 544.0325pt x 358.33875pt>
+<images/BA-randomsource.png, id=891, 544.0325pt x 358.33875pt>
 File: images/BA-randomsource.png Graphic file (type png)
 
 <use images/BA-randomsource.png>
-Package pdftex.def Info: images/BA-randomsource.png used on input line 913.
+Package pdftex.def Info: images/BA-randomsource.png used on input line 1135.
 (pdftex.def)             Requested size: 203.83417pt x 134.26187pt.
 
-<images/ER-degreesource.png, id=669, 562.1pt x 368.37625pt>
+<images/ER-degreesource.png, id=892, 562.1pt x 368.37625pt>
 File: images/ER-degreesource.png Graphic file (type png)
 
 <use images/ER-degreesource.png>
-Package pdftex.def Info: images/ER-degreesource.png used on input line 918.
+Package pdftex.def Info: images/ER-degreesource.png used on input line 1140.
 (pdftex.def)             Requested size: 203.83417pt x 133.58214pt.
 
-<images/ER-randomsource.png, id=670, 539.01375pt x 360.34625pt>
+<images/ER-randomsource.png, id=893, 539.01375pt x 360.34625pt>
 File: images/ER-randomsource.png Graphic file (type png)
 
 <use images/ER-randomsource.png>
-Package pdftex.def Info: images/ER-randomsource.png used on input line 923.
+Package pdftex.def Info: images/ER-randomsource.png used on input line 1145.
 (pdftex.def)             Requested size: 203.83417pt x 136.26768pt.
- [17 <./images/quantity-time-exponents-x0.png> <./images/quantity-time-exponent
+ [24 <./images/quantity-time-exponents-x0.png> <./images/quantity-time-exponent
 s-x01.png> <./images/quantity-time-exponents-x03.png> <./images/legend-gamma.pn
-g> <./images/BA-degreesource.png> <./images/BA-randomsource.png> <./images/ER-d
-egreesource.png> <./images/ER-randomsource.png>] [18] [19] <images/balanceDigra
-ph.pdf, id=712, 182.6825pt x 111.41624pt>
+g>] [25 <./images/BA-degreesource.png> <./images/BA-randomsource.png> <./images
+/ER-degreesource.png> <./images/ER-randomsource.png>] [26] <images/balanceDigra
+ph.pdf, id=935, 182.6825pt x 111.41624pt>
 File: images/balanceDigraph.pdf Graphic file (type pdf)
 
 <use images/balanceDigraph.pdf>
-Package pdftex.def Info: images/balanceDigraph.pdf used on input line 1009.
+Package pdftex.def Info: images/balanceDigraph.pdf used on input line 1231.
 (pdftex.def)             Requested size: 181.18439pt x 110.50812pt.
 
-<images/Balanced-digraph-diffusion.png, id=713, 547.04375pt x 351.3125pt>
+<images/Balanced-digraph-diffusion.png, id=936, 547.04375pt x 351.3125pt>
 File: images/Balanced-digraph-diffusion.png Graphic file (type png)
 
 <use images/Balanced-digraph-diffusion.png>
 Package pdftex.def Info: images/Balanced-digraph-diffusion.png used on input li
-ne 1014.
+ne 1236.
 (pdftex.def)             Requested size: 226.48395pt x 145.44888pt.
 
-<images/UnbalanceDigraph.pdf, id=714, 182.6825pt x 111.41624pt>
+<images/UnbalanceDigraph.pdf, id=937, 182.6825pt x 111.41624pt>
 File: images/UnbalanceDigraph.pdf Graphic file (type pdf)
 
 <use images/UnbalanceDigraph.pdf>
-Package pdftex.def Info: images/UnbalanceDigraph.pdf used on input line 1019.
+Package pdftex.def Info: images/UnbalanceDigraph.pdf used on input line 1241.
 (pdftex.def)             Requested size: 181.18439pt x 110.50812pt.
 
-<images/non-balnceddigraph-difusion.png, id=715, 544.0325pt x 361.35pt>
+<images/non-balnceddigraph-difusion.png, id=938, 544.0325pt x 361.35pt>
 File: images/non-balnceddigraph-difusion.png Graphic file (type png)
 
 <use images/non-balnceddigraph-difusion.png>
 Package pdftex.def Info: images/non-balnceddigraph-difusion.png used on input l
-ine 1024.
+ine 1246.
 (pdftex.def)             Requested size: 226.48395pt x 150.43164pt.
- [20] [21 <./images/balanceDigraph.pdf> <./images/Balanced-digraph-diffusion.pn
+ [27] [28 <./images/balanceDigraph.pdf> <./images/Balanced-digraph-diffusion.pn
 g> <./images/UnbalanceDigraph.pdf> <./images/non-balnceddigraph-difusion.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1078.
+(hyperref)                removing `math shift' on input line 1300.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1078.
+(hyperref)                removing `subscript' on input line 1300.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1078.
+(hyperref)                removing `math shift' on input line 1300.
 
-<images/nodecharge1.png, id=757, 320.19624pt x 139.52126pt>
+<images/nodecharge1.png, id=979, 320.19624pt x 139.52126pt>
 File: images/nodecharge1.png Graphic file (type png)
 
 <use images/nodecharge1.png>
-Package pdftex.def Info: images/nodecharge1.png used on input line 1085.
+Package pdftex.def Info: images/nodecharge1.png used on input line 1307.
 (pdftex.def)             Requested size: 135.89174pt x 59.21378pt.
 
-<images/nodecharge11.png, id=758, 320.19624pt x 155.58125pt>
+<images/nodecharge11.png, id=980, 320.19624pt x 155.58125pt>
 File: images/nodecharge11.png Graphic file (type png)
 
 <use images/nodecharge11.png>
-Package pdftex.def Info: images/nodecharge11.png used on input line 1090.
+Package pdftex.def Info: images/nodecharge11.png used on input line 1312.
 (pdftex.def)             Requested size: 135.89174pt x 66.02974pt.
 
-<images/nodecharge2.png, id=759, 338.26375pt x 139.52126pt>
+<images/nodecharge2.png, id=981, 338.26375pt x 139.52126pt>
 File: images/nodecharge2.png Graphic file (type png)
 
 <use images/nodecharge2.png>
-Package pdftex.def Info: images/nodecharge2.png used on input line 1095.
+Package pdftex.def Info: images/nodecharge2.png used on input line 1317.
 (pdftex.def)             Requested size: 135.89174pt x 56.05232pt.
 
 
-LaTeX Warning: Hyper reference `polarity1' on page 22 undefined on input line 1
-099.
+LaTeX Warning: Hyper reference `polarity1' on page 29 undefined on input line 1
+321.
 
 
-LaTeX Warning: Reference `sub@polarity1' on page 22 undefined on input line 109
-9.
+LaTeX Warning: Reference `sub@polarity1' on page 29 undefined on input line 132
+1.
 
 
-LaTeX Warning: Hyper reference `polarity1' on page 22 undefined on input line 1
-099.
+LaTeX Warning: Hyper reference `polarity1' on page 29 undefined on input line 1
+321.
 
 
-LaTeX Warning: Reference `sub@polarity1' on page 22 undefined on input line 109
-9.
+LaTeX Warning: Reference `sub@polarity1' on page 29 undefined on input line 132
+1.
 
 File: images/nodecharge1.png Graphic file (type png)
 <use images/nodecharge1.png>
-Package pdftex.def Info: images/nodecharge1.png used on input line 1107.
+Package pdftex.def Info: images/nodecharge1.png used on input line 1329.
 (pdftex.def)             Requested size: 135.89174pt x 59.21378pt.
 
-<images/nodecharge41.png, id=764, 320.19624pt x 151.56625pt>
+<images/nodecharge41.png, id=986, 320.19624pt x 151.56625pt>
 File: images/nodecharge41.png Graphic file (type png)
 
 <use images/nodecharge41.png>
-Package pdftex.def Info: images/nodecharge41.png used on input line 1112.
+Package pdftex.def Info: images/nodecharge41.png used on input line 1334.
 (pdftex.def)             Requested size: 135.89174pt x 64.32576pt.
 
-<images/nodecharge4.png, id=765, 324.21124pt x 151.56625pt>
+<images/nodecharge4.png, id=987, 324.21124pt x 151.56625pt>
 File: images/nodecharge4.png Graphic file (type png)
 
 <use images/nodecharge4.png>
-Package pdftex.def Info: images/nodecharge4.png used on input line 1117.
+Package pdftex.def Info: images/nodecharge4.png used on input line 1339.
 (pdftex.def)             Requested size: 135.89174pt x 63.52786pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1124--1125
+Underfull \hbox (badness 10000) in paragraph at lines 1346--1347
 
  []
 
-[22 <./images/nodecharge1.png (PNG copy)> <./images/nodecharge11.png (PNG copy)
+[29 <./images/nodecharge1.png (PNG copy)> <./images/nodecharge11.png (PNG copy)
 > <./images/nodecharge2.png (PNG copy)> <./images/nodecharge41.png (PNG copy)> 
 <./images/nodecharge4.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
+Underfull \hbox (badness 10000) in paragraph at lines 1348--1349
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1131--1132
+Underfull \hbox (badness 10000) in paragraph at lines 1353--1354
+
+ []
+
+<images/sample-lap2.pdf, id=1005, 159.59625pt x 113.42375pt>
+File: images/sample-lap2.pdf Graphic file (type pdf)
+
+<use images/sample-lap2.pdf>
+Package pdftex.def Info: images/sample-lap2.pdf used on input line 1362.
+(pdftex.def)             Requested size: 135.89174pt x 96.57678pt.
+ [30 <./images/sample-lap2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1437--1439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1140--1142
+Underfull \hbox (badness 10000) in paragraph at lines 1441--1442
 
  []
 
-<images/compute-spanning.pdf, id=782, 31.11626pt x 21.07875pt>
-File: images/compute-spanning.pdf Graphic file (type pdf)
-
-<use images/compute-spanning.pdf>
-Package pdftex.def Info: images/compute-spanning.pdf used on input line 1149.
-(pdftex.def)             Requested size: 113.24197pt x 76.72893pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1173--1174
-
- []
-
-[23 <./images/compute-spanning.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1212--1214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1216--1217
-
- []
-
-
-Package natbib Warning: Citation `von2007tutorial' on page 24 undefined on inpu
-t line 1244.
-
-[24] [25]
+[31] [32]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1484.
+(hyperref)                removing `math shift' on input line 1715.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 1484.
+(hyperref)                removing `subscript' on input line 1715.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1484.
+(hyperref)                removing `math shift' on input line 1715.
 
-[26] <images/BA-lam1-laplace.png, id=854, 433.62pt x 290.08376pt>
-File: images/BA-lam1-laplace.png Graphic file (type png)
+[33] [34] <images/Barabasi-Mellin15.png, id=1109, 440.64626pt x 288.07625pt>
+File: images/Barabasi-Mellin15.png Graphic file (type png)
 
-<use images/BA-lam1-laplace.png>
-Package pdftex.def Info: images/BA-lam1-laplace.png used on input line 1540.
-(pdftex.def)             Requested size: 203.83417pt x 136.36151pt.
+<use images/Barabasi-Mellin15.png>
+Package pdftex.def Info: images/Barabasi-Mellin15.png used on input line 1847.
+(pdftex.def)             Requested size: 203.83417pt x 133.25954pt.
 
-<images/ER-lam1-laplace.png, id=855, 407.5225pt x 286.06876pt>
-File: images/ER-lam1-laplace.png Graphic file (type png)
+<images/Barabasi-Laplace15.png, id=1110, 446.66875pt x 303.1325pt>
+File: images/Barabasi-Laplace15.png Graphic file (type png)
 
-<use images/ER-lam1-laplace.png>
-Package pdftex.def Info: images/ER-lam1-laplace.png used on input line 1545.
-(pdftex.def)             Requested size: 203.83417pt x 143.0864pt.
+<use images/Barabasi-Laplace15.png>
+Package pdftex.def Info: images/Barabasi-Laplace15.png used on input line 1852.
 
-<images/BA-lam2-laplace.png, id=856, 434.62375pt x 296.10625pt>
-File: images/BA-lam2-laplace.png Graphic file (type png)
+(pdftex.def)             Requested size: 203.83417pt x 138.33253pt.
 
-<use images/BA-lam2-laplace.png>
-Package pdftex.def Info: images/BA-lam2-laplace.png used on input line 1550.
-(pdftex.def)             Requested size: 203.83417pt x 138.87175pt.
+<images/Barabasi-Mellin2.png, id=1111, 454.69875pt x 294.09875pt>
+File: images/Barabasi-Mellin2.png Graphic file (type png)
 
-<images/ER-lam2-laplace.png, id=857, 399.4925pt x 294.09875pt>
-File: images/ER-lam2-laplace.png Graphic file (type png)
+<use images/Barabasi-Mellin2.png>
+Package pdftex.def Info: images/Barabasi-Mellin2.png used on input line 1857.
+(pdftex.def)             Requested size: 203.83417pt x 131.84059pt.
 
-<use images/ER-lam2-laplace.png>
-Package pdftex.def Info: images/ER-lam2-laplace.png used on input line 1555.
-(pdftex.def)             Requested size: 203.83417pt x 150.06017pt.
+<images/Barabasi-Laplace2.png, id=1112, 449.68pt x 306.14375pt>
+File: images/Barabasi-Laplace2.png Graphic file (type png)
 
-<images/BA-lam3-laplace.png, id=858, 425.59pt x 304.13625pt>
-File: images/BA-lam3-laplace.png Graphic file (type png)
+<use images/Barabasi-Laplace2.png>
+Package pdftex.def Info: images/Barabasi-Laplace2.png used on input line 1862.
+(pdftex.def)             Requested size: 203.83417pt x 138.77242pt.
 
-<use images/BA-lam3-laplace.png>
-Package pdftex.def Info: images/BA-lam3-laplace.png used on input line 1560.
-(pdftex.def)             Requested size: 203.83417pt x 145.66817pt.
-File: images/BA-lam3-laplace.png Graphic file (type png)
- <use images/BA-lam3-laplace.png>
-Package pdftex.def Info: images/BA-lam3-laplace.png used on input line 1565.
-(pdftex.def)             Requested size: 203.83417pt x 145.66817pt.
- [27] [28 <./images/BA-lam1-laplace.png> <./images/ER-lam1-laplace.png> <./imag
-es/BA-lam2-laplace.png> <./images/ER-lam2-laplace.png> <./images/BA-lam3-laplac
-e.png>]
-[29] [30] <images/kernel-graphs.pdf, id=945, 281.05pt x 164.615pt>
-File: images/kernel-graphs.pdf Graphic file (type pdf)
+<images/Barabasi-Mellin3.png, id=1113, 461.725pt x 304.13625pt>
+File: images/Barabasi-Mellin3.png Graphic file (type png)
 
-<use images/kernel-graphs.pdf>
-Package pdftex.def Info: images/kernel-graphs.pdf used on input line 1715.
-(pdftex.def)             Requested size: 203.83417pt x 119.38928pt.
+<use images/Barabasi-Mellin3.png>
+Package pdftex.def Info: images/Barabasi-Mellin3.png used on input line 1867.
+(pdftex.def)             Requested size: 203.83417pt x 134.26587pt.
 
-<images/Trace-kernel-plot.png, id=946, 558.085pt x 367.3725pt>
-File: images/Trace-kernel-plot.png Graphic file (type png)
+<images/Barabasi-Laplace3.png, id=1114, 449.68pt x 311.1625pt>
+File: images/Barabasi-Laplace3.png Graphic file (type png)
 
-<use images/Trace-kernel-plot.png>
-Package pdftex.def Info: images/Trace-kernel-plot.png used on input line 1720.
-(pdftex.def)             Requested size: 203.83417pt x 134.17673pt.
- [31 <./images/kernel-graphs.pdf> <./images/Trace-kernel-plot.png>] [32]
-<images/kenel-toymodel.pdf, id=995, 160.6pt x 113.42375pt>
-File: images/kenel-toymodel.pdf Graphic file (type pdf)
+<use images/Barabasi-Laplace3.png>
+Package pdftex.def Info: images/Barabasi-Laplace3.png used on input line 1872.
+(pdftex.def)             Requested size: 203.83417pt x 141.04738pt.
+ [35]
+<images/Erdos-Mellin15.png, id=1126, 459.7175pt x 309.155pt>
+File: images/Erdos-Mellin15.png Graphic file (type png)
 
-<use images/kenel-toymodel.pdf>
-Package pdftex.def Info: images/kenel-toymodel.pdf used on input line 1836.
-(pdftex.def)             Requested size: 158.54152pt x 111.97313pt.
-File: images/diffusion-graph.pdf Graphic file (type pdf)
- <use images/diffusion-graph.pdf>
-Package pdftex.def Info: images/diffusion-graph.pdf used on input line 1841.
-(pdftex.def)             Requested size: 158.54152pt x 101.72656pt.
+<use images/Erdos-Mellin15.png>
+Package pdftex.def Info: images/Erdos-Mellin15.png used on input line 1884.
+(pdftex.def)             Requested size: 203.83417pt x 137.07585pt.
 
-<images/model-1-mellin.png, id=1000, 458.71375pt x 303.1325pt>
-File: images/model-1-mellin.png Graphic file (type png)
+<images/Erdos-Laplace15.png, id=1127, 473.77pt x 317.185pt>
+File: images/Erdos-Laplace15.png Graphic file (type png)
 
-<use images/model-1-mellin.png>
-Package pdftex.def Info: images/model-1-mellin.png used on input line 1852.
-(pdftex.def)             Requested size: 203.83417pt x 134.70158pt.
+<use images/Erdos-Laplace15.png>
+Package pdftex.def Info: images/Erdos-Laplace15.png used on input line 1889.
+(pdftex.def)             Requested size: 203.83417pt x 136.46431pt.
 
-<images/model-2-mellin.png, id=1001, 454.69875pt x 295.1025pt>
-File: images/model-2-mellin.png Graphic file (type png)
+<images/Erdos-Mellin2.png, id=1128, 453.695pt x 299.1175pt>
+File: images/Erdos-Mellin2.png Graphic file (type png)
 
-<use images/model-2-mellin.png>
-Package pdftex.def Info: images/model-2-mellin.png used on input line 1857.
-(pdftex.def)             Requested size: 203.83417pt x 132.29056pt.
+<use images/Erdos-Mellin2.png>
+Package pdftex.def Info: images/Erdos-Mellin2.png used on input line 1894.
+(pdftex.def)             Requested size: 203.83417pt x 134.3871pt.
 
-<images/model-1-klap.png, id=1002, 447.6725pt x 297.11pt>
-File: images/model-1-klap.png Graphic file (type png)
+<images/Erdos-Laplace2.png, id=1129, 469.755pt x 299.1175pt>
+File: images/Erdos-Laplace2.png Graphic file (type png)
 
-<use images/model-1-klap.png>
-Package pdftex.def Info: images/model-1-klap.png used on input line 1864.
-(pdftex.def)             Requested size: 203.83417pt x 135.28046pt.
+<use images/Erdos-Laplace2.png>
+Package pdftex.def Info: images/Erdos-Laplace2.png used on input line 1899.
+(pdftex.def)             Requested size: 203.83417pt x 129.791pt.
 
-<images/model-2-klap.png, id=1003, 448.67625pt x 305.14pt>
-File: images/model-2-klap.png Graphic file (type png)
+<images/Erdos-Mellin3.png, id=1130, 458.71375pt x 304.13625pt>
+File: images/Erdos-Mellin3.png Graphic file (type png)
 
-<use images/model-2-klap.png>
-Package pdftex.def Info: images/model-2-klap.png used on input line 1869.
-(pdftex.def)             Requested size: 203.83417pt x 138.62473pt.
- [33 <./images/kenel-toymodel.pdf>]
-<images/zeta-laplace.png, id=1038, 462.72874pt x 301.125pt>
-File: images/zeta-laplace.png Graphic file (type png)
+<use images/Erdos-Mellin3.png>
+Package pdftex.def Info: images/Erdos-Mellin3.png used on input line 1904.
+(pdftex.def)             Requested size: 203.83417pt x 135.1476pt.
 
-<use images/zeta-laplace.png>
-Package pdftex.def Info: images/zeta-laplace.png used on input line 1884.
-(pdftex.def)             Requested size: 158.54152pt x 103.17143pt.
+<images/Erdos-Laplace3.png, id=1131, 474.77374pt x 315.1775pt>
+File: images/Erdos-Laplace3.png Graphic file (type png)
 
-<images/zeta-mellin.png, id=1039, 454.69875pt x 303.1325pt>
-File: images/zeta-mellin.png Graphic file (type png)
-
-<use images/zeta-mellin.png>
-Package pdftex.def Info: images/zeta-mellin.png used on input line 1889.
-(pdftex.def)             Requested size: 158.54152pt x 105.69554pt.
- [34 <./images/model-1-mellin.png> <./images/model-2-mellin.png> <./images/mode
-l-1-klap.png> <./images/model-2-klap.png>]
-<images/zeta-laplace2.png, id=1056, 462.72874pt x 294.09875pt>
-File: images/zeta-laplace2.png Graphic file (type png)
-
-<use images/zeta-laplace2.png>
-Package pdftex.def Info: images/zeta-laplace2.png used on input line 1900.
-(pdftex.def)             Requested size: 158.54152pt x 100.7641pt.
-
-<images/zeta-mellin2.png, id=1057, 460.72125pt x 296.10625pt>
-File: images/zeta-mellin2.png Graphic file (type png)
-
-<use images/zeta-mellin2.png>
-Package pdftex.def Info: images/zeta-mellin2.png used on input line 1905.
-(pdftex.def)             Requested size: 158.54152pt x 101.8947pt.
-
-<images/complete_5.pdf, id=1064, 125.46875pt x 113.42375pt>
-File: images/complete_5.pdf Graphic file (type pdf)
-
-<use images/complete_5.pdf>
-Package pdftex.def Info: images/complete_5.pdf used on input line 1916.
-(pdftex.def)             Requested size: 144.95303pt x 131.05241pt.
-
-<images/cycle-khop.pdf, id=1065, 121.45375pt x 134.5025pt>
-File: images/cycle-khop.pdf Graphic file (type pdf)
-
-<use images/cycle-khop.pdf>
-Package pdftex.def Info: images/cycle-khop.pdf used on input line 1920.
-(pdftex.def)             Requested size: 135.89174pt x 150.49193pt.
-File: images/kenel-toymodel.pdf Graphic file (type pdf)
- <use images/kenel-toymodel.pdf>
-Package pdftex.def Info: images/kenel-toymodel.pdf used on input line 1925.
-(pdftex.def)             Requested size: 158.54152pt x 111.97313pt.
-
-<images/G3-khop.pdf, id=1066, 143.53625pt x 114.4275pt>
-File: images/G3-khop.pdf Graphic file (type pdf)
-
-<use images/G3-khop.pdf>
-Package pdftex.def Info: images/G3-khop.pdf used on input line 1930.
-(pdftex.def)             Requested size: 158.54152pt x 126.39268pt.
- <images/G4-khop.pdf, id=1067, 154.5775pt x 140.525pt>
-File: images/G4-khop.pdf Graphic file (type pdf)
-
-<use images/G4-khop.pdf>
-Package pdftex.def Info: images/G4-khop.pdf used on input line 1935.
-(pdftex.def)             Requested size: 158.54152pt x 144.14197pt.
- [35 <./images/zeta-laplace.png> <./images/zeta-mellin.png> <./images/zeta-lapl
-ace2.png> <./images/zeta-mellin2.png>]
-<images/complete-L1.png, id=1080, 445.665pt x 293.095pt>
-File: images/complete-L1.png Graphic file (type png)
-
-<use images/complete-L1.png>
-Package pdftex.def Info: images/complete-L1.png used on input line 1946.
-(pdftex.def)             Requested size: 203.83417pt x 134.05162pt.
-
-<images/s2-graphcomp.png, id=1081, 447.6725pt x 294.09875pt>
-File: images/s2-graphcomp.png Graphic file (type png)
-
-<use images/s2-graphcomp.png>
-Package pdftex.def Info: images/s2-graphcomp.png used on input line 1951.
-(pdftex.def)             Requested size: 203.83417pt x 133.90936pt.
-
-<images/s3-graphcomp.png, id=1082, 444.66125pt x 291.0875pt>
-File: images/s3-graphcomp.png Graphic file (type png)
-
-<use images/s3-graphcomp.png>
-Package pdftex.def Info: images/s3-graphcomp.png used on input line 1956.
-(pdftex.def)             Requested size: 203.83417pt x 133.43549pt.
-
-<images/s4-graphcomp.png, id=1083, 447.6725pt x 294.09875pt>
-File: images/s4-graphcomp.png Graphic file (type png)
-
-<use images/s4-graphcomp.png>
-Package pdftex.def Info: images/s4-graphcomp.png used on input line 1961.
-(pdftex.def)             Requested size: 203.83417pt x 133.90936pt.
- [36 <./images/complete_5.pdf> <./images/cycle-khop.pdf> <./images/G3-khop.pdf>
- <./images/G4-khop.pdf>]
-<images/grid-t0-x0.png, id=1095, 433.62pt x 289.08pt>
+<use images/Erdos-Laplace3.png>
+Package pdftex.def Info: images/Erdos-Laplace3.png used on input line 1909.
+(pdftex.def)             Requested size: 203.83417pt x 135.31207pt.
+ [36 <./images/Barabasi-Mellin15.png> <./images/Barabasi-Laplace15.png> <./imag
+es/Barabasi-Mellin2.png> <./images/Barabasi-Laplace2.png> <./images/Barabasi-Me
+llin3.png> <./images/Barabasi-Laplace3.png>]
+<images/grid-t0-x0.png, id=1146, 433.62pt x 289.08pt>
 File: images/grid-t0-x0.png Graphic file (type png)
 
 <use images/grid-t0-x0.png>
-Package pdftex.def Info: images/grid-t0-x0.png used on input line 1979.
+Package pdftex.def Info: images/grid-t0-x0.png used on input line 1926.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t05-x0.png, id=1096, 433.62pt x 289.08pt>
+<images/grid-t05-x0.png, id=1147, 433.62pt x 289.08pt>
 File: images/grid-t05-x0.png Graphic file (type png)
 
 <use images/grid-t05-x0.png>
-Package pdftex.def Info: images/grid-t05-x0.png used on input line 1984.
+Package pdftex.def Info: images/grid-t05-x0.png used on input line 1931.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t3-x0.png, id=1097, 433.62pt x 289.08pt>
+<images/grid-t3-x0.png, id=1148, 433.62pt x 289.08pt>
 File: images/grid-t3-x0.png Graphic file (type png)
 
 <use images/grid-t3-x0.png>
-Package pdftex.def Info: images/grid-t3-x0.png used on input line 1989.
+Package pdftex.def Info: images/grid-t3-x0.png used on input line 1936.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t5-x0.png, id=1098, 433.62pt x 289.08pt>
+<images/grid-t5-x0.png, id=1149, 433.62pt x 289.08pt>
 File: images/grid-t5-x0.png Graphic file (type png)
 
 <use images/grid-t5-x0.png>
-Package pdftex.def Info: images/grid-t5-x0.png used on input line 1994.
+Package pdftex.def Info: images/grid-t5-x0.png used on input line 1941.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-Overfull \hbox (13.33328pt too wide) in paragraph at lines 1978--1998
+Overfull \hbox (13.33328pt too wide) in paragraph at lines 1925--1945
  [][]  []  []  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/grid-t0-x01.png, id=1099, 433.62pt x 289.08pt>
+[37 <./images/Erdos-Mellin15.png> <./images/Erdos-Laplace15.png> <./images/Erdo
+s-Mellin2.png> <./images/Erdos-Laplace2.png> <./images/Erdos-Mellin3.png> <./im
+ages/Erdos-Laplace3.png>]
+<images/grid-t0-x01.png, id=1163, 433.62pt x 289.08pt>
 File: images/grid-t0-x01.png Graphic file (type png)
 
 <use images/grid-t0-x01.png>
-Package pdftex.def Info: images/grid-t0-x01.png used on input line 2014.
+Package pdftex.def Info: images/grid-t0-x01.png used on input line 1961.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t05-x01.png, id=1100, 433.62pt x 289.08pt>
+<images/grid-t05-x01.png, id=1164, 433.62pt x 289.08pt>
 File: images/grid-t05-x01.png Graphic file (type png)
 
 <use images/grid-t05-x01.png>
-Package pdftex.def Info: images/grid-t05-x01.png used on input line 2019.
+Package pdftex.def Info: images/grid-t05-x01.png used on input line 1966.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t3-x01.png, id=1101, 433.62pt x 289.08pt>
+<images/grid-t3-x01.png, id=1165, 433.62pt x 289.08pt>
 File: images/grid-t3-x01.png Graphic file (type png)
 
 <use images/grid-t3-x01.png>
-Package pdftex.def Info: images/grid-t3-x01.png used on input line 2024.
+Package pdftex.def Info: images/grid-t3-x01.png used on input line 1971.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t5-x01.png, id=1102, 433.62pt x 289.08pt>
+<images/grid-t5-x01.png, id=1166, 433.62pt x 289.08pt>
 File: images/grid-t5-x01.png Graphic file (type png)
 
 <use images/grid-t5-x01.png>
-Package pdftex.def Info: images/grid-t5-x01.png used on input line 2029.
+Package pdftex.def Info: images/grid-t5-x01.png used on input line 1976.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-Overfull \hbox (13.33328pt too wide) in paragraph at lines 2013--2034
+Overfull \hbox (13.33328pt too wide) in paragraph at lines 1960--1981
  [][]  []  []  [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/grid-t0-x02.png, id=1103, 433.62pt x 289.08pt>
+<images/grid-t0-x02.png, id=1167, 433.62pt x 289.08pt>
 File: images/grid-t0-x02.png Graphic file (type png)
 
 <use images/grid-t0-x02.png>
-Package pdftex.def Info: images/grid-t0-x02.png used on input line 2039.
+Package pdftex.def Info: images/grid-t0-x02.png used on input line 1986.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t05-x02.png, id=1104, 433.62pt x 289.08pt>
+<images/grid-t05-x02.png, id=1168, 433.62pt x 289.08pt>
 File: images/grid-t05-x02.png Graphic file (type png)
 
 <use images/grid-t05-x02.png>
-Package pdftex.def Info: images/grid-t05-x02.png used on input line 2044.
+Package pdftex.def Info: images/grid-t05-x02.png used on input line 1991.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t3-x02.png, id=1105, 433.62pt x 289.08pt>
+<images/grid-t3-x02.png, id=1169, 433.62pt x 289.08pt>
 File: images/grid-t3-x02.png Graphic file (type png)
 
 <use images/grid-t3-x02.png>
-Package pdftex.def Info: images/grid-t3-x02.png used on input line 2049.
+Package pdftex.def Info: images/grid-t3-x02.png used on input line 1996.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/grid-t5-x02.png, id=1106, 433.62pt x 289.08pt>
+<images/grid-t5-x02.png, id=1170, 433.62pt x 289.08pt>
 File: images/grid-t5-x02.png Graphic file (type png)
 
 <use images/grid-t5-x02.png>
-Package pdftex.def Info: images/grid-t5-x02.png used on input line 2054.
+Package pdftex.def Info: images/grid-t5-x02.png used on input line 2001.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-Overfull \hbox (13.33328pt too wide) in paragraph at lines 2038--2057
+Overfull \hbox (13.33328pt too wide) in paragraph at lines 1985--2004
  [][]  []  []  [] 
  []
 
-<images/colour-bar-grid.png, id=1107, 738.76pt x 69.25874pt>
+<images/colour-bar-grid.png, id=1171, 738.76pt x 69.25874pt>
 File: images/colour-bar-grid.png Graphic file (type png)
 
 <use images/colour-bar-grid.png>
-Package pdftex.def Info: images/colour-bar-grid.png used on input line 2060.
+Package pdftex.def Info: images/colour-bar-grid.png used on input line 2007.
 (pdftex.def)             Requested size: 271.7835pt x 25.47948pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[37 <./images/complete-L1.png> <./images/s2-graphcomp.png> <./images/s3-graphco
-mp.png> <./images/s4-graphcomp.png>]
-<images/laplace-x1-t0.png, id=1126, 433.62pt x 289.08pt>
+ [38 <./images/grid-t0-x0.png> <./images/grid-t05-x0.png> <./images/grid-t3-x0.
+png> <./images/grid-t5-x0.png> <./images/grid-t0-x01.png> <./images/grid-t05-x0
+1.png> <./images/grid-t3-x01.png> <./images/grid-t5-x01.png> <./images/grid-t0-
+x02.png> <./images/grid-t05-x02.png> <./images/grid-t3-x02.png> <./images/grid-
+t5-x02.png> <./images/colour-bar-grid.png>]
+<images/laplace-x1-t0.png, id=1197, 433.62pt x 289.08pt>
 File: images/laplace-x1-t0.png Graphic file (type png)
 
 <use images/laplace-x1-t0.png>
-Package pdftex.def Info: images/laplace-x1-t0.png used on input line 2072.
+Package pdftex.def Info: images/laplace-x1-t0.png used on input line 2019.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/laplace-x1-t05.png, id=1127, 433.62pt x 289.08pt>
+<images/laplace-x1-t05.png, id=1198, 433.62pt x 289.08pt>
 File: images/laplace-x1-t05.png Graphic file (type png)
 
 <use images/laplace-x1-t05.png>
-Package pdftex.def Info: images/laplace-x1-t05.png used on input line 2077.
+Package pdftex.def Info: images/laplace-x1-t05.png used on input line 2024.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/laplace-x1-t3.png, id=1128, 433.62pt x 289.08pt>
+<images/laplace-x1-t3.png, id=1199, 433.62pt x 289.08pt>
 File: images/laplace-x1-t3.png Graphic file (type png)
 
 <use images/laplace-x1-t3.png>
-Package pdftex.def Info: images/laplace-x1-t3.png used on input line 2082.
+Package pdftex.def Info: images/laplace-x1-t3.png used on input line 2029.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/laplace-x1-t5.png, id=1129, 433.62pt x 289.08pt>
+<images/laplace-x1-t5.png, id=1200, 433.62pt x 289.08pt>
 File: images/laplace-x1-t5.png Graphic file (type png)
 
 <use images/laplace-x1-t5.png>
-Package pdftex.def Info: images/laplace-x1-t5.png used on input line 2087.
+Package pdftex.def Info: images/laplace-x1-t5.png used on input line 2034.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-Overfull \hbox (13.33328pt too wide) in paragraph at lines 2071--2091
+Overfull \hbox (13.33328pt too wide) in paragraph at lines 2018--2038
  [][]  []  []  [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/mellin-x2-t0.png, id=1132, 433.62pt x 289.08pt>
+<images/mellin-x2-t0.png, id=1203, 433.62pt x 289.08pt>
 File: images/mellin-x2-t0.png Graphic file (type png)
 
 <use images/mellin-x2-t0.png>
-Package pdftex.def Info: images/mellin-x2-t0.png used on input line 2098.
+Package pdftex.def Info: images/mellin-x2-t0.png used on input line 2045.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/mellin-x2-t05.png, id=1133, 433.62pt x 289.08pt>
+<images/mellin-x2-t05.png, id=1204, 433.62pt x 289.08pt>
 File: images/mellin-x2-t05.png Graphic file (type png)
 
 <use images/mellin-x2-t05.png>
-Package pdftex.def Info: images/mellin-x2-t05.png used on input line 2103.
+Package pdftex.def Info: images/mellin-x2-t05.png used on input line 2050.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/mellin-x2-t3.png, id=1134, 433.62pt x 289.08pt>
+<images/mellin-x2-t3.png, id=1205, 433.62pt x 289.08pt>
 File: images/mellin-x2-t3.png Graphic file (type png)
 
 <use images/mellin-x2-t3.png>
-Package pdftex.def Info: images/mellin-x2-t3.png used on input line 2108.
+Package pdftex.def Info: images/mellin-x2-t3.png used on input line 2055.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/mellin-x2-t5.png, id=1135, 433.62pt x 289.08pt>
+<images/mellin-x2-t5.png, id=1206, 433.62pt x 289.08pt>
 File: images/mellin-x2-t5.png Graphic file (type png)
 
 <use images/mellin-x2-t5.png>
-Package pdftex.def Info: images/mellin-x2-t5.png used on input line 2113.
+Package pdftex.def Info: images/mellin-x2-t5.png used on input line 2060.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-Overfull \hbox (13.33328pt too wide) in paragraph at lines 2097--2117
+Overfull \hbox (13.33328pt too wide) in paragraph at lines 2044--2064
  [][]  []  []  [] 
  []
 
-<images/mellin-x4-t0.png, id=1136, 433.62pt x 289.08pt>
+<images/mellin-x4-t0.png, id=1207, 433.62pt x 289.08pt>
 File: images/mellin-x4-t0.png Graphic file (type png)
 
 <use images/mellin-x4-t0.png>
-Package pdftex.def Info: images/mellin-x4-t0.png used on input line 2123.
+Package pdftex.def Info: images/mellin-x4-t0.png used on input line 2070.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/mellin-x4-t05.png, id=1137, 433.62pt x 289.08pt>
+<images/mellin-x4-t05.png, id=1208, 433.62pt x 289.08pt>
 File: images/mellin-x4-t05.png Graphic file (type png)
 
 <use images/mellin-x4-t05.png>
-Package pdftex.def Info: images/mellin-x4-t05.png used on input line 2128.
+Package pdftex.def Info: images/mellin-x4-t05.png used on input line 2075.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/mellin-x4-t3.png, id=1138, 433.62pt x 289.08pt>
+<images/mellin-x4-t3.png, id=1209, 433.62pt x 289.08pt>
 File: images/mellin-x4-t3.png Graphic file (type png)
 
 <use images/mellin-x4-t3.png>
-Package pdftex.def Info: images/mellin-x4-t3.png used on input line 2133.
+Package pdftex.def Info: images/mellin-x4-t3.png used on input line 2080.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-<images/mellin-x4-t5.png, id=1139, 433.62pt x 289.08pt>
+<images/mellin-x4-t5.png, id=1210, 433.62pt x 289.08pt>
 File: images/mellin-x4-t5.png Graphic file (type png)
 
 <use images/mellin-x4-t5.png>
-Package pdftex.def Info: images/mellin-x4-t5.png used on input line 2138.
+Package pdftex.def Info: images/mellin-x4-t5.png used on input line 2085.
 (pdftex.def)             Requested size: 113.24197pt x 75.49425pt.
 
-Overfull \hbox (13.33328pt too wide) in paragraph at lines 2122--2142
+Overfull \hbox (13.33328pt too wide) in paragraph at lines 2069--2089
  [][]  []  []  [] 
  []
 
+[39 <./images/laplace-x1-t0.png> <./images/laplace-x1-t05.png> <./images/laplac
+e-x1-t3.png> <./images/laplace-x1-t5.png> <./images/mellin-x2-t0.png> <./images
+/mellin-x2-t05.png> <./images/mellin-x2-t3.png> <./images/mellin-x2-t5.png> <./
+images/mellin-x4-t0.png> <./images/mellin-x4-t05.png> <./images/mellin-x4-t3.pn
+g> <./images/mellin-x4-t5.png>] [40]
+<images/kernel-graphs.pdf, id=1273, 281.05pt x 164.615pt>
+File: images/kernel-graphs.pdf Graphic file (type pdf)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<use images/kernel-graphs.pdf>
+Package pdftex.def Info: images/kernel-graphs.pdf used on input line 2174.
+(pdftex.def)             Requested size: 203.83417pt x 119.38928pt.
 
+<images/Trace-kernel-plot.png, id=1274, 558.085pt x 367.3725pt>
+File: images/Trace-kernel-plot.png Graphic file (type png)
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+<use images/Trace-kernel-plot.png>
+Package pdftex.def Info: images/Trace-kernel-plot.png used on input line 2179.
+(pdftex.def)             Requested size: 203.83417pt x 134.17673pt.
 
-[38 <./images/grid-t0-x0.png> <./images/grid-t05-x0.png> <./images/grid-t3-x0.p
-ng> <./images/grid-t5-x0.png> <./images/grid-t0-x01.png> <./images/grid-t05-x01
-.png> <./images/grid-t3-x01.png> <./images/grid-t5-x01.png> <./images/grid-t0-x
-02.png> <./images/grid-t05-x02.png> <./images/grid-t3-x02.png> <./images/grid-t
-5-x02.png> <./images/colour-bar-grid.png>] [39 <./images/laplace-x1-t0.png> <./
-images/laplace-x1-t05.png> <./images/laplace-x1-t3.png> <./images/laplace-x1-t5
-.png> <./images/mellin-x2-t0.png> <./images/mellin-x2-t05.png> <./images/mellin
--x2-t3.png> <./images/mellin-x2-t5.png> <./images/mellin-x4-t0.png> <./images/m
-ellin-x4-t05.png> <./images/mellin-x4-t3.png> <./images/mellin-x4-t5.png>]
-[40] [41] [42] [43]
+<images/traceisomorphism2.pdf, id=1282, 209.78375pt x 138.5175pt>
+File: images/traceisomorphism2.pdf Graphic file (type pdf)
+
+<use images/traceisomorphism2.pdf>
+Package pdftex.def Info: images/traceisomorphism2.pdf used on input line 2193.
+(pdftex.def)             Requested size: 135.89174pt x 89.72672pt.
+
+<images/traceisomorphism3.pdf, id=1283, 168.63pt x 126.4725pt>
+File: images/traceisomorphism3.pdf Graphic file (type pdf)
+
+<use images/traceisomorphism3.pdf>
+Package pdftex.def Info: images/traceisomorphism3.pdf used on input line 2198.
+(pdftex.def)             Requested size: 135.89174pt x 101.9211pt.
+
+<images/Trace-Isomorphics.png, id=1284, 531.9875pt x 353.32pt>
+File: images/Trace-Isomorphics.png Graphic file (type png)
+
+<use images/Trace-Isomorphics.png>
+Package pdftex.def Info: images/Trace-Isomorphics.png used on input line 2203.
+(pdftex.def)             Requested size: 158.54152pt x 105.29056pt.
+ [41 <./images/kernel-graphs.pdf> <./images/Trace-kernel-plot.png>]
+<images/graph-cospectral1.pdf, id=1302, 211.79124pt x 180.675pt>
+File: images/graph-cospectral1.pdf Graphic file (type pdf)
+
+<use images/graph-cospectral1.pdf>
+Package pdftex.def Info: images/graph-cospectral1.pdf used on input line 2215.
+(pdftex.def)             Requested size: 135.89174pt x 115.92934pt.
+
+<images/graph-cospectral2.pdf, id=1303, 205.76875pt x 145.54375pt>
+File: images/graph-cospectral2.pdf Graphic file (type pdf)
+
+<use images/graph-cospectral2.pdf>
+Package pdftex.def Info: images/graph-cospectral2.pdf used on input line 2220.
+(pdftex.def)             Requested size: 135.89174pt x 96.11913pt.
+
+<images/trace-cospectral.png, id=1304, 529.98pt x 361.35pt>
+File: images/trace-cospectral.png Graphic file (type png)
+
+<use images/trace-cospectral.png>
+Package pdftex.def Info: images/trace-cospectral.png used on input line 2225.
+(pdftex.def)             Requested size: 158.54152pt x 108.09706pt.
+ [42 <./images/traceisomorphism2.pdf> <./images/traceisomorphism3.pdf> <./image
+s/Trace-Isomorphics.png> <./images/graph-cospectral1.pdf> <./images/graph-cospe
+ctral2.pdf> <./images/trace-cospectral.png>]
+<images/graphskernelmellin2.png, id=1334, 544.0325pt x 364.36125pt>
+File: images/graphskernelmellin2.png Graphic file (type png)
+
+<use images/graphskernelmellin2.png>
+Package pdftex.def Info: images/graphskernelmellin2.png used on input line 2272
+.
+(pdftex.def)             Requested size: 158.54152pt x 106.18466pt.
+
+<images/graphskernelmellin3.png, id=1335, 546.04pt x 369.38pt>
+File: images/graphskernelmellin3.png Graphic file (type png)
+
+<use images/graphskernelmellin3.png>
+Package pdftex.def Info: images/graphskernelmellin3.png used on input line 2277
+.
+(pdftex.def)             Requested size: 158.54152pt x 107.24709pt.
+
+<images/graphskernellaplace15.png, id=1336, 545.03625pt x 361.35pt>
+File: images/graphskernellaplace15.png Graphic file (type png)
+
+<use images/graphskernellaplace15.png>
+Package pdftex.def Info: images/graphskernellaplace15.png used on input line 22
+82.
+(pdftex.def)             Requested size: 158.54152pt x 105.10861pt.
+
+<images/graphskernellaplace2.png, id=1337, 545.03625pt x 356.33125pt>
+File: images/graphskernellaplace2.png Graphic file (type png)
+
+<use images/graphskernellaplace2.png>
+Package pdftex.def Info: images/graphskernellaplace2.png used on input line 228
+7.
+(pdftex.def)             Requested size: 158.54152pt x 103.64876pt.
+ [43]
+File: images/diffusion-graph.pdf Graphic file (type pdf)
+ <use images/diffusion-graph.pdf>
+Package pdftex.def Info: images/diffusion-graph.pdf used on input line 2306.
+(pdftex.def)             Requested size: 158.54152pt x 101.72656pt.
+
+<images/Laplace-heattrace.png, id=1357, 543.02875pt x 368.37625pt>
+File: images/Laplace-heattrace.png Graphic file (type png)
+
+<use images/Laplace-heattrace.png>
+Package pdftex.def Info: images/Laplace-heattrace.png used on input line 2318.
+(pdftex.def)             Requested size: 203.83417pt x 138.27565pt.
+
+<images/model-2-mellin.png, id=1358, 454.69875pt x 295.1025pt>
+File: images/model-2-mellin.png Graphic file (type png)
+
+<use images/model-2-mellin.png>
+Package pdftex.def Info: images/model-2-mellin.png used on input line 2323.
+(pdftex.def)             Requested size: 203.83417pt x 132.29056pt.
+ [44 <./images/graphskernelmellin2.png> <./images/graphskernelmellin3.png> <./i
+mages/graphskernellaplace15.png> <./images/graphskernellaplace2.png>]
+<images/complete_5.pdf, id=1371, 125.46875pt x 113.42375pt>
+File: images/complete_5.pdf Graphic file (type pdf)
+
+<use images/complete_5.pdf>
+Package pdftex.def Info: images/complete_5.pdf used on input line 2335.
+(pdftex.def)             Requested size: 144.95303pt x 131.05241pt.
+
+<images/cycle-khop.pdf, id=1372, 121.45375pt x 134.5025pt>
+File: images/cycle-khop.pdf Graphic file (type pdf)
+
+<use images/cycle-khop.pdf>
+Package pdftex.def Info: images/cycle-khop.pdf used on input line 2339.
+(pdftex.def)             Requested size: 135.89174pt x 150.49193pt.
+
+<images/kenel-toymodel.pdf, id=1373, 160.6pt x 113.42375pt>
 File: images/kenel-toymodel.pdf Graphic file (type pdf)
- <use images/kenel-toymodel.pdf>
-Package pdftex.def Info: images/kenel-toymodel.pdf used on input line 2384.
-(pdftex.def)             Requested size: 135.89174pt x 95.97623pt.
 
-<images/graph-longrange-demo.pdf, id=1279, 178.6675pt x 128.48pt>
-File: images/graph-longrange-demo.pdf Graphic file (type pdf)
+<use images/kenel-toymodel.pdf>
+Package pdftex.def Info: images/kenel-toymodel.pdf used on input line 2344.
+(pdftex.def)             Requested size: 158.54152pt x 111.97313pt.
 
-<use images/graph-longrange-demo.pdf>
-Package pdftex.def Info: images/graph-longrange-demo.pdf used on input line 238
-9.
-(pdftex.def)             Requested size: 135.89174pt x 97.72421pt.
- [44 <./images/graph-longrange-demo.pdf>]
-Overfull \hbox (50.25204pt too wide) in alignment at lines 2454--2462
- [][][] []
- []
+<images/G3-khop.pdf, id=1374, 143.53625pt x 114.4275pt>
+File: images/G3-khop.pdf Graphic file (type pdf)
 
-[45] <images/centralities-weighted.pdf, id=1335, 60.225pt x 36.135pt>
-File: images/centralities-weighted.pdf Graphic file (type pdf)
+<use images/G3-khop.pdf>
+Package pdftex.def Info: images/G3-khop.pdf used on input line 2349.
+(pdftex.def)             Requested size: 158.54152pt x 126.39268pt.
+ <images/G4-khop.pdf, id=1375, 154.5775pt x 140.525pt>
+File: images/G4-khop.pdf Graphic file (type pdf)
 
-<use images/centralities-weighted.pdf>
-Package pdftex.def Info: images/centralities-weighted.pdf used on input line 24
-81.
-(pdftex.def)             Requested size: 226.48395pt x 135.90392pt.
- [46 <./images/centralities-weighted.pdf>] [47] <images/lap-algebraic.pdf, id=1
-379, 159.59625pt x 113.42375pt>
-File: images/lap-algebraic.pdf Graphic file (type pdf)
+<use images/G4-khop.pdf>
+Package pdftex.def Info: images/G4-khop.pdf used on input line 2354.
+(pdftex.def)             Requested size: 158.54152pt x 144.14197pt.
 
-<use images/lap-algebraic.pdf>
-Package pdftex.def Info: images/lap-algebraic.pdf used on input line 2583.
-(pdftex.def)             Requested size: 135.89174pt x 96.57678pt.
+<images/complete-L1.png, id=1378, 445.665pt x 293.095pt>
+File: images/complete-L1.png Graphic file (type png)
 
-<images/lap-algebraic2.pdf, id=1380, 159.59625pt x 113.42375pt>
-File: images/lap-algebraic2.pdf Graphic file (type pdf)
+<use images/complete-L1.png>
+Package pdftex.def Info: images/complete-L1.png used on input line 2365.
+(pdftex.def)             Requested size: 203.83417pt x 134.05162pt.
 
-<use images/lap-algebraic2.pdf>
-Package pdftex.def Info: images/lap-algebraic2.pdf used on input line 2588.
-(pdftex.def)             Requested size: 135.89174pt x 96.57678pt.
+<images/s2-graphcomp.png, id=1379, 447.6725pt x 294.09875pt>
+File: images/s2-graphcomp.png Graphic file (type png)
+
+<use images/s2-graphcomp.png>
+Package pdftex.def Info: images/s2-graphcomp.png used on input line 2370.
+(pdftex.def)             Requested size: 203.83417pt x 133.90936pt.
+
+<images/s3-graphcomp.png, id=1380, 444.66125pt x 291.0875pt>
+File: images/s3-graphcomp.png Graphic file (type png)
+
+<use images/s3-graphcomp.png>
+Package pdftex.def Info: images/s3-graphcomp.png used on input line 2375.
+(pdftex.def)             Requested size: 203.83417pt x 133.43549pt.
+
+<images/s4-graphcomp.png, id=1381, 447.6725pt x 294.09875pt>
+File: images/s4-graphcomp.png Graphic file (type png)
+
+<use images/s4-graphcomp.png>
+Package pdftex.def Info: images/s4-graphcomp.png used on input line 2380.
+(pdftex.def)             Requested size: 203.83417pt x 133.90936pt.
+ [45 <./images/Laplace-heattrace.png> <./images/model-2-mellin.png> <./images/c
+omplete_5.pdf> <./images/cycle-khop.pdf> <./images/kenel-toymodel.pdf> <./image
+s/G3-khop.pdf> <./images/G4-khop.pdf>]
+<images/zeta-laplace2.png, id=1397, 462.72874pt x 294.09875pt>
+File: images/zeta-laplace2.png Graphic file (type png)
+
+<use images/zeta-laplace2.png>
+Package pdftex.def Info: images/zeta-laplace2.png used on input line 2414.
+(pdftex.def)             Requested size: 158.54152pt x 100.7641pt.
+
+<images/zeta-mellin2.png, id=1398, 460.72125pt x 296.10625pt>
+File: images/zeta-mellin2.png Graphic file (type png)
+
+<use images/zeta-mellin2.png>
+Package pdftex.def Info: images/zeta-mellin2.png used on input line 2419.
+(pdftex.def)             Requested size: 158.54152pt x 101.8947pt.
+ [46 <./images/complete-L1.png> <./images/s2-graphcomp.png> <./images/s3-graphc
+omp.png> <./images/s4-graphcomp.png>] [47 <./images/zeta-laplace2.png> <./image
+s/zeta-mellin2.png>]
+<images/HeatcontMellins2.png, id=1436, 557.08125pt x 418.56375pt>
+File: images/HeatcontMellins2.png Graphic file (type png)
+
+<use images/HeatcontMellins2.png>
+Package pdftex.def Info: images/HeatcontMellins2.png used on input line 2500.
+(pdftex.def)             Requested size: 203.83417pt x 153.14812pt.
+
+<images/HeatcontMellin3.png, id=1437, 562.1pt x 418.56375pt>
+File: images/HeatcontMellin3.png Graphic file (type png)
+
+<use images/HeatcontMellin3.png>
+Package pdftex.def Info: images/HeatcontMellin3.png used on input line 2505.
+(pdftex.def)             Requested size: 203.83417pt x 151.78134pt.
+
+<images/HeatcontLaplace2.png, id=1438, 557.08125pt x 413.545pt>
+File: images/HeatcontLaplace2.png Graphic file (type png)
+
+<use images/HeatcontLaplace2.png>
+Package pdftex.def Info: images/HeatcontLaplace2.png used on input line 2510.
+(pdftex.def)             Requested size: 203.83417pt x 151.3118pt.
+
+<images/HeatcontLaplace3.png, id=1439, 567.11874pt x 421.575pt>
+File: images/HeatcontLaplace3.png Graphic file (type png)
+
+<use images/HeatcontLaplace3.png>
+Package pdftex.def Info: images/HeatcontLaplace3.png used on input line 2515.
+(pdftex.def)             Requested size: 203.83417pt x 151.52243pt.
+ [48] [49 <./images/HeatcontMellins2.png> <./images/HeatcontMellin3.png> <./ima
+ges/HeatcontLaplace2.png> <./images/HeatcontLaplace3.png>] <images/GlassSuperim
+pose.png, id=1462, 128.48pt x 127.47626pt>
+File: images/GlassSuperimpose.png Graphic file (type png)
+
+<use images/GlassSuperimpose.png>
+Package pdftex.def Info: images/GlassSuperimpose.png used on input line 2543.
+(pdftex.def)             Requested size: 67.94241pt x 67.41231pt.
+
+<images/ToySuperimpose.png, id=1463, 186.6975pt x 187.70125pt>
+File: images/ToySuperimpose.png Graphic file (type png)
+
+<use images/ToySuperimpose.png>
+Package pdftex.def Info: images/ToySuperimpose.png used on input line 2547.
+(pdftex.def)             Requested size: 67.94241pt x 68.3056pt.
+
+<images/IcecreamSuperimpose.png, id=1464, 128.48pt x 127.47626pt>
+File: images/IcecreamSuperimpose.png Graphic file (type png)
+
+<use images/IcecreamSuperimpose.png>
+Package pdftex.def Info: images/IcecreamSuperimpose.png used on input line 2552
+.
+(pdftex.def)             Requested size: 67.94241pt x 67.41231pt.
+
+<images/BottleSuperimpose.png, id=1465, 131.49126pt x 129.48375pt>
+File: images/BottleSuperimpose.png Graphic file (type png)
+
+<use images/BottleSuperimpose.png>
+Package pdftex.def Info: images/BottleSuperimpose.png used on input line 2557.
+(pdftex.def)             Requested size: 67.94241pt x 66.90714pt.
+
+<images/BirdSuperimpose.png, id=1466, 130.4875pt x 125.46875pt>
+File: images/BirdSuperimpose.png Graphic file (type png)
+
+<use images/BirdSuperimpose.png>
+Package pdftex.def Info: images/BirdSuperimpose.png used on input line 2562.
+(pdftex.def)             Requested size: 67.94241pt x 65.33026pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package natbib Warning: Citation `ding2004k' on page 50 undefined on input line
+ 2571.
 
-<images/jetstar-airnetwork.png, id=1386, 476.78125pt x 282.05376pt>
-File: images/jetstar-airnetwork.png Graphic file (type png)
+[50 <./images/GlassSuperimpose.png> <./images/ToySuperimpose.png> <./images/Ice
+creamSuperimpose.png> <./images/BottleSuperimpose.png> <./images/BirdSuperimpos
+e.png>] <images/No-longrange.png, id=1480, 614.295pt x 411.5375pt>
+File: images/No-longrange.png Graphic file (type png)
 
-<use images/jetstar-airnetwork.png>
-Package pdftex.def Info: images/jetstar-airnetwork.png used on input line 2600.
+<use images/No-longrange.png>
+Package pdftex.def Info: images/No-longrange.png used on input line 2588.
+(pdftex.def)             Requested size: 226.48395pt x 151.72644pt.
 
-(pdftex.def)             Requested size: 203.83417pt x 120.58353pt.
+<images/Mellin-s2.png, id=1481, 582.175pt x 416.55624pt>
+File: images/Mellin-s2.png Graphic file (type png)
 
-<images/lapalgebraic.png, id=1387, 452.69125pt x 308.15125pt>
-File: images/lapalgebraic.png Graphic file (type png)
+<use images/Mellin-s2.png>
+Package pdftex.def Info: images/Mellin-s2.png used on input line 2596.
+(pdftex.def)             Requested size: 203.83417pt x 145.84135pt.
 
-<use images/lapalgebraic.png>
-Package pdftex.def Info: images/lapalgebraic.png used on input line 2605.
-(pdftex.def)             Requested size: 203.83417pt x 138.7514pt.
- [48] [49 <./images/lap-algebraic.pdf> <./images/lap-algebraic2.pdf> <./images/
-jetstar-airnetwork.png> <./images/lapalgebraic.png>] (./Thesis-Draft.bbl [50] [
-51]
-Underfull \hbox (badness 10000) in paragraph at lines 269--274
+<images/Mellin-s3.png, id=1482, 622.325pt x 416.55624pt>
+File: images/Mellin-s3.png Graphic file (type png)
+
+<use images/Mellin-s3.png>
+Package pdftex.def Info: images/Mellin-s3.png used on input line 2601.
+(pdftex.def)             Requested size: 203.83417pt x 136.43428pt.
+
+<images/Mellin-s5.png, id=1483, 662.475pt x 415.5525pt>
+File: images/Mellin-s5.png Graphic file (type png)
+
+<use images/Mellin-s5.png>
+Package pdftex.def Info: images/Mellin-s5.png used on input line 2606.
+(pdftex.def)             Requested size: 203.83417pt x 127.85614pt.
+
+<images/Mellin-s6.png, id=1484, 633.36626pt x 411.5375pt>
+File: images/Mellin-s6.png Graphic file (type png)
+
+<use images/Mellin-s6.png>
+Package pdftex.def Info: images/Mellin-s6.png used on input line 2611.
+(pdftex.def)             Requested size: 203.83417pt x 132.44196pt.
+ [51 <./images/No-longrange.png>]
+<images/Laplace-lam1.png, id=1499, 581.17125pt x 405.515pt>
+File: images/Laplace-lam1.png Graphic file (type png)
+
+<use images/Laplace-lam1.png>
+Package pdftex.def Info: images/Laplace-lam1.png used on input line 2622.
+(pdftex.def)             Requested size: 203.83417pt x 142.22937pt.
+
+<images/Laplace-lam2.png, id=1500, 619.31375pt x 404.51125pt>
+File: images/Laplace-lam2.png Graphic file (type png)
+
+<use images/Laplace-lam2.png>
+Package pdftex.def Info: images/Laplace-lam2.png used on input line 2627.
+(pdftex.def)             Requested size: 203.83417pt x 133.1373pt.
+
+<images/Laplace-lam4.png, id=1501, 601.24625pt x 399.4925pt>
+File: images/Laplace-lam4.png Graphic file (type png)
+
+<use images/Laplace-lam4.png>
+Package pdftex.def Info: images/Laplace-lam4.png used on input line 2632.
+(pdftex.def)             Requested size: 203.83417pt x 135.43552pt.
+
+<images/Laplace-lam6.png, id=1502, 621.32124pt x 401.5pt>
+File: images/Laplace-lam6.png Graphic file (type png)
+
+<use images/Laplace-lam6.png>
+Package pdftex.def Info: images/Laplace-lam6.png used on input line 2637.
+(pdftex.def)             Requested size: 203.83417pt x 131.71735pt.
+ [52 <./images/Mellin-s2.png> <./images/Mellin-s3.png> <./images/Mellin-s5.png>
+ <./images/Mellin-s6.png>] [53 <./images/Laplace-lam1.png> <./images/Laplace-la
+m2.png> <./images/Laplace-lam4.png> <./images/Laplace-lam6.png>] (./Thesis-Draf
+t.bbl [54] [55]
+Underfull \hbox (badness 10000) in paragraph at lines 307--312
 []\OT1/cmr/m/n/10 Internet.  Net-work.  URL [][]$https : / / www . google . com
  / search ? q = internet + network &
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--274
+Underfull \hbox (badness 10000) in paragraph at lines 307--312
 \OT1/cmr/m/n/10 client = ubuntu & hs = xZp & channel = fs & gl = za & source = 
 lnms & tbm = isch & sa = X & ved =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--274
+Underfull \hbox (badness 10000) in paragraph at lines 307--312
 \OT1/cmr/m/n/10 0ahUKEwiZsrLOueTMAhVMCcAKHS[]8AysQ[]AUIBygB & biw = 1215 & bih 
 = 900 # channel = fs & gl =
  []
 
-[52] [53])
+[56] [57])
 
 Package natbib Warning: There were undefined citations.
 
-[54]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2639.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2639.
+[58]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2652.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2652.
  (./Thesis-Draft.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2639.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2639.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2652.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2652.
 
 Package rerunfilecheck Info: File `Thesis-Draft.out' has not changed.
-(rerunfilecheck)             Checksum: AD962B384514D0CA08465B9D5001BB96;5561.
+(rerunfilecheck)             Checksum: 4DFFF00FC19CDD7754225C5047EC5AC6;5457.
 
 
 LaTeX Warning: There were undefined references.
@@ -1985,16 +2296,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2639.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2652.
  ) 
 Here is how much of TeX's memory you used:
- 20356 strings out of 494317
- 379731 string characters out of 6162925
- 433717 words of memory out of 5000000
- 22782 multiletter control sequences out of 15000+600000
+ 20592 strings out of 494223
+ 385883 string characters out of 6159439
+ 435878 words of memory out of 5000000
+ 23001 multiletter control sequences out of 15000+600000
  19163 words of font info for 79 fonts, out of 8000000 for 9000
- 350 hyphenation exceptions out of 8191
- 48i,14n,55p,1378b,720s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 372 hyphenation exceptions out of 8191
+ 48i,17n,55p,1377b,667s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texli
@@ -2010,14 +2321,16 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Thesis-Draft.pdf (54 pages, 2130552 bytes).
+ist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/symbols/msam7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msbm7.pfb>
+Output written on Thesis-Draft.pdf (58 pages, 2776361 bytes).
 PDF statistics:
- 1648 PDF objects out of 1728 (max. 8388607)
- 1371 compressed objects within 14 object streams
- 464 named destinations out of 1000 (max. 500000)
- 932 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1764 PDF objects out of 2073 (max. 8388607)
+ 1407 compressed objects within 15 object streams
+ 468 named destinations out of 1000 (max. 500000)
+ 1136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

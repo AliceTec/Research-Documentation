@@ -1,4 +1,4 @@
-\begin{thebibliography}{94}
+\begin{thebibliography}{105}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -88,6 +88,17 @@ M.~Belkin and P.~Niyogi.
 \newblock \emph{Neural computation}, 15\penalty0 (6):\penalty0 1373--1396,
   2003.
 
+\bibitem[Biggs(1993)]{biggs1993algebraic}
+N.~Biggs.
+\newblock \emph{Algebraic graph theory}.
+\newblock Cambridge university press, 1993.
+
+\bibitem[Bozkurt et~al.(2010)Bozkurt, G{\"u}ng{\"o}r, Gutman, and
+  Cevik]{bozkurt2010randic}
+S.~B. Bozkurt, A.~D. G{\"u}ng{\"o}r, I.~Gutman, and A.~S. Cevik.
+\newblock Randic matrix and randic energy.
+\newblock \emph{MATCH Commun. Math. Comput. Chem}, 64:\penalty0 239--250, 2010.
+
 \bibitem[Brouwer and Haemers(2011)]{brouwer2011spectra}
 A.~E. Brouwer and W.~H. Haemers.
 \newblock \emph{Spectra of graphs}.
@@ -105,6 +116,12 @@ J.~L. Casti.
 \newblock URL
   \url{https://www.britannica.com/science/complexity-scientific-theory}.
 
+\bibitem[Chandak et~al.(2017)Chandak, Bhalotia, and Agrawal]{chandak2017novel}
+M.~Chandak, S.~Bhalotia, and S.~Agrawal.
+\newblock A novel approach to compute steiner point in graph: Application for
+  network design.
+\newblock 2017.
+
 \bibitem[Chung(2007)]{chung2007heat}
 F.~Chung.
 \newblock The heat kernel as the pagerank of a graph.
@@ -115,6 +132,16 @@ F.~Chung.
 F.~Chung.
 \newblock A local graph partitioning algorithm using heat kernel pagerank.
 \newblock \emph{Internet Mathematics}, 6\penalty0 (3):\penalty0 315--330, 2009.
+
+\bibitem[Chung(1997)]{chung1997spectral}
+F.~R. Chung.
+\newblock \emph{Spectral graph theory}.
+\newblock Number~92. American Mathematical Soc., 1997.
+
+\bibitem[Cvetkovic and Rowlinson(2004)]{cvetkovic2004spectral}
+D.~Cvetkovic and P.~Rowlinson.
+\newblock Spectral graph theory.
+\newblock \emph{Topics in algebraic graph theory}, pages 88--112, 2004.
 
 \bibitem[Das(2004)]{das2004laplacian}
 K.~C. Das.
@@ -137,6 +164,12 @@ C.~H. Edwards and D.~E. Penney.
 W.~Ellens and R.~E. Kooij.
 \newblock Graph measures and network robustness.
 \newblock \emph{arXiv preprint arXiv:1311.5064}, 2013.
+
+\bibitem[Erd{\"o}s and R{\'e}nyi(1959)]{erdos1959random}
+P.~Erd{\"o}s and A.~R{\'e}nyi.
+\newblock On random graphs, i.
+\newblock \emph{Publicationes Mathematicae (Debrecen)}, 6:\penalty0 290--297,
+  1959.
 
 \bibitem[Erdos and R{\'e}nyi(1960)]{erdos1960evolution}
 P.~Erdos and A.~R{\'e}nyi.
@@ -225,6 +258,11 @@ L.~C. Freeman.
 \newblock Centrality in social networks conceptual clarification.
 \newblock \emph{Social networks}, 1\penalty0 (3):\penalty0 215--239, 1978.
 
+\bibitem[Godsil and Royle(2001)]{godsil2001algebraic}
+C.~Godsil and G.~Royle.
+\newblock Algebraic graph theory springer.
+\newblock \emph{New York}, 2001.
+
 \bibitem[Gower(1980)]{gower1980modified}
 J.~Gower.
 \newblock A modified leverrier-faddeev algorithm for matrices with multiple
@@ -283,6 +321,12 @@ A.~Jamakovic and P.~Van~Mieghem.
   connectivity.
 \newblock \emph{NETWORKING 2008 Ad Hoc and Sensor Networks, Wireless Networks,
   Next Generation Internet}, pages 183--194, 2008.
+
+\bibitem[Karo{\'n}ski(1982)]{karonski1982review}
+M.~Karo{\'n}ski.
+\newblock A review of random graphs.
+\newblock \emph{Journal of Graph Theory}, 6\penalty0 (4):\penalty0 349--389,
+  1982.
 
 \bibitem[Kasprzak(2012)]{kasprzak2012diffusion}
 R.~Kasprzak.
@@ -394,6 +438,12 @@ M.~E. Newman.
 M.~E. Newman and M.~Girvan.
 \newblock Finding and evaluating community structure in networks.
 \newblock \emph{Physical review E}, 69\penalty0 (2):\penalty0 026113, 2004.
+
+\bibitem[Newman et~al.(2002)Newman, Watts, and Strogatz]{newman2002random}
+M.~E. Newman, D.~J. Watts, and S.~H. Strogatz.
+\newblock Random graph models of social networks.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 99\penalty0
+  (suppl 1):\penalty0 2566--2572, 2002.
 
 \bibitem[Nexus(2012)]{zacharydataset}
 Nexus.
@@ -509,6 +559,17 @@ M.~Trajkovi{\'c} and M.~Hedley.
 \newblock Fast corner detection.
 \newblock \emph{Image and vision computing}, 16\penalty0 (2):\penalty0 75--87,
   1998.
+
+\bibitem[Tsiatas(2012)]{tsiatas2012diffusion}
+A.~Tsiatas.
+\newblock \emph{Diffusion and clustering on large graphs}.
+\newblock University of California, San Diego, 2012.
+
+\bibitem[Tur{\'a}n(1984)]{turan1984succinct}
+G.~Tur{\'a}n.
+\newblock On the succinct representation of graphs.
+\newblock \emph{Discrete Applied Mathematics}, 8\penalty0 (3):\penalty0
+  289--294, 1984.
 
 \bibitem[Wang and Chen(2003)]{wang2003complex}
 X.~F. Wang and G.~Chen.

@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: NewThesis-Draft.aux
+The style file: abbrvnat.bst
+Database file #1: references.bib
+Warning--entry type for "zacharydataset" isn't style-file defined
+--line 351 of file references.bib
+Warning--entry type for "googleimages" isn't style-file defined
+--line 360 of file references.bib
+Warning--entry type for "EncyBrit" isn't style-file defined
+--line 668 of file references.bib
+Repeated entry---line 967 of file references.bib
+ : @article{barabasi1999emergence
+ :                               ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "von2007tutorial"
+Warning--I didn't find a database entry for "ding2004k"
+Warning--can't use both volume and number fields in adiga2009skew
+Warning--there's a number but no volume in anthonisse1971rush
+Warning--empty journal in chandak2017novel
+Warning--there's a number but no series in chung1997spectral
+Warning--empty journal in euler1976solution
+Warning--can't use both volume and number fields in faloutsos1999power
+Warning--can't use both volume and number fields in harris1988combined
+Warning--empty year in googleimages
+Warning--empty institution in smith2002tutorial
+Warning--empty year in wu2564spectral
+Warning--empty year in wu2564spectral
+You've used 104 entries,
+            2773 wiz_defined-function locations,
+            1171 strings with 20102 characters,
+and the built_in function-call counts, 45628 in all, are:
+= -- 4149
+> -- 2255
+< -- 94
++ -- 780
+- -- 675
+* -- 3497
+:= -- 6941
+add.period$ -- 324
+call.type$ -- 104
+change.case$ -- 520
+chr.to.int$ -- 103
+cite$ -- 219
+duplicate$ -- 2222
+empty$ -- 3974
+format.name$ -- 843
+if$ -- 9639
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 111
+newline$ -- 529
+num.names$ -- 416
+pop$ -- 1083
+preamble$ -- 1
+purify$ -- 431
+quote$ -- 0
+skip$ -- 1667
+stack$ -- 0
+substring$ -- 1902
+swap$ -- 247
+text.length$ -- 22
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1069
+warning$ -- 11
+while$ -- 453
+width$ -- 0
+write$ -- 1344
+(There was 1 error message)

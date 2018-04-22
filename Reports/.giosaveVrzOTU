@@ -1,0 +1,282 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{estrada2011structure}
+\citation{estrada2011structure}
+\citation{googleimages}
+\citation{googleimages}
+\citation{newman2010networks}
+\citation{newman2010networks}
+\citation{newman2010networks}
+\citation{estrada2011structure}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Review of Networks}{2}{section.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Graphs and Networks. An Introduction}{2}{subsection.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}K\"{o}nigsberg bridge problem}{2}{subsection.1.2}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{kornbridge}{{1a}{2}{\relax }{figure.caption.2}{}}
+\newlabel{sub@kornbridge}{{a}{2}{\relax }{figure.caption.2}{}}
+\newlabel{bridgegraph}{{1b}{2}{\relax }{figure.caption.2}{}}
+\newlabel{sub@bridgegraph}{{b}{2}{\relax }{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The K\"{o}nigsberg bridges: (\subref  {kornbridge}) A schematic diagram of the seven K\"{o}nigsberg bridges. (\subref  {bridgegraph}) A graph of the K\"{o}nigsberg bridges. Source: \citep  {googleimages}. \relax }}{2}{figure.caption.2}}
+\newlabel{bridgeproblem}{{1}{2}{The K\"{o}nigsberg bridges: (\subref {kornbridge}) A schematic diagram of the seven K\"{o}nigsberg bridges. (\subref {bridgegraph}) A graph of the K\"{o}nigsberg bridges. Source: \citep {googleimages}. \relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Networks}{2}{section.2}}
+\citation{gutman2012mathematical}
+\citation{estrada2011structure}
+\citation{estrada2011structure}
+\citation{estrada2011structure}
+\citation{newman2003structure}
+\citation{jackson2010social}
+\citation{zachary1977information}
+\citation{williams1993abundance}
+\citation{magouirk2008connecting}
+\citation{huberman2001laws}
+\citation{faloutsos1999power,pagani2013power,banavar1999size}
+\citation{estrada2011structure,sporns2004organization,schwikowski2000network}
+\newlabel{def:network}{{5}{3}{Network}{defn.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Examples of real-world networks}{3}{subsection.2.1}}
+\citation{googleimages}
+\citation{googleimages}
+\citation{EncyBrit}
+\citation{euler1976solution,euler1953leonhard}
+\citation{euler1976solution}
+\newlabel{socialnetwork}{{2a}{4}{\relax }{figure.caption.3}{}}
+\newlabel{sub@socialnetwork}{{a}{4}{\relax }{figure.caption.3}{}}
+\newlabel{citationntk}{{2b}{4}{\relax }{figure.caption.3}{}}
+\newlabel{sub@citationntk}{{b}{4}{\relax }{figure.caption.3}{}}
+\newlabel{foodweb}{{2c}{4}{\relax }{figure.caption.3}{}}
+\newlabel{sub@foodweb}{{c}{4}{\relax }{figure.caption.3}{}}
+\newlabel{internet}{{2d}{4}{\relax }{figure.caption.3}{}}
+\newlabel{sub@internet}{{d}{4}{\relax }{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Networks in real world: (\subref  {socialnetwork}) A social network. (\subref  {citationntk}) A citation network. (\subref  {foodweb}) A food web. (\subref  {internet}) Computer network. Source: \citep  {googleimages}\relax }}{4}{figure.caption.3}}
+\newlabel{fig:Tree}{{2}{4}{Networks in real world: (\subref {socialnetwork}) A social network. (\subref {citationntk}) A citation network. (\subref {foodweb}) A food web. (\subref {internet}) Computer network. Source: \citep {googleimages}\relax }{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Complex Systems and Complex Networks}{4}{subsection.2.2}}
+\citation{newman2010networks}
+\citation{newman2010networks}
+\citation{newman2010networks}
+\citation{estrada2011structure}
+\citation{estrada2015first}
+\citation{estrada2011structure}
+\citation{estrada2012path}
+\citation{newman2010networks}
+\citation{wilson1970introduction}
+\citation{wilson1970introduction}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Terminology in network theory}{5}{subsection.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Special Categories of Networks}{5}{subsection.2.4}}
+\citation{newman2010networks}
+\citation{newman2010networks}
+\citation{newman2010networks}
+\citation{chandak2017novel,turan1984succinct}
+\citation{biggs1993algebraic,godsil2001algebraic}
+\citation{cvetkovic2004spectral}
+\citation{newman2010networks}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Matrix representation of Graphs/Networks}{6}{subsection.2.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Adjacency Matrix}{6}{subsection.2.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.7}Degree matrix}{6}{subsection.2.7}}
+\citation{estrada2011structure}
+\citation{estrada2011structure}
+\citation{das2004laplacian}
+\citation{das2004laplacian}
+\citation{estrada2011structure}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.8}Incidence matrix}{7}{subsection.2.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.9}Laplacian Matrix}{7}{subsection.2.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.10}Definitions and Properties of the Laplacian Matrix}{7}{subsection.2.10}}
+\newlabel{lintermsb}{{6}{7}{Laplacian Matrix Definition}{equation.2.6}{}}
+\citation{estrada2011structure}
+\citation{estrada2011structure}
+\citation{estrada2011structure}
+\citation{das2004laplacian}
+\citation{estrada2015first}
+\citation{brouwer2011spectra}
+\citation{brouwer2011spectra}
+\citation{estrada2015first}
+\citation{estrada2011structure}
+\citation{harris2008combinatorics}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.10.1}Spectrum of the Laplacian Matrix}{8}{subsubsection.2.10.1}}
+\newlabel{fiedler}{{1}{8}{Fiedler, 1975}{equation.2.8}{}}
+\newlabel{thm:kirchoff}{{2}{8}{Kirchoff's Matrix-Tree Theorem}{thm.2}{}}
+\citation{estrada2011structure}
+\citation{bozkurt2010randic}
+\citation{estrada2011structure}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.11}Normalized Laplacian matrix}{9}{subsection.2.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.12}Randi\'{c} matrix}{9}{subsection.2.12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.13}Transition matrix of a random walk on a Graph}{9}{subsection.2.13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Structure of a Network}{9}{section.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Characteristics of Networks}{9}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Degree distributions}{9}{subsection.4.1}}
+\citation{estrada2011structure}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces A network of size $7$.\relax }}{10}{figure.caption.4}}
+\newlabel{deg-distb}{{3}{10}{A network of size $7$.\relax }{figure.caption.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Degree distribution of nodes in network in Fig.\nobreakspace  {}\ref  {deg-distb}.\relax }}{10}{figure.caption.4}}
+\newlabel{gauss}{{4a}{10}{\relax }{figure.caption.5}{}}
+\newlabel{sub@gauss}{{a}{10}{\relax }{figure.caption.5}{}}
+\newlabel{poss}{{4b}{10}{\relax }{figure.caption.5}{}}
+\newlabel{sub@poss}{{b}{10}{\relax }{figure.caption.5}{}}
+\newlabel{expo}{{4c}{10}{\relax }{figure.caption.5}{}}
+\newlabel{sub@expo}{{c}{10}{\relax }{figure.caption.5}{}}
+\newlabel{powerlaw}{{4d}{10}{\relax }{figure.caption.5}{}}
+\newlabel{sub@powerlaw}{{d}{10}{\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Common degree distributions of networks: (\subref  {gauss}) Gaussian distribution. (\subref  {poss}) Poisson distribution. (\subref  {expo}) Exponential distribution.(\subref  {powerlaw}) Power-law distribution.\relax }}{10}{figure.caption.5}}
+\newlabel{distribution}{{4}{10}{Common degree distributions of networks: (\subref {gauss}) Gaussian distribution. (\subref {poss}) Poisson distribution. (\subref {expo}) Exponential distribution.(\subref {powerlaw}) Power-law distribution.\relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Power-law degree distribution}{10}{subsection.4.2}}
+\citation{estrada2011structure}
+\citation{frankthesis}
+\citation{frankthesis}
+\citation{estrada2015first}
+\citation{newman2010networks}
+\newlabel{eqn:power-law}{{11}{11}{Power-law degree distribution}{equation.4.11}{}}
+\newlabel{noisy}{{5a}{11}{\relax }{figure.caption.6}{}}
+\newlabel{sub@noisy}{{a}{11}{\relax }{figure.caption.6}{}}
+\newlabel{cdf}{{5b}{11}{\relax }{figure.caption.6}{}}
+\newlabel{sub@cdf}{{b}{11}{\relax }{figure.caption.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces  Probability (\subref  {noisy}) and Cummulative Distribution Function (\subref  {cdf}) logarithmic plots for the version of the internet at autonomous system (AS) level following a power-law distribution. Source: \cite  {frankthesis}. \relax }}{11}{figure.caption.6}}
+\newlabel{log-plots}{{5}{11}{Probability (\subref {noisy}) and Cummulative Distribution Function (\subref {cdf}) logarithmic plots for the version of the internet at autonomous system (AS) level following a power-law distribution. Source: \cite {frankthesis}. \relax }{figure.caption.6}{}}
+\newlabel{scale}{{12}{11}{Power-law degree distribution}{equation.4.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Clustering coefficient}{11}{subsection.4.3}}
+\citation{opsahl2009clustering}
+\citation{wang2003complex}
+\citation{wang2003complex}
+\citation{wang2003complex}
+\citation{barabasi2016network}
+\newlabel{eqn:eff}{{16}{12}{Diameter of a network}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Robustness of Complex Systems}{12}{subsection.4.4}}
+\citation{ellens2013graph}
+\citation{sydney2008elasticity}
+\citation{wang2003complex}
+\citation{wang2003complex}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Robustness measures in networks}{13}{subsection.4.5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.1}Connectivity-based measures}{13}{subsubsection.4.5.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.2}Distance-based measures}{13}{subsubsection.4.5.2}}
+\citation{harris2008combinatorics}
+\citation{baras2009efficient}
+\citation{wu2564spectral}
+\citation{estrada2011structure}
+\newlabel{eqn:eff}{{18}{14}{Distance-based measures}{equation.4.18}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.3}Spectral Graph measures}{14}{subsubsection.4.5.3}}
+\citation{zager2008graph,nikolic2012measuring}
+\citation{zager2008graph}
+\citation{zager2008graph}
+\citation{stoica2011delaunay}
+\newlabel{sumclosed}{{21}{15}{Spectral Graph measures}{equation.4.21}{}}
+\newlabel{sumexpn}{{23}{15}{Spectral Graph measures}{equation.4.23}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Graph Similarity}{15}{subsection.4.6}}
+\newlabel{isomorphic1}{{6a}{15}{\relax }{figure.caption.7}{}}
+\newlabel{sub@isomorphic1}{{a}{15}{\relax }{figure.caption.7}{}}
+\newlabel{isomorphic2}{{6b}{15}{\relax }{figure.caption.7}{}}
+\newlabel{sub@isomorphic2}{{b}{15}{\relax }{figure.caption.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Two isomorphic graphs\relax }}{15}{figure.caption.7}}
+\newlabel{isomorphism}{{6}{15}{Two isomorphic graphs\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Voronoi Diagrams and Delaunay Triangulation}{16}{subsection.4.7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.7.1}Voronoi Diagrams }{16}{subsubsection.4.7.1}}
+\citation{trajkovic1998fast}
+\citation{harris1988combined}
+\citation{moravec1979visual,moravec1980obstacle}
+\citation{stoica2011delaunay}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.7.2}Delaunay Triangulation}{17}{subsubsection.4.7.2}}
+\newlabel{VoronnoiDiag}{{7a}{17}{\relax }{figure.caption.8}{}}
+\newlabel{sub@VoronnoiDiag}{{a}{17}{\relax }{figure.caption.8}{}}
+\newlabel{VoronoiDelaunay}{{7b}{17}{\relax }{figure.caption.8}{}}
+\newlabel{sub@VoronoiDelaunay}{{b}{17}{\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces A sample Vorronoi diagram on $8$ seeds/points (red) (\subref  {VoronnoiDiag}) and its corresponding dual graph (Delaunay Triangulation in blue) superimposed (\subref  {VoronoiDelaunay}).\relax }}{17}{figure.caption.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}The Harris Corner Point Detector}{17}{subsection.4.8}}
+\citation{harris1988combined}
+\citation{stoica2011delaunay}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.9}Principal Component Analysis}{18}{subsection.4.9}}
+\citation{newman2010networks}
+\citation{barrat2008dynamical}
+\citation{estrada2011epidemic,kasprzak2012diffusion,lopez2008diffusion}
+\citation{anton2007elementary}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Diffusion on networks}{20}{section.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Heat Diffusion Model}{20}{subsection.5.1}}
+\newlabel{difusion}{{37}{20}{Heat Diffusion Model}{equation.5.37}{}}
+\newlabel{dif-final-eqn}{{38}{20}{Heat Diffusion Model}{equation.5.38}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2} Equilibrium behaviour }{21}{subsection.5.2}}
+\newlabel{difn-graph}{{8a}{21}{\relax }{figure.caption.9}{}}
+\newlabel{sub@difn-graph}{{a}{21}{\relax }{figure.caption.9}{}}
+\newlabel{difn-plot}{{8b}{21}{\relax }{figure.caption.9}{}}
+\newlabel{sub@difn-plot}{{b}{21}{\relax }{figure.caption.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces (\subref  {difn-plot}) is an illustration of the diffusion process over the network in (\subref  {difn-graph}). \relax }}{21}{figure.caption.9}}
+\newlabel{graph-plot}{{8}{21}{(\subref {difn-plot}) is an illustration of the diffusion process over the network in (\subref {difn-graph}). \relax }{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Impact of Network structure on the rate of diffusion}{21}{subsection.5.3}}
+\citation{estrada2010quantifying,albert2002statistical,newman2003structure}
+\citation{estrada2010quantifying}
+\newlabel{barabasi-normal}{{9a}{22}{\relax }{figure.caption.10}{}}
+\newlabel{sub@barabasi-normal}{{a}{22}{\relax }{figure.caption.10}{}}
+\newlabel{ER-normal}{{9b}{22}{\relax }{figure.caption.10}{}}
+\newlabel{sub@ER-normal}{{b}{22}{\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Simulations for diffusion on networks following equation \ref  {dif-final-eqn}. To the left is the BA network and to the right is ER. Both networks have $100$ nodes and average path length $2.3$. \relax }}{22}{figure.caption.10}}
+\newlabel{barabasi-Erdos-compare}{{9}{22}{Simulations for diffusion on networks following equation \ref {dif-final-eqn}. To the left is the BA network and to the right is ER. Both networks have $100$ nodes and average path length $2.3$. \relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Influence of Heterogeneity on Diffusion over network}{22}{subsection.5.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Plots of the average quantity of heat for $200$ nodes with the highest degree centrality against time for $3$ scale free networks having different values of the power exponent($2.0$,$2.3$,$2.7$, and $3.0$), n=1000 and average degree=$6$. The figures to the left, centre and right correspond to x values $0$,$0.1$, and $0.3$ respectively.\relax }}{23}{figure.caption.11}}
+\newlabel{quantity-exponents}{{10}{23}{Plots of the average quantity of heat for $200$ nodes with the highest degree centrality against time for $3$ scale free networks having different values of the power exponent($2.0$,$2.3$,$2.7$, and $3.0$), n=1000 and average degree=$6$. The figures to the left, centre and right correspond to x values $0$,$0.1$, and $0.3$ respectively.\relax }{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Impact of choice of Initial diffusion nodes on the diffusion process on networks}{23}{subsection.5.5}}
+\newlabel{}{{11a}{24}{\relax }{figure.caption.12}{}}
+\newlabel{sub@}{{a}{24}{\relax }{figure.caption.12}{}}
+\newlabel{}{{11b}{24}{\relax }{figure.caption.12}{}}
+\newlabel{sub@}{{b}{24}{\relax }{figure.caption.12}{}}
+\newlabel{}{{11c}{24}{\relax }{figure.caption.12}{}}
+\newlabel{sub@}{{c}{24}{\relax }{figure.caption.12}{}}
+\newlabel{}{{11d}{24}{\relax }{figure.caption.12}{}}
+\newlabel{sub@}{{d}{24}{\relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces  Results of the simulations for two networks. The top row corresponds to the BA network, (left) is illustration for which the $20$ source nodes are ones with the highest degree and (right) is illustration for randomly selected source nodes. On the other hand, the bottom row is ER network for which (left) corresponds to diffusion for which the source nodes are the highest degree nodes and to figure to the right is one for which the source nodes are selected randomly.\relax }}{24}{figure.caption.12}}
+\newlabel{sourceimpact}{{11}{24}{Results of the simulations for two networks. The top row corresponds to the BA network, (left) is illustration for which the $20$ source nodes are ones with the highest degree and (right) is illustration for randomly selected source nodes. On the other hand, the bottom row is ER network for which (left) corresponds to diffusion for which the source nodes are the highest degree nodes and to figure to the right is one for which the source nodes are selected randomly.\relax }{figure.caption.12}{}}
+\citation{saber2003agreement}
+\citation{saber2003agreement}
+\citation{saber2003agreement}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Diffusion on Directed Networks}{25}{subsection.5.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Diffusion and Equilibrium behaviour in Directed Network}{25}{subsection.5.7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.1}Estimation of Eigenvalues of the Laplacian}{25}{subsubsection.5.7.1}}
+\newlabel{exponentialTheorem}{{3}{25}{Limit Theorem for Exponential Matrices}{equation.5.46}{}}
+\citation{saber2003agreement}
+\newlabel{equildirected}{{47}{26}{Estimation of Eigenvalues of the Laplacian}{equation.5.47}{}}
+\newlabel{prop1}{{1}{26}{}{prop.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.7.2}Equilibrium state for Balanced Graphs}{26}{subsubsection.5.7.2}}
+\newlabel{prop1}{{2}{26}{}{Item.24}{}}
+\citation{estrada2017path}
+\newlabel{balanced-graph}{{12a}{27}{\relax }{figure.caption.13}{}}
+\newlabel{sub@balanced-graph}{{a}{27}{\relax }{figure.caption.13}{}}
+\newlabel{plot-balanced}{{12b}{27}{\relax }{figure.caption.13}{}}
+\newlabel{sub@plot-balanced}{{b}{27}{\relax }{figure.caption.13}{}}
+\newlabel{unbalanced-graph}{{12c}{27}{\relax }{figure.caption.13}{}}
+\newlabel{sub@unbalanced-graph}{{c}{27}{\relax }{figure.caption.13}{}}
+\newlabel{plot-unbalanced}{{12d}{27}{\relax }{figure.caption.13}{}}
+\newlabel{sub@plot-unbalanced}{{d}{27}{\relax }{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Diffusion over different categories of directed networks. (\subref  {unbalanced-graph}) is an illustration of diffusion over weakly connected and unbalanced digraph in (\subref  {balanced-graph}). (\subref  {unbalanced-graph}) is an illustration of diffusion over strongly connected and balanced digraph (\subref  {unbalanced-graph}). \relax }}{27}{figure.caption.13}}
+\newlabel{unbalanced-diffusion}{{12}{27}{Diffusion over different categories of directed networks. (\subref {unbalanced-graph}) is an illustration of diffusion over weakly connected and unbalanced digraph in (\subref {balanced-graph}). (\subref {unbalanced-graph}) is an illustration of diffusion over strongly connected and balanced digraph (\subref {unbalanced-graph}). \relax }{figure.caption.13}{}}
+\citation{estrada2012path}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8}Diffusion on network with long-range interactions}{28}{subsection.5.8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.1} k-path Laplacian matrices, $\mathbf  {L}_k$}{28}{subsubsection.5.8.1}}
+\newlabel{particle1}{{13a}{28}{\relax }{figure.caption.14}{}}
+\newlabel{sub@particle1}{{a}{28}{\relax }{figure.caption.14}{}}
+\newlabel{polarity2}{{13b}{28}{\relax }{figure.caption.14}{}}
+\newlabel{sub@polarity2}{{b}{28}{\relax }{figure.caption.14}{}}
+\newlabel{polarity3}{{13c}{28}{\relax }{figure.caption.14}{}}
+\newlabel{sub@polarity3}{{c}{28}{\relax }{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces  Illustration of how the polarisation analogy used as a motivation for the $k$-path Laplacian concept for networks. Starting with a positively charged particle at node $1$ as shown in (\subref  {polarity1}), taking $d=1$, the particle polarises all its nearest neighbours at a distance $d$ from it (that is nodes $2$ and $3$) as depicted in (\subref  {polarity2}). The particle can therefore jump to the non-polarised nearest neighbours namely nodes $4$ and $5$ and $6$( though node $6$ is further compared to other two alternatives). Suppose the particle jumps to node $4$, similar polarisation process as the particle polarises the new nearest neighbours. The particle either jumps to node $3$ or returns to node $1$ as shown in (\subref  {polarity3}).\relax }}{28}{figure.caption.14}}
+\newlabel{1-path-particle}{{13}{28}{Illustration of how the polarisation analogy used as a motivation for the $k$-path Laplacian concept for networks. Starting with a positively charged particle at node $1$ as shown in (\subref {polarity1}), taking $d=1$, the particle polarises all its nearest neighbours at a distance $d$ from it (that is nodes $2$ and $3$) as depicted in (\subref {polarity2}). The particle can therefore jump to the non-polarised nearest neighbours namely nodes $4$ and $5$ and $6$( though node $6$ is further compared to other two alternatives). Suppose the particle jumps to node $4$, similar polarisation process as the particle polarises the new nearest neighbours. The particle either jumps to node $3$ or returns to node $1$ as shown in (\subref {polarity3}).\relax }{figure.caption.14}{}}
+\newlabel{polarityl21}{{14a}{28}{\relax }{figure.caption.15}{}}
+\newlabel{sub@polarityl21}{{a}{28}{\relax }{figure.caption.15}{}}
+\newlabel{polarityl22}{{14b}{28}{\relax }{figure.caption.15}{}}
+\newlabel{sub@polarityl22}{{b}{28}{\relax }{figure.caption.15}{}}
+\newlabel{polarityl23}{{14c}{28}{\relax }{figure.caption.15}{}}
+\newlabel{sub@polarityl23}{{c}{28}{\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Illustration of how the a charged particle navigates the network taking jumps of length $d=2$. As discussed before, a particle starting off at node $1$ will polarise neighbouring nodes separated at not more than distance $2$ from it (that is nodes $2$,$3$, $5$, and $4$) as shown in (\subref  {polarityl22}). The particle then has only an option of jumping to the non-polarised node $6$ after which a similar process occurs again as in (\subref  {polarityl23}). \relax }}{28}{figure.caption.15}}
+\newlabel{2-path-particle}{{14}{28}{Illustration of how the a charged particle navigates the network taking jumps of length $d=2$. As discussed before, a particle starting off at node $1$ will polarise neighbouring nodes separated at not more than distance $2$ from it (that is nodes $2$,$3$, $5$, and $4$) as shown in (\subref {polarityl22}). The particle then has only an option of jumping to the non-polarised node $6$ after which a similar process occurs again as in (\subref {polarityl23}). \relax }{figure.caption.15}{}}
+\citation{estrada2012path}
+\citation{estrada2012path}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces A Graph of size 4.\relax }}{29}{figure.caption.16}}
+\newlabel{spanning}{{15}{29}{A 

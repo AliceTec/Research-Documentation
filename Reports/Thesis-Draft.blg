@@ -4,30 +4,20 @@ The top-level auxiliary file: Thesis-Draft.aux
 The style file: abbrvnat.bst
 Database file #1: references.bib
 Warning--entry type for "zacharydataset" isn't style-file defined
---line 361 of file references.bib
+--line 351 of file references.bib
 Warning--entry type for "googleimages" isn't style-file defined
---line 370 of file references.bib
-Repeated entry---line 400 of file references.bib
- : @article{belkin2003laplacian
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 575 of file references.bib
- : @article{newman2003structure
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 649 of file references.bib
- : @article{estrada2017path
- :                         ,
-I'm skipping whatever remains of this entry
+--line 360 of file references.bib
 Warning--entry type for "EncyBrit" isn't style-file defined
---line 706 of file references.bib
-Repeated entry---line 715 of file references.bib
- : @book{barrat2008dynamical
- :                          ,
+--line 668 of file references.bib
+Repeated entry---line 967 of file references.bib
+ : @article{barabasi1999emergence
+ :                               ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "von2007tutorial"
+Warning--I didn't find a database entry for "ding2004k"
 Warning--can't use both volume and number fields in adiga2009skew
 Warning--there's a number but no volume in anthonisse1971rush
+Warning--empty journal in chandak2017novel
+Warning--there's a number but no series in chung1997spectral
 Warning--empty journal in euler1976solution
 Warning--can't use both volume and number fields in faloutsos1999power
 Warning--can't use both volume and number fields in harris1988combined
@@ -35,45 +25,45 @@ Warning--empty year in googleimages
 Warning--empty institution in smith2002tutorial
 Warning--empty year in wu2564spectral
 Warning--empty year in wu2564spectral
-You've used 94 entries,
+You've used 105 entries,
             2773 wiz_defined-function locations,
-            1122 strings with 18998 characters,
-and the built_in function-call counts, 41421 in all, are:
-= -- 3766
-> -- 2053
-< -- 85
-+ -- 710
-- -- 615
-* -- 3180
-:= -- 6295
-add.period$ -- 293
-call.type$ -- 94
-change.case$ -- 472
-chr.to.int$ -- 93
-cite$ -- 197
-duplicate$ -- 2014
-empty$ -- 3604
-format.name$ -- 767
-if$ -- 8756
+            1174 strings with 20194 characters,
+and the built_in function-call counts, 45920 in all, are:
+= -- 4171
+> -- 2265
+< -- 95
++ -- 784
+- -- 678
+* -- 3512
+:= -- 6989
+add.period$ -- 327
+call.type$ -- 105
+change.case$ -- 523
+chr.to.int$ -- 104
+cite$ -- 221
+duplicate$ -- 2242
+empty$ -- 4006
+format.name$ -- 847
+if$ -- 9700
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 99
-newline$ -- 479
-num.names$ -- 376
-pop$ -- 983
+missing$ -- 113
+newline$ -- 534
+num.names$ -- 420
+pop$ -- 1095
 preamble$ -- 1
-purify$ -- 391
+purify$ -- 434
 quote$ -- 0
-skip$ -- 1515
+skip$ -- 1679
 stack$ -- 0
-substring$ -- 1724
-swap$ -- 230
-text.length$ -- 20
+substring$ -- 1904
+swap$ -- 248
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 969
-warning$ -- 9
-while$ -- 410
+type$ -- 1075
+warning$ -- 11
+while$ -- 456
 width$ -- 0
-write$ -- 1218
-(There were 4 error messages)
+write$ -- 1356
+(There was 1 error message)
