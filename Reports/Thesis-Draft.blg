@@ -13,6 +13,7 @@ Repeated entry---line 967 of file references.bib
  : @article{barabasi1999emergence
  :                               ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "ding2004k"
 Warning--can't use both volume and number fields in adiga2009skew
 Warning--there's a number but no volume in anthonisse1971rush
@@ -25,45 +26,45 @@ Warning--empty year in googleimages
 Warning--empty institution in smith2002tutorial
 Warning--empty year in wu2564spectral
 Warning--empty year in wu2564spectral
-You've used 105 entries,
+You've used 109 entries,
             2773 wiz_defined-function locations,
-            1174 strings with 20194 characters,
-and the built_in function-call counts, 45920 in all, are:
-= -- 4171
-> -- 2265
-< -- 95
-+ -- 784
-- -- 678
-* -- 3512
-:= -- 6989
-add.period$ -- 327
-call.type$ -- 105
-change.case$ -- 523
-chr.to.int$ -- 104
-cite$ -- 221
-duplicate$ -- 2242
-empty$ -- 4006
-format.name$ -- 847
-if$ -- 9700
+            1198 strings with 20786 characters,
+and the built_in function-call counts, 47561 in all, are:
+= -- 4324
+> -- 2335
+< -- 98
++ -- 809
+- -- 699
+* -- 3639
+:= -- 7242
+add.period$ -- 339
+call.type$ -- 109
+change.case$ -- 541
+chr.to.int$ -- 108
+cite$ -- 229
+duplicate$ -- 2322
+empty$ -- 4157
+format.name$ -- 874
+if$ -- 10042
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 113
-newline$ -- 534
-num.names$ -- 420
-pop$ -- 1095
+missing$ -- 117
+newline$ -- 554
+num.names$ -- 436
+pop$ -- 1127
 preamble$ -- 1
-purify$ -- 434
+purify$ -- 448
 quote$ -- 0
-skip$ -- 1679
+skip$ -- 1736
 stack$ -- 0
-substring$ -- 1904
-swap$ -- 248
+substring$ -- 1987
+swap$ -- 252
 text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1075
+type$ -- 1119
 warning$ -- 11
-while$ -- 456
+while$ -- 474
 width$ -- 0
-write$ -- 1356
+write$ -- 1407
 (There was 1 error message)

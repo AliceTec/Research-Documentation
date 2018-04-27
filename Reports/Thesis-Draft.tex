@@ -2247,6 +2247,7 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
         On expansion of eqn.~\ref{gen-heatkernel} can be written as 
         \begin{equation}
         H_{Gt} = e^{-t(c_{1}\mathbf{L}_{1} + c_{2}\mathbf{L}_{2} + \cdots + c_{\Delta}\mathbf{L}_{\Delta})},
+        \label{heatkernel-hsope}
         \end{equation}
         where $\mathbf{L}_1, \mathbf{L}_2, \cdots, \mathbf{L}_{\Delta}$ are  $k$-path Laplacian matrices for hops of length $k=1,2,\cdots, \Delta$ respectively. 
         
@@ -2261,8 +2262,17 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
         Alternatively, Eqn.~\ref{Genkerneltrace} can be written as 
         \begin{equation}
         Z_{G}(t) =  1+ e^{-\mu_{2} t} + e^{-\mu_{3}} + \cdots + e^{-\mu_{N} t,}
+        \label{alttraceeqn}
         \end{equation}
         which takes on a similar format as eqn.~\ref{alttraceformula} for the trace of the 'classical' Laplacian matrix.
+        
+        We earlier on pointed out that the multiplicity of zero as an eigenvalue of $\mathbf{L}_G$ is equal to the number of connected components in a given graph, it therefore follows from eqn.\ref{alttraceeqn} that 
+        the trace of the generalised heat kernel can also be expressed as 
+        \begin{equation}
+        Tr(H_{Gt}) = C + \sum_{\mu_i \neq 0} e^{-\mu_i t}
+        \label{kernelexp2},
+        \end{equation}
+        where $C$ is the multiplicity of zero as an eigenvalue of $\mathbf{L}_G$ that is the number of connected components of a graph.
         
         It is quite interesting to ascertain whether the trace of the generalised heat kernel can be used as a basis for analysing graphs as is the case with the trace of the 'classical' heat kernel discussed earlier.
         We consider an example of the three graphs namely the star, ring and path graphs of size $10$ each in Fig.~\ref{kernelgraphs}. We use the Mellin and Laplace transforms for the Generalised Laplacian matrix.
@@ -2279,19 +2289,19 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
         		\label{threegraphMellin3}
         	\end{subfigure} \\
         	\begin{subfigure}[b]{0.35\textwidth}
-        		\includegraphics[width= \textwidth]{images/graphskernellaplace15.png}
-        		\caption{$\lambda=1.5$}
-        		\label{threegraphLaplace15}
-        	\end{subfigure}~
-        	\begin{subfigure}[b]{0.35\textwidth}
         		\includegraphics[width= \textwidth]{images/graphskernellaplace2.png}
         		\caption{$\lambda=2$}
         		\label{threegraphLaplace2}
-        	\end{subfigure}
-        	\caption{(\subref{threegraphMellin2}) and (\subref{threegraphMellin3}) in the top row correspond to plots of the trace function for the generalised heat kernel with Mellin transform for $s=2$ and $s=3$ respectively. The bottom row, that is, (\subref{threegraphLaplace15}) and (\subref{threegraphLaplace2}) are plots of trace function of the generalised heat kernel with Laplace transform for $\lambda=1.5$ and $\lambda=2$ respectively.}
+        	\end{subfigure}~
+	        \begin{subfigure}[b]{0.35\textwidth}
+	        	\includegraphics[width= \textwidth]{images/graphskernellaplace3.png}
+	        	\caption{$\lambda=3$}
+	        	\label{threegraphLaplace3}
+	        \end{subfigure}
+        	\caption{(\subref{threegraphMellin2}) and (\subref{threegraphMellin3}) in the top row correspond to plots of the trace function for the generalised heat kernel with Mellin transform for $s=2$ and $s=3$ respectively. The bottom row, that is, (\subref{threegraphLaplace2}) and (\subref{threegraphLaplace3}) are plots of trace function of the generalised heat kernel with Laplace transform for $\lambda=1.5$ and $\lambda=2$ respectively.}
         	\label{genthreegraphsTraceplots}
         \end{figure}
-        From Fig.~\ref{genthreegraphsTraceplots}, we observe distinct curves with distinct shapes for the $3$ graphs both both the Mellin and Laplace transform considerations for generalised heat kernel. We can thus conclude that the trace function of the generalised heat kernel can as well be used as a tool for analysing graphs with different topologies.
+        From Fig.~\ref{genthreegraphsTraceplots}, we observe distinct curves with distinct shapes for the $3$ graphs for both the Mellin and Laplace transform considerations for generalised heat kernel. Though for Mellin transformation for $s=2$, the curves get much closer to each other, we can still observe there distinctiveness and their slopes are slightly different from each other. We can thus conclude that the trace function of the generalised heat kernel can as well be used as a tool for analysing graphs with different topologies.
         
         
         Let us consider a simple toy example to illustrate the variation of the trace of the generalised heat kernel with time.
@@ -2369,20 +2379,23 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
          	\begin{subfigure}[b]{0.45\textwidth}
          		\includegraphics[width= \textwidth]{images/s2-graphcomp.png}
          		\caption{}
-         		\label{completeMellins3}
+         		\label{completeMellins2}
          	\end{subfigure} \\
          	\begin{subfigure}[b]{0.45\textwidth}
          		\includegraphics[width= \textwidth]{images/s3-graphcomp.png}
          		\caption{}
-         		\label{completeL1}
+         		\label{completeMellins3}
          	\end{subfigure}~
          	\begin{subfigure}[b]{0.45\textwidth}
          		\includegraphics[width= \textwidth]{images/s4-graphcomp.png}
          		\caption{}
-         		\label{completeMellins3}
+         		\label{completeMellins4}
          	\end{subfigure}
          \end{figure}
-         Figure \ref{completeL1} is a plot of the trace function of the graph Laplacian against time for a complete graph,G (blue) and other graphs $G1$(orange), $G2$(green), $G3$(red), and $G4$(purple). To the right, is a plot of the trace function of the Mellin transformed Laplacian matrix at $s=3$ against time. We observe that the two plots follow a similar shape, however, plot in Figure \ref{completeMellins3}, the curves for graphs $G1$,$G2$, $G3$, and $G4$ get closer to the curves corresponding to the complete graph$G$. This can loosely be explained by the longrange interactions involved that result into a flow of information closer to that of a complete graph.
+         Plots of trace function of generalised heat kernel against time.  From left to right and top to bottom, the plots are respectively for the normal Laplacian (\subref{completeL1}), Mellin based generalised Laplacian for $s=2,3$ and $4$.  To the right, is a plot of the trace function of the Mellin transformed Laplacian matrix at $s=3$ against time for graphs $G$(blue), $G1$(orange),$G2$(green), $G3$(red), and $G4$(purple).
+         
+         
+         We observe from Fig.\ref{completeL1} that based on the trace function curves, $G_4$ is closer to the complete graph followed by $G_1$, $G_2$ and lastly $G_3$. Interestingly, on considering the generalised heat kernel, the order is maintained. However, we can tell that as $s$ reduces, the curves corresponding to the four incomplete graphs get closer to that of the complete graph $G$. This can possibly be explained by increase in the long-range interactions as $s$ decreases such that the flow of information or any other substance tends to resemble that  involved that result into a flow of information (or substance of interest) closer to that of a complete graph.
         
         %		   \begin{figure}[H]
         %		    \begin{subfigure}[b]{0.45\textwidth}
@@ -2402,8 +2415,8 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
         %	  
         %	  Let us then focus on the plots for the trace function for the individual $k$-path Laplacians against time. Figure (\subref{model1-kpath}) corresponds to the simple graph in (\ref{keneltoymodel1}). We observe that there is a clear distinction for the trace functions of each of the $3$-path Laplacian matrices namely $L_1$, $L_2$, and $L_3$. For $k=1$ which is the combinatorial Laplacian, the curve has a deeper trough followed by $k=2$ and lastly $k=3$. This distinction in curves is possibly based on the change in eigenvalues for each of the $k$-path Laplacian following a decreasing of this format: $\lambda_i(L_1) \geq \lambda_i(L_2) \geq \lambda_i(L_3)$. On the other hand, however, Figure (\subref{model2-kpath}) shows a slightly different trend from what we observe in Figure (\subref{model1-kpath}) that is there is no clear distinction among the curves corresponding to different $k$-path Laplacian matrices. This is attributed to the fact that for some graphs, the eigenvalues for the $k$-path Laplacians do not necessarily follow a decreasing order as explained earlier.
         
-        \subsection{The Zeta function}
-        The Zeta function associated with the eigenvalues of the generalised Laplacian matrix is obtained by exponentiating and summing the reciprocal of the non-zero Laplacian eigenvalues. It is thus defined by
+        \subsection{Zeta Function}
+        In literature \citep{knill2013zeta,friedli2017spectral}, there exists various definition for the zeta function for finite simple graphs. Zeta functions play a vital role in definition of determinants of Laplacians and analytic torsion \citep{voros1987spectral,  moscovici1991r} as well as applicability in various aspects in differential geometry and theoretical physics. However, in this work we consider the Zeta function (introduced by Carleman) associated with the eigenvalues of the generalised Laplacian matrix is obtained by exponentiating and summing the reciprocal of the non-zero Laplacian eigenvalues \citep{friedli2017spectral}. It is thus defined by
         \begin{equation}
         \zeta_G(p) =  \sum_{\mu_{i} \neq 0} \mu_{i} ^{-p}.
         \end{equation}
@@ -2420,52 +2433,39 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
         		\caption{}
         		\label{zeta-mellin}
         	\end{subfigure} 
-        	\caption{Illustration of the Zeta function of the graph in Fig.~\ref{keneltoymodel2} against exponent $\delta$. (\subref{zeta-laplace}) corresponds to the Laplace transform of the graph Laplacian with $\lambda = 1.5, 2,$ and $2.5$. (\subref{zeta-mellin}) corresponds to the Mellin transform of the graph Laplacian with $s = 2, 3,$ and $4$. }
+        	\caption{Illustration of the Zeta function of the graph in Fig.~\ref{keneltoymodel2} against exponent $\delta$. (\subref{zeta-laplace}) corresponds to the Laplace transform of the graph Laplacian with $\lambda = 2,2.5,3 $ and $4$. (\subref{zeta-mellin}) corresponds to the Mellin transform of the graph Laplacian with $s = 2, 2.5, 3,$ and $4$. }
         	\label{}
         \end{figure}
     
-    Xiao \citep{xiao2009graph} established a relationship between the zeta function and the heat kernel trace by using the Mellin transform and is given by 
+    For the normal Laplacian, Mellin and Laplace transformed generalised Laplacian, we observe that the zeta function increases with increase in the exponent $p$. For different values of Laplace exponent $\lambda$, we can tell from the illustration in Fig.\ref{zeta-laplace} that the variation of the zeta function with $p$ follows a similar trend as that in the normal Laplacian curve (in blue) due to a moderate long-range influence. On contrary, as the Mellin exponent, $s$ changes, there is observable changes observed in the corresponding curves for the zeta function against $p$ (see Fig. \ref{zeta-mellin}). This can be attributed to the pronounced long-range interactions evident in the Mellin-based transformed Laplacian.
     
-    For a function $f(t)$, its Mellin transform is given by
-    \begin{equation}
-    F(s) = \int_{0}^{\infty} t^{s-1} f(t) dt.
-    \end{equation}
-    Taking a function $f(t)=e^{-\mu_i t}$, applying the Mellin transform gives 
+    \subsection{Zeta Function and Generalised Heat Kernel Trace Moments}
+     In his work \citep{xiao2009graph}, Xiao showed that the zeta function and the heat kernel trace are related in some way using the Mellin transform. In a similar way, we explore this relationship for the case of the generalised heat kernel and the zeta function of the eigenvalues of the generalised Laplacian matrix.
+    
+    We consider a function $f(t)=e^{-\mu_i t}$, its Mellin transform is given by
     \begin{equation}
     \mu_i ^{-s} = \frac{1}{\Gamma(p)} \int_{0}^{\infty} t^{p-1} e^{-\mu_i t} dt,
     \label{exponentlambda}
     \end{equation}
-    where $\Gamma(p)$ is the gamma function defined as 
+    where $\mu_i$ is the $i$-th eigenvalue of $\mathbf{L}_G$ and $\Gamma(p)$ is the gamma function defined as 
     \begin{equation}
     \Gamma(p) = \int_{0}^{\infty} t^{p-1} e^{-t} dt.
     \end{equation}
-    On summation for all non-zero eigenvalues of the Laplacian, Equation \ref{exponentlambda} becomes
+    On summation for all non-zero eigenvalues of the Laplacian, Eqn.\ref{exponentlambda} becomes
     \begin{equation}
     \zeta(p) = \sum_{\mu_i \neq 0} \mu_i ^{-p} = \frac{1}{\Gamma(p)} \int_{0}^{\infty} t^{p-1} \sum_{\mu_i \neq 0} e^{-\mu_i t} dt
     \label{label-kernel}
     \end{equation}
-    The heat kernel trace can be also expressed as 
+    Using the connected component based formula for the trace of the heat kernel,that is , Eqn.\ref{kernelexp2} in Eqn \ref{label-kernel} gives
     \begin{equation}
-    Tr(h_t) = C + \sum_{\mu_i \neq 0} e^{-\mu_i t}
-    \label{kernelexp2},
-    \end{equation}
-    where $C$ is the multiplicity of zero eigenvalues of the Laplacian that is the number of connected components of a graph.
-    Substituting Equation \ref{kernelexp2} into Equation 
-    \ref{label-kernel} gives
-    \begin{equation}
-    \zeta(p) = \frac{1}{\Gamma(p)} \int_{0}^{\infty} t^{p-1} \left \{ Tr(h_t)-C \right \} dt.
-    \end{equation}
-    where $C$ is the multiplicity of zero eigenvalues of the Laplacian that is the number of connected components of a graph and $\Gamma(p)$ is the gamma function defined as 
-    \begin{equation}
-    \Gamma(p) = \int_{0}^{\infty} t^{p-1} e^{-t} dt.
+    \zeta(p) = \frac{1}{\Gamma(p)} \int_{0}^{\infty} t^{p-1} \left \{ Tr(h_{Gt})-C \right \} dt.
     \end{equation}
     
     Thus the zeta function is related to the moments of the heat kernel trace. It is the moment generating function and thus a way of characterising the shape of the heat kernel trace.
     
       \subsection{Derivative of Zeta Function at the Origin}
     
-    The derivative or slope of the zeta function at the origin is another characterisation of the heat kernel trace second to the zeta function which measures its shape. It is defined as
-  	Writing the Zeta function in terms of natural exponential gives
+    The derivative or slope of the zeta function at the origin is another characterisation of the heat kernel trace second to the zeta function which measures its shape. It is obtained as follows:
   	\begin{equation}
   	\zeta(p) = \sum_{\mu_i \neq 0} \lambda_{i} ^{-p} = \sum_{\mu_i \neq 0} e^{-p \ln \mu_i}.
   	\end{equation}
@@ -2479,13 +2479,16 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
     \zeta'(0) = -\sum_{\mu_i \neq 0}\ln \mu_i
     \end{equation}
     
-    \subsection{Heat Content}
+    \subsection{Heat Content of the Generalised Laplacian matrix}
     
-    The heat content is defined as the sum of entries of the heat kernel matrix of a graph. Its given by
+    The heat content is defined as the sum of entries of the generalised heat kernel matrix of a graph. Its given by
     \begin{equation}
-    Q(t) = \sum_{u \in V} \sum_{v \in V} h_{Gt}(u,v)
+    Q(t) = \sum_{u \in V} \sum_{v \in V} H_{Gt}(u,v)
+    \label{heat-content}
     \end{equation}
-    Substituting for $h_{Gt}(u,v)$ gives
+    We note that from Eqn.\ref{heatkernel-hsope}, when we consider a particular case of hops of length $1 (k=1)$, we recover the heat content based on the normal Laplacian matrix which is extensively presented in \citep{xiao2009graph}.
+    
+    On substituting for $h_{Gt}(u,v)$ in Eqn.\ref{heat-content} gives
     \begin{equation}
     Q(t) = \sum_{p \in V} \sum_{q \in V} \sum_{k=1}^{\arrowvert V\arrowvert} e^{(-\mu_{k} t)} v_{k}(p) v_{k}(q),
     \end{equation}
@@ -2493,32 +2496,51 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
     \begin{equation}
     Q(t) = \sum_{m=0}^{\infty} q_m t^m
     \end{equation}
+    
+    
+    
+    \subsection{Heat content Simulations}
+    \begin{figure}[H]
+    	\centering
+    	\begin{subfigure}[b]{0.5\textwidth}
+    		\includegraphics[width= \textwidth]{images/Mellin-heatcontent.png}
+    		\caption{}
+    		\label{mellin-heatcont}
+    	\end{subfigure}~
+    	\begin{subfigure}[b]{0.5\textwidth}
+    		\includegraphics[width= \textwidth]{images/Laplace-heatcontent.png}
+    		\caption{ }
+    		\label{laplace-heatcont}
+    	\end{subfigure}
+    	\caption{Simulations for heat content against time for the graph in Fig. (\subref{mellin-heatcont}) shows the simulations for different values of the parameter $s$ of the Mellin transform based generalised laplacian matrix while (\subref{laplace-heatcont}) corresponds to that of the Laplace based generalised Laplacian for different values of $\lambda$. }
+    	\label{}
+    \end{figure}
  
- \begin{figure}[H]
- 	\centering
- 	\begin{subfigure}[b]{0.45\textwidth}
- 		\includegraphics[width= \textwidth]{images/HeatcontMellins2.png}
- 		\caption{$s=2$}
- 		\label{}
- 	\end{subfigure}~
- 	\begin{subfigure}[b]{0.45\textwidth}
- 		\includegraphics[width= \textwidth]{images/HeatcontMellin3.png}
- 		\caption{$s=3$}
- 		\label{}
- 	\end{subfigure}\\
- 	\begin{subfigure}[b]{0.45\textwidth}
- 		\includegraphics[width= \textwidth]{images/HeatcontLaplace2.png}
- 		\caption{$\lambda = 2$}
- 		\label{}
- 	\end{subfigure}~
- 	\begin{subfigure}[b]{0.45\textwidth}
- 		\includegraphics[width= \textwidth]{images/HeatcontLaplace3.png}
- 		\caption{$\lambda = 3$}
- 		\label{}
- 	\end{subfigure}
- 	\caption{ }
- 	\label{}
- \end{figure}
+% \begin{figure}[H]
+% 	\centering
+% 	\begin{subfigure}[b]{0.45\textwidth}
+% 		\includegraphics[width= \textwidth]{images/HeatcontMellins2.png}
+% 		\caption{$s=2$}
+% 		\label{}
+% 	\end{subfigure}~
+% 	\begin{subfigure}[b]{0.45\textwidth}
+% 		\includegraphics[width= \textwidth]{images/HeatcontMellin3.png}
+% 		\caption{$s=3$}
+% 		\label{}
+% 	\end{subfigure}\\
+% 	\begin{subfigure}[b]{0.45\textwidth}
+% 		\includegraphics[width= \textwidth]{images/HeatcontLaplace2.png}
+% 		\caption{$\lambda = 2$}
+% 		\label{}
+% 	\end{subfigure}~
+% 	\begin{subfigure}[b]{0.45\textwidth}
+% 		\includegraphics[width= \textwidth]{images/HeatcontLaplace3.png}
+% 		\caption{$\lambda = 3$}
+% 		\label{}
+% 	\end{subfigure}
+% 	\caption{ }
+% 	\label{}
+% \end{figure}
  
  \newpage
 \section{Graph Clustering}
@@ -2567,6 +2589,33 @@ We select $5$ objects along with one of its object view. We then implement the D
 	\label{}
 \end{figure}
 
+\subsection{Zeta Function against View Number}
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/zeta-viewnump1.png}
+		\caption{p=1}
+		\label{}
+	\end{subfigure}~
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/zeta-viewnump2.png}
+		\caption{$p=2$}
+		\label{}
+	\end{subfigure}\\
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/zeta-viewnump3.png}
+		\caption{$p=3$}
+		\label{}
+	\end{subfigure}~
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/zeta-viewnump4.png}
+		\caption{$p=4$}
+		\label{}
+	\end{subfigure}
+	\caption{ }
+	\label{}
+\end{figure}
+
 \subsection{Principal Component Analysis (PCA) on objects}
 As mentioned earlier, PCA is a widely used statistical tool for dimension reduction. The PCA-based dimension reduction relies on selection of dimensions with the largest variance. Ding and He \citep{ding2004k} showed that PCA dimension reduction indirectly performs clustering according to the $K$-means objective function by proving that the principal components are the continuous solution of the cluster membership indicators in the $K$-means clustering method.
 In this subsection, we discuss the steps followed in performing  PCA-based dimension reduction on a given number $m$ of objects.
@@ -2583,31 +2632,36 @@ In this subsection, we discuss the steps followed in performing  PCA-based dimen
 	where $\lambda_i$ are the eigenvalues and $\mathbf{v}_i$ are the eigenvectors. This is followed by selection of the first $s$ leading eigenvectors termed as the principal components. The matrix $\mathbf{V} = (\mathbf{v}_1, \mathbf{v}_2, \cdots, \mathbf{v}_s)$. By selecting the principal components, we reduce the dimension of the data.
 	\item Finally, we project individual graphs on to the co-ordinate eigenspace by $\mathcal{B} = \mathbf{U} \mathbf{B}_k$. Therefore, each graph $G_k$ is represented by an $s$-component vector $\mathbf{B}_k$ in the eigenspace.	 
 \end{enumerate}
+
+\subsection{Clustering using Spectrum of the Laplacian matrix}
+As discussed earlier on, one of the crucial steps involved in performing PCA is to create a feature vector of the images. One way is by using the leading eigenvalues of the Laplacian matrix. In this case, we take $6$ of them. We then develop data whose columns correspond to the  $6$ eigenvalues labelled $l_1,l_2,\cdots,l_6$  while rows correspond to individual graphs of different images of the $8$ objects. For visualisation purposes, we perform dimensionality reduction to only $3$ dimensions as shown.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{images/No-longrange.png}
-	\caption{3-D plot of the projection of individual graphs of images of $8$ selected objects on the $3$ principal components axes}
+	\includegraphics[width=0.6\textwidth]{images/No-longrange.png}
+	\caption{Clustering using PCA with feature vector composed of the $6$ leading eigenvalues of the graph Laplacian matrix for images of objects. The $3$D illustration consists of the $3$ principal components as axes.}
 	\label{}
 \end{figure}
 
+We dive deeper in performing clustering using PCA for which the feature vector consists of eigenvalues of the generalised Laplacian matrix whose long-range interactions are accounted for by the Mellin and the Laplace transforms of the $k$-Laplacian matrices.
+
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[b]{0.5\textwidth}
 		\includegraphics[width= \textwidth]{images/Mellin-s2.png}
 		\caption{$s=2$}
 		\label{}
 	\end{subfigure}~
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[b]{0.5\textwidth}
 		\includegraphics[width= \textwidth]{images/Mellin-s3.png}
 		\caption{$s=3$}
 		\label{}
 	\end{subfigure}\\
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[b]{0.5\textwidth}
 		\includegraphics[width= \textwidth]{images/Mellin-s5.png}
 		\caption{$s=5$}
 		\label{}
 	\end{subfigure}~
-\begin{subfigure}[b]{0.45\textwidth}
+\begin{subfigure}[b]{0.5\textwidth}
 	\includegraphics[width= \textwidth]{images/Mellin-s6.png}
 	\caption{$s=6$}
 	\label{}
@@ -2618,22 +2672,22 @@ In this subsection, we discuss the steps followed in performing  PCA-based dimen
 
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width= \textwidth]{images/Laplace-lam1.png}
-		\caption{$\lambda=1$}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/Laplace-lam2.png}
+		\caption{$\lambda=2$}
 		\label{}
 	\end{subfigure}~
-	\begin{subfigure}[b]{0.45\textwidth}
-		\includegraphics[width= \textwidth]{images/Laplace-lam2.png}
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/Laplace-lam3.png}
 		\caption{$\lambda=3$}
 		\label{}
 	\end{subfigure}\\
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[b]{0.5\textwidth}
 		\includegraphics[width= \textwidth]{images/Laplace-lam4.png}
 		\caption{$\lambda=4$}
 		\label{}
 	\end{subfigure}~
-	\begin{subfigure}[b]{0.45\textwidth}
+	\begin{subfigure}[b]{0.5\textwidth}
 		\includegraphics[width= \textwidth]{images/Laplace-lam6.png}
 		\caption{$\lambda=6$}
 		\label{}
@@ -2642,6 +2696,71 @@ In this subsection, we discuss the steps followed in performing  PCA-based dimen
 	\label{}
 \end{figure}
 
+
+\subsection{Clustering using Zeta function}
+Here, we perform clustering by executing PCA based on the feature vector of the zeta function for different values of $p$ for each graph representing images of selected objects in the COIL-100 database. For these simulation, we take $p$ equal to $1,2,3,$ and $4$. First we consider the zeta function of the normal Laplacian followed by that of the Mellin and Laplace based generalised Laplacian matrices.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{images/Zeta-nolongrange.png}
+	\caption{}
+	\label{}
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/Zeta-Mellin1.png}
+		\caption{$s=1$}
+		\label{}
+	\end{subfigure}~
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/Zeta-Mellin2.png}
+		\caption{$s=2$}
+		\label{}
+	\end{subfigure}\\
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/Zeta-Mellin4.png}
+		\caption{$s=4$}
+		\label{}
+	\end{subfigure}~
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/Zeta-Mellin6.png}
+		\caption{$s=6$}
+		\label{}
+	\end{subfigure}
+	\caption{ }
+	\label{}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/Zeta-Laplace1.png}
+		\caption{$\lambda=1$}
+		\label{}
+	\end{subfigure}~
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/Zeta-Laplace2.png}
+		\caption{$\lambda=2$}
+		\label{}
+	\end{subfigure}\\
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/Zeta-Laplace4.png}
+		\caption{$\lambda=4$}
+		\label{}
+	\end{subfigure}~
+	\begin{subfigure}[b]{0.5\textwidth}
+		\includegraphics[width= \textwidth]{images/Zeta-Laplace6.png}
+		\caption{$\lambda=6$}
+		\label{}
+	\end{subfigure}
+	\caption{ }
+	\label{}
+\end{figure}
 
 \newpage
 \renewcommand{\bibname}{References}
