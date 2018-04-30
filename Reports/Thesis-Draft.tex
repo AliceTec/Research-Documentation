@@ -343,7 +343,13 @@ The Adjacency matrix is very useful and simple matrix commonly used in graph rep
 0 & \text{otherwise}.
 \end{cases}
 \end{eqnarray}
-The summation of the $i$th row or column is equivalent to the total number of immediate neighbours, known as degree, of  vertex $v_i$. For simple undirected networks, the matrix is symmetric with zeros entries at the main diagonal. However, for directed networks, the matrix may be asymmetric since direction of edges have to be considered. For multigraphs and graphs with loops, the entries  are the number of edges between each pair of vertices and the diagonal entries are non-zero due to self-loops which may be counted once or twice based on whether the network is directed or undirected. \citep{biggs1993algebraic,godsil2001algebraic}.
+The summation of the $i$th row or column is equivalent to the total number of immediate neighbours, known as degree, of  vertex $v_i$. For simple undirected networks, the matrix is symmetric with zeros entries at the main diagonal. However, for directed networks, the matrix may be asymmetric since direction of edges have to be considered. For multigraphs, the entries  are the number of edges between each pair of vertices and for graphs with loops the diagonal entries are non-zero due to self-loops which may be counted once or twice based on whether the network is directed or undirected \citep{biggs1993algebraic,godsil2001algebraic}. For graphs with weighted edges, the adjacency matrix is given by 
+\begin{eqnarray}
+\mathbf{A}_{ij} = \begin{cases} w_{i,j} &\mbox{if } i \text{ and } j \text{ are adjacent}, \\
+0 & \text{otherwise}.
+\end{cases}
+\end{eqnarray}
+
 
 The spectrum, which is the eigenvalues and their multiplicities, of the Adjacency matrix is such a rich one and is thus used in mine interesting information about the graph. For example, the multiplicity of the largest eigenvalues is equal to the number of connected components of the graph \citep{cvetkovic2004spectral}. 
 
@@ -355,6 +361,16 @@ The spectrum, which is the eigenvalues and their multiplicities, of the Adjacenc
 	\end{cases}
 	\end{eqnarray}
 	In a directed network the degree of node may be the in-degree or the out-degree.
+
+
+\subsection{Distance matrix}
+The distance matrix also known as the all-pairs shortest path matrix denoted by $\mathbf{S}$ is a symmetric matrix whose elements are defined as 
+\begin{equation}
+	S_{i,j} =  \begin{cases} l_{i,j} &\mbox{if } i \neq j \\
+0 & \text{otherwise},
+\end{cases}
+\end{equation}
+where $l_{i,j}$ is the length of the irreducible shortest path between nodes $i$ and $j$.
 
 \subsection{Incidence matrix}
 	Consider a network with vertex set $V=\{v_1,v_2, \cdots,v_n\}$ and edge set $E =\{e_1,e_2,\cdots,e_m \}$. Let us consider an arbitrary orientation of every edge in the network, say, we label each edge $\{v_i,v_j\}$ in a way that $v_i$ is the positive end and $v_j$ is the negative end. It should be, however, noted that the orientation does not matter. Then the oriented incidence matrix $\mathbf{B(G)}$ has entries defined as
@@ -402,7 +418,7 @@ Some of the properties of the Combinatorial graph Laplacian  include the followi
 	The Laplacian matrix is a square matrix that is not invertible. Its determinant is equal to zero \citep{das2004laplacian}.
 	\item{Positive semi-definite}
 	
-	A matrix is positive semi-definite if and only if all its eigenvalues are non-negative. For a given matrix $\mathbf{L}$, this property is denoted by $\mathbf{L}\geq 0$. 
+	A matrix is positive semi-definite if and only if all its eigenvalues are non-negative. For a given matrix $\mathbf{L}$, this property is denoted by $\mathbf{L}\geq 0$. This property of the Laplacian matrix makes it more suitable for spectral analysis compared to the adjacency and incidence matrices.
 	
 \end{enumerate}
 \subsubsection{Spectrum of the Combinatorial Laplacian Matrix}
@@ -512,8 +528,6 @@ It is an $n \times n$ matrix $\mathbf{P}_G$ whose entries are given by
 \end{equation}
 In other words, $\mathbf{P}_G = \mathbf{D}_{G} ^ {-1} \mathbf{A}$
 
-
-\section{Structure of a Network}
 
 \section{Characteristics of Networks}
 \subsection{Degree distributions}
@@ -663,7 +677,18 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
 	where $d_{ij}$ is the shortest path between node $i$ and $j$ and $n$ is the total number of nodes in $G$. The value of $L$ determines the size of a network and helps to determine the efficiency of information flow or disease spread over a network \citep{wang2003complex}.
 \end{defn}
 
+\section{Structure of a Network}
 
+The structure of a network is a description of how nodes are connected to each other to form a network. 
+The study of network structure for purposes of understanding and predicting properties of networks was first and much embraced by chemists where chemical molecules are represented by graphs whose vertices are used to represent atoms and edges to represent chemical
+bonds.  In their work \citep{brown1868connection}, Crum Brown and Fraser were among the earliest researchers who put forward the idea that the properties of a chemical molecule are greatly dependent on its structure.  This structure-property relationship has further been explored using graph-theoretical approach not only in chemistry but in other fields such as social networks, biological networks and many others \citep{mihalic1992graph,smith2004associations,wellman1988social,wey2008social}.  
+
+As pointed out in previous chapters, complex networks are used to represent complex systems. The behaviour exhibited by complex systems occurs due to the interconnectedness between system components not individual components. In order to understand behaviour and properties of these system, we need to study the structure of the corresponding networks from which we deduce properties of the networks from which th behaviour of the systems can be drawn.
+
+The degree distribution of a graph provides useful insights about its structure though it is not conclusive as 
+graphs with different structures can have the same degree distribution which implies that degree distribution gives us some but not all the information regarding the structure
+of a graph. Thus, we cannot deduce a complete structure of a network based on information about
+its degree distribution alone.
 
 \subsection{Robustness of Complex Systems}
 	A complex systems is considered robust if it can with stand failures or perturbations that is to say a system can still perform as expected even in circumstances of failure of one or more components in the system. 
@@ -746,26 +771,41 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
 	\end{enumerate}
 
      \subsection{Graph Similarity}
-     Graph similarity has a wide range of applications such as web searching, comparing chemical structures, synonym extraction, image clustering, among others \citep{zager2008graph, nikolic2012measuring}. 
-     The notion of graph similarity can be defined in many different ways based on the application for instance similarity of graphs can be based on whether graphs are identical copies of each other, how much the neighbourhood of a given node in one graph is similar to neighbourhood of a given node in the other graph, how much changes (node or edge deletion, redirection or addition) can be performed to one graph to obtain the other graph, among others \citep{zager2008graph}. In this work, however, we consider one of the most common notions of similarity which is isomorphism of graphs.
-     Two graphs are isomorphic if there exists a bijective (one-to-one and onto) function between the sets of nodes
-     such that two nodes are connected in one graph if and only if their images under the bijection are connected \citep{zager2008graph}. In otherwords, two graphs are isomorphic if they are structurally identical. The graphs in Fig.~\ref{isomorphism} are an example of isomorphic graphs.
-     
+     Graph similarity has a wide range of applications such as web searching, chemical structure matching, comparing biological networks, synonym extraction, image clustering, social network mapping among others \citep{zager2008graph, nikolic2012measuring}. 
+     The notion of graph similarity can be defined in many different ways based on the application for instance similarity of graphs can be based on whether graphs are identical copies of each other (isomorphism), how much the neighbourhood of a given node in one graph is similar to neighbourhood of a given node in the other graph, how much changes (node or edge deletion, redirection or addition) can be performed to one graph to obtain the other graph, among others \citep{zager2008graph}. Based on different definitions of similarities, measures of similarity are also categorised as follows.
+     \begin{enumerate}
+     	\item \textbf{Isomorphism based techniques}
+     	
+     	 Two graphs are isomorphic if there exists a bijective (one-to-one and onto) function between the sets of nodes
+     	such that two nodes are connected in one graph if and only if their images under the bijection are connected \citep{zager2008graph}. In otherwords, two graphs are isomorphic if they are structurally identical. The graphs in Fig.~\ref{isomorphism} are an example of isomorphic graphs.
+     	
      	\begin{figure}[H]
-     	\centering
-     	\begin{subfigure}[b]{0.35\textwidth}
-     		\includegraphics[width=\textwidth]{images/graph-isomorphism1.pdf}
-     		\caption{}
-     		\label{isomorphic1}
-     	\end{subfigure}
-     	\begin{subfigure}[b]{0.35\textwidth}
-     		\includegraphics[width=\textwidth]{images/graph-isomorphism2.pdf}
-     		\caption{}
-     		\label{isomorphic2}
-     	\end{subfigure} 
-     	\caption{Two isomorphic graphs} 
-     	\label{isomorphism}
-     \end{figure}
+     		\centering
+     		\begin{subfigure}[b]{0.35\textwidth}
+     			\includegraphics[width=\textwidth]{images/graph-isomorphism1.pdf}
+     			\caption{}
+     			\label{isomorphic1}
+     		\end{subfigure}
+     		\begin{subfigure}[b]{0.35\textwidth}
+     			\includegraphics[width=\textwidth]{images/graph-isomorphism2.pdf}
+     			\caption{}
+     			\label{isomorphic2}
+     		\end{subfigure} 
+     		\caption{Two isomorphic graphs} 
+     		\label{isomorphism}
+     	\end{figure}
+     Two graphs are similar if they are isomorphic, or they have isormophic subgraphs (minimum or maximum subgraphs), or if one graph is isomorphic to a subgraph of of the other graph.
+     
+     Alternatively, another known technique is graph edit-distance (considered a generalisation of graph isomorphism) which involves transforming one graph into another by performing edit operations such as edge or node deletion/addition, edge reversal, among others. Each operation is associated with a cost and the sequence of operations with the minimum cost is attained which amounts to a measure of similarity between the two graphs.
+     
+     \item \textbf{Feature extraction}
+     These are statistical methods that measure graph similarity based on properties of graph structure such as degree distribution, betweeness measures, diameter, eigenvalues and many others. Graphs are counted similar if their respective aggregated properties are assessed based on certain similarity measures and similarity is established. This method is very powerful as it maps graphs to various statistics that are quite smaller and easier to work with compared to original graphs. However, one draw-back of this method is the choice of the statistics which at times may not give intuitive results. Take an example of graphs with different number of nodes but with the same diameter, these graphs may be considered similar which is not actually true.
+     
+     \item \textbf{Iterative methods}
+     These methods are based on the idea that two nodes are similar if their neighbourhoods are similar. The methods involve iterative processes in which at nodes share similarity scores at each iteration until convergence is attained. For detailed review of some of the algorithms can be obtained in  \citep{jeh2002simrank,melnik2002similarity,zager2008graph}
+     \end{enumerate}
+ 
+    \subsection{Subgraph Matching}   
  
      \subsection{Voronoi Diagrams and Delaunay Triangulation} \subsubsection{Voronoi Diagrams }  
      Voronoi diagrams (also called Voronoi tessellations, Voronoi
@@ -1437,54 +1477,55 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
     	    	A $k$-hopping connected component in a graph $G=(V,E)$ is a subgraph $G' = (V',E')$, $V'\subset V,E' \subset E$, such that there is at least one $k$-hopping walk that visit every node $v_i \in V'$.
     	    	As mentioned earlier, the motivation of the generalisation of graph Laplacian to find the solution of the problem of whether a given graph can be $k$-hopped. If not, how many $k$-hopping connected components exist?\\
     	    \end{defn}
-    	    \begin{thm}
+    	    
+    	    \textbf{Remark}:
     	    	The number of $k$-hopping connected components in a connected undirected graph $G=(V,E)$ is given by $\eta_k(G) = m[\lambda_1(L_k)=0]$ \citep{estrada2012path}.\\
-    	    \end{thm}
+    	    
         
-    	    \begin{proof}
-    	    	Let us consider a simple undirected graph $G$ that is connected, in otherwords a graph that can be $1$-hopped. Let ${v_1, v_2, \cdots, v_n}$ be an orthogonal basis of $\mathbb{R}^n$ such that $\mathbf{L} \mathbf{y}_j = \lambda_j (\mathbf{L}) \mathbf{y}_j$. Using Rayleigh-Ritz Principle we obtain
-    	    	\begin{equation}
-    	    	\lambda_1(\mathbf{L}) = \min\limits_{\mathbf{y} \in \mathbb{R}^n \ \{\mathbf{0} \}} \frac{\mathbf{y}^T \mathbf{L} \mathbf{y}}{\mathbf{y}^T \mathbf{y}} =
-    	    	\min\limits_{\mathbf{y} \in \mathbb{R}^n \ \{\mathbf{0} \}}
-    	    	\frac{\sum_{p,q \in P(v_p,v_q)} (y_p -y_q)^2}{\sum_{p\in V} y_p ^2}
-    	    	\end{equation}
-    	    	Let $\mathbf{y}$ be an eigenvector of $\mathbf{L}$ with eigenvalue $\lambda_i(\mathbf{L}_k)=0$. This implies that
-    	    	\begin{equation}
-    	    	\mathbf{y}^T \mathbf{L} \mathbf{y} = \frac{1}{2} \sum_{p,q \in P(v_p,v_q)} (y_p-y_q)^2 , 
-    	    	\label{equatezero} 
-    	    	\end{equation}
-    	    	Equation \ref{equatezero} holds if $y_p = y_q$ which happens if and only if the two vertices $v_p$ and $v_q$ are connected which implies that for all vertices connected by a path in the network, $\mathbf{y}$ should be a constant.
-    	    	which happens if and only if, $y_p =y_q$ for each pair of nodes which are connected by an edge. However, on assumption that $G$ is connected, it implies that each pair of vertices of the connected component can be connected by a path and thus $y_p =y_q$ for all pair of vertices of the connected component. Consequently, for a one connected component, the vector $\mathbf{v}= \mathbf{0}$ is the only vector with corresponding to eigenvalue of $0$. In otherwise, $\mathbf{v}$ is a constant vector spanning a dimensional space. 
-    	    	
-    	    	Let us now consider the case of $n$ connected components. Suppose graph $G$ is made of vertices arranged, without loss of generality, in way that its Laplacian matrix is organised as 
-    	    	\begin{equation*}
-    	    	\mathbf{L} = \begin{pmatrix}
-    	    	\mathbf{L}_{1} & 0 & \cdots & 0 \\
-    	    	0 & \mathbf{L}_{2} & \cdots & 0\\
-    	    	\vdots& \vdots & \ddots & \vdots \\
-    	    	0 & 0 & \cdots & \mathbf{L}_{n}
-    	    	\end{pmatrix}.
-    	    	\end{equation*}
-    	    	The spectrum of the block diagonal matrix $\mathbf{L}$ is given as the union of the spectra of blocks $\mathbf{L}_i$. The corresponding eigenvectors are given as those of $\mathbf{L}_i$ with zeroes at the positions of other blocks.
-    	    	Since $\mathbf{L}_i$ is a graph Laplacian for a connected component and we know that each $\mathbf{L}_i$ has $0$ as an eigenvalue with multiplicity $1$, it therefore implies that the multiplicity of $0$ as an eigenvalue of $\mathbf{L}$ corresponds to the number of connected components in the graph $G$. %\citep{von2007tutorial}. 
-    	    	
-    	    	Let us now consider a graph that can be $k$-hopped that is to say graph with only $1$ k-connected component for $k>1$. The graph Laplacian $\mathbf{L}_k$ is defined as in Equation \ref{k-laplacian}. Following similar argument as the case of $1$-hopped graph discussed before, we have
-    	    	\begin{equation}
-    	    	\mathbf{y}^T \mathbf{L}_k \mathbf{y} = \sum_{p,q \in P_k(v_p,v_q)} (y_p-y_q)^2 = 0,  
-    	    	\end{equation} 		
-    	    	which happens if and only if, $y_p =y_q$ for each pair of nodes which are connected by the shortest-path of length $k$. Now, let us assume that the graph is k-hopping connected. Then, because every pair of nodes is connected by paths of length $ck$, we have that $y_p =y_q \neq 0$ for every pair of nodes in the graph. Consequently, $\mathbf{y}$ is a constant vector spanning a one-dimensional space.
-    	    	
-    	    	Now let $j>1$ and let us assume that the graph has $g$ $k$-hopping connected components $\mathbf{L}_{k}^1,\mathbf{L}_{k}^2,\cdots, \mathbf{L}_{k}^g $. Then, the $k$-Laplacian matrix can be written as:
-    	    	\begin{equation*}
-    	    	\mathbf{L}_k = \begin{pmatrix}
-    	    	\mathbf{L}_{k}^1 & 0 & \cdots & 0 \\
-    	    	0 & \mathbf{L}_{k}^2 & \cdots & 0\\
-    	    	\vdots& \vdots & \ddots & \vdots \\
-    	    	0 & 0 & \cdots & \mathbf{L}_{k}^g
-    	    	\end{pmatrix}.
-    	    	\end{equation*}
-    	    	Following similar arguments as for the case of the $k$-hopping connected graph it can be seen that $\mathbf{L}_k$ has $g$ orthogonal eigenvectors $\mathbf{y}_j$ of eigenvalue $0$, such that $y_p = y_q \neq 0$ for each pair of nodes which are in the same $k$-connected of the graph and zero otherwise \citep{estrada2012path}.\\  	
-    	    \end{proof}
+%    	    \begin{proof}
+%    	    	Let us consider a simple undirected graph $G$ that is connected, in otherwords a graph that can be $1$-hopped. Let ${v_1, v_2, \cdots, v_n}$ be an orthogonal basis of $\mathbb{R}^n$ such that $\mathbf{L} \mathbf{y}_j = \lambda_j (\mathbf{L}) \mathbf{y}_j$. Using Rayleigh-Ritz Principle we obtain
+%    	    	\begin{equation}
+%    	    	\lambda_1(\mathbf{L}) = \min\limits_{\mathbf{y} \in \mathbb{R}^n \ \{\mathbf{0} \}} \frac{\mathbf{y}^T \mathbf{L} \mathbf{y}}{\mathbf{y}^T \mathbf{y}} =
+%    	    	\min\limits_{\mathbf{y} \in \mathbb{R}^n \ \{\mathbf{0} \}}
+%    	    	\frac{\sum_{p,q \in P(v_p,v_q)} (y_p -y_q)^2}{\sum_{p\in V} y_p ^2}
+%    	    	\end{equation}
+%    	    	Let $\mathbf{y}$ be an eigenvector of $\mathbf{L}$ with eigenvalue $\lambda_i(\mathbf{L}_k)=0$. This implies that
+%    	    	\begin{equation}
+%    	    	\mathbf{y}^T \mathbf{L} \mathbf{y} = \frac{1}{2} \sum_{p,q \in P(v_p,v_q)} (y_p-y_q)^2 , 
+%    	    	\label{equatezero} 
+%    	    	\end{equation}
+%    	    	Equation \ref{equatezero} holds if $y_p = y_q$ which happens if and only if the two vertices $v_p$ and $v_q$ are connected which implies that for all vertices connected by a path in the network, $\mathbf{y}$ should be a constant.
+%    	    	which happens if and only if, $y_p =y_q$ for each pair of nodes which are connected by an edge. However, on assumption that $G$ is connected, it implies that each pair of vertices of the connected component can be connected by a path and thus $y_p =y_q$ for all pair of vertices of the connected component. Consequently, for a one connected component, the vector $\mathbf{v}= \mathbf{0}$ is the only vector with corresponding to eigenvalue of $0$. In otherwise, $\mathbf{v}$ is a constant vector spanning a dimensional space. 
+%    	    	
+%    	    	Let us now consider the case of $n$ connected components. Suppose graph $G$ is made of vertices arranged, without loss of generality, in way that its Laplacian matrix is organised as 
+%    	    	\begin{equation*}
+%    	    	\mathbf{L} = \begin{pmatrix}
+%    	    	\mathbf{L}_{1} & 0 & \cdots & 0 \\
+%    	    	0 & \mathbf{L}_{2} & \cdots & 0\\
+%    	    	\vdots& \vdots & \ddots & \vdots \\
+%    	    	0 & 0 & \cdots & \mathbf{L}_{n}
+%    	    	\end{pmatrix}.
+%    	    	\end{equation*}
+%    	    	The spectrum of the block diagonal matrix $\mathbf{L}$ is given as the union of the spectra of blocks $\mathbf{L}_i$. The corresponding eigenvectors are given as those of $\mathbf{L}_i$ with zeroes at the positions of other blocks.
+%    	    	Since $\mathbf{L}_i$ is a graph Laplacian for a connected component and we know that each $\mathbf{L}_i$ has $0$ as an eigenvalue with multiplicity $1$, it therefore implies that the multiplicity of $0$ as an eigenvalue of $\mathbf{L}$ corresponds to the number of connected components in the graph $G$. %\citep{von2007tutorial}. 
+%    	    	
+%    	    	Let us now consider a graph that can be $k$-hopped that is to say graph with only $1$ k-connected component for $k>1$. The graph Laplacian $\mathbf{L}_k$ is defined as in Equation \ref{k-laplacian}. Following similar argument as the case of $1$-hopped graph discussed before, we have
+%    	    	\begin{equation}
+%    	    	\mathbf{y}^T \mathbf{L}_k \mathbf{y} = \sum_{p,q \in P_k(v_p,v_q)} (y_p-y_q)^2 = 0,  
+%    	    	\end{equation} 		
+%    	    	which happens if and only if, $y_p =y_q$ for each pair of nodes which are connected by the shortest-path of length $k$. Now, let us assume that the graph is k-hopping connected. Then, because every pair of nodes is connected by paths of length $ck$, we have that $y_p =y_q \neq 0$ for every pair of nodes in the graph. Consequently, $\mathbf{y}$ is a constant vector spanning a one-dimensional space.
+%    	    	
+%    	    	Now let $j>1$ and let us assume that the graph has $g$ $k$-hopping connected components $\mathbf{L}_{k}^1,\mathbf{L}_{k}^2,\cdots, \mathbf{L}_{k}^g $. Then, the $k$-Laplacian matrix can be written as:
+%    	    	\begin{equation*}
+%    	    	\mathbf{L}_k = \begin{pmatrix}
+%    	    	\mathbf{L}_{k}^1 & 0 & \cdots & 0 \\
+%    	    	0 & \mathbf{L}_{k}^2 & \cdots & 0\\
+%    	    	\vdots& \vdots & \ddots & \vdots \\
+%    	    	0 & 0 & \cdots & \mathbf{L}_{k}^g
+%    	    	\end{pmatrix}.
+%    	    	\end{equation*}
+%    	    	Following similar arguments as for the case of the $k$-hopping connected graph it can be seen that $\mathbf{L}_k$ has $g$ orthogonal eigenvectors $\mathbf{y}_j$ of eigenvalue $0$, such that $y_p = y_q \neq 0$ for each pair of nodes which are in the same $k$-connected of the graph and zero otherwise \citep{estrada2012path}.\\  	
+%    	    \end{proof}
     	    
     	    \begin{exa}
     	    	Let us consider the graph, G in Fig.\ref{spanning}, since $d_{max} = 2$ we compute the 1-hopping and 2-hopping connected components of G.
@@ -1509,7 +1550,7 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
     	    	
     	    	
     	    \end{exa}
-    	   \subsubsection{Time complexity of the Path Laplacian Matrices} 
+    	   
 %    	    \subsection{k-path Laplacian for Weighted Networks}
 %    	    For a weighted network, The weight of a path between two nodes $u$ and $v$ separated by $k$ edges, is the sum of the weights along the path. The entries of $k$-path Laplacian matrices are, therefore, given by
 %    	    
@@ -1785,7 +1826,8 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
 %    	    	by collisions and diffuse very fast. It is attained at $\kappa = 2$.
     	    \end{enumerate}
         \end{enumerate}
-        
+        \subsubsection{Complexity of the Generalised Laplacian matrix} 
+        In computing of the generalised Laplacian matrix $\mathbf{L}_G$, we need to compute $k$-path Laplacian matrices for $1 \leq k \leq d_{max}$ which we obtain from the distance matrix $D$. The matrix $D$ is obtained by computing all pairs of shortest paths between nodes in the network. There are various algorithms used in computing the all-pairs shortest paths in a given network as discussed in \citep{cherkassky1996shortest} . The most common one of these algorithms is the Dijkstra's with time complexity $O(mn+n^2 \log n)$ where $n$ and $m$ are the number of nodes and links respectively \citep{dijkstra1959note}. Though improvements to Dijkstra's algorithm have been developed \citep{pettie2002faster,thorup1999undirected,seidel1995all}, for very large networks, however, computation of path Laplacian matrices is still a computationally cumbersome task. For this reason, research directed towards developing more efficient algorithms for solving the all-pairs shortest path problem for very large networks would be of utmost importance. 
         
         
         %\begin{figure}[!h]
@@ -2152,7 +2194,7 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
         %&=& Tr(e^{(-\Lambda t)})
         \end{equation}
         %        	Like the trace of any other matrix, the trace of heat kernel is the summation of the main diagonal elements of the heat kernel matrix of a graph. 
-        Thus, the trace function, $Z(t)$, of the heat kernel is given by 
+        Thus, the trace of the heat kernel,$Z(t)$, is a function whose parameter are the eigenvalues of the Laplacian matrix and whose argument is time. It is given by                                                           
         \begin{equation}
         Z(t) = Tr(H_t) = \sum_{i=1}^{|V|} e^{-\lambda_i t},
         \label{kerneltrace}
@@ -2499,7 +2541,8 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
     
     
     
-    \subsection{Heat content Simulations}
+    \subsection{Heat Content Simulations}
+    
     \begin{figure}[H]
     	\centering
     	\begin{subfigure}[b]{0.5\textwidth}
@@ -2512,7 +2555,7 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
     		\caption{ }
     		\label{laplace-heatcont}
     	\end{subfigure}
-    	\caption{Simulations for heat content against time for the graph in Fig. (\subref{mellin-heatcont}) shows the simulations for different values of the parameter $s$ of the Mellin transform based generalised laplacian matrix while (\subref{laplace-heatcont}) corresponds to that of the Laplace based generalised Laplacian for different values of $\lambda$. }
+    	\caption{Simulations for heat content against time for the graph in Fig.\ref{G2}. (\subref{mellin-heatcont}) shows the simulations for different values of the parameter $s$ of the Mellin transform based generalised laplacian matrix while (\subref{laplace-heatcont}) corresponds to that of the Laplace based generalised Laplacian for different values of $\lambda$. }
     	\label{}
     \end{figure}
  
