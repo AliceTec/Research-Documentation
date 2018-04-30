@@ -1,4 +1,4 @@
-\begin{thebibliography}{109}
+\begin{thebibliography}{121}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -104,6 +104,15 @@ A.~E. Brouwer and W.~H. Haemers.
 \newblock \emph{Spectra of graphs}.
 \newblock Springer Science \& Business Media, 2011.
 
+\bibitem[Brown and Fraser(1868)]{brown1868connection}
+A.~C. Brown and T.~R. Fraser.
+\newblock On the connection between chemical constitution and physiological
+  action; with special reference to the physiological action of the salts of
+  the ammonium bases derived from strychnia, brucia, thebaia, codeia, morphia,
+  and nicotia.
+\newblock \emph{Journal of anatomy and physiology}, 2\penalty0 (2):\penalty0
+  224, 1868.
+
 \bibitem[Byrne et~al.(2005)Byrne, Feddema, and Abdallah]{byrne2005algebraic}
 R.~Byrne, J.~Feddema, and C.~Abdallah.
 \newblock Algebraic connectivity and graph robustness.
@@ -121,6 +130,13 @@ M.~Chandak, S.~Bhalotia, and S.~Agrawal.
 \newblock A novel approach to compute steiner point in graph: Application for
   network design.
 \newblock 2017.
+
+\bibitem[Cherkassky et~al.(1996)Cherkassky, Goldberg, and
+  Radzik]{cherkassky1996shortest}
+B.~V. Cherkassky, A.~V. Goldberg, and T.~Radzik.
+\newblock Shortest paths algorithms: Theory and experimental evaluation.
+\newblock \emph{Mathematical programming}, 73\penalty0 (2):\penalty0 129--174,
+  1996.
 
 \bibitem[Chung(2007)]{chung2007heat}
 F.~Chung.
@@ -154,6 +170,12 @@ K.~C. Das.
 P.~De~Meo, E.~Ferrara, G.~Fiumara, and A.~Ricciardello.
 \newblock A novel measure of edge centrality in social networks.
 \newblock \emph{Knowledge-based systems}, 30:\penalty0 136--150, 2012.
+
+\bibitem[Dijkstra(1959)]{dijkstra1959note}
+E.~W. Dijkstra.
+\newblock A note on two problems in connexion with graphs.
+\newblock \emph{Numerische mathematik}, 1\penalty0 (1):\penalty0 269--271,
+  1959.
 
 \bibitem[Edwards and Penney(2004)]{edwards2004differential}
 C.~H. Edwards and D.~E. Penney.
@@ -329,6 +351,13 @@ A.~Jamakovic and P.~Van~Mieghem.
 \newblock \emph{NETWORKING 2008 Ad Hoc and Sensor Networks, Wireless Networks,
   Next Generation Internet}, pages 183--194, 2008.
 
+\bibitem[Jeh and Widom(2002)]{jeh2002simrank}
+G.~Jeh and J.~Widom.
+\newblock Simrank: a measure of structural-context similarity.
+\newblock In \emph{Proceedings of the eighth ACM SIGKDD international
+  conference on Knowledge discovery and data mining}, pages 538--543. ACM,
+  2002.
+
 \bibitem[Karo{\'n}ski(1982)]{karonski1982review}
 M.~Karo{\'n}ski.
 \newblock A review of random graphs.
@@ -394,6 +423,19 @@ P.~McDonald and R.~Meyers.
 \newblock Diffusions on graphs, poisson problems and spectral geometry.
 \newblock \emph{Transactions of the American Mathematical Society},
   354\penalty0 (12):\penalty0 5111--5136, 2002.
+
+\bibitem[Melnik et~al.(2002)Melnik, Garcia-Molina, and
+  Rahm]{melnik2002similarity}
+S.~Melnik, H.~Garcia-Molina, and E.~Rahm.
+\newblock Similarity flooding: A versatile graph matching algorithm and its
+  application to schema matching.
+\newblock In \emph{Data Engineering, 2002. Proceedings. 18th International
+  Conference on}, pages 117--128. IEEE, 2002.
+
+\bibitem[Mihali{\'c} and Trinajsti{\'c}(1992)]{mihalic1992graph}
+Z.~Mihali{\'c} and N.~Trinajsti{\'c}.
+\newblock A graph-theoretical approach to structure-property relationships,
+  1992.
 
 \bibitem[Milgram(1967)]{milgram1967small}
 S.~Milgram.
@@ -505,6 +547,13 @@ G.~A. Pagani and M.~Aiello.
 \newblock \emph{Physica A: Statistical Mechanics and its Applications},
   392\penalty0 (11):\penalty0 2688--2700, 2013.
 
+\bibitem[Pettie(2002)]{pettie2002faster}
+S.~Pettie.
+\newblock A faster all-pairs shortest path algorithm for real-weighted sparse
+  graphs.
+\newblock In \emph{International Colloquium on Automata, Languages, and
+  Programming}, pages 85--97. Springer, 2002.
+
 \bibitem[Qi et~al.(2012)Qi, Fuller, Wu, Wu, and Zhang]{qi2012laplacian}
 X.~Qi, E.~Fuller, Q.~Wu, Y.~Wu, and C.-Q. Zhang.
 \newblock Laplacian centrality: A new centrality measure for weighted networks.
@@ -531,10 +580,25 @@ B.~Schwikowski, P.~Uetz, and S.~Fields.
 \newblock A network of protein--protein interactions in yeast.
 \newblock \emph{Nature biotechnology}, 18\penalty0 (12):\penalty0 1257, 2000.
 
+\bibitem[Seidel(1995)]{seidel1995all}
+R.~Seidel.
+\newblock On the all-pairs-shortest-path problem in unweighted undirected
+  graphs.
+\newblock \emph{Journal of computer and system sciences}, 51\penalty0
+  (3):\penalty0 400--403, 1995.
+
 \bibitem[Shlens(2014)]{shlens2014tutorial}
 J.~Shlens.
 \newblock A tutorial on principal component analysis.
 \newblock \emph{arXiv preprint arXiv:1404.1100}, 2014.
+
+\bibitem[Smith et~al.(2004)Smith, Grierson, Wain, Pitts, and
+  Pattison]{smith2004associations}
+A.~Smith, J.~Grierson, D.~Wain, M.~Pitts, and P.~Pattison.
+\newblock Associations between the sexual behaviour of men who have sex with
+  men and the structure and composition of their social networks.
+\newblock \emph{Sexually transmitted infections}, 80\penalty0 (6):\penalty0
+  455--458, 2004.
 
 \bibitem[Smith(2002)]{smith2002tutorial}
 L.~I. Smith.
@@ -572,6 +636,13 @@ D.~Thanou, X.~Dong, D.~Kressner, and P.~Frossard.
 \newblock \emph{IEEE Transactions on Signal and Information Processing over
   Networks}, 3\penalty0 (3):\penalty0 484--499, 2017.
 
+\bibitem[Thorup(1999)]{thorup1999undirected}
+M.~Thorup.
+\newblock Undirected single-source shortest paths with positive integer weights
+  in linear time.
+\newblock \emph{Journal of the ACM (JACM)}, 46\penalty0 (3):\penalty0 362--394,
+  1999.
+
 \bibitem[Trajkovi{\'c} and Hedley(1998)]{trajkovic1998fast}
 M.~Trajkovi{\'c} and M.~Hedley.
 \newblock Fast corner detection.
@@ -605,6 +676,17 @@ X.~F. Wang and G.~Chen.
 D.~J. Watts and S.~H. Strogatz.
 \newblock Collective dynamics of ‘small-world’networks.
 \newblock \emph{nature}, 393\penalty0 (6684):\penalty0 440--442, 1998.
+
+\bibitem[Wellman and Berkowitz(1988)]{wellman1988social}
+B.~Wellman and S.~D. Berkowitz.
+\newblock \emph{Social structures: A network approach}, volume~2.
+\newblock CUP Archive, 1988.
+
+\bibitem[Wey et~al.(2008)Wey, Blumstein, Shen, and Jordan]{wey2008social}
+T.~Wey, D.~T. Blumstein, W.~Shen, and F.~Jordan.
+\newblock Social network analysis of animal behaviour: a promising tool for the
+  study of sociality.
+\newblock \emph{Animal behaviour}, 75\penalty0 (2):\penalty0 333--344, 2008.
 
 \bibitem[Williams et~al.(1993)Williams, Dawson, and
   Slooten]{williams1993abundance}

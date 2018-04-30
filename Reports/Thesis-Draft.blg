@@ -13,7 +13,10 @@ Repeated entry---line 967 of file references.bib
  : @article{barabasi1999emergence
  :                               ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for ""
+Repeated entry---line 1096 of file references.bib
+ : @article{zager2008graph
+ :                        ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "ding2004k"
 Warning--can't use both volume and number fields in adiga2009skew
 Warning--there's a number but no volume in anthonisse1971rush
@@ -26,45 +29,45 @@ Warning--empty year in googleimages
 Warning--empty institution in smith2002tutorial
 Warning--empty year in wu2564spectral
 Warning--empty year in wu2564spectral
-You've used 109 entries,
+You've used 121 entries,
             2773 wiz_defined-function locations,
-            1198 strings with 20786 characters,
-and the built_in function-call counts, 47561 in all, are:
-= -- 4324
-> -- 2335
-< -- 98
-+ -- 809
-- -- 699
-* -- 3639
-:= -- 7242
-add.period$ -- 339
-call.type$ -- 109
-change.case$ -- 541
-chr.to.int$ -- 108
-cite$ -- 229
-duplicate$ -- 2322
-empty$ -- 4157
-format.name$ -- 874
-if$ -- 10042
+            1267 strings with 23124 characters,
+and the built_in function-call counts, 53230 in all, are:
+= -- 4853
+> -- 2606
+< -- 110
++ -- 902
+- -- 780
+* -- 4076
+:= -- 8077
+add.period$ -- 377
+call.type$ -- 121
+change.case$ -- 603
+chr.to.int$ -- 120
+cite$ -- 253
+duplicate$ -- 2595
+empty$ -- 4657
+format.name$ -- 975
+if$ -- 11263
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 117
-newline$ -- 554
-num.names$ -- 436
-pop$ -- 1127
+missing$ -- 129
+newline$ -- 613
+num.names$ -- 484
+pop$ -- 1258
 preamble$ -- 1
-purify$ -- 448
+purify$ -- 499
 quote$ -- 0
-skip$ -- 1736
+skip$ -- 1946
 stack$ -- 0
-substring$ -- 1987
-swap$ -- 252
-text.length$ -- 22
+substring$ -- 2258
+swap$ -- 293
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1119
+type$ -- 1246
 warning$ -- 11
-while$ -- 474
+while$ -- 532
 width$ -- 0
-write$ -- 1407
-(There was 1 error message)
+write$ -- 1563
+(There were 2 error messages)
