@@ -20,54 +20,56 @@
 \BOOKMARK [1][-]{section.3}{Characteristics of Networks}{}% 20
 \BOOKMARK [2][-]{subsection.3.1}{Degree distributions}{section.3}% 21
 \BOOKMARK [2][-]{subsection.3.2}{Power-law degree distribution}{section.3}% 22
-\BOOKMARK [2][-]{subsection.3.3}{Clustering coefficient}{section.3}% 23
-\BOOKMARK [1][-]{section.4}{Structure of a Network}{}% 24
-\BOOKMARK [2][-]{subsection.4.1}{Robustness of Complex Systems}{section.4}% 25
-\BOOKMARK [2][-]{subsection.4.2}{Robustness measures in networks}{section.4}% 26
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Connectivity-based measures}{subsection.4.2}% 27
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Distance-based measures}{subsection.4.2}% 28
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Spectral Graph measures}{subsection.4.2}% 29
-\BOOKMARK [2][-]{subsection.4.3}{Graph Similarity}{section.4}% 30
-\BOOKMARK [2][-]{subsection.4.4}{Subgraph Matching}{section.4}% 31
-\BOOKMARK [2][-]{subsection.4.5}{Voronoi Diagrams and Delaunay Triangulation}{section.4}% 32
-\BOOKMARK [3][-]{subsubsection.4.5.1}{Voronoi Diagrams }{subsection.4.5}% 33
-\BOOKMARK [3][-]{subsubsection.4.5.2}{Delaunay Triangulation}{subsection.4.5}% 34
-\BOOKMARK [2][-]{subsection.4.6}{The Harris Corner Point Detector}{section.4}% 35
-\BOOKMARK [2][-]{subsection.4.7}{Principal Component Analysis}{section.4}% 36
-\BOOKMARK [1][-]{section.5}{Diffusion on networks}{}% 37
-\BOOKMARK [2][-]{subsection.5.1}{Heat Diffusion Model}{section.5}% 38
-\BOOKMARK [2][-]{subsection.5.2}{ Equilibrium behaviour }{section.5}% 39
-\BOOKMARK [2][-]{subsection.5.3}{Impact of Network structure on the rate of diffusion}{section.5}% 40
-\BOOKMARK [2][-]{subsection.5.4}{Influence of Heterogeneity on Diffusion over network}{section.5}% 41
-\BOOKMARK [2][-]{subsection.5.5}{Impact of choice of Initial diffusion nodes on the diffusion process on networks}{section.5}% 42
-\BOOKMARK [2][-]{subsection.5.6}{Diffusion on Directed Networks}{section.5}% 43
-\BOOKMARK [2][-]{subsection.5.7}{Diffusion and Equilibrium behaviour in Directed Network}{section.5}% 44
-\BOOKMARK [3][-]{subsubsection.5.7.1}{Estimation of Eigenvalues of the Laplacian}{subsection.5.7}% 45
-\BOOKMARK [3][-]{subsubsection.5.7.2}{Equilibrium state for Balanced Graphs}{subsection.5.7}% 46
-\BOOKMARK [2][-]{subsection.5.8}{Diffusion on network with long-range interactions}{section.5}% 47
-\BOOKMARK [3][-]{subsubsection.5.8.1}{ k-path Laplacian matrices, Lk}{subsection.5.8}% 48
-\BOOKMARK [3][-]{subsubsection.5.8.2}{The Generalised Laplacian Matrix}{subsection.5.8}% 49
-\BOOKMARK [3][-]{subsubsection.5.8.3}{Properties of the Generalised Laplacian Matrix }{subsection.5.8}% 50
-\BOOKMARK [3][-]{subsubsection.5.8.4}{Choice of Co-efficients, ck}{subsection.5.8}% 51
-\BOOKMARK [3][-]{subsubsection.5.8.5}{Complexity of the Generalised Laplacian matrix}{subsection.5.8}% 52
-\BOOKMARK [3][-]{subsubsection.5.8.6}{Generalised Diffusion Model}{subsection.5.8}% 53
-\BOOKMARK [2][-]{subsection.5.9}{Comparison of Mellin and Laplace based Generalised Diffusion}{section.5}% 54
-\BOOKMARK [3][-]{subsubsection.5.9.1}{Simulations of diffusion on lattice}{subsection.5.9}% 55
-\BOOKMARK [1][-]{section.6}{The Heat Kernel}{}% 56
-\BOOKMARK [2][-]{subsection.6.1}{Heat Kernel Trace}{section.6}% 57
-\BOOKMARK [3][-]{subsubsection.6.1.1}{Heat kernel trace as a Graph Analysis Technique}{subsection.6.1}% 58
-\BOOKMARK [2][-]{subsection.6.2}{Generalised Heat kernel}{section.6}% 59
-\BOOKMARK [2][-]{subsection.6.3}{Trace of the Generalised Heat Kernel}{section.6}% 60
-\BOOKMARK [2][-]{subsection.6.4}{Comparison with Complete Graph based on Trace of the diffusion kernel}{section.6}% 61
-\BOOKMARK [2][-]{subsection.6.5}{Zeta Function}{section.6}% 62
-\BOOKMARK [2][-]{subsection.6.6}{Zeta Function and Generalised Heat Kernel Trace Moments}{section.6}% 63
-\BOOKMARK [2][-]{subsection.6.7}{Derivative of Zeta Function at the Origin}{section.6}% 64
-\BOOKMARK [2][-]{subsection.6.8}{Heat Content of the Generalised Laplacian matrix}{section.6}% 65
-\BOOKMARK [2][-]{subsection.6.9}{Heat Content Simulations}{section.6}% 66
-\BOOKMARK [1][-]{section.7}{Graph Clustering}{}% 67
-\BOOKMARK [2][-]{subsection.7.1}{Image representation using Delaunay graphs}{section.7}% 68
-\BOOKMARK [2][-]{subsection.7.2}{Delaunay Graph Superimposition on Objects }{section.7}% 69
-\BOOKMARK [2][-]{subsection.7.3}{Zeta Function against View Number}{section.7}% 70
-\BOOKMARK [2][-]{subsection.7.4}{Principal Component Analysis \(PCA\) on objects}{section.7}% 71
-\BOOKMARK [2][-]{subsection.7.5}{Clustering using Spectrum of the Laplacian matrix}{section.7}% 72
-\BOOKMARK [2][-]{subsection.7.6}{Clustering using Zeta function}{section.7}% 73
+\BOOKMARK [2][-]{subsection.3.3}{Average Degree of the Nearest Neighbors}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.4}{Clustering coefficient}{section.3}% 24
+\BOOKMARK [1][-]{section.4}{Structure of a Network}{}% 25
+\BOOKMARK [2][-]{subsection.4.1}{Robustness of Complex Systems}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.2}{Robustness measures in networks}{section.4}% 27
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Connectivity-based measures}{subsection.4.2}% 28
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Distance-based measures}{subsection.4.2}% 29
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Spectral Graph measures}{subsection.4.2}% 30
+\BOOKMARK [2][-]{subsection.4.3}{Graph Similarity}{section.4}% 31
+\BOOKMARK [2][-]{subsection.4.4}{Subgraph Matching}{section.4}% 32
+\BOOKMARK [2][-]{subsection.4.5}{Voronoi Diagrams and Delaunay Triangulation}{section.4}% 33
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Voronoi Diagrams }{subsection.4.5}% 34
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Delaunay Triangulation}{subsection.4.5}% 35
+\BOOKMARK [2][-]{subsection.4.6}{The Harris Corner Point Detector}{section.4}% 36
+\BOOKMARK [2][-]{subsection.4.7}{Principal Component Analysis}{section.4}% 37
+\BOOKMARK [1][-]{section.5}{Diffusion on networks}{}% 38
+\BOOKMARK [2][-]{subsection.5.1}{Heat Diffusion Model}{section.5}% 39
+\BOOKMARK [2][-]{subsection.5.2}{ Equilibrium behaviour }{section.5}% 40
+\BOOKMARK [2][-]{subsection.5.3}{Impact of Network structure on the rate of diffusion}{section.5}% 41
+\BOOKMARK [2][-]{subsection.5.4}{Influence of Heterogeneity on Diffusion over network}{section.5}% 42
+\BOOKMARK [2][-]{subsection.5.5}{Impact of choice of Initial diffusion nodes on the diffusion process on networks}{section.5}% 43
+\BOOKMARK [2][-]{subsection.5.6}{Diffusion on Directed Networks}{section.5}% 44
+\BOOKMARK [2][-]{subsection.5.7}{Diffusion and Equilibrium behaviour in Directed Network}{section.5}% 45
+\BOOKMARK [3][-]{subsubsection.5.7.1}{Estimation of Eigenvalues of the Laplacian}{subsection.5.7}% 46
+\BOOKMARK [3][-]{subsubsection.5.7.2}{Equilibrium state for Balanced Graphs}{subsection.5.7}% 47
+\BOOKMARK [2][-]{subsection.5.8}{Diffusion on network with long-range interactions}{section.5}% 48
+\BOOKMARK [3][-]{subsubsection.5.8.1}{ k-path Laplacian matrices, Lk}{subsection.5.8}% 49
+\BOOKMARK [3][-]{subsubsection.5.8.2}{The Generalised Laplacian Matrix}{subsection.5.8}% 50
+\BOOKMARK [3][-]{subsubsection.5.8.3}{Properties of the Generalised Laplacian Matrix }{subsection.5.8}% 51
+\BOOKMARK [3][-]{subsubsection.5.8.4}{Choice of Co-efficients, ck}{subsection.5.8}% 52
+\BOOKMARK [3][-]{subsubsection.5.8.5}{Complexity of the Generalised Laplacian matrix}{subsection.5.8}% 53
+\BOOKMARK [3][-]{subsubsection.5.8.6}{Generalised Diffusion Model}{subsection.5.8}% 54
+\BOOKMARK [2][-]{subsection.5.9}{Comparison of Mellin and Laplace based Generalised Diffusion}{section.5}% 55
+\BOOKMARK [3][-]{subsubsection.5.9.1}{Simulations of diffusion on lattice}{subsection.5.9}% 56
+\BOOKMARK [1][-]{section.6}{The Heat Kernel}{}% 57
+\BOOKMARK [2][-]{subsection.6.1}{Heat Kernel Trace}{section.6}% 58
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Heat kernel trace as a Graph Analysis Technique}{subsection.6.1}% 59
+\BOOKMARK [2][-]{subsection.6.2}{Generalised Heat kernel}{section.6}% 60
+\BOOKMARK [2][-]{subsection.6.3}{Trace of the Generalised Heat Kernel}{section.6}% 61
+\BOOKMARK [2][-]{subsection.6.4}{Comparison with Complete Graph based on Trace of the diffusion kernel}{section.6}% 62
+\BOOKMARK [2][-]{subsection.6.5}{Zeta Function}{section.6}% 63
+\BOOKMARK [2][-]{subsection.6.6}{Zeta Function and Generalised Heat Kernel Trace Moments}{section.6}% 64
+\BOOKMARK [2][-]{subsection.6.7}{Derivative of Zeta Function at the Origin}{section.6}% 65
+\BOOKMARK [2][-]{subsection.6.8}{Heat Content of the Generalised Laplacian matrix}{section.6}% 66
+\BOOKMARK [2][-]{subsection.6.9}{Heat content Simulations}{section.6}% 67
+\BOOKMARK [2][-]{subsection.6.10}{Heat Content Simulations}{section.6}% 68
+\BOOKMARK [1][-]{section.7}{Graph Clustering}{}% 69
+\BOOKMARK [2][-]{subsection.7.1}{Image representation using Delaunay graphs}{section.7}% 70
+\BOOKMARK [2][-]{subsection.7.2}{Delaunay Graph Superimposition on Objects }{section.7}% 71
+\BOOKMARK [2][-]{subsection.7.3}{Zeta Function against View Number}{section.7}% 72
+\BOOKMARK [2][-]{subsection.7.4}{Principal Component Analysis \(PCA\) on objects}{section.7}% 73
+\BOOKMARK [2][-]{subsection.7.5}{Clustering using Spectrum of the Laplacian matrix}{section.7}% 74
+\BOOKMARK [2][-]{subsection.7.6}{Clustering using Zeta function}{section.7}% 75

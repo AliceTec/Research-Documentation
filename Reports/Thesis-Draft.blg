@@ -29,45 +29,45 @@ Warning--empty year in googleimages
 Warning--empty institution in smith2002tutorial
 Warning--empty year in wu2564spectral
 Warning--empty year in wu2564spectral
-You've used 121 entries,
+You've used 126 entries,
             2773 wiz_defined-function locations,
-            1267 strings with 23124 characters,
-and the built_in function-call counts, 53230 in all, are:
-= -- 4853
-> -- 2606
-< -- 110
-+ -- 902
-- -- 780
-* -- 4076
-:= -- 8077
-add.period$ -- 377
-call.type$ -- 121
-change.case$ -- 603
-chr.to.int$ -- 120
-cite$ -- 253
-duplicate$ -- 2595
-empty$ -- 4657
-format.name$ -- 975
-if$ -- 11263
+            1295 strings with 23895 characters,
+and the built_in function-call counts, 55359 in all, are:
+= -- 5044
+> -- 2714
+< -- 113
++ -- 940
+- -- 813
+* -- 4251
+:= -- 8410
+add.period$ -- 392
+call.type$ -- 126
+change.case$ -- 629
+chr.to.int$ -- 125
+cite$ -- 263
+duplicate$ -- 2696
+empty$ -- 4843
+format.name$ -- 1013
+if$ -- 11702
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 129
-newline$ -- 613
-num.names$ -- 484
-pop$ -- 1258
+missing$ -- 134
+newline$ -- 638
+num.names$ -- 504
+pop$ -- 1303
 preamble$ -- 1
-purify$ -- 499
+purify$ -- 520
 quote$ -- 0
-skip$ -- 1946
+skip$ -- 2018
 stack$ -- 0
-substring$ -- 2258
-swap$ -- 293
+substring$ -- 2346
+swap$ -- 298
 text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1246
+type$ -- 1301
 warning$ -- 11
-while$ -- 532
+while$ -- 554
 width$ -- 0
-write$ -- 1563
+write$ -- 1628
 (There were 2 error messages)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{121}
+\begin{thebibliography}{126}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -287,6 +287,12 @@ F.~Friedli, A.~Karlsson, et~al.
 \newblock \emph{Tohoku Mathematical Journal}, 69\penalty0 (4):\penalty0
   585--610, 2017.
 
+\bibitem[Gao et~al.(2010)Gao, Xiao, Tao, and Li]{gao2010survey}
+X.~Gao, B.~Xiao, D.~Tao, and X.~Li.
+\newblock A survey of graph edit distance.
+\newblock \emph{Pattern Analysis and applications}, 13\penalty0 (1):\penalty0
+  113--129, 2010.
+
 \bibitem[Godsil and Royle(2001)]{godsil2001algebraic}
 C.~Godsil and G.~Royle.
 \newblock Algebraic graph theory springer.
@@ -310,6 +316,13 @@ L.~Grady.
 I.~Gribkovskaia, {\O}.~Halskau, and G.~Laporte.
 \newblock The bridges of k{\"o}nigsberg—a historical perspective.
 \newblock \emph{Networks}, 49\penalty0 (3):\penalty0 199--203, 2007.
+
+\bibitem[Grisi-Filho et~al.(2013)Grisi-Filho, Ossada, Ferreira, and
+  Amaku]{grisi2013scale}
+J.~H. Grisi-Filho, R.~Ossada, F.~Ferreira, and M.~Amaku.
+\newblock Scale-free networks with the same degree distribution: Different
+  structural properties.
+\newblock \emph{Physics Research International}, 2013, 2013.
 
 \bibitem[Gutman and Polansky(2012)]{gutman2012mathematical}
 I.~Gutman and O.~E. Polansky.
@@ -397,6 +410,12 @@ J.~Lafferty and G.~Lebanon.
 \newblock Diffusion kernels on statistical manifolds.
 \newblock \emph{Journal of Machine Learning Research}, 6\penalty0
   (Jan):\penalty0 129--163, 2005.
+
+\bibitem[Levi(1973)]{levi1973note}
+G.~Levi.
+\newblock A note on the derivation of maximal common subgraphs of two directed
+  or undirected graphs.
+\newblock \emph{Calcolo}, 9\penalty0 (4):\penalty0 341, 1973.
 
 \bibitem[L{\'o}pez-Pintado(2008)]{lopez2008diffusion}
 D.~L{\'o}pez-Pintado.
@@ -660,6 +679,12 @@ G.~Tur{\'a}n.
 \newblock \emph{Discrete Applied Mathematics}, 8\penalty0 (3):\penalty0
   289--294, 1984.
 
+\bibitem[Ullmann(1976)]{ullmann1976algorithm}
+J.~R. Ullmann.
+\newblock An algorithm for subgraph isomorphism.
+\newblock \emph{Journal of the ACM (JACM)}, 23\penalty0 (1):\penalty0 31--42,
+  1976.
+
 \bibitem[Voros(1987)]{voros1987spectral}
 A.~Voros.
 \newblock Spectral functions, special functions and the selberg zeta function.
@@ -676,6 +701,13 @@ X.~F. Wang and G.~Chen.
 D.~J. Watts and S.~H. Strogatz.
 \newblock Collective dynamics of ‘small-world’networks.
 \newblock \emph{nature}, 393\penalty0 (6684):\penalty0 440--442, 1998.
+
+\bibitem[Weinberg(1966)]{weinberg1966simple}
+L.~Weinberg.
+\newblock A simple and efficient algorithm for determining isomorphism of
+  planar triply connected graphs.
+\newblock \emph{IEEE Transactions on Circuit Theory}, 13\penalty0 (2):\penalty0
+  142--148, 1966.
 
 \bibitem[Wellman and Berkowitz(1988)]{wellman1988social}
 B.~Wellman and S.~D. Berkowitz.

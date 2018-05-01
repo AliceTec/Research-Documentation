@@ -631,6 +631,14 @@ p(k,a) = C(ak)^{-\gamma} = a^{-\gamma} p(k) \propto p(k).
 \end{eqnarray}
 Thus, scaling by a constant $a$ multiplies the original power-law relation by the constant $a^{-\gamma}$ which implies that all power laws with a particular scaling factor are scaled versions of each other. Thus, networks that follow a power-law distribution are referred to as scale-free networks. 
 
+\subsection{Average Degree of the Nearest Neighbors}
+The average degree of the nearest neighbor of a vertex $i$ is given by
+\begin{equation}
+k_{nn,i} = \frac{\sum_{j=1}^{n} a_{ij} k_j}{k_i},
+\end{equation}
+where $a_{ij}$ is the $i,j$th element of the adjacency matrix and $n$ is the number of nodes in the network.
+This measure checks the correlation between the degrees of different vertices.
+
 \subsection{Clustering coefficient}
 Clustering coefficient is a measure of the degree to which nodes tend to cluster together. Such behaviour is more evident in real-world networks, especially social networks where nodes tend to form tightly knit groups that have relatively high density of ties among them \citep{estrada2015first}.
 Consider three nodes in a network, say, $i$, $j$ and $k$. Suppose $i$ is connected to both $j$ and $k$ (two neighbors of a node will be neighbors themselves), then the likelihood that $j$ and $k$ are also connected is what is known as the clustering coefficient. In other words, clustering coefficient measures the density of triangles in a  network. 
@@ -662,12 +670,19 @@ The value of clustering coefficient is in the interval $[0,1]$. There are two ty
 \end{defn}
 \begin{defn}[Diameter of a network]
 	The diameter $D$ of a network is the maximum distance between any two
-	nodes in the network \citep{wang2003complex}. The diameter of a graph $G= (V,E )$ is defined as \[ \text{diam}(G ) = \max_{i,j \in V} d_{ij}.\] For a disconnected network, the diameter is undefined and therefore, for such a case, we take the efficiency of a network which is a finite value given by
+	nodes in the network \citep{wang2003complex}. The diameter of a graph $G= (V,E )$ is defined as \[ \text{diam}(G ) = \max_{i,j \in V} d_{ij}.\] For a disconnected network, the diameter is undefined and therefore, for such a case, we take the efficiency.
+   \end{defn}	
+	
+	\begin{defn}[Efficiency]
+	The efficiency, $\bar{e}$, of a network is a measure defined as
 	\begin{eqnarray*}
-		\bar{e} =\frac{1}{n(n-1)} \sum_{i,j \in V,i\neq j} \frac{1}{d_{ij}}.
+		\bar{e} =\frac{1}{n(n-1)} \sum_{i,j \in V,i\neq j} \frac{1}{d_{ij}},
 		\label{eqn:eff}
 	\end{eqnarray*}
 \end{defn}
+where $d_{i,j}$ is the shortest path between vertices $i$ and $j$.
+
+The efficiency of a network is a measure of how efficient information spreads between vertices thus networks with high values of efficiency are considered fast spreaders of information and a large percentage of vertices are reached compared their counter parts with lower values of efficiency.
 
 \begin{defn}[Average path length]
 	The average path length of a network is the average number of steps along the shortest paths for all possible pairs of network nodes. Let $G = (V , E )$ be a graph the average path length $L_G$ is defined by
@@ -687,8 +702,62 @@ As pointed out in previous chapters, complex networks are used to represent comp
 
 The degree distribution of a graph provides useful insights about its structure though it is not conclusive as 
 graphs with different structures can have the same degree distribution which implies that degree distribution gives us some but not all the information regarding the structure
-of a graph. Thus, we cannot deduce a complete structure of a network based on information about
-its degree distribution alone.
+of a graph. Thus, in most cases, we cannot deduce a complete structure of a network based on knowledge of
+its degree distribution.
+
+\begin{figure}[H]
+	\centering
+			\begin{subfigure}[b]{0.35\textwidth}
+				\includegraphics[width=\textwidth]{images/sameDegreeDistribution.pdf}
+				\caption{}
+				\label{samedeg1}
+			\end{subfigure}~
+			\begin{subfigure}[b]{0.35\textwidth}
+				\includegraphics[width=\textwidth]{images/sameDegreeDistribution2.pdf}
+				\caption{}
+				\label{samedeg2}
+			\end{subfigure}~ 
+	\begin{subfigure}[b]{.35\textwidth}
+		\centering
+		\vspace{0pt}
+		\setlength{\tabcolsep}{10pt}
+		\renewcommand{\arraystretch}{2.0}
+		\begin{tabular}{|c|c|}
+			\hline 
+			Degree, $k$ & $p(k)$ \\
+			\hline
+			$1$ & $1/5$ \\
+			$2$ & $3/5$ \\
+			$3$ & $1/7$ \\
+			\hline
+		\end{tabular}
+        \caption{}	
+        \label{tabdegdist}
+	\end{subfigure}
+    \caption{Two simple graphs (\subref{samedeg1} and \subref{samedeg2}) of size $5$ both have the same degree distribution given in Table (\subref{tabdegdist}).}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|c|c|}
+		\hline
+		&G1 & G2 \\
+		\hline
+		\multirow{5}{*}{Average neighbour} & $1:3.0$ & $1: 2.0$\\
+		& $2: 1.7$& $2:2.0$\\
+		& $3: 2.5$ & $3:2.0 $ \\
+		& $4:2.5 $ & $4:2.5 $ \\ 
+		& $5: 2.0$ & $5:2.5 $ \\
+		\hline
+		Average Degree & 1.6 & 1.7 \\
+		\hline
+		Clustering Coefficient & 0 &0.46667 \\
+		\hline
+		Global efficiency & & \\
+		\hline
+	\end{tabular}   
+\end{table}
+
 
 \subsection{Robustness of Complex Systems}
 	A complex systems is considered robust if it can with stand failures or perturbations that is to say a system can still perform as expected even in circumstances of failure of one or more components in the system. 
@@ -794,9 +863,9 @@ its degree distribution alone.
      		\caption{Two isomorphic graphs} 
      		\label{isomorphism}
      	\end{figure}
-     Two graphs are similar if they are isomorphic, or they have isormophic subgraphs (minimum or maximum subgraphs), or if one graph is isomorphic to a subgraph of of the other graph.
+     Two graphs are similar if they are isomorphic, or they have isomorphic subgraphs (minimum or maximum common subgraphs) for which the larger the subgraph then the greater the similarity between the two graphs, or if one graph is isomorphic to a subgraph of another graph (subgraph isomorphism). Subgraph isomorphism can be used in image analysis to ascertain whether a given object is part of another object or a group of objects for instance in scenery study. Detailed algorithms for the three similarity measures can be found in \citep{weinberg1966simple,levi1973note,ullmann1976algorithm}
      
-     Alternatively, another known technique is graph edit-distance (considered a generalisation of graph isomorphism) which involves transforming one graph into another by performing edit operations such as edge or node deletion/addition, edge reversal, among others. Each operation is associated with a cost and the sequence of operations with the minimum cost is attained which amounts to a measure of similarity between the two graphs.
+     Alternatively, another known technique is graph edit-distance (considered a generalisation of graph isomorphism) which involves transforming one graph into another by performing edit operations such as edge or node deletions, additions or substitutions, among others. Each operation is associated with a cost and the sequence of operations with the minimum cost is attained which amounts to a measure of similarity between the two graphs \citep{gao2010survey}.
      
      \item \textbf{Feature extraction}
      These are statistical methods that measure graph similarity based on properties of graph structure such as degree distribution, betweeness measures, diameter, eigenvalues and many others. Graphs are counted similar if their respective aggregated properties are assessed based on certain similarity measures and similarity is established. This method is very powerful as it maps graphs to various statistics that are quite smaller and easier to work with compared to original graphs. However, one draw-back of this method is the choice of the statistics which at times may not give intuitive results. Take an example of graphs with different number of nodes but with the same diameter, these graphs may be considered similar which is not actually true.
@@ -1958,183 +2027,80 @@ its degree distribution alone.
     \subsubsection{Simulations of diffusion on lattice}
     We consider a 2-dimensional discrete grid in which each point is connected to 8 of its nearest neighbours. Initially, we assign heat quantities to all the points on the grid and then we investigate how the diffusion process occurs and at each time $t$. 
     
-    Let us take a $20$ by $20$ grid on which we assigned heat quantities of amounts $5$, $7$ and $10$ to a few points and the rest are assigned zero. The diffusion on the lattice through direct interactions only as well as through both direct and indirect interactions by using the Social distance concept, Laplace and Mellin tranforms.
+    Let us take a $20$ by $20$ grid on which we assigned heat quantities of amounts $5$(green), $7$(yellow) and $10$(red) to selected blocks of the lattice and the rest are assigned zeroes (dark blue). We consider two cases of diffusion over the grid namely one through direct interactions of nearest neighbours and the other through both direct and long-range interactions. The latter are accounted for by the Mellin and Laplace transforms of the path Laplacian matrices following equations \ref{laplacetransform} and \ref{mellin-transforms} respectively.
     
-    \begin{enumerate}[i)]
-    	\item Diffusion on lattice through Direct interactions only
     	\begin{figure}[!h]
     		\centering
     		\begin{subfigure}[b]{0.25\textwidth}
-    			\includegraphics[width=\textwidth]{images/grid-t0-x0.png}
-    			\caption{$t=0$}
-    			\label{gridt0x0}
+    			\includegraphics[width=\textwidth]{images/nolongrange-t0.png}
+    			\caption{}
+    			\label{nolongranget0}
     		\end{subfigure}~
     		\begin{subfigure}[b]{0.25\textwidth}
-    			\includegraphics[width= \textwidth]{images/grid-t05-x0.png}
-    			\caption{$t=0.5$}
-    			\label{gridt05x0}
+    			\includegraphics[width= \textwidth]{images/nolongrange-t05.png}
+    			\caption{}
+    			\label{nolongranget05}
     		\end{subfigure}~
     		\begin{subfigure}[b]{0.25\textwidth}
-    			\includegraphics[width= \textwidth]{images/grid-t3-x0.png}
-    			\caption{$t=3.0$}
-    			\label{gridt3x0}
+    			\includegraphics[width= \textwidth]{images/nolongrange-t3.png}
+    			\caption{}
+    			\label{nolongrange3}
     		\end{subfigure}~
     		\begin{subfigure}[b]{0.25\textwidth}
-    			\includegraphics[width= \textwidth]{images/grid-t5-x0.png}
-    			\caption{$t=5.0$}
-    			\label{gridt5x0}
-    		\end{subfigure}
-    		\caption{Sample illustrations for progression of diffusion over a $20 \times 20$ lattice where specific regions are assigned particular heat quantities which in turn spread to other regions of low heat quantities through interactions along links in the network.}
+    			\includegraphics[width= \textwidth]{images/nolongrange-t5.png}
+    			\caption{}
+    			\label{nolongranget5}
+    		\end{subfigure}\\
+    	\begin{subfigure}[b]{0.25\textwidth}
+    		\includegraphics[width= \textwidth]{images/laplace-x3-t0.png}
+    		\caption{}
+    		\label{laplacet0}
+    	\end{subfigure}~
+    	\begin{subfigure}[b]{0.25\textwidth}
+    		\includegraphics[width= \textwidth]{images/laplace-x3-t05.png}
+    		\caption{}
+    		\label{laplacet05}
+    	\end{subfigure}~
+    	\begin{subfigure}[b]{0.25\textwidth}
+    		\includegraphics[width= \textwidth]{images/laplace-x3-t3.png}
+    		\caption{}
+    		\label{laplacet3}
+    	\end{subfigure}~
+    	\begin{subfigure}[b]{0.25\textwidth}
+    		\includegraphics[width= \textwidth]{images/laplace-x3-t5.png}
+    		\caption{}
+    		\label{laplacet5}
+    	\end{subfigure} \\
+    	\begin{subfigure}[b]{0.25\textwidth}
+    		\includegraphics[width=\textwidth]{images/mellin-x3-t0.png}
+    		\caption{}
+    		\label{mellint0}
+    	\end{subfigure}~
+    	\begin{subfigure}[b]{0.25\textwidth}
+    		\includegraphics[width= \textwidth]{images/mellin-x3-t05.png}
+    		\caption{}
+    		\label{mellint05}
+    	\end{subfigure}~
+    	\begin{subfigure}[b]{0.25\textwidth}
+    		\includegraphics[width= \textwidth]{images/mellin-x3-t3.png}
+    		\caption{}
+    		\label{mellint3}
+    	\end{subfigure}~
+    	\begin{subfigure}[b]{0.25\textwidth}
+    		\includegraphics[width= \textwidth]{images/mellin-x3-t5.png}
+    		\caption{}
+    		\label{mellint5}
+    	\end{subfigure} \\
+        \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width= \textwidth]{images/colour-bar-grid.png}
+        \end{subfigure}
+    		\caption{Sample illustrations for progression of diffusion over a $20 \times 20$ lattice with initial heat quantities indicated by coloured blocks. Diffusion state is captured at different time steps that is, from left to right, $t= 0, 0.5, 3$ and $5$ respectively. The top row (\subref{nolongranget0} - \subref{nolongranget5}) correspond to diffusion through direct interactions only. The middle row (\subref{laplacet0} - \subref{laplacet5}) and bottom row (\subref{mellint0} - \subref{mellint5}) correspond to diffusion with long-range interactions accounted for by the Laplace and Mellin transforms of path Laplacians at $\lambda = s=3$ respectively. }
     		\label{gridx0}
     	\end{figure}
     	
-    	
-    	
-    	\item Diffusion on lattice through both direct and indirect interactions.
-    	Considering a similar lattice with initial heat quantity assignments as in the directed case discussed before, we account for the diffusion process where interactions among nodes occurs through both direct and indirect interactions.
-    	
-    	As discussed previously, long-range interactions can be accounted for by using various techniques as illustrated by the following illustrations.
-    	\begin{enumerate}[a)]
-    		\item Long range interactions using social distance 
-    		Taking $x=0.1$ and $x=0.2$.
-    		\begin{figure}[H]
-    			\centering
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width=\textwidth]{images/grid-t0-x01.png}
-    				\caption{$t=0$}
-    				\label{gridt0x01}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/grid-t05-x01.png}
-    				\caption{$t=0.5$}
-    				\label{gridt05x01}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/grid-t3-x01.png}
-    				\caption{$t=3.0$}
-    				\label{gridt3x01}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/grid-t5-x01.png}
-    				\caption{$t=5.0$}
-    				\label{gridt5x01}
-    			\end{subfigure}
-    			\label{gridx01}
-    		\end{figure}
-    		
-    		\begin{figure}[!h]
-    			\centering
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width=\textwidth]{images/grid-t0-x02.png}
-    				\caption{$t=0$}
-    				\label{gridt0x02}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/grid-t05-x02.png}
-    				\caption{$t=0.5$}
-    				\label{gridt05x02}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/grid-t3-x02.png}
-    				\caption{$t=3.0$}
-    				\label{gridt3x02}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/grid-t5-x02.png}
-    				\caption{$t=5.0$}
-    				\label{gridt5x02}
-    			\end{subfigure}\\
-    			\vspace{0.25cm}
-    			\begin{subfigure}[b]{0.60\textwidth}
-    				\includegraphics[width= \textwidth]{images/colour-bar-grid.png}
-    			\end{subfigure}
-    			\caption{Illustrations for diffusion over a grid with long-range interactions accounted for by the social distance technique. The upper row corresponds to diffusion with conductance $x=0.1$ while lower row corresponds to results obtained $x=0.2$. The intensity of heat follows a color grid where by red implies higher intensity followed by yellow and blue implies low heat intensities.}
-    			\label{gridlongrange}
-    		\end{figure}
-    		
-    		At $t=0$, diffusion on the grid starts off with $3$ strong regions having high quantities of heat as observed from figures \ref{gridx0}, and \ref{gridlongrange} which correspond to diffusion with direct interactions only and diffusion with conductance $x = 0.1$ and $0.2$ respectively. As the diffusion process continues, we see that at $t=0.5$, strong heat points can still be spotted for direct interactions, relatively strong points in $x=0.1$ and almost complete diffusion in $x=0.2$. We can also observe that by $t=2.0$, heat is uniformly distributed across the grid for $x=0.1$ and $x=0.2$. However, for the case of direct interactions (Fig.\ref{gridt5x0}) diffusion is still ongoing and we can notice strong heat points at the centre of the grid. Following the sequences in the figures, we can conclude that as $x$ (i.e increase in intensity of long range interactions), the diffusion process goes faster and equilibrium across the grid is reached faster as observed in the above simulations where for $x=0.2$, $x=0.1$ equilibrium is reached by $t=3$ while for $x=0$, equilibrium is not yet reached by then.
-    		
-    		\item Longrange interactions using Laplace Transforms
-    		\begin{figure}[H]
-    			\centering
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width=\textwidth]{images/laplace-x1-t0.png}
-    				\caption{$t=0$}
-    				\label{laplacet0x01}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/laplace-x1-t05.png}
-    				\caption{$t=0.5$}
-    				\label{laplacet05x01}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/laplace-x1-t3.png}
-    				\caption{$t=3.0$}
-    				\label{laplacet3x01}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/laplace-x1-t5.png}
-    				\caption{$t=5.0$}
-    				\label{laplacet5x01}
-    			\end{subfigure}
-    			\caption{Illustration for diffusion on the lattice with both direct and long range interactions. These longrange interactions are accounted for by Laplace transforms given by Equation \ref{laplacetransform}  with $\lambda=1$.}
-    		\end{figure}
-    		
-    		\item Longrange interactions using Mellin Transforms of the $k$-Laplacian matrices.
-    		\begin{figure}[!h]
-    			\centering
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width=\textwidth]{images/mellin-x2-t0.png}
-    				%\caption{$x=0, t=0$}
-    				%\label{gridt0x0}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/mellin-x2-t05.png}
-    				%\caption{$x=0, t=0.5$}
-    				%\label{gridt05x01}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/mellin-x2-t3.png}
-    				%\caption{$x=0, t=3.0$}
-    				%\label{gridt3x01}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/mellin-x2-t5.png}
-    				%\caption{$x=0, t=5.0$}
-    				%\label{gridt5x01}
-    			\end{subfigure}
-    			\caption{}
-    			%\label{gridatx0}
-    		\end{figure}
-    		\begin{figure}[!h]
-    			\centering
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width=\textwidth]{images/mellin-x4-t0.png}
-    				%\caption{$x=0, t=0$}
-    				%\label{gridt0x0}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/mellin-x4-t05.png}
-    				%\caption{$x=0, t=0.5$}
-    				%\label{gridt05x01}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/mellin-x4-t3.png}
-    				%\caption{$x=0, t=3.0$}
-    				%\label{gridt3x01}
-    			\end{subfigure}~
-    			\begin{subfigure}[b]{0.25\textwidth}
-    				\includegraphics[width= \textwidth]{images/mellin-x4-t5.png}
-    				%\caption{$x=0, t=5.0$}
-    				%\label{gridt5x01}
-    			\end{subfigure}
-    			\caption{Illustrations of diffusion process on the lattice allowing for both direct and longrange interations. The latter are accounted for using Mellin transforms of the $k$-Laplacian matrices as in Equation.~\ref{mellin-transforms}. The top row corresponds to the case for which $s=2$ and the bottom row corresponds to case $s=4$.}
-    			\label{mellintransformsfig}
-    		\end{figure}
-    		For the case of Mellin transforms, we observe that rate of diffusion is quite faster at $k=2$(upper row) than at $k=4$(lower row).This is due to the fact that at $k<3$, super diffusion occurs, however normal diffusion occurs when $k>3$ as shown in lower row of Fig.~\ref{mellintransformsfig}.
-    	\end{enumerate}
-    \end{enumerate}
-        
+    	At the start, $t=0$. Both cases (direct and long-range cases) are in the same state. As time progresses, we observe that diffusion occurs much faster in the cases where long-range interactions are involved (middle and bottom rows) compared to the case where diffusion occurs through direct interactions only (top row). However, it is evident from the illustrations that the case where long-range interactions are accounted for by Mellin transform, diffusion occurs much more faster than the Laplace based counterparts. For example, at $t=5$ almost the whole lattice is at equilibrium (light blue coloured blocks) for the Mellin based case (see Fig \ref{mellint5}) yet for the the Laplace based case, (see Fig \ref{laplacet5}), different blocks contain different amounts of heat that is, equilibrium is not yet attained.
+   	
+       
         \newpage
         \section{The Heat Kernel}
         The heat kernel associated with the diffusion equation has been proved very useful in a number of applications for instance identification of communities in graph,  partitioning of graphs, as a pagerank of a graph, as a means of embedding a graph into a pattern space, among others \citep{chung2007heat,chung2009local,kloster2014heat}. 
