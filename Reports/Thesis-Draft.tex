@@ -382,7 +382,10 @@ where $l_{i,j}$ is the length of the irreducible shortest path between nodes $i$
 	\end{eqnarray}
 
 \subsection{Laplacian Matrix}
-The Laplacian matrix or graph Laplacian is one of matrices used to represent a graph or network. Recently, a number of researchers have been deeply involved in the study of the Laplacian matrix of a graph since this matrix has interesting spectral properties that provide more useful information about the structure of a graph as compared to other matrices such as the adjacency matrix. The Laplacian matrix has various applications such as diffusion, centrality measure, among others, which we explore later on. In addition, the Laplacian matrix takes on different versions namely the normalised and unnormalised Laplacian matrices.
+The Laplacian matrix or graph Laplacian is one of matrices used to represent a graph or network. Recently, a number of researchers have been deeply involved in the study of the Laplacian matrix of a graph since this matrix has interesting spectral properties that provide more useful information about the structure of a graph as compared to other matrices such as the adjacency matrix. The Laplacian plays a key role as a natural link between discrete representations like graphs and continuous representations such as vector spaces and manifolds. 
+There are various applications of the graph Laplacian which include spectral clustering, spectral matching, diffusion on networks, centrality measure, among others, which we explore later on. 
+
+The Laplacian matrix takes on different versions namely the normalised and unnormalised Laplacian matrices.
 
 \subsection{Definitions and Properties of the Laplacian Matrix}
 
@@ -484,8 +487,8 @@ Some analytic expressions for the spectra of different kinds of simple networks 
 \subsection{Normalized Laplacian matrix}
 one format of normalized Laplacian matrix also known as symmetric normalised Laplacian is defined as 
 \begin{eqnarray*}
-	\mathcal{L}_{ij} = \begin{cases} 1, &\mbox{if } i = j \\
-		- \frac{1}{\sqrt{d_i d_j}}, &\mbox{if } v_i \text{ and } v_j \text{ are adjacent} \\ 
+	\mathcal{L}_{ij} = \begin{cases} 1, &\mbox{if } i = j \text{ and } k_i \neq  0, \\
+		- \frac{1}{\sqrt{k_i k_j}}, &\mbox{if } v_i \text{ and } v_j \text{ are adjacent,} \\ 
 		0, & \text{otherwise}.
 	\end{cases}
 \end{eqnarray*}
@@ -500,19 +503,20 @@ where $\mathbf{D}^{-1/2}$ is the diagonal matrix determined by the inverse squar
 \mathcal{L} = \mathbf{I}-\frac{1}{k} \mathbf{A}.
 \end{equation}
 
-The matrix $\mathcal{L}$ is symmetric and its spectrum satisfies:
+The matrix $\mathcal{L}$ is symmetric with real and nonnegative eigenvalues which satisfies:
 \begin{equation*}
-0  = \lambda_1(\mathcal{L}) \leq  \lambda_2(\mathcal{L}) \lambda(\mathcal{L}) \leq 2.
+0  = \lambda_1(\mathcal{L}) \leq  \lambda_2(\mathcal{L}) \leq \cdots \leq  \lambda(\mathcal{L}) \leq 2.
 \end{equation*}
-The largest eigenvalue, $\lambda_n(\mathcal{L})$, is only equal to $2$ for a bipartite graph. Like the combinatorial Laplacian, the multiplicity of zero as an eigenvalue of $\mathcal{L}$ is equal to the number of connected components of the corresponding graph.
+It is very convenient to work with the spectrum of the normalised Laplacian because of the small spectrum interval ($[0,2]$) for example it is easier to compare the spectrum of the normalised than the unnormalised Laplacian of two graphs. It is for this reason that we will, in most cases, consider the normalised version of the Laplacian.
+The largest eigenvalue, $\lambda_n(\mathcal{L})$, is only equal to $2$ for a bipartite graph. Like the combinatorial Laplacian, the smallest eigenvalue is zero and its the multiplicity is equal to the number of connected components of the corresponding graph. 
 
-There are various flavors of the Laplacian matrix as discussed in detail in \citep{tsiatas2012diffusion}
+A detailed account of other variants of the Laplacian matrix can be found in \citep{tsiatas2012diffusion}
 
 \subsection{Randi\'{c} matrix}
 Let $G=(V,E)$ be a graph with vertex set ${v_1,v_2, \cdots, v_n}$. Let $d_i$ denote the degree of a vertex $v_i$. The entries of the Randi\'{c} matrix (name proposed in \citep{bozkurt2010randic}) are given by
 \begin{equation*}
 \mathbf{R}_{ij} = \begin{cases} 0, &\mbox{if } i = j \\
-\frac{1}{\sqrt{d_i d_j}}, &\mbox{if } v_i \text{ and } v_j \text{ are adjacent} \\ 
+\frac{1}{\sqrt{k_i k_j}}, &\mbox{if } v_i \text{ and } v_j \text{ are adjacent} \\ 
 0, & \text{otherwise}.
 \end{cases}
 \end{equation*}
@@ -524,48 +528,121 @@ The Randi\'{c} matrix is related to the normalised Laplacian matrix by
 \subsection{Transition matrix of a random walk on a Graph}
 It is an $n \times n$ matrix $\mathbf{P}_G$ whose entries are given by
 \begin{equation}
-\mathbf{P}_{ij} = \frac{1}{d_i} \mathbf{A}_{ij},
+\mathbf{P}_{ij} = \frac{1}{k_i} \mathbf{A}_{ij},
 \end{equation}
-In other words, $\mathbf{P}_G = \mathbf{D}_{G} ^ {-1} \mathbf{A}$
+In other words, $\mathbf{P}_G = \mathbf{D}_{G} ^ {-1} \mathbf{A}$ which is the normalised adjacency matrix.
+
+The entry at $P_{ij}$ indicates the probability for a random walker moving from vertex $i$ to $j$. Like any other stochastic matrix, the eigenvalues of $\mathbf{P}$ are such that $|\lambda_i(\mathbf{P})| \leq 1$.
+
+The transition matrix is normally encountered in the study of Markov chains where its spectrum is used to compute the time it takes for the chain to reach its stationary distribution (mixing time) as discussed in \citep{behrends2000introduction}.
+
+%\section{Characteristics of Networks}
 
 
-\section{Characteristics of Networks}
+\section{Structure of a Network}
+
+The structure of a network is a description of how nodes are connected to each other in a network. 
+The study of network structure for purposes of understanding and predicting properties of networks was first and much embraced by chemists who used graphs to represent chemical molecules where vertices are used to represent atoms and edges to represent chemical
+bonds.  In their work \citep{brown1868connection}, Crum Brown and Fraser were among the earliest researchers who put forward the idea that the properties of a chemical molecule are greatly dependent on its structure.  This structure-property relationship has further been explored using graph-theoretical approach not only in chemistry but in other fields such as social networks, biological networks and many others \citep{mihalic1992graph,smith2004associations,wellman1988social,wey2008social}.  
+
+As pointed out in previous chapters, complex networks are used to represent complex systems. The behaviour exhibited by complex systems is due to the interconnectedness between system components not individual components. In order to understand behaviour and properties of these system, we need to study the structure of the corresponding networks from which we deduce properties of the networks from which the behaviour of the systems can be drawn. Let us discuss some of the properties that characterise the static structure of a network:
+
+\subsection{Average Degree of the Nearest Neighbors}
+The average degree of the nearest neighbor of a vertex $i$ is given by
+\begin{equation}
+k_{nn,i} = \frac{\sum_{j=1}^{n} a_{ij} k_j}{k_i},
+\end{equation}
+where $a_{ij}$ is the $i,j$th element of the adjacency matrix and $n$ is the number of nodes in the network.
+This measure checks the correlation between the degrees of different vertices.
+
+\begin{defn}[Distance between a pair of nodes]
+	In a network, the distance $d_{ij}$ between two nodes, labelled $i$ and $j$ respectively, is defined as the length of the shortest path (or geodesic path) connecting them \citep{wang2003complex}. It is also known as geodesic distance. It is possible to have more than one shortest paths between a pair of nodes.
+\end{defn}
+\begin{defn}[Diameter of a network]
+	The diameter $D$ of a network is the maximum distance between any two
+	nodes in the network \citep{wang2003complex}. The diameter of a graph $G= (V,E )$ is defined as \[ \text{diam}(G ) = \max_{i,j \in V} d_{ij}.\] For a disconnected network, the diameter is undefined and therefore, for such a case, we take the efficiency.
+\end{defn}	
+
+\begin{defn}[Efficiency]
+	The efficiency, $\bar{e}$, of a network is a measure defined as
+	\begin{eqnarray*}
+		\bar{e} =\frac{1}{n(n-1)} \sum_{i,j \in V,i\neq j} \frac{1}{d_{ij}},
+		\label{eqn:eff}
+	\end{eqnarray*}
+\end{defn}
+where $d_{i,j}$ is the shortest path between vertices $i$ and $j$.
+
+The efficiency of a network is a measure of how efficient information spreads between vertices thus networks with high values of efficiency are considered fast spreaders of information and a large percentage of vertices are reached compared their counter parts with lower values of efficiency.
+
+\begin{defn}[Average path length]
+	The average path length of a network is the average number of steps along the shortest paths for all possible pairs of network nodes. Let $G = (V , E )$ be a graph the average path length $L_G$ is defined by
+	\begin{eqnarray}
+	L_G = \frac{1}{n(n-1)} \sum_{i,j \in V,~i \neq j} d_{ij},
+	\end{eqnarray}
+	where $d_{ij}$ is the shortest path between node $i$ and $j$ and $n$ is the total number of nodes in $G$. The value of $L$ determines the size of a network and helps to determine the efficiency of information flow or disease spread over a network \citep{wang2003complex}.
+\end{defn}
+
+\subsection{Clustering coefficient}
+Clustering coefficient is a measure of the degree to which nodes tend to cluster together. Such behaviour is more evident in real-world networks, especially social networks where nodes tend to form tightly knit groups that have relatively high density of ties among them \citep{estrada2015first}.
+Consider three nodes in a network, say, $i$, $j$ and $k$. Suppose $i$ is connected to both $j$ and $k$ (two neighbors of a node will be neighbors themselves), then the likelihood that $j$ and $k$ are also connected is what is known as the clustering coefficient. In other words, clustering coefficient measures the density of triangles in a  network. 
+The value of clustering coefficient is in the interval $[0,1]$. There are two types of clustering coefficients namely, the local and the global clustering coefficients.
+
+\begin{defn}[Local clustering coefficient]
+	The local clustering coefficient is a measure of the clustering tendency in a node's immediate network. The local clustering coefficient for a node $i$ with degree $k_i$ is formally defined as 
+	\begin{eqnarray}
+	C_i = \frac{\text{number of pairs of neighbors of } i\text{ that are connected}}{\text{number of pairs of neighbors of }i}= \frac{2 t_i}{k_i(k_i-1)},  
+	\end{eqnarray}
+	where $t_i$ is the number of triangles attached to node $i$. For nodes with degree equal to zero or one, we set $C_i = 0$ since there are no triangles attached to such nodes \citep{newman2010networks}. The average clustering coefficient for the network is given by
+	\begin{eqnarray}
+	\bar{C} = \frac{1}{n} \sum_i C_i.
+	\end{eqnarray} 
+\end{defn}
+
+\begin{defn}[Global clustering coefficient]
+	The global clustering coefficient is concerned with the density of triplets of nodes in a network. A triplet is defined as three nodes that are connected by either two (open triplet) or three (closed triplet) ties. Global clustering coefficient determines the overall level of clustering in a network \citep{opsahl2009clustering}.
+	Mathematically, we define the global clustering coefficient $C$ as
+	\begin{eqnarray}
+	C = \frac{3 \times \text{number of triangles}}{\text{number of connected triplets of vertices}} = \frac{\sum t_\vartriangle}{\sum t},
+	\end{eqnarray}
+	where $\sum t_\vartriangle$ is the total number of closed triplets and $\sum t$ is the total number of connected triplets of vertices in the network.
+\end{defn}
+
 \subsection{Degree distributions}
-The scattering of node degrees over a network is characterised by the distribution function, $p(k)$, which is the probability that a node chosen uniformly at random has degree $k$. We define $p(k)$ to be the fraction of nodes in a network that have degree $k$. That is, $p(k) = n(k)/n,$ where $n(k)$ is the number of nodes with degree $k$ in a network of size $n$. The degree distribution of a network is  referred to as the probability distribution of node degrees over that network. It is represented by plot of $p(k)$ against $n$ \citep{estrada2011structure}. 
+The scattering of node degrees over a network is characterised by the distribution function, $p(k)$, which is the probability that a node chosen uniformly at random has degree $k$. We define $p(k)$ to be the fraction of nodes in a network that have degree $k$. That is, $p(k) = n(k)/n,$ where $n(k)$ is the number of nodes with degree $k$ in a network of size $n$. The degree distribution of a network is  referred to as the probability distribution of node degrees over that network. It is represented by plot of $p(k)$ against $k$ \citep{estrada2011structure}. Fig.~\ref{distribution} is of plots of some of the common degree distributions in networks namely Gaussian, Poisson, exponential and power-law degree distributions.
 
-\begin{exa} We compute the degree distribution for the network in Fig.~\ref{deg-distb}.
-	
-	\begin{figure}[H]
-		\centering
-		\begin{minipage}[t]{.30\textwidth}
-			\centering
-			\vspace{0pt}
-			\includegraphics[width=\textwidth]{images/degree-prob.pdf}
-			\captionof{figure}{A network of size $7$.}
-			\label{deg-distb}
-		\end{minipage}
-		\hfill
-		\begin{minipage}[t]{.64\textwidth}
-			\centering
-			\vspace{0pt}
-			\captionof{table}{Degree distribution of nodes in network in Fig.~\ref{deg-distb}.}
-			\setlength{\tabcolsep}{15pt}
-			\renewcommand{\arraystretch}{1.2}
-			\begin{tabular}{|c|c|c|}
-				\hline 
-				Node & Degree, $k$ & $p(k)$ \\
-				\hline
-				G & $1$ & $1/7$ \\
-				A,B,D,E & $2$ & $4/7$ \\
-				F & $3$ & $1/7$ \\
-				C & $4$ & $1/7$ \\
-				\hline
-			\end{tabular}
-		\end{minipage}
-	\end{figure}
-\end{exa}
-
-We use the degree distribution of a network to obtain useful insights about the structure of a network. The structure of a network is a description of how nodes are linked to each other to form a network. It is important to note that networks with different structures can have the same degree distribution which implies that degree distribution gives us some but not all the information regarding the structure of a network. Thus, we cannot deduce a complete structure of a network based on information about its degree distribution alone. Fig.~\ref{distribution} shows some of the common degree distributions in networks.
+%\begin{exa} We compute the degree distribution for the network in Fig.~\ref{deg-distb}.
+%	
+%	\begin{figure}[H]
+%		\centering
+%		\begin{minipage}[t]{.30\textwidth}
+%			\centering
+%			\vspace{0pt}
+%			\includegraphics[width=\textwidth]{images/degree-prob.pdf}
+%			\captionof{figure}{A network of size $7$.}
+%			\label{deg-distb}
+%		\end{minipage}
+%		\hfill
+%		\begin{minipage}[t]{.64\textwidth}
+%			\centering
+%			\vspace{0pt}
+%			\captionof{table}{Degree distribution of nodes in network in Fig.~\ref{deg-distb}.}
+%			\setlength{\tabcolsep}{15pt}
+%			\renewcommand{\arraystretch}{1.2}
+%			\begin{tabular}{|c|c|c|}
+%				\hline 
+%				Node & Degree, $k$ & $p(k)$ \\
+%				\hline
+%				G & $1$ & $1/7$ \\
+%				A,B,D,E & $2$ & $4/7$ \\
+%				F & $3$ & $1/7$ \\
+%				C & $4$ & $1/7$ \\
+%				\hline
+%			\end{tabular}
+%		\end{minipage}
+%	\end{figure}
+%\end{exa}
+%
+%We use the degree distribution of a network to obtain useful insights about the structure of a network. The structure of a network is a description of how nodes are linked to each other to form a network. It is important to note that networks with different structures can have the same degree distribution which implies that degree distribution gives us some but not all the information regarding the structure of a network. Thus, we cannot deduce a complete structure of a network based on information about its degree distribution alone. Fig.~\ref{distribution} shows some of the common degree distributions in networks.
 
 \begin{figure}[H]
 	\centering
@@ -593,7 +670,7 @@ We use the degree distribution of a network to obtain useful insights about the 
 	\label{distribution}
 \end{figure} 
 
-\subsection{Power-law degree distribution}
+\subsubsection{Power-law degree distribution}
 Research shows that most of the real-world networks roughly follow a power-law degree distribution. In this distribution, the probability of finding a node with degree $k$ decreases as a negative power of degree $k$. This implies that in such networks, it is less likely to find a node with high degree \citep{estrada2011structure}.
 Formally,
 \begin{eqnarray}
@@ -629,81 +706,13 @@ When we scale the degree by a constant factor $a$, we obtain
 p(k,a) = C(ak)^{-\gamma} = a^{-\gamma} p(k) \propto p(k).
 \label{scale}
 \end{eqnarray}
-Thus, scaling by a constant $a$ multiplies the original power-law relation by the constant $a^{-\gamma}$ which implies that all power laws with a particular scaling factor are scaled versions of each other. Thus, networks that follow a power-law distribution are referred to as scale-free networks. 
+Thus, scaling by a constant $a$ multiplies the original power-law relation by the constant $a^{-\gamma}$ which implies that all power laws with a particular scaling factor are scaled versions of each other. Thus, networks that follow a power-law distribution are referred to as scale-free networks.
 
-\subsection{Average Degree of the Nearest Neighbors}
-The average degree of the nearest neighbor of a vertex $i$ is given by
-\begin{equation}
-k_{nn,i} = \frac{\sum_{j=1}^{n} a_{ij} k_j}{k_i},
-\end{equation}
-where $a_{ij}$ is the $i,j$th element of the adjacency matrix and $n$ is the number of nodes in the network.
-This measure checks the correlation between the degrees of different vertices.
-
-\subsection{Clustering coefficient}
-Clustering coefficient is a measure of the degree to which nodes tend to cluster together. Such behaviour is more evident in real-world networks, especially social networks where nodes tend to form tightly knit groups that have relatively high density of ties among them \citep{estrada2015first}.
-Consider three nodes in a network, say, $i$, $j$ and $k$. Suppose $i$ is connected to both $j$ and $k$ (two neighbors of a node will be neighbors themselves), then the likelihood that $j$ and $k$ are also connected is what is known as the clustering coefficient. In other words, clustering coefficient measures the density of triangles in a  network. 
-The value of clustering coefficient is in the interval $[0,1]$. There are two types of clustering coefficients namely, the local and the global clustering coefficients.
-
-\begin{defn}[Local clustering coefficient]
-	The local clustering coefficient is a measure of the clustering tendency in a node's immediate network. The local clustering coefficient for a node $i$ with degree $k_i$ is formally defined as 
-	\begin{eqnarray}
-	C_i = \frac{\text{number of pairs of neighbors of } i\text{ that are connected}}{\text{number of pairs of neighbors of }i}= \frac{2 t_i}{k_i(k_i-1)},  
-	\end{eqnarray}
-	where $t_i$ is the number of triangles attached to node $i$. For nodes with degree equal to zero or one, we set $C_i = 0$ since there are no triangles attached to such nodes \citep{newman2010networks}. The average clustering coefficient for the network is given by
-	\begin{eqnarray}
-	\bar{C} = \frac{1}{n} \sum_i C_i.
-	\end{eqnarray} 
-\end{defn}
-
-\begin{defn}[Global clustering coefficient]
-	The global clustering coefficient is concerned with the density of triplets of nodes in a network. A triplet is defined as three nodes that are connected by either two (open triplet) or three (closed triplet) ties. Global clustering coefficient determines the overall level of clustering in a network \citep{opsahl2009clustering}.
-	Mathematically, we define the global clustering coefficient $C$ as
-	\begin{eqnarray}
-	C = \frac{3 \times \text{number of triangles}}{\text{number of connected triplets of vertices}} = \frac{\sum t_\vartriangle}{\sum t},
-	\end{eqnarray}
-	where $\sum t_\vartriangle$ is the total number of closed triplets and $\sum t$ is the total number of connected triplets of vertices in the network.
-\end{defn}
-
-
-\begin{defn}[Distance between a pair of nodes]
-	In a network, the distance $d_{ij}$ between two nodes, labelled $i$ and $j$ respectively, is defined as the length of the shortest path (or geodesic path) connecting them \citep{wang2003complex}. It is also known as geodesic distance. It is possible to have more than one shortest paths between a pair of nodes.
-\end{defn}
-\begin{defn}[Diameter of a network]
-	The diameter $D$ of a network is the maximum distance between any two
-	nodes in the network \citep{wang2003complex}. The diameter of a graph $G= (V,E )$ is defined as \[ \text{diam}(G ) = \max_{i,j \in V} d_{ij}.\] For a disconnected network, the diameter is undefined and therefore, for such a case, we take the efficiency.
-   \end{defn}	
-	
-	\begin{defn}[Efficiency]
-	The efficiency, $\bar{e}$, of a network is a measure defined as
-	\begin{eqnarray*}
-		\bar{e} =\frac{1}{n(n-1)} \sum_{i,j \in V,i\neq j} \frac{1}{d_{ij}},
-		\label{eqn:eff}
-	\end{eqnarray*}
-\end{defn}
-where $d_{i,j}$ is the shortest path between vertices $i$ and $j$.
-
-The efficiency of a network is a measure of how efficient information spreads between vertices thus networks with high values of efficiency are considered fast spreaders of information and a large percentage of vertices are reached compared their counter parts with lower values of efficiency.
-
-\begin{defn}[Average path length]
-	The average path length of a network is the average number of steps along the shortest paths for all possible pairs of network nodes. Let $G = (V , E )$ be a graph the average path length $L_G$ is defined by
-	\begin{eqnarray}
-	L_G = \frac{1}{n(n-1)} \sum_{i,j \in V,~i \neq j} d_{ij},
-	\end{eqnarray}
-	where $d_{ij}$ is the shortest path between node $i$ and $j$ and $n$ is the total number of nodes in $G$. The value of $L$ determines the size of a network and helps to determine the efficiency of information flow or disease spread over a network \citep{wang2003complex}.
-\end{defn}
-
-\section{Structure of a Network}
-
-The structure of a network is a description of how nodes are connected to each other to form a network. 
-The study of network structure for purposes of understanding and predicting properties of networks was first and much embraced by chemists where chemical molecules are represented by graphs whose vertices are used to represent atoms and edges to represent chemical
-bonds.  In their work \citep{brown1868connection}, Crum Brown and Fraser were among the earliest researchers who put forward the idea that the properties of a chemical molecule are greatly dependent on its structure.  This structure-property relationship has further been explored using graph-theoretical approach not only in chemistry but in other fields such as social networks, biological networks and many others \citep{mihalic1992graph,smith2004associations,wellman1988social,wey2008social}.  
-
-As pointed out in previous chapters, complex networks are used to represent complex systems. The behaviour exhibited by complex systems occurs due to the interconnectedness between system components not individual components. In order to understand behaviour and properties of these system, we need to study the structure of the corresponding networks from which we deduce properties of the networks from which th behaviour of the systems can be drawn.
-
+\subsubsection{Deduction of Structure of network using its degree distribution}
 The degree distribution of a graph provides useful insights about its structure though it is not conclusive as 
 graphs with different structures can have the same degree distribution which implies that degree distribution gives us some but not all the information regarding the structure
 of a graph. Thus, in most cases, we cannot deduce a complete structure of a network based on knowledge of
-its degree distribution.
+its degree distribution. To further backup this argument, we consider a simple example of two graphs both of size $5$ (Figs. \ref{samedeg1} \& \ref{samedeg2}) and whose degree distribution is the same (see table \ref{tabdegdist}). We then compute some of the structural properties of the two graphs (as in table \ref{table-properties}) to ascertain whether their structures are the same.
 
 \begin{figure}[H]
 	\centering
@@ -734,29 +743,37 @@ its degree distribution.
         \caption{}	
         \label{tabdegdist}
 	\end{subfigure}
-    \caption{Two simple graphs (\subref{samedeg1} and \subref{samedeg2}) of size $5$ both have the same degree distribution given in Table (\subref{tabdegdist}).}
+    \caption{Two simple graphs (\subref{samedeg1} and \subref{samedeg2}) of size $5$ both have the same degree distribution given in table (\subref{tabdegdist}).}
 \end{figure}
 
 \begin{table}[H]
 	\centering
+	\renewcommand{\arraystretch}{1.2}
 	\begin{tabular}{|l|c|c|}
 		\hline
 		&G1 & G2 \\
 		\hline
 		\multirow{5}{*}{Average neighbour} & $1:3.0$ & $1: 2.0$\\
-		& $2: 1.7$& $2:2.0$\\
+		& $2: 1.7$ & $2:2.0$\\
 		& $3: 2.5$ & $3:2.0 $ \\
-		& $4:2.5 $ & $4:2.5 $ \\ 
+		& $4: 2.5$ & $4:2.5 $ \\ 
 		& $5: 2.0$ & $5:2.5 $ \\
+		\hline
+		Diameter & 3 & 3 \\
 		\hline
 		Average Degree & 1.6 & 1.7 \\
 		\hline
-		Clustering Coefficient & 0 &0.46667 \\
+		Clustering Coefficient & 0 &0.4667 \\
 		\hline
-		Global efficiency & & \\
+		Global efficiency & 0.7333 & 0.7167 \\
 		\hline
-	\end{tabular}   
+	\end{tabular} 
+    \captionof{table}{Some of the structural properties of the two graphs (Figs. \ref{samedeg1} \& \ref{samedeg2} ) whose degree distribution is the same. }  
+    \label{table-properties}
 \end{table}
+
+Table \ref{table-properties} consists some of the selected structural properties computed for the two graphs. First, the average neighbor degree for the $5$ nodes for bth graphs is quite different for example  the average neighbor degree for node labelled $1$ in graphs $G1$ and $G2$ is  $1.20$ and $1.30$ respectively. The diameter, however, of both graphs is the same. On the other hand, other properties such as average degree, clustering coefficient and global efficiency are different. The differences in structural properties of the two graphs despite the fact that they have the same degree distribution explains why one cannot entire rely on the degree distribution to deduce the structure of a given graph. 
+
 
 
 \subsection{Robustness of Complex Systems}
@@ -919,6 +936,7 @@ its degree distribution.
       	\item If we assume that no four points are co-circular, then the vertices of the Voronoi diagram all have degree three.
       	
       \end{itemize}
+  
       
       \subsubsection{Delaunay Triangulation}
       Let $P={p_1, p_2, \hdots,p_n} \subset \mathbb{R}^2$ be a point set. A triangulation $\mathcal{T}$ of $P$ is a maximal planar subdivision with vertex set $P$. Following the Empty circle property, $\mathcal{T}$ is a Delaunay triangulation of $P$ if and only if the circumcircle of any triangle in $\mathcal{T}$ does not contain a point of $P$ in its interior. Delaunay Triangulation is used in constructing Euclidean minimum Spanning Trees (EMST) used in solving the famous traveling salesman problem.
@@ -993,9 +1011,10 @@ its degree distribution.
       
       A clear step-by-step algorithm and Matlab code for the Harris corner Detector can be reviewed \citep{stoica2011delaunay}.
       
-      
-     \subsection{Principal Component Analysis}
-	  Principal Component Analysis (PCA) is a very important and widely used statistical technique in various applications such as image compression, face recognition, pattern identification in high dimensional data, among others. It is such a powerful tool for data analysis especially for dimension reduction of data. Before we dive into details of PCA, let us first define some of the statistical concepts that we will come across most often. Given a sample of size $n$ of a population. We have the following definitions:
+     Voronoi diagrams, Delaunay triangulation and corner point detection are very useful methods in the extraction of graphs from objects. In later chapters of this work, we demonstrate the process of image extraction from objects of selected database using a combination of the $3$ concepts.
+     
+     \subsection{Principal Component Analysis (PCA)}
+	  Principal Component Analysis is a very important and widely used statistical technique in various applications such as image compression, face recognition, pattern identification in high dimensional data, among others. It is such a powerful tool for data analysis especially for dimension reduction of data. Before we dive into details of PCA, let us first define some of the statistical concepts that we will come across most often. Given a sample of size $n$ of a population. We have the following definitions:
 	  
 	  \begin{defn}[Mean]
 	  	The mean, $\bar{X}$, of a sample is the average of elements of the sample and is given by
@@ -1055,7 +1074,21 @@ its degree distribution.
        	 \end{equation}
        	
        \end{itemize}
-    
+     \subsection{Graph Embedding}
+     In this era where graphs manifest in a number of fields ranging from chemistry, infrastructure, social and biology,  there is quite large amounts of data consisting of graphs from which information needs to be extracted. Graph analysis for purposes of obtaining useful information has been greatly explored by researchers recently and various techniques have been put forward to attaining this task. It is worth noting that effective graph analysis can aid in classification of nodes/graphs, link predictions, graph visualisations, graph clustering among others.
+     One effective yet effective way of handling the task of graph analysis is graph embedding. Graph embedding is a way of mapping a graph into a low-dimensional vector space in which all graph information is preserved. Such information includes structural information, node label or attribute information, among others. 
+     The task of graph embedding involves an input as well as an output. The embedding input is normally a graph which could be homogeneous, heterogeneous, attributed graph or graph constructed from relational data. Given an input graph, different embedding outputs can be obtained depending on the task at hand. The outputs include node embedding, edge embedding, substructure embedding and whole-graph embedding. In this work, however, we will consider whole-graph embedding where a whole-graph is represented as a vector.  Formally, we consider mapping of a set of graphs to vectorial space, that is,
+     
+     \begin{equation}
+     \Phi : G \longrightarrow \mathbb{R}^n, \quad 
+     g \longrightarrow \Phi(g) = (f_1, f_2, f_3, \cdots, f_n)
+     \end{equation}     
+     There are various methods used in construction of feature vectors that represent graphs. These are categorised as follows:
+     \subsubsection{Spectral methods}
+     This 
+     \subsubsection{Substructure finding methods}
+     \subsubsection{Dissimilarity representation}
+     
     \newpage
     \section{Diffusion on networks}
     Dynamical processes on networks aid in the modelling of processes that occur in real-world systems for example spread of diseases in a social group, transmission of signals in brain networks, spread of information in a social network, and many others. In this work, we explore the diffusion process is one of the most popular dynamic processes studied in literature.
@@ -2260,6 +2293,9 @@ its degree distribution.
         where $\mathbf{L}_1, \mathbf{L}_2, \cdots, \mathbf{L}_{\Delta}$ are  $k$-path Laplacian matrices for hops of length $k=1,2,\cdots, \Delta$ respectively. 
         
         At $k=1$, we recover the normal heat kernel in eqn.~\ref{kernel}.
+        
+        On performing permutations of node labels of a graph, the spectrum of Laplacian matrix of the graph remains unchanged thus functions whose arguments are the spectrum of the Laplacian are considered invariants under node label permutations. In subsequent subsections, we explore some of the invariants of the generalised heat kernel which include trace, zeta function, derivative of the zeta function at the origin and heat content.
+        
         \subsection{Trace of the Generalised Heat Kernel}
         The trace of the generalised heat kernel is therefore given by
         \begin{equation}
@@ -2507,12 +2543,9 @@ its degree distribution.
     
     
     
-<<<<<<< HEAD
-    \subsection{Heat content Simulations}
-=======
-    \subsection{Heat Content Simulations}
->>>>>>> 3bf1a8e83b90f25b839d34dff4ec8dec902833ce
-    
+
+  \subsection{Heat content Simulations}
+
     \begin{figure}[H]
     	\centering
     	\begin{subfigure}[b]{0.5\textwidth}
@@ -2633,17 +2666,19 @@ We select $5$ objects along with one of its object view. We then implement the D
 As mentioned earlier, PCA is a widely used statistical tool for dimension reduction. The PCA-based dimension reduction relies on selection of dimensions with the largest variance. Ding and He \citep{ding2004k} showed that PCA dimension reduction indirectly performs clustering according to the $K$-means objective function by proving that the principal components are the continuous solution of the cluster membership indicators in the $K$-means clustering method.
 In this subsection, we discuss the steps followed in performing  PCA-based dimension reduction on a given number $m$ of objects.
 \begin{enumerate}[i)]
-	\item Select the objects from a database to which PCA is to be applied say $m$ objects.
-	\item Obtain the graph representation of each object using Delaunay triangulation with the Harris corner detection technique. This results into graphs $G_1, G_2, \cdots, G_m$.
-	\item Construct the feature vector $\mathbf{B}$ for each graph. For instance the vector can be obtained from the $k$ leading co-efficients of the heat content polynomial that is $\mathbf{B} = (q_1,q_2, \cdots, q_k)^T$. Alternatively $\mathbf{B} = (l_1, l_2, \cdots, l_k)^T$ from the $k$ leading Laplacian eigenvalues.
-	\item Construct the matrix $\mathbf{S}=[ \mathbf{B_1}|\mathbf{B_2}| \cdots | \mathbf{B_m}]$. The feature vectors form the columns of $\mathbf{S}$.
-	\item Compute the covariance matrix $C$, which is given by $C = \hat{\mathbf{S}} \hat{\mathbf{S}}^T$, where $\hat{\mathbf{S}}$ is matrix of normalised data which is computed by subtracting the mean of the feature vectors from each column of the matrix $\mathbf{S}$.
-	\item Obtain the principal components direction by performing eigendecomposition on the covariance matrix $C$ that is 
+	\item We commence by selecting the objects from a database to which PCA is to be applied say $m$ objects.
+	\item Next, we extract graphs from each object using Delaunay triangulation with the Harris corner detection technique. This results into graphs $G_1, G_2, \cdots, G_m$.
+	\item We construct the feature vector $\mathbf{B}_k$ for each graph $G_k$. For instance the vector can be obtained from the $n$ leading co-efficients of the heat content polynomial that is $\mathbf{B}_k = (q_1,q_2, \cdots, q_n)^T$ or from the $n$ leading Laplacian eigenvalues: $\mathbf{B}_k = (l_1, l_2, \cdots, l_n)^T$.
+	\item We compute the matrix $\mathbf{S}=[ \mathbf{B}_1|\mathbf{B}_2| \cdots | \mathbf{B}_m]$. The feature vectors form the columns of $\mathbf{S}$.
+	\item We then compute the matrix,$\hat{\mathbf{S}}$, of normalised data by subtracting the mean feature vector of the data set, $\mathbf{\bar{B}}$, from each of the column vectors as  
+	$\hat{\mathbf{S}}=[ \mathbf{B}_1-\mathbf{\bar{B}}|\mathbf{B}_2-\mathbf{\bar{B}}| \cdots | \mathbf{B}_m -\mathbf{\bar{B}}]$. 
+	\item We compute the covariance matrix $\mathbf{C}$ by taking the matrix product $\mathbf{C} = \hat{\mathbf{S}} \hat{\mathbf{S}}^T$.
+	\item We extract the principal components directions by performing eigendecomposition on the covariance matrix $\mathbf{C}$ that is 
 	\begin{equation}
-	C = \sum _{i=1} ^m \lambda_i \mathbf{v}_i \mathbf{v}_i^T,
+	\mathbf{C} = \sum _{i=1} ^m \lambda_i \mathbf{v}_i \mathbf{v}_i^T,
 	\end{equation}
-	where $\lambda_i$ are the eigenvalues and $\mathbf{v}_i$ are the eigenvectors. This is followed by selection of the first $s$ leading eigenvectors termed as the principal components. The matrix $\mathbf{V} = (\mathbf{v}_1, \mathbf{v}_2, \cdots, \mathbf{v}_s)$. By selecting the principal components, we reduce the dimension of the data.
-	\item Finally, we project individual graphs on to the co-ordinate eigenspace by $\mathcal{B} = \mathbf{U} \mathbf{B}_k$. Therefore, each graph $G_k$ is represented by an $s$-component vector $\mathbf{B}_k$ in the eigenspace.	 
+	where $\lambda_i$ are the eigenvalues and $\mathbf{v}_i$ are the eigenvectors. This is followed by selection of the first $s$ leading eigenvectors (normally $3$ for purposes of visualisation) to represent the graphs that we obtained from the images of the objects. By selecting the principal components, we reduce the dimension of the data. The coordinate system of the eigenspace is spanned by the $s$ orthogonal vectors $\mathbf{V} = (\mathbf{v}_1, \mathbf{v}_2, \cdots, \mathbf{v}_s)$. 
+	\item Finally, we project individual graphs (represented by $\mathbf{B}_k$ for $1\leq k \leq m$) onto this eigenspace using $\mathbf{B}'_k = \mathbf{V}^T (\mathbf{B}_k -\mathbf{\bar{B}})$. Therefore, each graph $G_k$ is represented by an $s$-component vector $\mathbf{B}'_k$ in the eigenspace.	 
 \end{enumerate}
 
 \subsection{Clustering using Spectrum of the Laplacian matrix}

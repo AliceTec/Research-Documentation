@@ -1,4 +1,4 @@
-\begin{thebibliography}{126}
+\begin{thebibliography}{128}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -81,6 +81,11 @@ A.~Barrat, M.~Barthelemy, and A.~Vespignani.
 \newblock \emph{Dynamical processes on complex networks}.
 \newblock Cambridge university press, 2008.
 
+\bibitem[Behrends(2000)]{behrends2000introduction}
+E.~Behrends.
+\newblock \emph{Introduction to Markov chains}, volume 228.
+\newblock Springer, 2000.
+
 \bibitem[Belkin and Niyogi(2003)]{belkin2003laplacian}
 M.~Belkin and P.~Niyogi.
 \newblock Laplacian eigenmaps for dimensionality reduction and data
@@ -118,6 +123,12 @@ R.~Byrne, J.~Feddema, and C.~Abdallah.
 \newblock Algebraic connectivity and graph robustness.
 \newblock \emph{Sandia National Laboratories, Albuquerque, New Mexico}, 87185,
   2005.
+
+\bibitem[Cai et~al.(2018)Cai, Zheng, and Chang]{cai2018comprehensive}
+H.~Cai, V.~W. Zheng, and K.~Chang.
+\newblock A comprehensive survey of graph embedding: problems, techniques and
+  applications.
+\newblock \emph{IEEE Transactions on Knowledge and Data Engineering}, 2018.
 
 \bibitem[Casti(September 26, 2017)]{EncyBrit}
 J.~L. Casti.
