@@ -17,6 +17,10 @@ Repeated entry---line 1096 of file references.bib
  : @article{zager2008graph
  :                        ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 1231 of file references.bib
+ : @book{chung1997spectral
+ :                        ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "ding2004k"
 Warning--can't use both volume and number fields in adiga2009skew
 Warning--there's a number but no volume in anthonisse1971rush
@@ -29,45 +33,45 @@ Warning--empty year in googleimages
 Warning--empty institution in smith2002tutorial
 Warning--empty year in wu2564spectral
 Warning--empty year in wu2564spectral
-You've used 128 entries,
+You've used 129 entries,
             2773 wiz_defined-function locations,
-            1304 strings with 24173 characters,
-and the built_in function-call counts, 56075 in all, are:
-= -- 5101
-> -- 2754
-< -- 115
-+ -- 954
-- -- 825
-* -- 4303
-:= -- 8526
-add.period$ -- 398
-call.type$ -- 128
-change.case$ -- 638
-chr.to.int$ -- 127
-cite$ -- 267
-duplicate$ -- 2736
-empty$ -- 4906
-format.name$ -- 1027
-if$ -- 11849
+            1309 strings with 24320 characters,
+and the built_in function-call counts, 56531 in all, are:
+= -- 5145
+> -- 2775
+< -- 116
++ -- 961
+- -- 831
+* -- 4340
+:= -- 8594
+add.period$ -- 401
+call.type$ -- 129
+change.case$ -- 643
+chr.to.int$ -- 128
+cite$ -- 269
+duplicate$ -- 2756
+empty$ -- 4946
+format.name$ -- 1036
+if$ -- 11945
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 137
-newline$ -- 648
-num.names$ -- 512
-pop$ -- 1326
+missing$ -- 138
+newline$ -- 653
+num.names$ -- 516
+pop$ -- 1334
 preamble$ -- 1
-purify$ -- 528
+purify$ -- 532
 quote$ -- 0
-skip$ -- 2046
+skip$ -- 2062
 stack$ -- 0
-substring$ -- 2350
-swap$ -- 301
+substring$ -- 2377
+swap$ -- 302
 text.length$ -- 27
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1318
+type$ -- 1329
 warning$ -- 11
-while$ -- 560
+while$ -- 565
 width$ -- 0
-write$ -- 1653
-(There were 2 error messages)
+write$ -- 1666
+(There were 3 error messages)

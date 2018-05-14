@@ -1,4 +1,4 @@
-\begin{thebibliography}{128}
+\begin{thebibliography}{129}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -285,6 +285,13 @@ M.~Faloutsos, P.~Faloutsos, and C.~Faloutsos.
 \newblock On power-law relationships of the internet topology.
 \newblock In \emph{ACM SIGCOMM computer communication review}, volume~29, pages
   251--262. ACM, 1999.
+
+\bibitem[Fredman and Tarjan(1987)]{fredman1987fibonacci}
+M.~L. Fredman and R.~E. Tarjan.
+\newblock Fibonacci heaps and their uses in improved network optimization
+  algorithms.
+\newblock \emph{Journal of the ACM (JACM)}, 34\penalty0 (3):\penalty0 596--615,
+  1987.
 
 \bibitem[Freeman(1978)]{freeman1978centrality}
 L.~C. Freeman.
