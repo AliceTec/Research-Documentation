@@ -489,7 +489,7 @@ Some analytic expressions for the spectra of different kinds of simple networks 
 \end{thm}
 
 \subsection{Normalized Laplacian matrix}
-one format of normalized Laplacian matrix also known as symmetric normalised Laplacian is defined as 
+One format of normalized Laplacian matrix also known as symmetric normalised Laplacian is defined as 
 \begin{eqnarray*}
 	\mathcal{L}_{ij} = \begin{cases} 1, &\mbox{if } i = j \text{ and } k_i \neq  0, \\
 		- \frac{1}{\sqrt{k_i k_j}}, &\mbox{if } v_i \text{ and } v_j \text{ are adjacent,} \\ 
@@ -516,7 +516,24 @@ The largest eigenvalue, $\lambda_n(\mathcal{L})$, is only equal to $2$ for a bip
 
 For a graph $G$ with $n$ vertices, $\sum_{i}\lambda_i(\mathcal{L}) \leq n$ and inequality only holds when $G$ consists of isolated vertices.
 
-A detailed account of other variants of the Laplacian matrix can be found in \citep{tsiatas2012diffusion}
+\subsection{Random Walk Normalised Laplacian}
+This variant of the Laplacian matrix is based on the random walks in the graph. It is an unsymmetric matrix defined as 
+\begin{equation}
+\mathbf{L}_r = \mathbf{L} D^{-1}
+\end{equation}
+The relationship between $\mathbf{L}_r$ and $\mathcal{L}$ is :
+\begin{equation}
+\mathbf{L}_r = \mathbf{D}^{1/2} \mathbb{L} \mathbf{D}^{-1/2}.
+\label{randomNorm}
+\end{equation}
+By diagonalizing $\mathcal{(L)}$, Eqn.\ref{randomNorm} can be rewritten as 
+\begin{equation}
+\mathbf{L}_r = (\mathbf{D}^{1/2} \mathbf{\Phi}) \mathbf{\Lambda} (\mathbf{D}^{1/2} \mathbf{\Phi})^{-1},
+\label{decomprandom}
+\end{equation}
+where $\mathbf{\Lambda}$ is a diagonal matrix of eigenvalues of $\mathcal{(L)}$ and $\mathbf{\Phi}$ is the eigenvector matrix. Thus, $\mathbf{L}_r$ can is diagonizable and it shares the same set of eigenvalue as $\mathcal{L}$ though the corresponding eigenvectors are different. From this relationship, some applications would use the random matrix $\mathbf{L}_r$ in place of $\mathcal{(L)}$.
+
+A detailed account of other variants of the Laplacian matrix can be found in \citep{tsiatas2012diffusion}.
 
 \subsection{Randi\'{c} matrix}
 Let $G=(V,E)$ be a graph with vertex set ${v_1,v_2, \cdots, v_n}$. Let $d_i$ denote the degree of a vertex $v_i$. The entries of the Randi\'{c} matrix (name proposed in \citep{bozkurt2010randic}) are given by
@@ -526,7 +543,7 @@ Let $G=(V,E)$ be a graph with vertex set ${v_1,v_2, \cdots, v_n}$. Let $d_i$ den
 0, & \text{otherwise}.
 \end{cases}
 \end{equation*}
-The Randi\'{c} matrix is related to the normalised Laplacian matrix by
+The Randi\'{c} matrix is related to the symmetric normalised Laplacian matrix by
 \begin{equation}
 \mathcal{L} = \mathbf{I} -\mathbf{R}
 \end{equation}
@@ -2611,17 +2628,21 @@ Focusing at the Mellin transformation is in the middle row, we observe that for 
     To start with we compute the values of the zeta function for graph (Fig.\ref{gen-sample-graph}) which are $1.5686$ and $-3.4012$ for the normalised and unnormalised Laplacian matrices respectively. As discussed earlier on, increase in values of $s$ and $\lambda$ results into lesser influence due to long-range interaction in the Mellin and Laplace transform cases respectively. We, however, observe that for the latter case, the value for the derivative of zeta function reaches faster (in both (\ref{normal-zetaderivative}) and (\ref{normalised-zetaderivative}) ) that of the normal diffusion with no long range interactions compared to the former case.     
     
     \subsection{Heat Content of the Generalised Laplacian matrix}
-    
+    Heat content of a graph is intuitively the total amount of heat preserved in the graph.
     The heat content is defined as the sum of entries of the generalised heat kernel matrix of a graph. Its given by
     \begin{equation}
     Q(t) = \sum_{p \in V} \sum_{q \in V} \mathbf{H}_{G_t}(p,q)
     \label{heat-content}
     \end{equation}
+    
+    The structural properties of a graph play a role in determining the quantity of heat preserved within a graph over time.
+    
     We note that from Eqn.\ref{heatkernel-hsope}, when we consider a particular case of hops of length $1 (k=1)$, we recover the heat content based on the normal Laplacian matrix which is extensively presented in \citep{xiao2009graph}.
     
     On substituting for $\mathbf{H}_{G_t}(p,q)$ in Eqn.\ref{heat-content} gives
     \begin{equation}
     Q(t) = \sum_{p \in V} \sum_{q \in V} \sum_{k=1}^{\arrowvert V\arrowvert} e^{(-\mu_{k} t)} v_{k}(p) v_{k}(q),
+    \label{heatcontentdecomp}
     \end{equation}
     which can be expanded into a polynomial in time as in \citep{mcdonald2002diffusions}
     \begin{equation}
@@ -2633,7 +2654,14 @@ Focusing at the Mellin transformation is in the middle row, we observe that for 
     \end{equation}
     
     The set of polynomial co-efficients, $q_m$ is unique for a given graph and thus, can be used for graph characterisation. For purposes of graph clustering, we can construct feature vector using the $k$ leading co-efficients, that is $B_k = (q_1,q_2,\cdots,q_k)^T$. We will further explore this idea in Section 6.
-
+    
+    Alternatively, Eqn. \ref{heatcontentdecomp} can be written as
+    \begin{equation}
+      Q(t) = \sum_{i=1}^{m} \alpha_i e^{-\lambda t},
+      \label{heatcontent2}
+    \end{equation}
+    where $\alpha_i = \sum_{p \in V} \sum_{q \in V}  v_{k}(p) v_{k}(q) $.
+    We can see from Eqn \ref{heatcontent2} that the heat content can be treated as a summation of exponential functions with different decay rates determined by Laplacian eigenvalues and different weights ($\alpha_i$) determined by the eigenvectors of the Laplacian. 
   \subsection{Heat content Simulations}
    As pointed out before, the normalised Laplacian matrix performs better than the normal Laplacian in some scenarios. For computation of heat content, we opt for the normalised Laplacian since for the unnormalised case, the heat content remains constant over time.
     \begin{figure}[H]
