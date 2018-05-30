@@ -3,75 +3,87 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Thesis-Draft.aux
 The style file: abbrvnat.bst
 Database file #1: references.bib
-Warning--entry type for "zacharydataset" isn't style-file defined
---line 351 of file references.bib
-Warning--entry type for "googleimages" isn't style-file defined
---line 360 of file references.bib
+Warning--entry type for "bridgeimage" isn't style-file defined
+--line 352 of file references.bib
 Warning--entry type for "EncyBrit" isn't style-file defined
---line 668 of file references.bib
-Repeated entry---line 967 of file references.bib
+--line 661 of file references.bib
+Repeated entry---line 960 of file references.bib
  : @article{barabasi1999emergence
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1096 of file references.bib
+Repeated entry---line 1089 of file references.bib
  : @article{zager2008graph
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1231 of file references.bib
+Repeated entry---line 1224 of file references.bib
  : @book{chung1997spectral
  :                        ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "ding2004k"
+Repeated entry---line 1253 of file references.bib
+ : @article{estrada2005subgraph
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--entry type for "Hawkinginterview" isn't style-file defined
+--line 1264 of file references.bib
+Warning--entry type for "Quantamagazine" isn't style-file defined
+--line 1421 of file references.bib
+Repeated entry---line 1440 of file references.bib
+ : @article{estrada2010quantifying
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1490 of file references.bib
+ : @article{aurenhammer2000voronoi
+ :                                ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "googleimages"
 Warning--can't use both volume and number fields in adiga2009skew
 Warning--there's a number but no volume in anthonisse1971rush
+Warning--empty year in bridgeimage
 Warning--empty journal in chandak2017novel
 Warning--there's a number but no series in chung1997spectral
 Warning--empty journal in euler1976solution
 Warning--can't use both volume and number fields in faloutsos1999power
 Warning--can't use both volume and number fields in harris1988combined
-Warning--empty year in googleimages
 Warning--empty institution in smith2002tutorial
-Warning--empty year in wu2564spectral
-Warning--empty year in wu2564spectral
-You've used 129 entries,
+You've used 153 entries,
             2773 wiz_defined-function locations,
-            1309 strings with 24320 characters,
-and the built_in function-call counts, 56531 in all, are:
-= -- 5145
-> -- 2775
-< -- 116
-+ -- 961
-- -- 831
-* -- 4340
-:= -- 8594
-add.period$ -- 401
-call.type$ -- 129
-change.case$ -- 643
-chr.to.int$ -- 128
-cite$ -- 269
-duplicate$ -- 2756
-empty$ -- 4946
-format.name$ -- 1036
-if$ -- 11945
+            1434 strings with 27585 characters,
+and the built_in function-call counts, 67222 in all, are:
+= -- 6135
+> -- 3275
+< -- 138
++ -- 1135
+- -- 981
+* -- 5147
+:= -- 10195
+add.period$ -- 474
+call.type$ -- 153
+change.case$ -- 764
+chr.to.int$ -- 152
+cite$ -- 315
+duplicate$ -- 3273
+empty$ -- 5905
+format.name$ -- 1222
+if$ -- 14227
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 138
-newline$ -- 653
-num.names$ -- 516
-pop$ -- 1334
+missing$ -- 160
+newline$ -- 770
+num.names$ -- 612
+pop$ -- 1581
 preamble$ -- 1
-purify$ -- 532
+purify$ -- 630
 quote$ -- 0
-skip$ -- 2062
+skip$ -- 2456
 stack$ -- 0
-substring$ -- 2377
-swap$ -- 302
-text.length$ -- 27
+substring$ -- 2880
+swap$ -- 361
+text.length$ -- 32
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1329
-warning$ -- 11
-while$ -- 565
+type$ -- 1588
+warning$ -- 9
+while$ -- 675
 width$ -- 0
-write$ -- 1666
-(There were 3 error messages)
+write$ -- 1973
+(There were 6 error messages)

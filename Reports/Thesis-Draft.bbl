@@ -1,4 +1,4 @@
-\begin{thebibliography}{129}
+\begin{thebibliography}{153}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -7,7 +7,7 @@
 
 \bibitem[Adiga and Smitha(2009)]{adiga2009skew}
 C.~Adiga and M.~Smitha.
-\newblock On the skew laplacian energy of a digraph.
+\newblock On the skew {L}aplacian energy of a digraph.
 \newblock In \emph{Int. Math. Forum}, volume~4, pages 1907--1914, 2009.
 
 \bibitem[Alahakoon et~al.(2011)Alahakoon, Tripathi, Kourtellis, Simha, and
@@ -22,6 +22,29 @@ R.~Albert and A.-L. Barab{\'a}si.
 \newblock Statistical mechanics of complex networks.
 \newblock \emph{Reviews of modern physics}, 74\penalty0 (1):\penalty0 47, 2002.
 
+\bibitem[Albertson(1997)]{albertson1997irregularity}
+M.~O. Albertson.
+\newblock The irregularity of a graph.
+\newblock \emph{Ars Combinatoria}, 46:\penalty0 219--225, 1997.
+
+\bibitem[Allem et~al.(2016)Allem, Jacobs, and Trevisan]{allem2016normalized}
+L.~E. Allem, D.~P. Jacobs, and V.~Trevisan.
+\newblock Normalized {L}aplacian energy change and edge deletion.
+\newblock \emph{MATCH Commun. Math. Comput. Chem.}, 75:\penalty0 343--353,
+  2016.
+
+\bibitem[Alon(2003)]{alon2003biological}
+U.~Alon.
+\newblock Biological networks: the tinkerer as an engineer.
+\newblock \emph{Science}, 301\penalty0 (5641):\penalty0 1866--1867, 2003.
+
+\bibitem[Amaral et~al.(2000)Amaral, Scala, Barthelemy, and
+  Stanley]{amaral2000classes}
+L.~A.~N. Amaral, A.~Scala, M.~Barthelemy, and H.~E. Stanley.
+\newblock Classes of small-world networks.
+\newblock \emph{Proceedings of the national academy of sciences}, 97\penalty0
+  (21):\penalty0 11149--11152, 2000.
+
 \bibitem[Anthonisse(1971)]{anthonisse1971rush}
 J.~M. Anthonisse.
 \newblock The rush in a directed graph.
@@ -33,6 +56,13 @@ H.~Anton and C.~Rorres.
 \newblock Elementary linear algebra, (2000).
 \newblock \emph{Anton Textbook Inc, Ottawa}, 2007.
 
+\bibitem[Aurenhammer(1991)]{aurenhammer1991voronoi}
+F.~Aurenhammer.
+\newblock Voronoi diagrams—a survey of a fundamental geometric data
+  structure.
+\newblock \emph{ACM Computing Surveys (CSUR)}, 23\penalty0 (3):\penalty0
+  345--405, 1991.
+
 \bibitem[Aurenhammer and Klein(2000)]{aurenhammer2000voronoi}
 F.~Aurenhammer and R.~Klein.
 \newblock Voronoi diagrams.
@@ -42,13 +72,17 @@ F.~Aurenhammer and R.~Klein.
 \bibitem[Aurenhammer et~al.(2013)Aurenhammer, Klein, and
   Lee]{aurenhammer2013voronoi}
 F.~Aurenhammer, R.~Klein, and D.-T. Lee.
-\newblock \emph{Voronoi diagrams and Delaunay triangulations}.
+\newblock \emph{Voronoi diagrams and {D}elaunay triangulations}.
 \newblock World Scientific Publishing Company, 2013.
 
 \bibitem[Banavar et~al.(1999)Banavar, Maritan, and Rinaldo]{banavar1999size}
 J.~R. Banavar, A.~Maritan, and A.~Rinaldo.
 \newblock Size and form in efficient transportation networks.
 \newblock \emph{Nature}, 399\penalty0 (6732):\penalty0 130, 1999.
+
+\bibitem[Barab{\'a}si(2003)]{barabasi2003linked}
+A.-L. Barab{\'a}si.
+\newblock Linked: The new science of networks, 2003.
 
 \bibitem[Barab{\'a}si(2016)]{barabasi2016network}
 A.-L. Barab{\'a}si.
@@ -83,7 +117,7 @@ A.~Barrat, M.~Barthelemy, and A.~Vespignani.
 
 \bibitem[Behrends(2000)]{behrends2000introduction}
 E.~Behrends.
-\newblock \emph{Introduction to Markov chains}, volume 228.
+\newblock \emph{Introduction to {M}arkov chains}, volume 228.
 \newblock Springer, 2000.
 
 \bibitem[Belkin and Niyogi(2003)]{belkin2003laplacian}
@@ -93,6 +127,19 @@ M.~Belkin and P.~Niyogi.
 \newblock \emph{Neural computation}, 15\penalty0 (6):\penalty0 1373--1396,
   2003.
 
+\bibitem[Bell(1992)]{bell1992note}
+F.~K. Bell.
+\newblock A note on the irregularity of graphs.
+\newblock \emph{Linear Algebra and its Applications}, 161:\penalty0 45--54,
+  1992.
+
+\bibitem[Bestavros()]{bridgeimage}
+A.~Bestavros.
+\newblock Discussion on eulerian circuits.
+\newblock URL
+  \url{http://www.cs.bu.edu/~best/courses/cs109/modules/euleriancircuits/}.
+\newblock [Online; accessed 2017-03-29].
+
 \bibitem[Biggs(1993)]{biggs1993algebraic}
 N.~Biggs.
 \newblock \emph{Algebraic graph theory}.
@@ -101,8 +148,18 @@ N.~Biggs.
 \bibitem[Bozkurt et~al.(2010)Bozkurt, G{\"u}ng{\"o}r, Gutman, and
   Cevik]{bozkurt2010randic}
 S.~B. Bozkurt, A.~D. G{\"u}ng{\"o}r, I.~Gutman, and A.~S. Cevik.
-\newblock Randic matrix and randic energy.
+\newblock Randic matrix and {R}andic energy.
 \newblock \emph{MATCH Commun. Math. Comput. Chem}, 64:\penalty0 239--250, 2010.
+
+\bibitem[Bray(2003)]{bray2003molecular}
+D.~Bray.
+\newblock Molecular networks: the top-down view.
+\newblock \emph{Science}, 301\penalty0 (5641):\penalty0 1864, 2003.
+
+\bibitem[Broido and Clauset(2018)]{broido2018scale}
+A.~D. Broido and A.~Clauset.
+\newblock Scale-free networks are rare.
+\newblock \emph{arXiv preprint arXiv:1801.03400}, 2018.
 
 \bibitem[Brouwer and Haemers(2011)]{brouwer2011spectra}
 A.~E. Brouwer and W.~H. Haemers.
@@ -165,6 +222,18 @@ F.~R. Chung.
 \newblock \emph{Spectral graph theory}.
 \newblock Number~92. American Mathematical Soc., 1997.
 
+\bibitem[Cohen(2002)]{cohen2002all}
+D.~Cohen.
+\newblock All the world's a net.
+\newblock \emph{New Scientist}, 174\penalty0 (2338):\penalty0 24--9, 2002.
+
+\bibitem[Colman and Rodgers(2013)]{colman2013complex}
+E.~R. Colman and G.~J. Rodgers.
+\newblock Complex scale-free networks with tunable power-law exponent and
+  clustering.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  392\penalty0 (21):\penalty0 5501--5510, 2013.
+
 \bibitem[Cvetkovic and Rowlinson(2004)]{cvetkovic2004spectral}
 D.~Cvetkovic and P.~Rowlinson.
 \newblock Spectral graph theory.
@@ -172,7 +241,7 @@ D.~Cvetkovic and P.~Rowlinson.
 
 \bibitem[Das(2004)]{das2004laplacian}
 K.~C. Das.
-\newblock The laplacian spectrum of a graph.
+\newblock The {L}aplacian spectrum of a graph.
 \newblock \emph{Computers \& Mathematics with Applications}, 48\penalty0
   (5):\penalty0 715--724, 2004.
 
@@ -188,6 +257,18 @@ E.~W. Dijkstra.
 \newblock \emph{Numerische mathematik}, 1\penalty0 (1):\penalty0 269--271,
   1959.
 
+\bibitem[Dinas and Banon(2014)]{dinas2014review}
+S.~Dinas and J.~M. Banon.
+\newblock A review on delaunay triangulation with application on computer
+  vision.
+\newblock \emph{Int. J. Comp. Sci. Eng}, 3:\penalty0 9--18, 2014.
+
+\bibitem[Ding and He(2004)]{ding2004k}
+C.~Ding and X.~He.
+\newblock K-means clustering via principal component analysis.
+\newblock In \emph{Proceedings of the twenty-first international conference on
+  Machine learning}, page~29. ACM, 2004.
+
 \bibitem[Edwards and Penney(2004)]{edwards2004differential}
 C.~H. Edwards and D.~E. Penney.
 \newblock \emph{Differential equations and boundary value problems}, volume~2.
@@ -200,7 +281,7 @@ W.~Ellens and R.~E. Kooij.
 
 \bibitem[Erd{\"o}s and R{\'e}nyi(1959)]{erdos1959random}
 P.~Erd{\"o}s and A.~R{\'e}nyi.
-\newblock On random graphs, i.
+\newblock On random graphs.
 \newblock \emph{Publicationes Mathematicae (Debrecen)}, 6:\penalty0 290--297,
   1959.
 
@@ -222,8 +303,8 @@ E.~Estrada.
 
 \bibitem[Estrada(2012)]{estrada2012path}
 E.~Estrada.
-\newblock Path laplacian matrices: introduction and application to the analysis
-  of consensus in networks.
+\newblock Path {L}aplacian matrices: introduction and application to the
+  analysis of consensus in networks.
 \newblock \emph{Linear Algebra and its Applications}, 436\penalty0
   (9):\penalty0 3373--3391, 2012.
 
@@ -264,14 +345,14 @@ E.~Estrada, L.~V. Gambuzza, and M.~Frasca.
 \bibitem[Estrada et~al.(2017{\natexlab{b}})Estrada, Hameed, Hatano, and
   Langer]{estrada2017path}
 E.~Estrada, E.~Hameed, N.~Hatano, and M.~Langer.
-\newblock Path laplacian operators and superdiffusive processes on graphs. i.
+\newblock Path {L}aplacian operators and superdiffusive processes ongraphs. i.
   one-dimensional case.
 \newblock \emph{Linear Algebra and its Applications}, 523:\penalty0 307--334,
   2017{\natexlab{b}}.
 
 \bibitem[Euler(1953)]{euler1953leonhard}
 L.~Euler.
-\newblock Leonhard euler and the k{\"o}nigsberg bridges.
+\newblock Leonhard euler and the {K}{\"o}nigsberg bridges.
 \newblock \emph{Scientific American}, 189\penalty0 (1):\penalty0 66--70, 1953.
 
 \bibitem[Euler(1976)]{euler1976solution}
@@ -300,7 +381,7 @@ L.~C. Freeman.
 
 \bibitem[Friedli et~al.(2017)Friedli, Karlsson, et~al.]{friedli2017spectral}
 F.~Friedli, A.~Karlsson, et~al.
-\newblock Spectral zeta functions of graphs and the riemann zeta function in
+\newblock Spectral zeta functions of graphs and the {R}iemann zeta function in
   the critical strip.
 \newblock \emph{Tohoku Mathematical Journal}, 69\penalty0 (4):\penalty0
   585--610, 2017.
@@ -318,9 +399,9 @@ C.~Godsil and G.~Royle.
 
 \bibitem[Gower(1980)]{gower1980modified}
 J.~Gower.
-\newblock A modified leverrier-faddeev algorithm for matrices with multiple
+\newblock A modified {L}everrier-{F}addeev algorithm for matrices with multiple
   eigenvalues.
-\newblock \emph{Linear Algebra and its Applications}, 31:\penalty0 61--70,
+\newblock \emph{Linear {A}lgebra and its {A}pplications}, 31:\penalty0 61--70,
   1980.
 
 \bibitem[Grady(2006)]{grady2006random}
@@ -332,7 +413,7 @@ L.~Grady.
 \bibitem[Gribkovskaia et~al.(2007)Gribkovskaia, Halskau, and
   Laporte]{gribkovskaia2007bridges}
 I.~Gribkovskaia, {\O}.~Halskau, and G.~Laporte.
-\newblock The bridges of k{\"o}nigsberg—a historical perspective.
+\newblock The bridges of {K}{\"o}nigsberg—a historical perspective.
 \newblock \emph{Networks}, 49\penalty0 (3):\penalty0 199--203, 2007.
 
 \bibitem[Grisi-Filho et~al.(2013)Grisi-Filho, Ossada, Ferreira, and
@@ -342,10 +423,29 @@ J.~H. Grisi-Filho, R.~Ossada, F.~Ferreira, and M.~Amaku.
   structural properties.
 \newblock \emph{Physics Research International}, 2013, 2013.
 
+\bibitem[Gutman(2001)]{gutman2001energy}
+I.~Gutman.
+\newblock The energy of a graph: old and new results.
+\newblock In \emph{Algebraic combinatorics and applications}, pages 196--211.
+  Springer, 2001.
+
 \bibitem[Gutman and Polansky(2012)]{gutman2012mathematical}
 I.~Gutman and O.~E. Polansky.
 \newblock \emph{Mathematical concepts in organic chemistry}.
 \newblock Springer Science \& Business Media, 2012.
+
+\bibitem[Gutman and Zhou(2006)]{gutman2006laplacian}
+I.~Gutman and B.~Zhou.
+\newblock Laplacian energy of a graph.
+\newblock \emph{Linear Algebra and its applications}, 414\penalty0
+  (1):\penalty0 29--37, 2006.
+
+\bibitem[Gutman et~al.(2009)Gutman, Kiani, Mirzakhah, and
+  Zhou]{gutman2009incidence}
+I.~Gutman, D.~Kiani, M.~Mirzakhah, and B.~Zhou.
+\newblock On incidence energy of a graph.
+\newblock \emph{Linear Algebra and its Applications}, 431\penalty0
+  (8):\penalty0 1223--1233, 2009.
 
 \bibitem[Harris and Stephens(1988)]{harris1988combined}
 C.~Harris and M.~Stephens.
@@ -359,16 +459,14 @@ J.~M. Harris, J.~L. Hirst, and M.~J. Mossinghoff.
 \newblock \emph{Combinatorics and graph theory}, volume~2.
 \newblock Springer, 2008.
 
+\bibitem[Hawking(2000)]{Hawkinginterview}
+S.~Hawking.
+\newblock San {J}ose {M}ercury {N}ews, 2000.
+\newblock [].
+
 \bibitem[Huberman(2001)]{huberman2001laws}
 B.~A. Huberman.
 \newblock The laws of the web, 2001.
-
-\bibitem[Internet()]{googleimages}
-Internet.
-\newblock Network.
-\newblock URL
-  \url{https://www.google.com/search?q=internet+network&client=ubuntu&hs=xZp&channel=fs&gl=za&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiZsrLOueTMAhVMCcAKHS_8AysQ_AUIBygB&biw=1215&bih=900#channel=fs&gl=za&tbm=isch&q=computer+network&imgrc=_}.
-\newblock [Online; accessed 2016-03-29].
 
 \bibitem[Jackson(2010)]{jackson2010social}
 M.~O. Jackson.
@@ -382,12 +480,23 @@ A.~Jamakovic and P.~Van~Mieghem.
 \newblock \emph{NETWORKING 2008 Ad Hoc and Sensor Networks, Wireless Networks,
   Next Generation Internet}, pages 183--194, 2008.
 
+\bibitem[Jasny and Ray(2003)]{jasny2003life}
+B.~R. Jasny and L.~B. Ray.
+\newblock Life and the art of networks, 2003.
+
 \bibitem[Jeh and Widom(2002)]{jeh2002simrank}
 G.~Jeh and J.~Widom.
 \newblock Simrank: a measure of structural-context similarity.
 \newblock In \emph{Proceedings of the eighth ACM SIGKDD international
   conference on Knowledge discovery and data mining}, pages 538--543. ACM,
   2002.
+
+\bibitem[Ju et~al.(2011)Ju, Ringler, and Gunzburger]{ju2011voronoi}
+L.~Ju, T.~Ringler, and M.~Gunzburger.
+\newblock Voronoi tessellations and their application to climate and global
+  modeling.
+\newblock In \emph{Numerical techniques for global atmospheric models}, pages
+  313--342. Springer, 2011.
 
 \bibitem[Karo{\'n}ski(1982)]{karonski1982review}
 M.~Karo{\'n}ski.
@@ -406,6 +515,13 @@ P.~Kissani and Y.~Mizoguchi.
 \newblock Laplacian energy of directed graphs and minimizing maximum outdegree
   algorithms.
 \newblock \emph{Kyushu University Institutional Repository}, 2010.
+
+\bibitem[Klarreich(February 15, 2018)]{Quantamagazine}
+E.~Klarreich.
+\newblock Scant evidence of power laws found in real- world networks, February
+  15, 2018.
+\newblock URL
+  \url{https://www.quantamagazine.org/scant-evidence-of-power-laws-found-in-real-world-networks-20180215/}.
 
 \bibitem[Kloster and Gleich(2014)]{kloster2014heat}
 K.~Kloster and D.~F. Gleich.
@@ -441,6 +557,12 @@ D.~L{\'o}pez-Pintado.
 \newblock \emph{Games and Economic Behavior}, 62\penalty0 (2):\penalty0
   573--590, 2008.
 
+\bibitem[Luo et~al.(2003)Luo, Wilson, and Hancock]{luo2003spectral}
+B.~Luo, R.~C. Wilson, and E.~R. Hancock.
+\newblock Spectral clustering of graphs.
+\newblock In \emph{International Workshop on Graph-Based Representations in
+  Pattern Recognition}, pages 190--201. Springer, 2003.
+
 \bibitem[Ma et~al.(2008)Ma, Yang, Lyu, and King]{ma2008mining}
 H.~Ma, H.~Yang, M.~R. Lyu, and I.~King.
 \newblock Mining social networks using heat diffusion processes for marketing
@@ -457,7 +579,7 @@ J.~Magouirk, S.~Atran, and M.~Sageman.
 
 \bibitem[McDonald and Meyers(2002)]{mcdonald2002diffusions}
 P.~McDonald and R.~Meyers.
-\newblock Diffusions on graphs, poisson problems and spectral geometry.
+\newblock Diffusions on graphs, {P}oisson problems and spectral geometry.
 \newblock \emph{Transactions of the American Mathematical Society},
   354\penalty0 (12):\penalty0 5111--5136, 2002.
 
@@ -487,7 +609,7 @@ R.~Milo, S.~Shen-Orr, S.~Itzkovitz, N.~Kashtan, D.~Chklovskii, and U.~Alon.
 
 \bibitem[Molitierno(2012)]{molitierno2012applications}
 J.~J. Molitierno.
-\newblock \emph{Applications of combinatorial matrix theory to Laplacian
+\newblock \emph{Applications of combinatorial matrix theory to {L}aplacian
   matrices of graphs}.
 \newblock CRC Press, 2012.
 
@@ -542,17 +664,17 @@ M.~E. Newman, D.~J. Watts, and S.~H. Strogatz.
 \newblock \emph{Proceedings of the National Academy of Sciences}, 99\penalty0
   (suppl 1):\penalty0 2566--2572, 2002.
 
-\bibitem[Nexus(2012)]{zacharydataset}
-Nexus.
-\newblock Zachary's karate club [karate], 2012.
-\newblock URL \url{http://nexus.igraph.org/api/dataset_info?id=1&format=html}.
-\newblock [Online; accessed 2016-04-25].
-
 \bibitem[Nikoli{\'c}(2012)]{nikolic2012measuring}
 M.~Nikoli{\'c}.
 \newblock Measuring similarity of graph nodes by neighbor matching.
 \newblock \emph{Intelligent Data Analysis}, 16\penalty0 (6):\penalty0 865--878,
   2012.
+
+\bibitem[Okabe et~al.(2009)Okabe, Boots, Sugihara, and Chiu]{okabe2009spatial}
+A.~Okabe, B.~Boots, K.~Sugihara, and S.~N. Chiu.
+\newblock \emph{Spatial tessellations: concepts and applications of Voronoi
+  diagrams}, volume 501.
+\newblock John Wiley \& Sons, 2009.
 
 \bibitem[Opsahl(2009)]{opsahl2009structure}
 T.~Opsahl.
@@ -566,7 +688,7 @@ T.~Opsahl and P.~Panzarasa.
 
 \bibitem[Opsahl et~al.(2010)Opsahl, Agneessens, and Skvoretz]{opsahl2010node}
 T.~Opsahl, F.~Agneessens, and J.~Skvoretz.
-\newblock Node centrality in weighted networks: Generalizing degree and
+\newblock Node centrality in weighted networks: {G}eneralizing degree and
   shortest paths.
 \newblock \emph{Social Networks}, 32\penalty0 (3):\penalty0 245--251, 2010.
 
@@ -601,8 +723,22 @@ X.~Qi, E.~Fuller, Q.~Wu, Y.~Wu, and C.-Q. Zhang.
 X.~Qi, R.~D. Duval, K.~Christensen, E.~Fuller, A.~Spahiu, Q.~Wu, Y.~Wu,
   W.~Tang, C.~Zhang, et~al.
 \newblock Terrorist networks, network energy and node removal: a new measure of
-  centrality based on laplacian energy.
+  centrality based on {L}aplacian energy.
 \newblock \emph{Social Networking}, 2\penalty0 (01):\penalty0 19, 2013.
+
+\bibitem[Ramane et~al.(2008)Ramane, Revankar, Gutman, Rao, Acharya, and
+  Walikar]{ramane2008bounds}
+H.~S. Ramane, D.~S. Revankar, I.~Gutman, S.~B. Rao, B.~D. Acharya, and H.~B.
+  Walikar.
+\newblock Bounds for the distance energy of a graph.
+\newblock \emph{Kragujevac Journal of Mathematics}, 31\penalty0 (31):\penalty0
+  59--68, 2008.
+
+\bibitem[Randic(1975)]{randic1975characterization}
+M.~Randic.
+\newblock Characterization of molecular branching.
+\newblock \emph{Journal of the American Chemical Society}, 97\penalty0
+  (23):\penalty0 6609--6615, 1975.
 
 \bibitem[Saber and Murray(2003)]{saber2003agreement}
 R.~O. Saber and R.~M. Murray.
@@ -666,6 +802,12 @@ A.~Sydney, C.~Scoglio, P.~Schumm, and R.~E. Kooij.
   ICST (Institute for Computer Sciences, Social-Informatics and
   Telecommunications Engineering), 2008.
 
+\bibitem[Tanaka(2005)]{tanaka2005scale}
+R.~Tanaka.
+\newblock Scale-rich metabolic networks.
+\newblock \emph{Physical review letters}, 94\penalty0 (16):\penalty0 168101,
+  2005.
+
 \bibitem[Thanou et~al.(2017)Thanou, Dong, Kressner, and
   Frossard]{thanou2017learning}
 D.~Thanou, X.~Dong, D.~Kressner, and P.~Frossard.
@@ -705,7 +847,8 @@ J.~R. Ullmann.
 
 \bibitem[Voros(1987)]{voros1987spectral}
 A.~Voros.
-\newblock Spectral functions, special functions and the selberg zeta function.
+\newblock Spectral functions, special functions and the {S}elberg zeta
+  function.
 \newblock \emph{Communications in Mathematical Physics}, 110\penalty0
   (3):\penalty0 439--465, 1987.
 
@@ -717,7 +860,7 @@ X.~F. Wang and G.~Chen.
 
 \bibitem[Watts and Strogatz(1998)]{watts1998collective}
 D.~J. Watts and S.~H. Strogatz.
-\newblock Collective dynamics of ‘small-world’networks.
+\newblock Collective dynamics of ‘small-world’ networks.
 \newblock \emph{nature}, 393\penalty0 (6684):\penalty0 440--442, 1998.
 
 \bibitem[Weinberg(1966)]{weinberg1966simple}
@@ -751,10 +894,10 @@ R.~J. Wilson.
 \newblock \emph{An introduction to graph theory}.
 \newblock Pearson Education India, 1970.
 
-\bibitem[Wu et~al.()Wu, Tan, Deng, Li, Liu, and Lv]{wu2564spectral}
+\bibitem[Wu et~al.(2008)Wu, Tan, Deng, Li, Liu, and Lv]{wu2564spectral}
 J.~Wu, Y.~Tan, H.~Deng, Y.~Li, B.~Liu, and X.~Lv.
-\newblock Spectral measure of robustness in complex networks, 2008.
-\newblock \emph{arXiv preprint arXiv:0802.2564}.
+\newblock Spectral measure of robustness in complex networks.
+\newblock \emph{arXiv preprint arXiv:0802.2564}, 2008.
 
 \bibitem[Xiao et~al.(2009)Xiao, Hancock, and Wilson]{xiao2009graph}
 B.~Xiao, E.~R. Hancock, and R.~C. Wilson.
@@ -764,7 +907,7 @@ B.~Xiao, E.~R. Hancock, and R.~C. Wilson.
 
 \bibitem[Yang et~al.(2016)Yang, Mao, and Wei]{yang2016air}
 C.~Yang, J.~Mao, and P.~Wei.
-\newblock Air traffic network optimization via laplacian energy maximization.
+\newblock Air traffic network optimization via {L}aplacian energy maximization.
 \newblock \emph{Aerospace Science and Technology}, 49:\penalty0 26--33, 2016.
 
 \bibitem[Zachary(1977)]{zachary1977information}
