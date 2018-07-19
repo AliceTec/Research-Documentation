@@ -1,0 +1,74 @@
+\documentclass[10pt,a4paper]{article}
+% usepackages
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+% math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{latexsym}
+% formatting
+\usepackage{parskip}
+\usepackage{fullpage}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+% graphics
+%\usepackage[pdftex]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[below,section]{placeins} % the one below is better for short assignments
+\usepackage{float} % provides H as float placement specifier
+% extras
+\usepackage[pdftex,a4paper,colorlinks=true,urlcolor=blue]{hyperref}
+\urlstyle{same}
+\usepackage{moreverb} %\verbatimtabinput{filename.py} preserves indentation
+
+%Numbering first level list roman (i,ii,iii) instead of arabic (1,2,3)
+% options are \roman \Roman \alph \Alph \arabic
+\renewcommand{\theenumi}{\roman{enumi}} 
+\renewcommand{\theenumii}{\roman{enumii}}
+\newcommand{\Int}{\int\limits}
+% Also achieved with the enumerate package
+\usepackage{enumerate}
+%\numberwithin{equation}{section}%
+
+% author/title details
+\author{Alice NANYANZI (\href{mailto:alicenanyanzi@aims.ac.za}{alicenanyanzi@aims.ac.za})}
+% \title{Course Title: Assignment X}
+\title{Random walks with long-range interactions}
+\begin{document}
+\maketitle
+\section{Random walks on graphs}
+Random walks are a fundamental concept as they are used to model dynamics of systems in numerous fields ranging from physics, biology, engineering, economics and mathematics. Recently, random walks on networks have been extensively studied \cite{newman2003structure,estrada2011structure} and various applications of this concept have been explored. For example modeling diffusion on networks, image segmentation \cite{grady2006random}, measuring centrality of nodes in networks \cite{chung2007heat}, community detection \cite{pons2005computing}, and many others.
+
+\subsection{Simple random walk}
+Let $G=(V,E)$ be a simple undirected graph with $V$ as a set of nodes and $E$ as the set of edges. Suppose $v_0$ is the initial node at which the random walker sets off from, at each time step the random walker moves along the edges to the nearest-neighbour nodes with a uniform probability $p_{u,v}$ where $u$ is the node at which the random walker is positioned and $v$ is any of the nodes to which $u$ is connected by an edge. The resultant sequence of nodes and edges traversed is referred to as random walk. The probability of a random walker moving from one one to another is given by the transition matrix whose entries are given by
+\begin{equation}
+\mathbf{P}_{uv} =  \begin{cases} 
+\frac{1}{k_u}  & \mbox{if } u \text{ is adjacent to } v \\
+0 &\mbox{otherwise }  
+\end{cases} 
+\end{equation}  
+where $k_u$ is the degree of node $u$.
+
+\subsection{Random walk with long-range interactions}
+Here, we extend the notion of random walk on a network by considering the possibility that at every step, the random walker can not only move to the nearest nodes via an edge but can as well hop to the any other node which is connected to the current node through a path in the network. The maximum length of any hop is the diameter of the network. The transition matrix associated with this random walk is defined as
+\begin{equation}
+\mathbf{P}_{G}(uv) =  \begin{cases} 
+\frac{1}{\sigma_{u}}  & \mbox{if } d_{u,v} = k \\
+0 &\mbox{otherwise } , 
+\end{cases} 
+\end{equation} 
+where $\sigma_u$ is the $k$-path degree for node $u$ (definition~\ref{def:kdegree}).
+
+\newpage
+
+\renewcommand{\bibname}{References}
+\nocite{*}
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+
+\end{document}

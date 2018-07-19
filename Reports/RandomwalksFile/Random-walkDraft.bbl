@@ -1,0 +1,41 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Chung(2007)]{chung2007heat}
+F.~Chung.
+\newblock The heat kernel as the pagerank of a graph.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 104\penalty0
+  (50):\penalty0 19735--19740, 2007.
+
+\bibitem[Estrada(2011)]{estrada2011structure}
+E.~Estrada.
+\newblock \emph{The structure of complex networks: theory and applications}.
+\newblock OUP Oxford, 2011.
+
+\bibitem[Grady(2006)]{grady2006random}
+L.~Grady.
+\newblock Random walks for image segmentation.
+\newblock \emph{IEEE transactions on pattern analysis and machine
+  intelligence}, 28\penalty0 (11):\penalty0 1768--1783, 2006.
+
+\bibitem[Newman(2003)]{newman2003structure}
+M.~E. Newman.
+\newblock The structure and function of complex networks.
+\newblock \emph{SIAM review}, 45\penalty0 (2):\penalty0 167--256, 2003.
+
+\bibitem[Page et~al.(1999)Page, Brin, Motwani, and Winograd]{page1999pagerank}
+L.~Page, S.~Brin, R.~Motwani, and T.~Winograd.
+\newblock The pagerank citation ranking: Bringing order to the web.
+\newblock Technical report, Stanford InfoLab, 1999.
+
+\bibitem[Pons and Latapy(2005)]{pons2005computing}
+P.~Pons and M.~Latapy.
+\newblock Computing communities in large networks using random walks.
+\newblock In \emph{International symposium on computer and information
+  sciences}, pages 284--293. Springer, 2005.
+
+\end{thebibliography}
